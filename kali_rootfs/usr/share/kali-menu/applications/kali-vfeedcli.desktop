@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=vfeedcli
+Encoding=UTF-8
+Exec=sh -c "vfeedcli;${SHELL:-bash}"
+Icon=kali-vfeedcli.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;
+X-Kali-Package=vfeed

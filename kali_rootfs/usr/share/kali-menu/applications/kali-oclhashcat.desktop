@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=oclhashcat
+Encoding=UTF-8
+Exec=sh -c "oclhashcat;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;04-03-gpu-tools;
+X-Kali-Package=oclhashcat

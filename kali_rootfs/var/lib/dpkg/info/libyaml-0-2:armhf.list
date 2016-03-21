@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libyaml-0-2
+/usr/share/doc/libyaml-0-2/README
+/usr/share/doc/libyaml-0-2/buildinfo_armhf.gz
+/usr/share/doc/libyaml-0-2/changelog.Debian.gz
+/usr/share/doc/libyaml-0-2/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.4
+/usr/lib/arm-linux-gnueabihf/libyaml-0.so.2

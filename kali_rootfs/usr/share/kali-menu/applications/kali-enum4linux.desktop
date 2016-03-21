@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=enum4linux
+Encoding=UTF-8
+Exec=sh -c "enum4linux;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-10-smb-analysis;
+X-Kali-Package=enum4linux
+
+

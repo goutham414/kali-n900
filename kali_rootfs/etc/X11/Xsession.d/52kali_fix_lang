@@ -1,0 +1,11 @@
+# This file is here to work around https://bugs.kali.org/view.php?id=2138
+# Basically gdm will incorrectly set LANG=C and gnome-terminal doesn't
+# like a non-UTF8 locale.
+
+if [ "$LANG" = "C" ]; then
+    if [ -e /etc/default/locale ]; then
+	. /etc/default/locale
+    else
+	LANG="C.UTF-8"
+    fi
+fi

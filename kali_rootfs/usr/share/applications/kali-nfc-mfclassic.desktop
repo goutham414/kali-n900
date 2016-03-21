@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=nfc-mfclassic
+Encoding=UTF-8
+Exec=sh -c "nfc-mfclassic -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Kali-Package=libnfc-bin

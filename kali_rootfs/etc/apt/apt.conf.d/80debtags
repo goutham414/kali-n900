@@ -1,0 +1,2 @@
+// Update the package tags database from new index files
+APT::Update::Post-Invoke { "[ ! -x /usr/bin/debtags ] || debtags update || true"; };

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wafw00f
+Encoding=UTF-8
+Exec=sh -c "wafw00f -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-03-ids-ips-identification;
+X-Kali-Package=wafw00f

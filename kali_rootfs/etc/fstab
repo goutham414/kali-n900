@@ -1,0 +1,12 @@
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mmcblk0p1	/	ext4	errors=remount-ro,noatime	0	1
+proc	/proc	proc	nodev,noexec,nosuid	0	0
+none	/tmp	tmpfs	noatime	0	0
+/dev/mmcblk1p3	none	swap	sw	0	0
+/dev/ubi0_0	/srv/fremantle	ubifs	defaults,noatime	0	0
+/dev/mmcblk1p2	/srv/fremantle/home	ext3	noatime,errors=continue,commit=1,data=writeback	0	0
+/srv/fremantle/home/opt	/srv/fremantle/opt	none	bind	0	0
+/dev/mmcblk1p1	/srv/fremantle/home/user/MyDocs	vfat	nodev,noexec,nosuid,noatime,nodiratime,utf8,uid=29999,shortname=mixed,dmask=000,fmask=0133,rodir	0	0
+cgroup	/sys/fs/cgroup	cgroup	defaults	0	0

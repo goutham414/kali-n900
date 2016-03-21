@@ -1,0 +1,131 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Van Hauser / THC <vh@thc.org>
+Upstream-Name: hydra
+Source: http://freeworld.thc.org/thc-hydra/
+
+Files: *
+Copyright: 2001-2014 Van Hauser / THC <vh@thc.org>
+           2011 Roland Kessler
+License: AGPL-3.0 with OpenSSL exception
+
+Files: debian/*
+Copyright: 2011-2014 Julián Moreno Patiño <julian@debian.org>
+           2011-2014 Daniel Echeverry <epsilon77@gmail.com>
+           2004 Andrés Roldán <aroldan@debian.org>
+License: AGPL-3.0 with OpenSSL exception
+
+Files: ntlm.c ntlm.h
+Copyright: 1992-1998 Andrew Tridgell
+           2002-2004 Simon Josefsson
+           1995 Jeremy Allison
+License: GPL-2.0+
+
+Files: hmacmd5.c hmacmd5.h
+Copyright: 1996-2000 Luke Kenneth Casson Leighton
+           1992-2000 Andrew Tridgell
+License: GPL-2.0+
+
+Files: bfg.c bfg.h
+Copyright: 2008 Jan Dlabal <dlabaljan@gmail.com>
+License: GPL-3.0+
+
+Files: dpl4hydra.sh
+Copyright: 2012 Roland Kessler
+License: AGPL-3.0 with OpenSSL exception
+
+Files: d3des.c d3des.h
+Copyright: 1999 AT&T Laboratories Cambridge
+           1988-1992 Richard Outerbridge
+License: public-domain
+ This software is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Files: crc32.c crc32.h
+Copyright: 1986 Gary S. Brown
+License: Other
+ You may use this program, or code or tables extracted from it,
+ as desired without restriction.
+
+Files: libpq-fe.h postgres_ext.h
+Copyright: 1996-2003 PostgreSQL Global Development Group
+           1994 Regents of the University of California
+License: Other
+ Permission to use, copy, modify, and distribute this software and its
+ documentation for any purpose, without fee, and without a written
+ agreement is hereby granted, provided that the above copyright notice
+ and this paragraph and the following two paragraphs appear in all copies.
+ .
+ IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY
+ FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+ INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS
+ DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF
+ THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER
+ IS ON AN "AS IS" BASIS, AND THE UNIVERSITY OF CALIFORNIA HAS NO OBLIGATIONS
+ TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
+License: AGPL-3.0 with OpenSSL exception
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License version 3
+ as published by the Free Software Foundation.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+ .
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>
+ .
+ Special Exception
+ .
+ In addition, as a special exception, the copyright holders give
+ permission to link the code of portions of this program with the
+ OpenSSL library under certain conditions as described in each
+ individual source file, and distribute linked combinations
+ including the two.
+ You must obey the GNU Affero General Public License in all respects
+ for all of the code used other than OpenSSL.  If you modify
+ file(s) with this exception, you may extend this exception to your
+ version of the file(s), but you are not obligated to do so.  If you
+ do not wish to do so, delete this exception statement from your
+ version.  If you delete this exception statement from all source
+ files in the program, then also delete it here.
+
+License: GPL-2.0+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3.0+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".

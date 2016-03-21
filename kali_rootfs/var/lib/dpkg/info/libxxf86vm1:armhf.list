@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxxf86vm1
+/usr/share/doc/libxxf86vm1/copyright
+/usr/share/doc/libxxf86vm1/changelog.gz
+/usr/share/doc/libxxf86vm1/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libXxf86vm.so.1.0.0
+/usr/lib/arm-linux-gnueabihf/libXxf86vm.so.1

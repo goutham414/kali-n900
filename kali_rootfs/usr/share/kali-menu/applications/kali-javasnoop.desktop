@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=javasnoop
+Encoding=UTF-8
+Exec=sh -c "javasnoop"
+Icon=kali-javasnoop.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
+X-Kali-Package=javasnoop

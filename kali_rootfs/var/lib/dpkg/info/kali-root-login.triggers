@@ -1,0 +1,5 @@
+interest-noawait /etc/gdm3/daemon.conf
+interest-noawait /etc/pam.d/gdm-password
+interest-noawait /etc/pam.d/gdm-autologin
+interest-noawait /etc/pam.d/sddm
+interest-noawait /etc/sddm.conf

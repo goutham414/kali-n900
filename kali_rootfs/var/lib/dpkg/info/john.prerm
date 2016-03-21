@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+case $1 in
+remove)
+	/usr/share/john/cronjob stop
+	;;
+
+upgrade|failed-upgrade|deconfigure)
+	# These cases need no actions here
+	:
+	;;
+
+*)
+	echo "$0: undocumented call: $@" >&2
+	exit 1
+	;;
+esac
+
+

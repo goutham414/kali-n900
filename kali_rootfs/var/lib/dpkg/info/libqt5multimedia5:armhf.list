@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libqt5multimedia5
+/usr/share/doc/libqt5multimedia5/changelog.Debian.gz
+/usr/share/doc/libqt5multimedia5/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libQt5Multimedia.so.5.5.1
+/usr/lib/arm-linux-gnueabihf/libQt5Multimedia.so.5.5
+/usr/lib/arm-linux-gnueabihf/libQt5Multimedia.so.5

@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxm4
+/usr/share/doc/libxm4/changelog.Debian.gz
+/usr/share/doc/libxm4/changelog.gz
+/usr/share/doc/libxm4/copyright
+/usr/share/doc/libxm4/README.Debian
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libXm.so.4.0.4
+/usr/lib/arm-linux-gnueabihf/libXm.so.3
+/usr/lib/arm-linux-gnueabihf/libXm.so.4

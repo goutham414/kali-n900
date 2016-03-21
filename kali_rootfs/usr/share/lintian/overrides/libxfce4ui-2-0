@@ -1,0 +1,2 @@
+# libxfce4kbd-private-3 is a “private” to Xfce core
+shlib-missing-in-symbols-control-file libxfce4kbd-private-3 0 for usr/lib/x86_64-linux-gnu/libxfce4kbd-private-3.so.0.0.0

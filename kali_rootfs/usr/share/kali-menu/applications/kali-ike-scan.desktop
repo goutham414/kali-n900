@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ike-scan
+Encoding=UTF-8
+Exec=sh -c "ike-scan -h;${SHELL:-bash}"
+Icon=kali-ike-skan.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Kali-Package=ike-scan

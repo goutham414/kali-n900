@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ua-tester
+Encoding=UTF-8
+Exec=sh -c "ua-tester;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-01-cms-identification;
+X-Kali-Package=ua-tester

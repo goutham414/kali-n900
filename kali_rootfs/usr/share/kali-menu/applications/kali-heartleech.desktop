@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=heartleech
+Encoding=UTF-8
+Exec=sh -c "heartleech;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Kali-Package=heartleech

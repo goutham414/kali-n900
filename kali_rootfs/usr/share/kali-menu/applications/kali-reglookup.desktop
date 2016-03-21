@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=reglookup
+Encoding=UTF-8
+Exec=sh -c "reglookup;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-04-forensic-analysis-tools;
+X-Kali-Package=reglookup

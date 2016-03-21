@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bulk_extractor
+Encoding=UTF-8
+Exec=sh -c "bulk_extractor -h;${SHELL:-bash}"
+Icon=kali-bulk_extractor.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=bulk-extractor

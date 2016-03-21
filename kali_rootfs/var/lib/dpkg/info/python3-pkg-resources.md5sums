@@ -1,0 +1,11 @@
+0bff9ae4f9db9207fde7b6b9409bc9aa  usr/lib/python3/dist-packages/pkg_resources/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/pkg_resources/_vendor/__init__.py
+fe3ed3d364ff17f2c81caa45951909b3  usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/__about__.py
+476b7473a5a7490e1049ff98361cfec5  usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/__init__.py
+79a1b53ecfd83a1aa119306addd04a6a  usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/_compat.py
+446b7aee9878fc4b6695f9d2444adf69  usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/_structures.py
+4ffe71fb39c0bec005ef454f84403a35  usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/specifiers.py
+3e8b4f33d9750ce201facbf437b8d0ad  usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py
+b04928cdc2564b09e2a063b4daeb7c5d  usr/share/doc/python3-pkg-resources/changelog.Debian.gz
+5d9cb055663df075f4710730ca90e6cd  usr/share/doc/python3-pkg-resources/changelog.gz
+330b9dde0b00b295f5c3f73815e255f2  usr/share/doc/python3-pkg-resources/copyright

@@ -1,0 +1,7 @@
+2aa96cc49a647e5b8969a3a35b8ab3f5  usr/lib/arm-linux-gnueabihf/liblua5.1-lpeg.so.2.0.0
+7d883dcef999d9def10782c7b1a1d03f  usr/lib/arm-linux-gnueabihf/liblua5.2-lpeg.so.2.0.0
+df95eb3df0cbb0a2e05fbed6c571d882  usr/lib/arm-linux-gnueabihf/liblua5.3-lpeg.so.2.0.0
+4cd58588a08316dc6344b5fea163eab6  usr/share/doc/lua-lpeg/changelog.Debian.gz
+6b8460a72e10d302ebcfe9767f164bcd  usr/share/doc/lua-lpeg/changelog.gz
+edffc521c5f823d0b4a132339349eb19  usr/share/doc/lua-lpeg/copyright
+5f09bb0129b09b6a8e8c1db1b206b1ca  usr/share/lua/5.1/re.lua

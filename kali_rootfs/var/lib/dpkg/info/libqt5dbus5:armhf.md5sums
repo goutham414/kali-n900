@@ -1,0 +1,6 @@
+3217eef57e7f8a05afdbb9c135ecc135  usr/lib/arm-linux-gnueabihf/libQt5DBus.so.5.5.1
+9625233da42f9e0ce9d63651a9d97654  usr/share/doc/libqt5dbus5/LGPL_EXCEPTION.txt
+41f0a260790ac41bcd324fbfe0df3f5c  usr/share/doc/libqt5dbus5/changelog.Debian.gz
+6abc52fb2240b75266486e2a8029f402  usr/share/doc/libqt5dbus5/changelog.gz
+e508e4b2bfd172c74a9d7c2f97013ec9  usr/share/doc/libqt5dbus5/copyright
+6b94383c54f31b9c67e3c12c9a7ac268  usr/share/lintian/overrides/libqt5dbus5

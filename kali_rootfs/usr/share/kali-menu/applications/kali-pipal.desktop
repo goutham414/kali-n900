@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pipal
+Encoding=UTF-8
+Exec=sh -c "pipal -h;${SHELL:-bash}"
+Icon=kali-pipal.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-reporting;
+X-Kali-Package=pipal

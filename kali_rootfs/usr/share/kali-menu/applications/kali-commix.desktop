@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=commix
+Encoding=UTF-8
+Exec=sh -c "commix;${SHELL:-bash}"
+Icon=kali-commix.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;
+X-Kali-Package=commix

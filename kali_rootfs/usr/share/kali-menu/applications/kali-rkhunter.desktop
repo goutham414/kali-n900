@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rkhunter
+Encoding=UTF-8
+Exec=sh -c "rkhunter -h;${SHELL:-bash}"
+Icon=kali-rkhunter.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=rkhunter

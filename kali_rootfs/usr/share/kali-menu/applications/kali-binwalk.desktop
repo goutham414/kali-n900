@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=binwalk
+Encoding=UTF-8
+Exec=sh -c "binwalk -h;${SHELL:-bash}"
+Icon=kali-binwalk.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=binwalk

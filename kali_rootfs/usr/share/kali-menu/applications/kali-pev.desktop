@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pev
+Encoding=UTF-8
+Exec=sh -c "pev -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+X-Kali-Package=pev

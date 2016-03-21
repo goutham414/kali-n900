@@ -1,0 +1,16 @@
+65224c196e5da68bb76c147c99432739  usr/bin/synclient
+9c829add4e8a55a0fa904ae0dbeaf1d7  usr/bin/syndaemon
+08d7ee4077ee128e86aea87d0ae0322b  usr/lib/xorg/modules/input/synaptics_drv.so
+7dcae9f720b2a5b4143f918e55473df6  usr/share/X11/xorg.conf.d/50-synaptics.conf
+7dca589291b8c05a9fa1869439c41b7a  usr/share/doc/xserver-xorg-input-synaptics/NEWS.Debian.gz
+24e2921daa4093d2bb7181bd6d58705f  usr/share/doc/xserver-xorg-input-synaptics/README.Debian
+a326d37466ee8c58a4366cf9c761ea62  usr/share/doc/xserver-xorg-input-synaptics/README.alps
+08b15acca9bad205752039562085cde5  usr/share/doc/xserver-xorg-input-synaptics/README.gz
+c2312c5d7f94658d0c95f8cd6ae2b3d9  usr/share/doc/xserver-xorg-input-synaptics/changelog.Debian.armhf.gz
+f694b16321da51eca50ac3903852f9ae  usr/share/doc/xserver-xorg-input-synaptics/changelog.Debian.gz
+7ba0f63f33629a97af88a16c4cb62946  usr/share/doc/xserver-xorg-input-synaptics/changelog.gz
+fee6bba92687ec5f581de779024ba28f  usr/share/doc/xserver-xorg-input-synaptics/copyright
+cccd822bff141e85879ab447732f13d8  usr/share/doc/xserver-xorg-input-synaptics/trouble-shooting.txt.gz
+77158ef3cfb26d6f5e9168b0c7bfbff9  usr/share/man/man1/synclient.1.gz
+842ac5474103574d567346cc438462e8  usr/share/man/man1/syndaemon.1.gz
+64a05ec24260fd11bcb0d71a148460d0  usr/share/man/man4/synaptics.4.gz

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=webacoo
+Encoding=UTF-8
+Exec=sh -c "webacoo -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-03-web-backdoors;
+X-Kali-Package=webacoo

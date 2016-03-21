@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=netmask
+Encoding=UTF-8
+Exec=sh -c "netmask -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Kali-Package=netmask

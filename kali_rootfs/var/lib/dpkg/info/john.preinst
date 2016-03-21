@@ -1,0 +1,61 @@
+#!/bin/sh
+set -e
+
+# Relocate a conffile from one location to another; it is removed iff
+# unmodified, and moved iff modified.
+# The undo path is postrm abort-install|abort-upgrade.
+# $1 is the old pathname of the conffile,
+# $2 is the new pathname of the conffile.
+mv_conffile ()
+{
+	[ ! -f "$1" ] && return
+	if [ -e "$2" ] ; then
+		echo "Not moving conffile $1 to $2; new file exists"
+		return
+	fi
+
+	orgmd5=`dpkg-query -W -f='${Conffiles}' dpkg | cut -d' ' -f3`
+	curmd5=`md5sum $1 |sed -e 's/ .*//'`
+	if [ "$orgmd5" = "$curmd5" ]; then
+		# conffile unmodified; prepare to remove it, allowing
+		# dpkg to install a new copy to the new location
+		# before "configuration"
+		echo "Preparing to remove unmodified conffile:"
+		echo -n " "
+		mv -fv $1 $1.moved_by_preinst
+	else
+		# conffile modified by admin; relocate it, causing
+		# dpkg to prompt, as intended
+		echo "Relocating modified conffile to new location:"
+		echo -n " "
+		mv -fv $1 $2
+	fi >&2
+}
+
+p1=/etc
+p2=/etc/john
+case $1 in
+install|upgrade)
+	[ -d $p2 ] || mkdir $p2
+	if dpkg --compare-versions "$2" le-nl 1.6-27; then
+		mv_conffile $p1/john.ini $p2/john.conf
+		mv_conffile $p1/john-mail.conf $p2/john-mail.conf
+		mv_conffile $p1/john-mail.msg $p2/john-mail.msg
+
+	# No need to remove the obsolete conffile
+	# /etc/cron.daily/john, since old prerm does so
+	# unconditionally (and there is nothing we can do to stop it)
+	fi
+	;;
+
+abort-upgrade)
+	# This case needs no actions here
+	;;
+
+*)
+	echo "$0: undocumented call: $@"
+	exit 1
+	;;
+esac
+
+

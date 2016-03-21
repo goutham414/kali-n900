@@ -1,0 +1,3 @@
+/etc/apt/apt.conf.d/99kali-menu
+/etc/dconf/db/local.d/kali-menu
+/etc/xdg/menus/applications-merged/kali-applications.menu

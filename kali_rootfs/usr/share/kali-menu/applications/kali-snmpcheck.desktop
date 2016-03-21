@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=snmp-check
+Encoding=UTF-8
+Exec=sh -c "snmp-check -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-12-snmp-analysis;
+X-Kali-Package=snmpcheck

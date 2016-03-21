@@ -1,0 +1,5 @@
+# We do this on purpose, the static library has been modified
+# we don't want to shared library
+embedded-library usr/bin/pth-curl: curl
+# Curl has the required exception
+possible-gpl-code-linked-with-openssl

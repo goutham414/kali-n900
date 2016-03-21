@@ -1,0 +1,10 @@
+This pseudo meta package was cobbled together by Martin Loschwitz on
+July 20th, 2003.
+
+Xfce is © 1996-2007 Olivier Fourdan <fourdan@xfce.org>
+
+The packaging is © The pkg-xfce debian team and is licensed under the GNU
+GPL version 2 or later.
+
+On Debian systems, the complete text of the GNU General Public 
+License can be found in `/usr/share/common-licenses/GPL'.

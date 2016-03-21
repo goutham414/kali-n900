@@ -1,0 +1,61 @@
+#!/bin/sh
+set -e
+
+# Revert relocation of a conffile from one location to another.
+# The forward path is preinst install|upgrade.
+# $1 is the original pathname of the conffile,
+# $2 is the pathname of the current conffile.
+unmv_conffile ()
+{
+	if [ -e "$1" ] ; then
+		echo "Not reverting conffile relocation to $2;"
+		echo "original pathname $1 exists."
+	elif [ -e "$1.moved_by_preinst" ] ; then
+		echo "Reverting removal of unmodified conffile:"
+		echo -n " "
+		mv -v "$1.moved_by_preinst" "$1"
+	elif  [ -e "$2" ] ; then
+		echo "Reverting relocation of modified conffile to original location:"
+		echo -n " "
+		mv -fv $2 $1
+	fi >&2
+}
+
+case $1 in
+disappear|remove)
+	# These are the restore and cracked-password file used by the
+	# cronjob for attacking the system password file for a short
+	# period each day:
+	d=/var/lib/john
+	rm -f $d/restore $d/john.pot
+	d=/var/run/john
+# FIXME: this is configurable...
+	rm -f "$d/john.pid $d/cronpasswd.*"
+	;;
+
+abort-install|abort-upgrade)
+	# Revert relocation of conffiles:
+	p1=/etc
+	p2=/etc/john
+	if dpkg --compare-versions "$2" le-nl 1.6-27; then
+		unmv_conffile $p1/john.ini $p2/john.conf
+		unmv_conffile $p1/john-mail.conf $p2/john-mail.conf
+		unmv_conffile $p1/john-mail.msg $p2/john-mail.msg
+
+		# "Display the warning, but don't fail if nonempty":
+		rmdir $p2 || rmdir --ignore-fail-on-non-empty $p2
+	fi
+	;;
+
+purge|upgrade|failed-upgrade)
+	# These cases need no actions here
+	:
+	;;
+
+*)
+	echo "$0: undocumented call: $@" >&2
+	exit 1
+	;;
+esac
+
+

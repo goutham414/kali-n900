@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rtl_test
+Encoding=UTF-8
+Exec=sh -c "rtl_test -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-05-radio-tools;
+X-Kali-Package=librtlsdr-bin

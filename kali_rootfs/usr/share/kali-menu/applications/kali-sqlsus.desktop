@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sqlsus
+Encoding=UTF-8
+Exec=sh -c "sqlsus -h;${SHELL:-bash}"
+Icon=kali-sqlsus.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-database-assessment;
+X-Kali-Package=sqlsus

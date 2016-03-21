@@ -1,0 +1,179 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: motif
+Source: http://sourceforge.net/projects/motif/
+
+Files: *
+Copyright: 1987-2012 The Open Group
+           1986 University of Toronto
+           1987-1989 MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+           1987-1996 DIGITAL EQUIPMENT CORPORATION, MAYNARD, MASS
+           1987-1996 FUJITSU LIMITED
+           1987-1996 Hewlett-Packard Company
+           1988 MICROSOFT CORPORATION
+           1988-1996 International Business Machines Corp.
+           1989-1994 OPEN SOFTWARE FOUNDATION, INC
+           1989-1995 GROUPE BULL
+           1989-1996 Sun Microsystems, Inc
+           1990 MOTOROLA, INC.
+           1990-1993 Free Software Foundation, Inc
+           1992 Network Computing Devices, Inc
+           1993-1996 Novell, Inc
+           1994-1995 Integrated Computer Solutions, Inc
+           1995-1996 Hitachi
+License: LGPL-2+
+
+Files: lib/Xm/Xpms_popen.c
+Copyright: 2004 The X.Org fundation
+License: Expat-X.org
+
+Files: demos/lib/Xmd/RegEditI.h
+Copyright: 1989 X Consortium
+	   1987-2012, The Open Group
+License: Expat-X.org and LGPL-2+
+
+Files:
+ config/makedepend/cppsetup.c
+ config/makedepend/def.h
+ config/makedepend/include.c
+ config/makedepend/parse.c
+ config/makedepend/pr.c
+ lib/Xm/EditresCom.c
+ lib/Xm/Xmfuncs.h
+Copyright: 1989-1994  X Consortium
+License: X11
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of the X Consortium shall not be
+ used in advertising or otherwise to promote the sale, use or other dealings
+ in this Software without prior written authorization from the X Consortium.
+
+Files: lib/Xm/XpmAttrib.c
+ lib/Xm/XpmCrBufFrI.c
+ lib/Xm/XpmCrBufFrP.c
+ lib/Xm/XpmCrDatFrI.c
+ lib/Xm/XpmCrDatFrP.c
+ lib/Xm/XpmCrIFrBuf.c
+ lib/Xm/XpmCrIFrDat.c
+ lib/Xm/XpmCrIFrP.c
+ lib/Xm/XpmCrPFrBuf.c
+ lib/Xm/XpmCrPFrDat.c
+ lib/Xm/XpmCrPFrI.c
+ lib/Xm/XpmImage.c
+ lib/Xm/XpmInfo.c
+ lib/Xm/XpmRdFToBuf.c
+ lib/Xm/XpmRdFToDat.c
+ lib/Xm/XpmRdFToI.c
+ lib/Xm/XpmRdFToP.c
+ lib/Xm/XpmWrFFrBuf.c
+ lib/Xm/XpmWrFFrDat.c
+ lib/Xm/XpmWrFFrI.c
+ lib/Xm/XpmWrFFrP.c
+ lib/Xm/Xpmcreate.c
+ lib/Xm/Xpmdata.c
+ lib/Xm/Xpmhashtab.c
+ lib/Xm/Xpmmisc.c
+ lib/Xm/Xpmparse.c
+ lib/Xm/Xpmrgb.c
+ lib/Xm/Xpmscan.c
+Copyright: 1989-95 GROUPE BULL
+License: Expat-Groupe_Bull
+
+Files: lib/Xm/XpmP.h
+Copyright: 1989-95 GROUPE BULL
+ 1996 Digital Equipment Corporation
+ 1996 Hewlett-Packard Company
+ 1996 International Business Machines Corp
+ 1996 Sun Microsystems, Inc
+ 1996 Novell, Inc
+ 1996 FUJITSU LIMITED
+ 1996 Hitachi
+License: Expat-Groupe_Bull
+
+Files: debian/*
+Copyright: 2012-2016 Graham Inggs <ginggs@debian.org>
+           2013 Paul Gevers <elbrus@debian.org>
+License: LGPL-2+
+
+License: LGPL-2+
+ These libraries and programs are free software; you can
+ redistribute them and/or modify them under the terms of the GNU
+ Lesser General Public License as published by the Free Software
+ Foundation; either version 2 of the License, or (at your option)
+ any later version.
+ .
+ These libraries and programs are distributed in the hope that
+ they will be useful, but WITHOUT ANY WARRANTY; without even the
+ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE. See the GNU Lesser General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with these librararies and programs; if not, write
+ to the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+ Floor, Boston, MA 02110-1301 USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in the
+ /usr/share/common-licenses/LGPL-2 file.
+
+License: Expat-X.org
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use, copy,
+ modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is fur-
+ nished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT.  IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR
+ ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of the X.Org fundation
+ shall not be used in advertising or otherwise to promote the sale,
+ use or other dealings in this Software without prior written
+ authorization from the X.Org fundation.
+
+License: Expat-Groupe_Bull
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ GROUPE BULL BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of GROUPE BULL shall not be
+ used in advertising or otherwise to promote the sale, use or other dealings
+ in this Software without prior written authorization from GROUPE BULL.

@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmm-glib0
+/usr/share/doc/libmm-glib0/changelog.Debian.gz
+/usr/share/doc/libmm-glib0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmm-glib.so.0.2.0
+/usr/lib/arm-linux-gnueabihf/libmm-glib.so.0

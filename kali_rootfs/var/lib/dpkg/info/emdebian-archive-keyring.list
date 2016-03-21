@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/emdebian-archive-keyring
+/usr/share/doc/emdebian-archive-keyring/changelog.gz
+/usr/share/doc/emdebian-archive-keyring/copyright
+/usr/share/doc/emdebian-archive-keyring/NEWS.Debian.gz
+/usr/share/keyrings
+/usr/share/emdebian-tools
+/usr/share/emdebian-tools/1804772E.txt
+/usr/share/emdebian-tools/emdebian-archive-keyring.gpg
+/usr/share/keyrings/emdebian-archive-keyring.gpg

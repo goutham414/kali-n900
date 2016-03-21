@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxfce4util7
+/usr/share/doc/libxfce4util7/copyright
+/usr/share/doc/libxfce4util7/changelog.gz
+/usr/share/doc/libxfce4util7/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxfce4util.so.7.0.0
+/usr/lib/arm-linux-gnueabihf/libxfce4util.so.7

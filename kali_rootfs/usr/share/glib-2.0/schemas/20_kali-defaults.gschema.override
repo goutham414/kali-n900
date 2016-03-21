@@ -1,0 +1,42 @@
+# Change default terminal settings
+[org.gnome.Terminal.Legacy.Profile]
+use-theme-colors=false
+foreground-color='#FFFFFF'
+background-color='#000000'
+scrollback-unlimited=true
+use-transparent-background=true
+background-transparency-percent=15
+
+[org.gnome.Terminal.Legacy.Settings]
+confirm-close=false
+
+# Change desktop settings
+[org.gnome.desktop.background]
+show-desktop-icons=true
+
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:minimize,maximize,close'
+theme='Kali-X'
+
+[org.gnome.desktop.interface]
+icon-theme='Vibrancy-Kali'
+gtk-theme='Kali-X'
+
+[org.gnome.shell.extensions.user-theme]
+name='Kali-X'
+
+[org.gnome.desktop.screensaver]
+picture-uri='file:///usr/share/images/desktop-base/kali-lockscreen.xml'
+
+[org.gnome.nautilus.desktop]
+trash-icon-visible=false
+home-icon-visible=false
+
+# Change misc application settings
+[org.gnome.eog.ui]
+disable-close-confirmation=true
+
+# Change the gnome shell dash settings
+[org.gnome.shell]
+favorite-apps=['iceweasel.desktop', 'gnome-terminal.desktop', 'org.gnome.Nautilus.desktop', 'kali-msfconsole.desktop', 'kali-armitage.desktop', 'kali-burpsuite.desktop', 'kali-maltego.desktop', 'kali-beef.desktop', 'kali-faraday.desktop','leafpad.desktop','gnome-tweak-tool.desktop']
+enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com','places-menu@gnome-shell-extensions.gcampax.github.com','workspace-indicator@gnome-shell-extensions.gcampax.github.com','dash-to-dock@micxgx.gmail.com','ProxySwitcher@flannaghan.com','EasyScreenCast@iacopodeenosee.gmail.com','refresh-wifi@kgshank.net','user-theme@gnome-shell-extensions.gcampax.github.com']

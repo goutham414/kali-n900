@@ -1,0 +1,47 @@
+#!/bin/sh -e
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
+    update-alternatives --remove x-www-browser /usr/bin/iceweasel
+    update-alternatives --remove gnome-www-browser /usr/bin/iceweasel
+fi
+
+if [ "$1" = "remove" ]; then
+    rm -f /usr/lib/iceweasel/components/compreg.dat \
+          /usr/lib/iceweasel/components/xpti.dat
+    rm -rf /usr/lib/iceweasel/updates
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/yahoo.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/wikipedia.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/twitter.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/google.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/eBay.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/ddg.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/bing.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/amazondotcom.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/common/duckduckgo.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/profile/bookmarks.html -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/iceweaselrc -- "$@"
+# End automatically added section
+

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/whiptail.1.gz
+/usr/share/doc
+/usr/share/doc/whiptail
+/usr/share/doc/whiptail/changelog.Debian.gz
+/usr/share/doc/whiptail/changelog.gz
+/usr/share/doc/whiptail/copyright
+/usr/share/doc/whiptail/README.whiptail
+/usr/share/bash-completion
+/usr/share/bash-completion/completions
+/usr/share/bash-completion/completions/whiptail
+/usr/bin
+/usr/bin/whiptail

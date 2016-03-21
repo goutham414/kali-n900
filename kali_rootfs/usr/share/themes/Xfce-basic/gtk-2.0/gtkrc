@@ -1,0 +1,101 @@
+style "default"
+{
+    GtkButton::default_border         = {0, 0, 0, 0}
+    GtkButton::default_outside_border = {0, 0, 0, 0}
+    GtkButton::default_spacing        = 8
+    GtkButton::focus-line-width       = 1
+    GtkButton::focus-padding          = 2
+    GtkMenuBar::shadow_type           = out
+    GtkPaned::handle_full_size        = 1
+    GtkToolbar::shadow_type           = out
+    GtkWidget::interior_focus         = 1
+    GtkRange::slider_width            = 14
+    GtkRange::stepper_size            = 14
+    GtkRange::stepper_spacing         = 0
+    GtkRange::trough_border           = 0
+
+    fg[ACTIVE]        = "#000000"
+    fg[INSENSITIVE]   = "#757575"
+    fg[NORMAL]        = "#000000"
+    fg[PRELIGHT]      = "#000000"
+    fg[SELECTED]      = "#ffffff"
+
+    bg[ACTIVE]        = "#c4c2bd"
+    bg[INSENSITIVE]   = "#dcdad5"
+    bg[NORMAL]        = "#dcdad5"
+    bg[PRELIGHT]      = "#eeebe7"
+    bg[SELECTED]      = "#4b6983"
+
+    base[ACTIVE]      = "#9c9a94"
+    base[INSENSITIVE] = "#eeebe7"
+    base[NORMAL]      = "#ffffff"
+    base[PRELIGHT]    = "#ffffff"
+    base[SELECTED]    = "#4b6983"
+
+    text[ACTIVE]      = "#ffffff"
+    text[INSENSITIVE] = "#757575"
+    text[NORMAL]      = "#000000"
+    text[PRELIGHT]    = "#000000"
+    text[SELECTED]    = "#ffffff"
+
+    engine "xfce" 
+    {
+        smooth_edge = true
+        grip_style = none
+        boxfill
+        {
+            fill_style = plain
+        }
+    }
+}
+widget_class "*"                style "default"
+
+style "button" = "default"
+{
+    xthickness = 2
+    ythickness = 2
+    engine "xfce" 
+    {
+        smooth_edge = true
+        grip_style = none
+        boxfill
+        {
+            fill_style = gradient
+            orientation = vertical
+            shade_start = 1.10
+            shade_end = 1.00
+        }
+    }
+}
+widget_class "*Button*"            style "button"
+class "*Button*"                   style "button"
+
+
+# This is for ROX-Filer
+# 
+style "rox" = "default"
+{
+  bg[NORMAL] = "#ffffff"
+  bg[ACTIVE] = "#ffffff"
+}
+widget_class "*Collection"         style "rox"
+
+
+style "scrollbar" = "default"
+{
+    xthickness = 2
+    ythickness = 2
+    engine "xfce" 
+    {
+        smooth_edge = true
+        grip_style = none
+        boxfill
+        {
+            fill_style = plain
+        }
+    }
+}
+widget_class "*Scrollbar*"         style "scrollbar"
+class "*Scrollbar*"                style "scrollbar"
+widget_class "*GtkScale*"          style "scrollbar"
+class "*GtkScale*"                 style "scrollbar"

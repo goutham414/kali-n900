@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libparted2
+/usr/share/doc/libparted2/changelog.Debian.gz
+/usr/share/doc/libparted2/changelog.gz
+/usr/share/doc/libparted2/copyright
+/lib
+/lib/arm-linux-gnueabihf
+/lib/arm-linux-gnueabihf/libparted.so.2.0.1
+/lib/arm-linux-gnueabihf/libparted.so.2

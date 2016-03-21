@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=policygen
+Encoding=UTF-8
+Exec=sh -c "policygen -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+X-Kali-Package=pack

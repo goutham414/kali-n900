@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sqldict
+Encoding=UTF-8
+Exec=sh -c "sqldict"
+Icon=kali-sqldict.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=04-database-assessment;
+X-Kali-Package=sqldict

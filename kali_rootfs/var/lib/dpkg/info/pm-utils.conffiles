@@ -1,0 +1,2 @@
+/etc/kernel/postinst.d/pm-utils
+/etc/logrotate.d/pm-utils

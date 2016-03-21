@@ -1,0 +1,27 @@
+#!/bin/sh
+# Synchronize system time with hardware time.
+# Modern kernels handle this correctly so we skip this hook by default.
+
+. "${PM_FUNCTIONS}"
+
+suspend_clock()
+{
+        printf "Saving system time to hardware clock..."
+	/sbin/hwclock --systohc >/dev/null 2>&1 0<&1 && echo Done. || \
+	    echo Failed.
+}
+
+resume_clock()
+{
+        printf "Loading system time from hardware clock..."
+	/sbin/hwclock --hctosys >/dev/null 2>&1 0<&1 && echo Done. || \
+	    echo Failed.
+}
+
+is_set "$NEED_CLOCK_SYNC" || exit $NA
+
+case "$1" in
+	hibernate|suspend) suspend_clock ;;
+	thaw|resume) resume_clock ;;
+	*) exit $NA ;;
+esac

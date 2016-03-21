@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sandi-gui
+Encoding=UTF-8
+Exec=sh -c "sandi-gui"
+Icon=kali-sandi-gui.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=08-exploitation-tools;
+X-Kali-Package=sandi

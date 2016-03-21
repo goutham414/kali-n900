@@ -1,0 +1,47 @@
+John the Ripper and word lists
+------------------------------
+(or how to remove the false sense of security)
+
+The Debian version of John the Ripper can be configured to run as a
+cron job, which will make it periodically check the passwords used
+on the system in order to determine if they are really "secure"
+(that is, not easy to guess or crack by brute force).
+
+Currently, john provides its own word list for password cracking, which
+contains a lot of common passwords, as provided by john's author, and
+can be found on /usr/share/john/password.lst. However, user passwords
+strongly depend on the mother tongue and the cultural background, hence,
+the default word list alone might not be ideal for every system.
+
+This is the reason why, in some cases, installing john and running it
+often might give sense of security that is not necessarily true. While
+you think it will be able to guess easy passwords, it is only able to
+guess easy and common English passwords.
+
+If you think this is the case, there are a number of wordlists you can
+use: provided by Debian or other sources (FTP servers related to security
+often provide a directory with those).
+
+Some spell checkers in Debian provide the word lists used by them (26 at
+the time of writing these lines). They may be useful to look for passwords
+based on words, and are available for many foreign languages. You can see
+the list of packages providing wordlists by running
+
+$ grep-available -e wordlist -n -F Provides -s package
+
+Notice that there are some other Debian packages (such as 'jargon') that
+might provide word lists useful for password-checking purposes too.
+
+Some word lists suitable for password cracking can be found on, among
+others:
+	ftp://ftp.zedz.net/pub/crypto/wordlists/
+	ftp://ftp.cerias.purdue.edu/pub/dict/
+	ftp://ftp.ox.ac.uk/pub/wordlists/
+
+They are not simply dictionaries, but a compendium of common names,
+heroes, popular teams, etc., which may provide even more useful input
+for john.
+
+--
+The Debian Maintainers of john
+Tue, 19 Jul 2005 14:15:15 -0300

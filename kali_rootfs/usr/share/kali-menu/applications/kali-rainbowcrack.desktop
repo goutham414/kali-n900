@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rainbowcrack
+Encoding=UTF-8
+Exec=sh -c "rcrack;${SHELL:-bash}"
+Icon=kali-rainbowcrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;05-password-attacks;
+X-Kali-Package=rainbowcrack

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libqt5dbus5
+/usr/share/doc
+/usr/share/doc/libqt5dbus5
+/usr/share/doc/libqt5dbus5/changelog.Debian.gz
+/usr/share/doc/libqt5dbus5/changelog.gz
+/usr/share/doc/libqt5dbus5/copyright
+/usr/share/doc/libqt5dbus5/LGPL_EXCEPTION.txt
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libQt5DBus.so.5.5.1
+/usr/lib/arm-linux-gnueabihf/libQt5DBus.so.5.5
+/usr/lib/arm-linux-gnueabihf/libQt5DBus.so.5

@@ -1,0 +1,68 @@
+#!/bin/sh
+set -e
+
+# Versions earlier than 1.6-34 and later than (perhaps) 1.6-19 include
+# /var/run/john as mode 0755, which could allow users to read cracked
+# passwords.  Later versions fixed the permissions of the included
+# directory, but dpkg doesn't automatically make changes to directory
+# modes.
+fixperms ()
+{
+	p=/var/run/john
+	# If the admin has an override, don't touch it
+	# (even if the override is to mode 0700?)
+	if [ -d $p ]; then
+		dpkg-statoverride --list $p >/dev/null && return
+		curmod=`stat -c %a $p`
+		[ $(( 0$curmod & 07077 )) -eq 0 ] && return
+		chmod -v 0700 $p
+	fi
+}
+
+# Commit conffile move from preinst
+rm_conffile_do ()
+{
+	c=0
+	# a=1 is a search if the files exist,
+	# a=2 is removal of those which do
+	for a in 1 2; do
+		for f in john-mail.conf john-mail.msg john.ini; do
+			g=/etc/$f.moved_by_preinst
+			[ -e $g ] || continue
+			c=$(( $c + 1 ))
+			[ "$a" -eq 1 ] && break
+			echo -n " "
+			rm -fv $g
+		done
+
+		[ "$c" -eq 0 ] && return
+		[ "$a" -eq 1 ] || continue
+		echo "Committing removal of unmodified conffiles:"
+	done >&2
+}
+
+case $1 in
+configure|abort-upgrade|abort-remove|abort-deconfigure)
+	fixperms
+	rm_conffile_do
+
+	# this state file has moved to /var/lib/john quite some time ago
+	old=/usr/share/john/restore
+	new=/var/lib/john/restore
+
+	if [ -e $old ] ; then
+		if [ -e $new ] ; then
+			rm -f $old
+		else
+			mv -f $old $new
+		fi
+	fi
+	;;
+
+*)
+	echo "$0: undocumented call $@" >&2
+	exit 1
+	;;
+esac
+
+

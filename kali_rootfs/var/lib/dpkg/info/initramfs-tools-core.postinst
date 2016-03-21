@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+if [ ! -e /etc/initramfs-tools/modules ]; then
+	sed '/^###/d' /usr/share/initramfs-tools/modules \
+		> /etc/initramfs-tools/modules
+fi
+
+# When installing as a new dependency of initramfs-tools, or upgrading
+# from <0.123, we need to move initramfs.conf back into place.
+if [ "$1" = configure ] && dpkg --compare-versions "$2" lt 0.123~ && \
+   [ -f /etc/initramfs-tools/initramfs.conf.dpkg-backup ]; then
+	# On fresh installation ($2 is empty), overwrite the shipped
+	# initramfs.conf.  Otherwise use -n to avoid overwriting user
+	# configuration if somehow both files exist.
+	mv ${2:+-n} /etc/initramfs-tools/initramfs.conf.dpkg-backup \
+		/etc/initramfs-tools/initramfs.conf
+fi
+
+

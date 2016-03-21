@@ -1,0 +1,2 @@
+# libxfce4kbd-private-2 is private to Xfce core
+libxfce4ui-1-0: shlib-missing-in-symbols-control-file libxfce4kbd-private-2 0 for usr/lib/x86_64-linux-gnu/libxfce4kbd-private-2.so.0.0.0

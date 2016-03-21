@@ -1,0 +1,10 @@
+ff1c36c7e2b343eb84b889925668677d  usr/bin/xinput_calibrator
+1ad6b31914c89e932336ee9aaecc4edf  usr/share/applications/xinput_calibrator.desktop
+2742200b482897e629c3cb4453d17616  usr/share/doc/xinput-calibrator/README
+bf8e11dc43ac07205b33ab9e96b60202  usr/share/doc/xinput-calibrator/changelog.Debian.armhf.gz
+5f40d36794cb8681a841c552330f2780  usr/share/doc/xinput-calibrator/changelog.Debian.gz
+809da145adda95c7e0f4803addf5717c  usr/share/doc/xinput-calibrator/changelog.gz
+c6dfddf5e15136f2b666f5d3d939b2cc  usr/share/doc/xinput-calibrator/copyright
+d22b2ec51141e9b4d9ff38d69dbddf40  usr/share/man/man1/xinput_calibrator.1.gz
+92f92c407dad2844363fd277bb3e0bb6  usr/share/pixmaps/xinput_calibrator.svg
+1f9e000b8f3474d36b6be84f3a514687  usr/share/pixmaps/xinput_calibrator.xpm

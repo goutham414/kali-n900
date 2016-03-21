@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/firebird
+/usr/lib/firebird/2.5
+/usr/share
+/usr/share/doc
+/usr/share/firebird2.5-common
+/usr/share/firebird2.5-common/functions.sh
+/etc
+/etc/firebird
+/etc/firebird/2.5
+/etc/firebird/2.5/firebird.conf
+/usr/lib/firebird/2.5/firebird.conf
+/usr/share/doc/firebird2.5-common

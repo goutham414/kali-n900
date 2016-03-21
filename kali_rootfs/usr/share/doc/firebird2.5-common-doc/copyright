@@ -1,0 +1,3967 @@
+Based on firebird2 packages initially created by Daniel Urban <daniel@sente.pl>
+on Mon, 14 Jun 2004 18:37:59 +0200.
+
+Since August 2005 it is maintained by Debian Firebird Maintainers
+<pkg-firebird-general@lists.alioth.debian.org>
+
+X-Source-Downloaded-From:
+        http://www.firebirdsql.org/en/downloads/
+        or source repository at http://sourceforge.net/svn/?group_id=9028 
+        (B2_5_Release branch)
+
+X-Repackaged: Yes
+
+Table of contents
+=================
+
+This file is long, but complete. Here's what's inside:
+
+* How to get re-packaged upstream source
+* What is removed from upstream source and why
+* The easy part: files under debian/
+* Upstream licensing summary
+* Upstream copyright summary
+* Complete list of the files in the repackaged upstream tarball, groupped by
+  license and copyright holders.
+* Verbatim copies of all licenses used upstream
+
+
+How to get re-packaged upstream source
+======================================
+Run 'uscan --force' or debian/rules get-orig-source
+
+That will download from upstream, remove what is to be removed and create
+an .orig.tar.gz
+
+
+What is removed from upstream source and why
+============================================
+
+* Bundled libraries
+
+The following libraries are supplied by upstream in their source
+tarball. These are present in Debian and using the Debian packages is
+better because:
+ - improved security: no need to watch the bundled libraries for
+   security problems -- Debian Security already handles that for the
+   Debian packages
+ - get fixes and improvements automatically when the Debian library
+   package is upgraded
+ - the source tarball decreases in size from 13MB to 7.5MB (42% decrease)
+Removed library sources:
+ - extern/icu
+ - extern/editline
+
+
+* Removed sources with non-free/missing licensing
+
+The following files are removed as they contain only copyright
+information without any license allowing their distribution. Luckily,
+they are not needed when building on Debiian.
+
+ - builds/install/arch-specific/solaris/
+ - src/install/arch-specific/solx86gcc/CS/postinstall.in
+ - src/install/arch-specific/solx86gcc/CS/postremove.in
+ - src/install/arch-specific/solx86gcc/CS/preinstall.in
+ - src/msgs/templates.sql
+ - extern/SfIO/
+
+* Generated files without source
+
+These two files are generated from SGML sources, but the sources are not in the 
+upstream tarball.
+
+ - doc/Firebird-2-QuickStart.pdf
+ - doc/ReleaseNotes.pdf
+
+* Generated files and other cruft.
+
+Since we are repackaging, we take the opportunity to also remove the following 
+files, which are generated during the build:
+
+ - configure
+ - builds/make.new/config/config.guess
+ - builds/make.new/config/config.h.in
+ - builds/make.new/config/config.sub
+ - builds/make.new/config/install-sh
+ - builds/make.new/config/ltmain.sh
+
+Also, the following files are just cruft and are present in the upstream 
+tarball by mistake:
+
+ - .cvsignore (in several directories)
+ - builds/make.new/config/config.h.in~
+
+
+The easy part: files under debian/
+==================================
+
+Files: debian/qli.pod
+Author: Remco Seesink
+License: PD
+ placed in public domain by its author, see
+ http://lists.alioth.debian.org/pipermail/pkg-firebird-general/2007-January/000820.html
+ .
+ I hereby place the documentation I wrote for firebird debian packages in the
+ public domain: debian/qli.sgml
+ .
+ This means your are free to place any license on it as you like or none at all
+ and leave it in the public domain.
+ .
+ If it breaks you get to keep both peaces, that manual was produced by
+ interpreting some source code and may be more useful for baking cookies  :)
+
+Files: debian/*
+Copyright: © 2006, 2007, 2008, 2009, 2010, 2011, 2012
+             2014, 2015 Damyan Ivanov <dmn@debian.org>
+License: other
+ Permission is granted to use this work, with or without modifications,
+ provided that this notice is retained. If we meet some day, and you think this
+ stuff is worth it, you can buy me a beer in return.
+
+
+Upstream licensing summary
+==========================
+
+ * Interbase Public License Version 1.0
+
+   The contents of this file are subject to the Interbase Public
+   License Version 1.0 (the "License"); you may not use this file
+   except in compliance with the License. You may obtain a copy
+   of the License at http://www.firebirdsql.org/index.php?op=doc&id=ipl
+
+   Software distributed under the License is distributed on an
+   "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express
+   or implied. See the License for the specific language governing
+   rights and limitations under the License.
+
+   The Original Code was created by Inprise Corporation
+   and its predecessors.  Portions created by Inprise Corporation are
+   Copyright (C) Inprise Corporation.
+   All Rights Reserved.
+
+The full text of the Interbase Public License Version 1.0 is included in the 
+section 'L I C E N S E   T E X T S' below.
+
+-----------------------------------------------------------------
+
+ * Mozilla Public License Version 1.1
+
+   The contents of this file are subject to the Mozilla Public
+   License Version 1.1 (the "License"); you may not use this file
+   except in compliance with the License. You may obtain a copy of
+   the License at http://www.mozilla.org/MPL/
+   Alternatively, the contents of this file may be used under the
+   terms of the GNU General Public License Version 2 or later (the
+   "GPL"), in which case the provisions of the GPL are applicable
+   instead of those above. You may obtain a copy of the Licence at
+   http://www.gnu.org/copyleft/gpl.html
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   Relevant for more details.
+
+   This file was created by members of the firebird development team.
+   All individual contributions remain the Copyright (C) of those
+   individuals.  Contributors to this file are either listed here or
+   can be obtained from a CVS history command.
+
+   All rights reserved.
+
+The full text of the Mozilla Public License Version 1.1 is included in the 
+section 'L I C E N S E   T E X T S' below.
+
+-----------------------------------------------------------------------
+
+ * Initial Developer's Public License Version 1.0
+
+   The contents of this file are subject to the Initial
+   Developer's Public License Version 1.0 (the "License");
+   you may not use this file except in compliance with the
+   License. You may obtain a copy of the License at
+   http://www.ibphoenix.com/idpl.html.
+
+   Software distributed under the License is distributed on
+   an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either
+   express or implied.  See the License for the specific
+   language governing rights and limitations under the License.
+
+   The contents of this file or any work derived from this file
+   may not be distributed under any other license whatsoever
+   without the express prior written permission of the original
+   author.
+
+The full text of the Initial Developer's Public License Version 1.0 is included 
+in the section 'L I C E N S E   T E X T S' below
+
+-----------------------------------------------------------------------
+
+ * GNU Lesser General Public License 2.1 or later with an exception clause
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+   You may obtain a copy of the Licence at
+   http://www.gnu.org/licences/lgpl.html
+
+   As a special exception this file can also be included in modules
+   with other source code as long as that source code has been
+   released under an Open Source Initiative certificed licence.
+   More information about OSI certification can be found at:
+   http://www.opensource.org
+
+   This module is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Lesser General Public Licence for more details.
+
+   This module was created by members of the firebird development
+   team.  All individual contributions remain the Copyright (C) of
+   those individuals and all rights are reserved.  Contributors to
+   this file are either listed below or can be obtained from a CVS
+   history command.
+
+Copy of the GNU Lesser General Public License version 2.1 may be found at 
+/usr/share/common-licenses/LGPL-2.1 on every Debian system.
+----------------------------------------------------------------------------
+
+ * Assumed Public Domain
+
+Some files lack copyright/licensing information. According to
+doc/license/README.license.usage.txt, they should be considered Public Domain:
+
+   Every non-binary file that exists in the CVS tree, should have a header
+   section which describes the license this code is released under. If a file
+   contains no header, it means that this code is freeware and nobody owns the
+   appropriate copyrights.
+
+----------------------------------------------------------------------------
+
+ * BSD-like
+
+  One file is under a BSD-like license with the advertising clause. See 
+  'BSD-like licensing' below.
+
+----------------------------------------------------------------------------
+
+ * Declared public domain
+
+  Some of the files are declared to be put in Public Domain.
+
+----------------------------------------------------------------------------
+
+ * Other
+
+  Finally, some files use other licensing terms, they are quoted verbatin on 
+  the "Other licensing" section below.
+
+----------------------------------------------------------------------------
+
+
+Upstream copyright summary
+==========================
+
+ © 1981-2000 Inprise Corporation and its predecessors
+ Copyright 1991 by the Massachusetts Institute of Technology
+ Copyright (c) 1989 The Regents of the University of California.
+ Copyright © 2007 Steven G. Johnson <stevenj@alum.mit.edu>
+ Copyright (C) 1992-2006 Free Software Foundation, Inc.
+ © 2000-2012 various Firebird Project members and contributors
+        Adriano dos Santos Fernandes <adrianosf@uol.com.br>, 2004, 2005, 2006, 2007, 2008
+        Alan Barclay
+        Aleksey Karyakin <aleksey.karyakin@mail.ru>, 2005
+        Alex Peshkov <AlexPeshkov@users.sourceforge.net>
+        Alexander Peshkoff <peshkoff@mail.ru>, 2002, 2003, 2004, 2005, 2007, 2008, 2009
+        Alexey Karyakin <aleksey.karyakin@mail.ru>
+        Ann Harrison
+        Ann W. Harrison
+        Arno Brinkman <firebird@abvisie.nl>, 2003, 2004
+        Bill Oliver <Bill.Oliver@sas.com>
+        Blas Rodriguez Somoza, 2004
+        Chris Knight <chris@e-easy.com.au>
+        Claudio Valderrama C., 2003, 2004, 2007
+        Damyan Ivanov
+        Dimitry Sibiryakov <aafemt@users.sourceforge.net>
+        Dmitry Yemanov <dimitr@users.sf.net>, 2002, 2004, 2005, 2006, 2008
+        Erik Kunze <Erik.Kunze@philosys.de>
+        Erik Kunze, Philosys GmbH, <kunze@philosys.de>
+        Fikret Hasovic
+        Frank Schlottmann-Gödde
+        Fred Polizo, Jr.
+        Gabor Boros
+        IBPhoenix, 2001
+        Ivan Prenosil
+        James A. Starkey, 1997 - 2000, 2001, 2003, 2004
+        James K. Lowden <jklowden@schemamania.org>
+        Jaroslaw Glowacki <glowacki@plocman.pl>
+        Jerry Adair
+        John Bellardo <bellardo at cs.ucsd.edu>, 2002
+        Jonas Jasas
+        Karel Brichnac <brichna@atlas.cz>
+        Khorsun Vladyslav <hvlad@users.sourceforge.net>, 2008, 2009
+        Konstantin Kuznetsov
+        Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+        Mark O'Donohue <skywalker@users.sourceforge.net>, 2002
+        Michael Rimov
+        Michal Bukovjan
+        Mike Nordell <tamlin@algonet.se>, 2001
+        Neil McCalden
+        Netfrastructure, Inc., 1997 - 2000, 2001, 2003
+        Nickolay Samofatov <nickolay@broadviewsoftware.com>, 2004, 2006
+        Nikolay Samofatov
+        Oleg Loa <loa@mail.ru>
+        Olivier Mascia, 2003
+        Patrick J. P. Griffin
+        Paul Beach
+        Paul Reeves, 2001-2004
+        Philippe Makowski
+        Roman Simakov <roman-simakov@users.sourceforge.net>, 2008
+        Sandor Szollosi <ssani@freemail.hu>
+        Sean Leyne
+        Sergey Nikitin
+        Simon Carter
+        Slavomir Skopalik
+        Stephen W. Boyd
+        Steve Boyd <sboydlns at gmail.com>, 2006
+        Theo ?
+        Tilo Muetze
+        Toni Martir
+        Victor Seryodkin
+        Vlad Horsun
+        Vlad Khorsun <hvlad at users.sourceforge.net>, 2005, 2006, 2007, 2008
+        Vlad Khorsun <hvlad@users.sf.net>, 2004
+        Vladyslav Khorsun <hvlad@users.sourceforge.net>, 2007, 2009
+
+Years of copyright after 2000 are uncertain. Sources point to VCS repositories 
+for exact dates. Upstream Subversion repository is at 
+http://sourceforge.net/svn/?group_id=9028 (B2_5_Release branch)
+The dates are quoted verbatim where present in the source.
+
+
+=========================================================================
+Detailed list of upstream source files, groupped by license and copyright
+holders
+=========================================================================
+
+Note that IPL and IDPL require listing the contributors. These are copied below
+when present.
+
+No explicit licensing/copyright information (assumed Public Domain)
+-------------------------------------------------------------------
+
+autogen.sh
+binreloc.m4
+builds/install/arch-specific/aix/classic/rpmfiles.txt.in
+builds/install/arch-specific/aix/classic/rpmheader.txt.in
+builds/install/arch-specific/aix/misc/aixLibrary.sh.in
+builds/install/arch-specific/aix/misc/firebird.init.d.aix.in
+builds/install/arch-specific/aix/misc/rc.config.firebird.aix.in
+builds/install/arch-specific/darwin/*
+builds/install/arch-specific/freebsd/firebird_daemon_startup_script.in
+builds/install/arch-specific/hpux/classic/firebirdCS.psf.in
+builds/install/arch-specific/hpux/misc/changedbaPassword.sh.in
+builds/install/arch-specific/hpux/misc/rc.config.firebird.hpux.in
+builds/install/arch-specific/hpux/super/postInstall.sh.in
+builds/install/arch-specific/hpux/super/postUninstall.sh.in
+builds/install/arch-specific/hpux/super/preInstall.sh.in
+builds/install/arch-specific/hpux/super/preUninstall.sh.in
+builds/install/arch-specific/linux/classic/rpmfiles.txt.in
+builds/install/arch-specific/linux/classic/rpmheader.txt.in
+builds/install/arch-specific/linux/misc/README
+builds/install/arch-specific/linux/misc/firebird.init.d.debian.in
+builds/install/arch-specific/linux/misc/firebird.init.d.generic.in
+builds/install/arch-specific/linux/misc/firebird.init.d.gentoo.in
+builds/install/arch-specific/linux/misc/firebird.init.d.mandrake.in
+builds/install/arch-specific/linux/misc/firebird.init.d.slackware.in
+builds/install/arch-specific/linux/misc/firebird.init.d.suse.in
+builds/install/arch-specific/linux/misc/firebird.xinetd.in
+builds/install/arch-specific/linux/misc/rc.config.firebird.in
+builds/install/arch-specific/linux/super/rpmfiles.txt.in
+builds/install/arch-specific/linux/super/rpmheader.txt.in
+builds/install/arch-specific/mingw/*
+builds/install/arch-specific/solx86/Makefile.in
+builds/install/arch-specific/win32/After_Installation.url
+builds/install/arch-specific/win32/ba/*
+builds/install/arch-specific/win32/custom_messages.inc
+builds/install/arch-specific/win32/cz/*
+builds/install/arch-specific/win32/de/*
+builds/install/arch-specific/win32/es/*
+builds/install/arch-specific/win32/firebird_install_logo1.bmp
+builds/install/arch-specific/win32/firebirdsql.org.url
+builds/install/arch-specific/win32/fr/*
+builds/install/arch-specific/win32/hu/*
+builds/install/arch-specific/win32/i18n_readme.txt
+builds/install/arch-specific/win32/installation_readme.txt
+builds/install/arch-specific/win32/installation_scripted.txt
+builds/install/arch-specific/win32/install_classic.bat
+builds/install/arch-specific/win32/install_super.bat
+builds/install/arch-specific/win32/install_superclassic.bat
+builds/install/arch-specific/win32/it/*
+builds/install/arch-specific/win32/pl/*
+builds/install/arch-specific/win32/pt/*
+builds/install/arch-specific/win32/readme_snapshot.txt
+builds/install/arch-specific/win32/Readme.txt
+builds/install/arch-specific/win32/ru/Readme.txt
+builds/install/arch-specific/win32/ru/custom_messages_ru.inc
+builds/install/arch-specific/win32/ru/installation_readme.txt
+builds/install/arch-specific/win32/si/*
+builds/install/arch-specific/win32/strip_comments.sed
+builds/install/arch-specific/win32/uninstall.bat
+builds/install/misc/aliases.conf.in
+builds/install/misc/changeDBAPassword.sh.in
+builds/install/misc/fbintl.conf
+builds/install/misc/firebird.conf.in
+builds/install/misc/firebird.init.d.generic.in
+builds/install/misc/firebird.init.d.mandrake.in
+builds/install/misc/firebird.init.d.Solaris.in
+builds/mac_os_x/CS/*
+builds/make.new/config/config.h.in
+builds/misc/help.gbak
+builds/misc/metadata.gbak
+builds/misc/msg.gbak
+builds/old_prefixes/README.txt
+builds/posix/make.shared.variables
+builds/posix/prefix.example
+builds/posix/prefix.solaris
+builds/posix/prefix.solaris-64gcc
+builds/win32/adjust_vc7_files.cmd
+builds/win32/blrtable.bat
+builds/win32/clean_all.bat
+builds/win32/compile.bat
+builds/win32/create_msgs.bat
+builds/win32/defs/fbrmclib.def
+builds/win32/make_all.bat
+builds/win32/make_boot.bat
+builds/win32/make_examples.bat
+builds/win32/make_icu.bat
+builds/win32/msvc7/*
+builds/win32/msvc8/*
+builds/win32/msvc9/*
+builds/win32/msvc10/*
+builds/win32/parse.bat
+builds/win32/preprocess.bat
+builds/win32/run_all.bat
+builds/win32/set_build_target.bat
+builds/win32/setenvvar.bat
+builds/win32/update_vc7_build.cmd
+ChangeLog
+configure.in
+doc/Firebird_conf.txt
+doc/README.*
+doc/WhatsNew
+doc/*.txt
+doc/*.html
+doc/license/README.license.usage.txt
+doc/sql.extensions/*
+examples/build_win32/*.bat
+examples/empbuild/*.inp
+lang_helpers/README.txt
+lang_helpers/gds.h
+Makefile.in
+src/auth/trusted/AuthSspi.cpp
+src/auth/trusted/AuthSspi.h
+src/common/classes/test.sh
+src/common/fb_exception.cpp
+src/config/FileName.cpp
+src/config/FileName.h
+src/config/Parameters.h
+src/dsql/btyacc_fb.ske
+src/include/fb_blk.h
+src/include/fb_macros.h
+src/include/gen/autoconfig_msvc.h
+src/include/gen/blrtable.h
+src/include/gen/files.txt
+src/include/gen/README.txt
+src/include/old_fb_blk.h
+src/install/arch-specific/solx86gcc/CS/pkginfo.in
+src/install/arch-specific/solx86gcc/CS/prototype.in
+src/install/arch-specific/solx86gcc/LIBGCC/pkginfolg.in
+src/install/arch-specific/solx86gcc/LIBGCC/prototypelg.in
+src/intl/charsets/cs_koi8r.h
+src/intl/charsets/cs_koi8u.h
+src/intl/charsets/cs_w1258.h
+src/intl/moved_files.txt
+src/jrd/build_no.h
+src/jrd/intl_builtin.cpp
+src/jrd/os/win32/mod_loader.cpp
+src/jrd/os/win32/path_utils.cpp
+src/jrd/thread_proto.h
+src/misc/gds_header.txt
+src/misc/headers.sed
+src/misc/ibase_header.txt
+src/misc/intl.sql
+src/misc/makeHeader.cpp
+src/misc/upgrade/recovering_build.txt
+src/misc/upgrade/v2.1/metadata_charset_create.sql
+src/misc/upgrade/v2.1/metadata_charset_drop.sql
+src/misc/upgrade/v2/ib_udf2_params.txt
+src/misc/upgrade/v2/ib_udf_params.txt
+src/misc/upgrade/v2/security_database.txt
+src/misc/writeBuildNum.sh
+src/msgs/facilities2.sql
+src/msgs/history2.sql
+src/msgs/locales.sql
+src/msgs/messages2.sql
+src/msgs/msg.sql
+src/msgs/sqlstates.sql
+src/msgs/symbols2.sql
+src/msgs/system_errors2.sql
+src/msgs/transmsgs.de_DE.sql
+src/msgs/transmsgs.de_DE2.sql
+src/msgs/transmsgs.fr_FR.sql
+src/msgs/transmsgs.fr_FR2.sql
+src/remote/os/sun/server_main_dummy.cpp
+src/remote/os/win32/window_proto.h
+src/remote/server_stub.cpp
+src/utilities/create_db.cpp
+src/utilities/fbcpl/ctrlpan.cpp
+src/utilities/fbcpl/ctrlpan.h
+src/utilities/fbcpl/fbcontrol.clw
+src/utilities/fbcpl/fbcontrol.cpp
+src/utilities/fbcpl/fbcontrol.def
+src/utilities/fbcpl/fbcontrol.h
+src/utilities/fbcpl/FBControl.rc
+src/utilities/fbcpl/res/fbcontrol.rc2
+src/utilities/fbcpl/resource.h
+src/utilities/fbcpl/res/server.ico
+src/utilities/fbcpl/res/server_stop.ico
+src/utilities/fbcpl/stdafx.cpp
+src/utilities/fbcpl/stdafx.h
+src/utilities/gsec/gsec_proto.h
+src/utilities/ntrace/fbtrace.conf
+
+
+Declared Public Domain
+----------------------
+
+extern/binreloc/*
+   This source code is public domain. You can relicense this code
+   under whatever license you want.
+
+
+Interbase Public License Version 1.0 (IPL)
+------------------------------------------
+
+Following is the list of files, then a list of contributors, as stated in them.
+
+builds/old_prefixes/prefix.aix
+builds/old_prefixes/prefix.aix_ppc
+builds/old_prefixes/prefix.darwin
+builds/old_prefixes/prefix.freebsd
+builds/old_prefixes/prefix.hp10
+builds/old_prefixes/prefix.hp9.0
+builds/old_prefixes/prefix.linux
+builds/old_prefixes/prefix.mu
+builds/old_prefixes/prefix.ncr3000
+builds/old_prefixes/prefix.netbsd
+builds/old_prefixes/prefix.sco
+builds/old_prefixes/prefix.sco_ev
+builds/old_prefixes/prefix.solaris
+builds/old_prefixes/prefix.solaris_mt
+builds/old_prefixes/prefix.sun4
+builds/old_prefixes/prefix.sun4_acc
+builds/old_prefixes/prefix.win_nt
+builds/old_prefixes/prefix.win_nts
+builds/posix/prefix.hpux_ia64
+builds/win32/defs/build.def
+builds/win32/defs/burp.def
+builds/win32/defs/burp32.def
+builds/win32/defs/dsql.def
+builds/win32/defs/fbclient.def
+builds/win32/defs/fbclient_s.def
+builds/win32/defs/gds32.def
+builds/win32/defs/ib_udf.def
+builds/win32/defs/ib_util.def
+builds/win32/defs/intl.def
+builds/win32/defs/isql.def
+builds/win32/defs/iutls.def
+builds/win32/defs/jrd.def
+builds/win32/defs/utls.def
+examples/api/*
+examples/build_unix/*
+examples/build_win32/old/example.mak
+examples/build_win32/old/prefix.win32_bc
+examples/build_win32/old/prefix.win32_msc
+examples/build_win32/old/sfx.win32_makefile
+examples/dyn/dyn1.e
+examples/dyn/dyn2.e
+examples/dyn/dyn3.e
+examples/dyn/dyn4.e
+examples/dyn/dyn5.e
+examples/dyn/dynfull.e
+examples/empbuild/empbld.sql
+examples/empbuild/empbuild.e
+examples/empbuild/empddl.sql
+examples/empbuild/empdml.sql
+examples/empbuild/employe2.sql
+examples/empbuild/indexoff.sql
+examples/empbuild/indexon.sql
+examples/empbuild/intlbld.e
+examples/empbuild/intlbld.sql
+examples/empbuild/intlddl.sql
+examples/empbuild/intldml.sql
+examples/functions.c
+examples/include/example.h
+examples/readme
+examples/stat/*
+examples/udf/*
+lang_helpers/gds.bas
+lang_helpers/gds.pas
+lang_helpers/gds.pli
+lang_helpers/gds.vpas
+lang_helpers/gds_aix.f
+lang_helpers/gds_codes.ftn
+lang_helpers/gds_codes.pas
+lang_helpers/gds_hp.f
+lang_helpers/gds_sun.f
+lang_helpers/gds_vms.f
+lang_helpers/ib_util.pas
+lang_helpers/perf.pas
+src/alice/alice.h
+src/alice/alice_meta.epp
+src/alice/alice_meta.h
+src/alice/alice_proto.h
+src/alice/exe_proto.h
+src/alice/tdr_proto.h
+src/burp/backu_proto.h
+src/burp/burp_proto.h
+src/burp/canon_proto.h
+src/burp/misc_proto.h
+src/burp/mvol_proto.h
+src/burp/resto_proto.h
+src/burp/spit.cpp
+src/burp/spit.h
+src/burp/std_desc.h
+src/dbs/dflt.gdl
+src/dbs/grant.gdl
+src/dbs/isc.gdl
+src/dbs/metadata.sql
+src/dbs/ods10.gdl
+src/dbs/ods101.gdl
+src/dbs/ods72.gdl
+src/dbs/ods80.gdl
+src/dbs/ods80dif.gdl
+src/dbs/ods81.gdl
+src/dbs/ods91.gdl
+src/dbs/procs2.gdl
+src/dbs/scrty_unix.gdl
+src/dbs/scrty_vms.gdl
+src/dbs/security.gdl
+src/dbs/stored_proc.gdl
+src/dbs/v2_triggers.gdl
+src/dsql/array_proto.h
+src/dsql/blob_proto.h
+src/dsql/chars.h
+src/dsql/errd_proto.h
+src/dsql/gen_proto.h
+src/dsql/hsh.cpp
+src/dsql/hsh_proto.h
+src/dsql/metd_proto.h
+src/dsql/movd.cpp
+src/dsql/movd_proto.h
+src/dsql/parse_proto.h
+src/dsql/pass1_proto.h
+src/dsql/prepa_proto.h
+src/dsql/preparse.cpp
+src/dsql/sqlda.h
+src/dsql/sqlda_pub.h
+src/dsql/sym.h
+src/dsql/user__proto.h
+src/dudley/ddl.cpp
+src/dudley/ddl.h
+src/dudley/ddl_proto.h
+src/dudley/exe.epp
+src/dudley/exe_proto.h
+src/dudley/expan_proto.h
+src/dudley/expand.cpp
+src/dudley/expr.cpp
+src/dudley/expr_proto.h
+src/dudley/extra_proto.h
+src/dudley/extract.epp
+src/dudley/gener_proto.h
+src/dudley/generate.cpp
+src/dudley/hsh.cpp
+src/dudley/hsh_proto.h
+src/dudley/lex_proto.h
+src/dudley/parse.h
+src/dudley/parse_proto.h
+src/dudley/trn.cpp
+src/dudley/trn_proto.h
+src/extlib/ib_udf.h
+src/extlib/ib_util.h
+src/gpre/ada.cpp
+src/gpre/cdbtable.h
+src/gpre/cmd_proto.h
+src/gpre/cme_proto.h
+src/gpre/cmp_proto.h
+src/gpre/dyntable.h
+src/gpre/exp_proto.h
+src/gpre/gpre_meta.epp
+src/gpre/gpre_meta.h
+src/gpre/gpre_meta_boot.cpp
+src/gpre/gpre_proto.h
+src/gpre/hsh_proto.h
+src/gpre/jrdme_proto.h
+src/gpre/movg_proto.h
+src/gpre/msc_proto.h
+src/gpre/par_proto.h
+src/gpre/parse.h
+src/gpre/pas.cpp
+src/gpre/pat.cpp
+src/gpre/pat.h
+src/gpre/pat_proto.h
+src/gpre/prett_proto.h
+src/gpre/sdltable.h
+src/gpre/sqe_proto.h
+src/gpre/sql_proto.h
+src/include/gen/ids.h
+src/include/gen/sql_state.h
+src/intl/charsets/cs_big5.h
+src/intl/charsets/cs_cyrl.h
+src/intl/charsets/cs_gb2312.h
+src/intl/charsets/cs_jis_0208_1990.h
+src/intl/charsets/cs_ksc5601.h
+src/intl/charsets/cs_next.h
+src/intl/charsets/cs_sjis.h
+src/intl/collations/bl88591ca0.h
+src/intl/collations/bl88591da0.h
+src/intl/collations/bl88591de0.h
+src/intl/collations/bl88591es0.h
+src/intl/collations/bl88591fi0.h
+src/intl/collations/bl88591fr0.h
+src/intl/collations/bl88591is0.h
+src/intl/collations/bl88591it0.h
+src/intl/collations/bl88591nl0.h
+src/intl/collations/bl88591no0.h
+src/intl/collations/bl88591pt0.h
+src/intl/collations/bl88591ptbr0.h
+src/intl/collations/bl88591sv0.h
+src/intl/collations/bl88591uk0.h
+src/intl/collations/bl88591us0.h
+src/intl/collations/blNEXTde0.h
+src/intl/collations/blNEXTes0.h
+src/intl/collations/blNEXTfr0.h
+src/intl/collations/blNEXTit0.h
+src/intl/collations/blNEXTus0.h
+src/intl/collations/db437de0.h
+src/intl/collations/db437es1.h
+src/intl/collations/db437fi0.h
+src/intl/collations/db437fr0.h
+src/intl/collations/db437it0.h
+src/intl/collations/db437nl0.h
+src/intl/collations/db437sv0.h
+src/intl/collations/db437uk0.h
+src/intl/collations/db437us0.h
+src/intl/collations/db850cf0.h
+src/intl/collations/db850de0.h
+src/intl/collations/db850es0.h
+src/intl/collations/db850fr0.h
+src/intl/collations/db850it1.h
+src/intl/collations/db850nl0.h
+src/intl/collations/db850pt0.h
+src/intl/collations/db850sv1.h
+src/intl/collations/db850uk0.h
+src/intl/collations/db850us0.h
+src/intl/collations/db852cz0.h
+src/intl/collations/db852po0.h
+src/intl/collations/db852sl0.h
+src/intl/collations/db857tr0.h
+src/intl/collations/db860pt0.h
+src/intl/collations/db863cf1.h
+src/intl/collations/db865da0.h
+src/intl/collations/db865no0.h
+src/intl/collations/db866ru0.h
+src/intl/collations/pd437intl.h
+src/intl/collations/pd437swedfin.h
+src/intl/collations/pd852czech.h
+src/intl/collations/pd852hundc.h
+src/intl/collations/pd852polish.h
+src/intl/collations/pd852slovene.h
+src/intl/collations/pd861iceland.h
+src/intl/collations/pd865nordan40.h
+src/intl/collations/pd866cyrr.h
+src/intl/collations/pw1250hundc.h
+src/intl/collations/pw1250polish.h
+src/intl/collations/pw1250slov.h
+src/intl/collations/pw1251cyrr.h
+src/intl/collations/pw1252i850.h
+src/intl/collations/pw1252intl.h
+src/intl/collations/pw1252nor4.h
+src/intl/collations/pw1252ptbr.h
+src/intl/collations/pw1252span.h
+src/intl/collations/pw1252swfn.h
+src/intl/collations/pw1253greek1.h
+src/intl/collations/pw1254turk.h
+src/intl/collations/xx1251_ua.h
+src/intl/conversions/tx437_865.h
+src/intl/conversions/tx437_lat1.h
+src/intl/conversions/tx865_lat1.h
+src/intl/country_codes.h
+src/intl/cs_big5.cpp
+src/intl/cs_gb2312.cpp
+src/intl/cs_jis.cpp
+src/intl/cs_ksc.cpp
+src/intl/cs_narrow.cpp
+src/intl/cs_unicode_fss.cpp
+src/intl/cs_unicode_ucs2.cpp
+src/intl/cv_big5.cpp
+src/intl/cv_big5.h
+src/intl/cv_gb2312.cpp
+src/intl/cv_gb2312.h
+src/intl/cv_jis.cpp
+src/intl/cv_jis.h
+src/intl/cv_ksc.cpp
+src/intl/cv_ksc.h
+src/intl/cv_narrow.cpp
+src/intl/cv_narrow.h
+src/intl/cv_unicode_fss.h
+src/intl/cv_unicode_fss.cpp
+src/intl/kanji.cpp
+src/intl/kanji.h
+src/intl/kanji_proto.h
+src/intl/lc_ascii.cpp
+src/intl/lc_ascii.h
+src/intl/lc_big5.cpp
+src/intl/lc_big5.h
+src/intl/lc_dos.cpp
+src/intl/lc_dos.h
+src/intl/lc_gb2312.cpp
+src/intl/lc_iso8859_1.cpp
+src/intl/lc_jis.cpp
+src/intl/lc_ksc.cpp
+src/intl/lc_narrow.cpp
+src/intl/lc_narrow.h
+src/intl/lc_unicode_ucs2.cpp
+src/intl/ldcommon.h
+src/intl/utils/dtest2.c
+src/intl/utils/make.maps
+src/intl/utils/mapdump.c
+src/intl/utils/mapgen4.c
+src/intl/utils/maptest.cpp
+src/intl/utils/maptest2.c
+src/iscguard/cntl_guard.cpp
+src/iscguard/cntlg_proto.h
+src/iscguard/iscguard.cpp
+src/iscguard/iscguard.h
+src/iscguard/iscguard.rc
+src/iscguard/iscguard.rh
+src/iscguard/salrt23i.ico
+src/iscguard/sgard23i.ico
+src/isql/extra_proto.h
+src/isql/isql.rc
+src/isql/isql.rh
+src/isql/isql_proto.h
+src/isql/isql_win.cpp
+src/isql/isql_win.h
+src/isql/isqlw_proto.h
+src/isql/show_proto.h
+src/jrd/Relation.h
+src/jrd/acl.h
+src/jrd/blb_proto.h
+src/jrd/blf_proto.h
+src/jrd/blob_filter.h
+src/jrd/btr_proto.h
+src/jrd/builtin.cpp
+src/jrd/cch.h
+src/jrd/cch_proto.h
+src/jrd/cmp_proto.h
+src/jrd/cvt2_proto.h
+src/jrd/cvt_proto.h
+src/jrd/dbg.cpp
+src/jrd/dbg.h
+src/jrd/dbg_proto.h
+src/jrd/dbt.cpp
+src/jrd/dflt.h
+src/jrd/dfw_proto.h
+src/jrd/divorce.cpp
+src/jrd/divorce.h
+src/jrd/dmp.cpp
+src/jrd/dmp_proto.h
+src/jrd/dpm_proto.h
+src/jrd/dsc.cpp
+src/jrd/dsc_proto.h
+src/jrd/dyn.h
+src/jrd/dyn_df_proto.h
+src/jrd/dyn_dl_proto.h
+src/jrd/dyn_md_proto.h
+src/jrd/dyn_proto.h
+src/jrd/dyn_ut_proto.h
+src/jrd/enc_proto.h
+src/jrd/entry.h
+src/jrd/err_proto.h
+src/jrd/evl_proto.h
+src/jrd/exe_proto.h
+src/jrd/ext.h
+src/jrd/ext_proto.h
+src/jrd/fields.h
+src/jrd/filte_proto.h
+src/jrd/filters.cpp
+src/jrd/flags.h
+src/jrd/flu_proto.h
+src/jrd/fun_proto.h
+src/jrd/functions.cpp
+src/jrd/grant_proto.h
+src/jrd/ibsetjmp.h
+src/jrd/idx_proto.h
+src/jrd/inf_proto.h
+src/jrd/ini.epp
+src/jrd/ini.h
+src/jrd/ini_proto.h
+src/jrd/intl.h
+src/jrd/intl_proto.h
+src/jrd/intlnames.h
+src/jrd/isc_proto.h
+src/jrd/isc_version.h
+src/jrd/jrd_proto.h
+src/jrd/lck.h
+src/jrd/lck_proto.h
+src/jrd/met.h
+src/jrd/met_proto.h
+src/jrd/mov_proto.h
+src/jrd/msg.h
+src/jrd/msg_encode.h
+src/jrd/names.h
+src/jrd/nav.cpp
+src/jrd/nav_proto.h
+src/jrd/nodebug.cpp
+src/jrd/obj.h
+src/jrd/opt_proto.h
+src/jrd/os/isc_i_proto.h
+src/jrd/os/pio_proto.h
+src/jrd/pag_proto.h
+src/jrd/par_proto.h
+src/jrd/pcmet.epp
+src/jrd/pcmet_proto.h
+src/jrd/perf_proto.h
+src/jrd/qatest.cpp
+src/jrd/quad.cpp
+src/jrd/quad.h
+src/jrd/quad_proto.h
+src/jrd/que.h
+src/jrd/relations.h
+src/jrd/rlck_proto.h
+src/jrd/rse.h
+src/jrd/rse_proto.h
+src/jrd/scl.h
+src/jrd/scl_proto.h
+src/jrd/scroll_cursors.h
+src/jrd/sdl.cpp
+src/jrd/sdl.h
+src/jrd/sdl_proto.h
+src/jrd/sdw.cpp
+src/jrd/sdw.h
+src/jrd/sdw_proto.h
+src/jrd/shut.cpp
+src/jrd/shut_proto.h
+src/jrd/sort.h
+src/jrd/sort_proto.h
+src/jrd/sqz.cpp
+src/jrd/sqz.h
+src/jrd/sqz_proto.h
+src/jrd/svc.h
+src/jrd/svc_undoc.h
+src/jrd/tpc.cpp
+src/jrd/tpc.h
+src/jrd/tpc_proto.h
+src/jrd/tra_proto.h
+src/jrd/trig.h
+src/jrd/utl_proto.h
+src/jrd/val_proto.h
+src/jrd/validation.cpp
+src/jrd/version.rc
+src/jrd/vio_debug.h
+src/jrd/why_proto.h
+src/lock/driver.cpp
+src/lock/lock_proto.h
+src/lock/reset.cpp
+src/lock/ulimit.cpp
+src/misc/align.cpp
+src/misc/ids.m
+src/misc/memtest.cpp
+src/msgs/change_msgs.epp
+src/msgs/check_msgs.epp
+src/msgs/enter_msgs.epp
+src/msgs/include.epp
+src/msgs/load.epp
+src/msgs/modify_msgs.epp
+src/msgs/msg.gdl
+src/qli/all.cpp
+src/qli/all_proto.h
+src/qli/blk.h
+src/qli/comma_proto.h
+src/qli/command.cpp
+src/qli/compi_proto.h
+src/qli/compile.cpp
+src/qli/compile.h
+src/qli/dtr.h
+src/qli/err.cpp
+src/qli/err_proto.h
+src/qli/eval.cpp
+src/qli/eval_proto.h
+src/qli/exe.cpp
+src/qli/exe.h
+src/qli/exe_proto.h
+src/qli/expan_proto.h
+src/qli/expand.cpp
+src/qli/forma_proto.h
+src/qli/format.cpp
+src/qli/format.h
+src/qli/gener.cpp
+src/qli/gener_proto.h
+src/qli/help_proto.h
+src/qli/hsh.cpp
+src/qli/hsh_proto.h
+src/qli/lex_proto.h
+src/qli/meta.epp
+src/qli/meta_proto.h
+src/qli/mov.cpp
+src/qli/mov_proto.h
+src/qli/nounix.cpp
+src/qli/parse.cpp
+src/qli/parse.h
+src/qli/parse_proto.h
+src/qli/picst_proto.h
+src/qli/picstr.cpp
+src/qli/proc_ddl.h
+src/qli/proc_proto.h
+src/qli/procddl1.h
+src/qli/procddl2.h
+src/qli/procddl3.h
+src/qli/procddl4.h
+src/qli/repor_proto.h
+src/qli/report.cpp
+src/qli/report.h
+src/qli/reqs.h
+src/qli/show.epp
+src/qli/show_proto.h
+src/qli/symbols.h
+src/qli/words.h
+src/remote/inet_proto.h
+src/remote/inter_proto.h
+src/remote/merge.cpp
+src/remote/merge_proto.h
+src/remote/os/win32/caution.ico
+src/remote/os/win32/chop.cpp
+src/remote/os/win32/chop_proto.h
+src/remote/os/win32/cntl.cpp
+src/remote/os/win32/cntl_proto.h
+src/remote/os/win32/property.rc
+src/remote/os/win32/property.rh
+src/remote/os/win32/propty_proto.h
+src/remote/os/win32/server.ico
+src/remote/os/win32/window.cpp
+src/remote/os/win32/window.h
+src/remote/os/win32/window.rc
+src/remote/os/win32/window.rh
+src/remote/os/win32/wnet.cpp
+src/remote/os/win32/wnet_proto.h
+src/remote/parse_proto.h
+src/remote/parser.cpp
+src/remote/proto_proto.h
+src/remote/remot_proto.h
+src/remote/remote.cpp
+src/remote/serve_proto.h
+src/remote/xdr_proto.h
+src/utilities/analyse.cpp
+src/utilities/cache.cpp
+src/utilities/gsec/gsec.cpp
+src/utilities/gsec/gsec.h
+src/utilities/gsec/gsecswi.h
+src/utilities/gsec/secur_proto.h
+src/utilities/gsec/security.epp
+src/utilities/gstat/dbaswi.h
+src/utilities/gstat/ppg_proto.h
+src/utilities/guard/guard.cpp
+src/utilities/guard/util.cpp
+src/utilities/guard/util_proto.h
+src/utilities/ibmgr/ibmgr.h
+src/utilities/ibmgr/ibmgrswi.h
+src/utilities/ibmgr/srvrmgr.cpp
+src/utilities/ibmgr/srvrmgr_proto.h
+src/utilities/install/install_nt.h
+src/utilities/install/install_reg.cpp
+src/utilities/install/install_svc.cpp
+src/utilities/install/regis_proto.h
+src/utilities/install/servi_proto.h
+src/utilities/print_event.cpp
+src/utilities/print_pool.cpp
+src/utilities/rebuild/rebui_proto.h
+src/utilities/rebuild/rebuild.cpp
+src/utilities/rebuild/rebuild.gdl
+src/utilities/rebuild/rebuild.h
+src/utilities/rebuild/rmet.epp
+src/utilities/rebuild/rmet_proto.h
+src/utilities/rebuild/rstor_proto.h
+src/utilities/rebuild/rstore.epp
+src/utilities/relay.cpp
+src/utilities/run_service.cpp
+src/utilities/stats.epp
+src/jrd/drq.h
+src/jrd/event_proto.h
+src/jrd/os/vms/*
+        No contributors.
+
+src/intl/ld.cpp
+src/intl/ld_proto.h
+src/dsql/DdlNodes.epp
+src/dsql/StmtNodes.cpp
+src/dsql/dsql_proto.h
+src/extlib/ib_util.cpp
+src/jrd/blob_filter.cpp
+src/jrd/os/win32/ibinitdll.cpp
+	Contributors: Adriano dos Santos Fernandes
+src/dsql/pass1.cpp
+	Contributors: Adriano dos Santos Fernandes, Ann Harrison,
+		      Arno Brinkman, Claudio Valderrama, Dmitry Yemanov,
+		      Dmitry Yemanov, John Bellardo, Neil McCalden,
+		      Nickolay Samofatov, Vlad Horsun
+src/jrd/dfw.epp
+        Contributors: Adriano dos Santos Fernandes, Alex Peshkoff,
+                      Ann Harrison, Claudio Valderrama, Dmitry Yemanov,
+                      Sean Leyne
+src/dsql/make.cpp
+	Contributors: Adriano dos Santos Fernandes, Arno Brinkman,
+		      Claudio Valderrama, Dmitry Yemanov
+src/dsql/gen.cpp
+src/dsql/node.h
+	Contributors: Adriano dos Santos Fernandes, Arno Brinkman,
+		      Claudio Valderrama, Dmitry Yemanov, John Bellardo,
+		      Nickolay Samofatov, Vlad Horsun
+src/dsql/parse.y
+	Contributors: Adriano dos Santos Fernandes, Arno Brinkman,
+		      Blas Rodriguez Somoza, Claudio Valderrama, Dmitry Yemanov,
+		      John Bellardo, Mark O'Donohue, Mike Nordell,
+		      Neil McCalden, Nickolay Samofatov, Sean Leyne,
+		      Vlad Horsun
+src/gpre/dyntable.cpp
+src/jrd/types.h
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama
+src/jrd/blr.h
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+		      Dmitry Yemanov, Nickolay Samofatov
+src/jrd/exe.cpp
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+		      Dmitry Yemanov, Nickolay Samofatov, Sean Leyne
+src/jrd/cmp.cpp
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+		      Dmitry Yemanov, John Bellardo, Nickolay Samofatov,
+		      Sean Leyne
+src/jrd/par.cpp
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+		      Dmitry Yemanov, Mike Nordell, Nickolay Samofatov,
+		      Sean Leyne, Vlad Horsun
+src/jrd/evl.cpp
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+  		      Dmitry Yemanov, Neil McCalden, Patrick J. P. Griffin,
+		      Paul Beach
+src/jrd/blb.cpp
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+		      Sean Leyne
+src/jrd/mov.cpp
+	Contributors: Adriano dos Santos Fernandes, Dmitry Yemanov
+src/jrd/exe.h
+	Contributors: Adriano dos Santos Fernandes, Dmitry Yemanov,
+		      Nikolay Samofatov
+src/jrd/blp.h
+	Contributors: Adriano dos Santos Fernandes, John Bellardo
+src/jrd/nod.h
+src/misc/blrtable.cpp
+	Contributors: Adriano dos Santos Fernandes, Nickolay Samofatov
+src/jrd/dsc.h
+	Contributors: Adriano dos Santos Fernandes, Paul Beach
+src/jrd/CharSet.cpp
+src/jrd/Collation.cpp
+src/jrd/TextType.cpp
+	Contributors: Adriano dos Santos Fernandes, Sean Leyne
+builds/posix/empty.vers
+src/jrd/lls.h
+src/jrd/os/fbsyslog.h
+	Contributors: Alex Peshkov
+src/common/cvt.cpp
+        Contributors: Alex Peshkoff, Claudio Valderrama, Sean Leyne
+src/jrd/dyn.epp
+        Contributors: Alex Peshkov, Claudio Valderrama, Dmitry Yemanov,
+		      John Bellardo, Nickolay Samofatov
+src/jrd/vio.cpp
+	Contributors: Alex Peshkov, Dmitry Yemanov, Nickolay Samofatov,
+		      Sean Leyne
+src/jrd/why.cpp
+	Contributors: Alex Peshkov, Dmitry Yemanov, Sean Leyne
+src/dbs/security.sql
+	Contributors: Alex Peshkov, Ivan Prenosil
+src/dsql/user_dsql.cpp
+src/jrd/flu.cpp
+	Contributors: Alex Peshkov, Sean Leyne
+src/jrd/dyn_def.epp
+	Contributors: Ann Harrison, Claudio Valderrama, Dmitry Yemanov,
+		      Paul Beach, Sean Leyne, Vlad Horsun
+src/jrd/ibase.h
+	Contributors: Ann Harrison, John Bellardo, Mike Nordell,
+		      Nickolay Samofatov, Paul Beach, Sean Leyne,
+		      Steve Boyd
+src/jrd/os/win32/winnt.cpp
+	Contributors: Ann Harrison, Mike Nordell, Sean Leyne
+src/jrd/common.h
+	Contributors: Ann Harrison, Paul Beach, Sean Leyne
+src/dsql/errd.cpp
+src/dsql/utld.cpp
+	Contributors: Ann W. Harrison, Sean Leyne
+src/dsql/make_proto.h
+	Contributors: Arno Brinkman
+src/jrd/opt.cpp
+	Contributors: Arno Brinkman, Claudio Valderrama, John Bellardo,
+		      Nickolay Samofatov, Sean Leyne
+src/jrd/jrd.cpp
+src/jrd/jrd.h
+        Contributors: Adriano dos Santos Fernandes, Claudio Valderrama C.,
+        Sean Leyne
+src/dsql/dsql.h
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+		      Nickolay Samofatov, Vlad Horsun
+src/dsql/ddl.cpp
+	Contributors: Adriano dos Santos Fernandes, Claudio Valderrama,
+	              Dmitry Yemanov, Mike Nordell, Nikolay Samofatov,
+		      Sean Leyne, Vlad Horsun
+builds/posix/prefix.linux_arm
+builds/posix/prefix.linux_arm64
+builds/posix/prefix.linux_powerpc64el
+	Contributors: Alan Barclay
+builds/posix/darwin.defaults
+        Contributors: Alex Peshkov, Nickolay Samofatov
+src/jrd/ThreadData.cpp
+src/jrd/ThreadData.h
+src/jrd/ThreadStart.cpp
+src/jrd/ThreadStart.h
+src/jrd/svc.cpp
+        Contributors: Alex Peshkov, Sean Leyne
+src/jrd/inf.cpp
+	Contributors: Ann Harrison, Claudio Valderrama, Paul Reeves,
+		      Sean Leyne
+src/intl/charsets/cs_437.h
+src/intl/charsets/cs_737.h
+src/intl/charsets/cs_775.h
+src/intl/charsets/cs_850.h
+src/intl/charsets/cs_852.h
+src/intl/charsets/cs_857.h
+src/intl/charsets/cs_858.h
+src/intl/charsets/cs_860.h
+src/intl/charsets/cs_861.h
+src/intl/charsets/cs_862.h
+src/intl/charsets/cs_863.h
+src/intl/charsets/cs_864.h
+src/intl/charsets/cs_865.h
+src/intl/charsets/cs_866.h
+src/intl/charsets/cs_869.h
+src/intl/charsets/cs_iso8859_13.h
+src/intl/charsets/cs_iso8859_1.h
+src/intl/charsets/cs_iso8859_2.h
+src/intl/charsets/cs_iso8859_3.h
+src/intl/charsets/cs_iso8859_4.h
+src/intl/charsets/cs_iso8859_5.h
+src/intl/charsets/cs_iso8859_6.h
+src/intl/charsets/cs_iso8859_7.h
+src/intl/charsets/cs_iso8859_8.h
+src/intl/charsets/cs_iso8859_9.h
+src/intl/charsets/cs_w1250.h
+src/intl/charsets/cs_w1251.h
+src/intl/charsets/cs_w1252.h
+src/intl/charsets/cs_w1253.h
+src/intl/charsets/cs_w1254.h
+src/intl/charsets/cs_w1255.h
+src/intl/charsets/cs_w1256.h
+src/intl/charsets/cs_w1257.h
+src/intl/charsets.h
+src/jrd/alt_proto.h
+	Contributors: Blas Rodriguez Somoza.
+builds/posix/prefix.aix_powerpc
+builds/posix/prefix.aix_powerpc_xlc
+        Contributor(s): Bill Oliver
+src/dsql/blob.epp
+src/extlib/ib_udf2.sql
+src/extlib/ib_udf.sql
+src/jrd/constants.h
+src/jrd/cvt2.cpp
+src/jrd/dyn_del.epp
+src/jrd/gdsassert.h
+src/jrd/irq.h
+src/jrd/scl.epp
+src/remote/os/win32/srvr_w32.cpp
+	Contributors: Claudio Valderrama
+src/isql/isql.epp
+	Contributors: Claudio Valderrama, Damyan Ivanov, Fred Polizo, Jr.,
+		      FSG (Frank Schlottmann-Gödde), Neil McCalden,
+		      Sean Leyne
+src/isql/show.epp
+	Contributors: Claudio Valderrama, Dmitry Yemanov,
+	FSG (Frank Schlottmann-Gödde)
+src/isql/extract.epp
+	Contributors: Claudio Valderrama, Dmitry Yemanov,
+	FSG (Frank Schlottmann-Gödde), patrickgriffin
+src/jrd/dyn_mod.epp
+src/jrd/utl.cpp
+	Contributors: Claudio Valderrama, Dmitry Yemanov, Sean Leyne
+src/jrd/fun.epp
+	Contributors: Claudio Valderrama, Fred Polizo, Jr., Sean Leyne
+src/jrd/rse.cpp
+	Contributors: Claudio Valderrama, John Bellardo, Sean Leyne
+src/jrd/tra.h
+	Contributors: Claudio Valderrama, Nickolay Samofatov
+src/jrd/met.epp
+	Contributors: Claudio Valderrama, Nickolay Samofatov, Sean Leyne,
+		      Vlad Horsun
+src/dsql/array.epp
+src/jrd/Database.cpp
+src/jrd/Database.h
+src/jrd/alt.cpp
+src/jrd/cvt.cpp
+src/jrd/isc_file.cpp
+src/remote/server.cpp
+	Contributors: Claudio Valderrama, Sean Leyne
+src/extlib/ib_udf.cpp
+	Contributors: Claudio Valderrama, Slavomir Skopalik
+src/dsql/dsql.cpp
+	Contributors: Claudio Valderrama, Mike Nordell, Nickolay Samofatov,
+	  	      Sean Leyne, Vlad Horsun
+src/dsql/metd.epp
+	Contributors: Claudio Valderrama, Vlad Horsun
+src/include/consts_pub.h
+	Contributors: Dimitry Sibiryakov
+src/include/memory_routines.h
+	 Created by: Dimitry Sibiryakov <aafemt@users.sourceforge.net>
+src/jrd/idx.cpp
+src/jrd/os/config_root.h
+src/jrd/pwd.cpp
+src/jrd/req.h
+	Contributors: Dmitry Yemanov
+src/jrd/idx.h
+	Contributors: Dmitry Yemanov, Nickolay Samofatov
+src/jrd/ods.h
+	Contributors: Dmitry Yemanov, Patrick J. P. Griffin, Sean Leyne
+src/jrd/jrd_pwd.h
+	Contributors: Dmitry Yemanov, Sean Leyne
+src/remote/xnet.cpp
+src/remote/xnet.h
+src/remote/xnet_proto.h
+	Contributors: Dmitry Yemanov, Victor Seryodkin
+src/intl/collations/win1250bsba.h
+	Contributors: Fikret Hasovic
+src/gpre/cob.cpp
+	Contributors: Frank Schlottmann-Gödde, Konstantin Kuznetsov,
+		      Neil McCalden
+src/gpre/sqe.cpp
+	Contributors: Frank Schlottmann-Gödde, TMN (Mike Nordell)
+		      Stephen W. Boyd
+src/isql/isql.h
+src/jrd/license.h
+	Contributors: FSG (Frank Schlottmann-Gödde), Sean Leyne
+src/gpre/gpre.h
+	Contributors: FSG (Frank Schlottmann-Gödde), Sean Leyne,
+		      Stephen W. Boyd
+src/gpre/gpre.cpp
+src/gpre/par.cpp
+	Contributors: FSG (Frank Schlottmann-Gödde), Sean Leyne,
+		      Stephen W. Boyd, TMN (Mike Nordell)
+src/gpre/gpreswi.h
+	Contributors: FSG (Frank Schlottmann-Gödde), Stephen W. Boyd
+src/intl/collations/pw1250hun.h
+src/intl/collations/xx88592hun.h
+	Contributors: Gabor Boros, Sandor Szollosi <ssani@freemail.hu>
+src/intl/collations/win_cz_ci_ai.h
+	Contributors: Ivan Prenosil
+src/intl/collations/win_cz.h
+	Contributors: Ivan Prenosil, Karel Brichnac <brichna@atlas.cz>
+src/intl/collations/xx88592plk.h
+	Contributors: Jaroslaw Glowacki <glowacki@plocman.pl>
+src/dsql/keywords.h
+src/jrd/inf_pub.h
+	Contributors: John Bellardo
+src/intl/collations/xx885913lt.h
+src/intl/lc_iso8859_13.cpp
+	Contributors: Jonas Jasas
+src/intl/collations/pw1250czech.h
+	Contributors: Karel Brichnac <brichna@atlas.cz>
+builds/old_prefixes/prefix.solx86
+        Contributors: Konstantin Kuznetsov, Neil McCalden
+builds/posix/make.platform.solaris.examples
+        Contributors: Konstantin Kuznetsov, Neil McCalden, Nickolay Samofatov
+src/jrd/isc.cpp
+        Contributors: Konstantin Kuznetsov, Mike Nordell, Neil McCalden,
+		      Paul Beach, Paul Reeves, Sean Leyne
+builds/posix/prefix.solx86gcc_64
+	Contributors: Konstantin Kuznetsov, Neil McCalden, Paul Beach
+src/remote/inet.cpp
+	Contributors: Konstantin Kuznetsov, Sean Leyne
+src/misc/codes.epp
+	 Contributor(s): Mark O'Donohue skywalker@users.sourceforge.net
+src/intl/collations/xx88592czech.h
+src/intl/lc_iso8859_2.cpp
+	Contributors: Michal Bukovjan
+src/gpre/cmd.cpp
+src/gpre/cmp.cpp
+src/gpre/exp.cpp
+src/gpre/hsh.cpp
+src/gpre/int_cxx.cpp
+src/gpre/jrdmet.cpp
+src/gpre/movg.cpp
+src/gpre/msc.cpp
+src/gpre/pretty.cpp
+src/gpre/sql.cpp
+	Contributors: Mike Nordell
+src/jrd/isc.h
+	Contributors: Mike Nordell, Paul Beach, Sean Leyne
+src/gpre/cme.cpp
+	Contributors: Mike Nordell, Stephen W. Boyd
+builds/posix/prefix.linux
+builds/posix/prefix.linux_amd64
+builds/posix/prefix.linux_generic
+builds/posix/prefix.linux_ia64
+builds/posix/prefix.linux_mips
+builds/posix/prefix.linux_mipsel
+builds/posix/prefix.linux_powerpc
+builds/posix/prefix.linux_sparc32
+src/common/classes/timestamp.cpp
+src/jrd/vio_proto.h
+builds/posix/prefix.darwin_ppc64
+builds/posix/prefix.freebsd_amd64
+builds/posix/prefix.linux_s390x
+	Contributor(s): Nickolay Samofatov
+src/jrd/gds.cpp
+src/jrd/tra.cpp
+src/lock/lock.cpp
+src/lock/lock.h
+	Contributor(s): Nickolay Samofatov, Sean Leyne
+builds/posix/empty.hpux.vers
+builds/posix/firebird.darwin.vers
+builds/posix/firebird.hpux.vers
+builds/posix/firebird.vers
+        Created from fbclient.def by Nickolay Samofatov
+builds/posix/empty.darwin.vers
+        Created from fbclient.def by Nickolay Samofatov
+        Contributors: Alex Peshkov, Paul Beach
+builds/posix/postfix.darwin
+builds/posix/prefix.darwin_i386
+builds/posix/prefix.darwin_powerpc
+builds/posix/prefix.darwin_x86_64
+builds/posix/prefix.freebsd
+builds/posix/prefix.netbsd
+	Contributors: Nickolay Samofatov
+builds/posix/prefix.mingw
+	All Rights Reserved.
+	Contributor(s): Blas Rodriguez Somoza
+builds/posix/prefix.sinixz
+	Contributor(s): Erik Kunze, Philosys GmbH, <kunze@philosys.de>
+			Nickolay Samofatov
+builds/posix/prefix.solx86
+builds/posix/prefix.solx86gcc
+	Contributor(s): Konstantin Kuznetsov
+			Neil McCalden
+			Nickolay Samofatov
+src/jrd/os/posix/isc_ipc.cpp
+src/jrd/os/win32/isc_ipc.cpp
+	Contributor(s): Konstantin Kuznetsov, Neil McCalden,
+			Nickolay Samofatov, Sean Leyne
+src/jrd/pag.h
+	Contributor(s): Patrick J. P. Griffin
+src/jrd/dpm.epp
+src/jrd/pag.cpp
+	Contributor(s): Patrick J. P. Griffin, Sean Leyne
+src/jrd/dsc2.h
+src/jrd/dsc_pub.h
+builds/posix/prefix.hpux
+	Contributor(s): Paul Beach
+builds/posix/prefix.hpux_aCC
+        Contributor(s): Paul Beach, Jerry Adair, Bill Oliver
+src/jrd/ext.cpp
+src/jrd/fil.h
+	Contributor(s): Paul Beach, Sean Leyne
+src/utilities/install/registry.cpp
+src/utilities/install/registry.h
+src/utilities/install/services.cpp
+	Contributors: Paul Reeves
+src/lock/print.cpp
+        Contributors: Roman Simakov, Sean Leyne
+src/alice/alice.cpp
+src/alice/aliceswi.h
+src/alice/exe.cpp
+src/alice/tdr.cpp
+src/burp/burp.cpp
+src/burp/burp.h
+src/burp/burpswi.h
+src/burp/canonical.cpp
+src/burp/misc.cpp
+src/burp/mvol.cpp
+src/common/thd.cpp
+src/common/thd.h
+src/dsql/utld_proto.h
+src/dudley/lex.cpp
+src/dudley/parse.cpp
+src/gpre/c_cxx.cpp
+src/gpre/ftn.cpp
+src/intl/ld.h
+src/intl/utils/dtest.c
+src/jrd/align.h
+src/jrd/blb.h
+src/jrd/btr.cpp
+src/jrd/btr.h
+src/jrd/cch.cpp
+src/jrd/dyn_util.epp
+src/jrd/err.cpp
+src/jrd/event.cpp
+src/jrd/event.h
+src/jrd/file_params.h
+src/jrd/flu.h
+src/jrd/gds_proto.h
+src/jrd/grant.epp
+src/jrd/intl.cpp
+src/jrd/isc_f_proto.h
+src/jrd/isc_s_proto.h
+src/jrd/isc_sync.cpp
+src/jrd/lck.cpp
+src/jrd/os/pio.h
+src/jrd/os/posix/unix.cpp
+src/jrd/perf.cpp
+src/jrd/perf.h
+src/jrd/rlck.cpp
+src/jrd/sbm.h
+src/jrd/sort.cpp
+src/jrd/val.h
+src/msgs/build_file.epp
+src/qli/dtr.cpp
+src/qli/help.epp
+src/qli/lex.cpp
+src/qli/proc.epp
+src/remote/inet_server.cpp
+src/remote/interface.cpp
+src/remote/os/win32/property.cpp
+src/remote/protocol.cpp
+src/remote/protocol.h
+src/remote/remote_def.h
+src/remote/remote.h
+src/remote/xdr.cpp
+src/remote/xdr.h
+src/utilities/drop.cpp
+src/utilities/gstat/dba.epp
+src/utilities/gstat/ppg.cpp
+src/utilities/ibmgr/ibmgr.cpp
+builds/win32/defs/remote.def
+examples/include/align.h
+lang_helpers/gds.hxx
+lang_helpers/gdsold.h
+	Contributor(s): Sean Leyne
+src/gpre/hsh.h
+src/gpre/lang_proto.h
+src/gpre/rmc.cpp
+src/gpre/words.h
+	Contributor(s): Stephen W. Boyd
+src/burp/backup.epp
+	Contributors: Toni Martir ,Sean Leyne, Claudio Valderrama, Mike Nordell
+src/burp/restore.epp
+	Contributors: Toni Martir, Claudio Valderrama,
+	Adriano dos Santos Fernandes
+	Contributors: Vlad Horsun
+src/jrd/os/posix/fbsyslog.cpp
+src/jrd/os/win32/fbsyslog.cpp
+src/jrd/rpb_chain.cpp
+src/jrd/rpb_chain.h
+	Created by: Alex Peshkov <peshkoff@mail.ru>
+src/common/classes/array.h
+	The Original Code was created by Inprise Corporation and its
+	predecessors. Portions created by Inprise Corporation are Copyright (C)
+	Inprise Corporation.
+	Created by: Alex Peshkov <peshkoff@mail.ru>
+	All Rights Reserved.
+	Contributor(s): Adriano dos Santos Fernandes
+src/include/gen/codetext.h
+src/include/gen/iberror.h
+src/include/gen/msg_facs.h
+src/include/gen/msgs.h
+src/include/gen/sql_code.h
+	The contents of this file are subject to the Interbase Public
+	License Version 1.0 (the "License"); you may not use this file
+	except in compliance with the License. You may obtain a copy
+	of the License at http://www.Inprise.com/IPL.html
+	.
+	Software distributed under the License is distributed on an
+	"AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express
+	or implied. See the License for the specific language governing
+	rights and limitations under the License.
+	. 
+	The content of this file was generated by the Firebird project
+	using the program jrd/codes.epp
+src/dsql/ddl_proto.h
+        Contributors: Vlad Horsun
+
+
+Initial Developer's Public License Version 1.0 (IDPL)
+-----------------------------------------------------
+
+builds/posix/empty.exp
+builds/posix/fbintl.exp
+builds/posix/fbtrace.exp
+builds/posix/firebird.exp
+builds/posix/ib_util.exp
+src/include/fb_api_proto.h
+        No original author or contributors noted.
+src/intl/cs_icu.cpp
+src/intl/cs_icu.h
+src/intl/cv_icu.cpp
+src/intl/cv_icu.h
+src/intl/lc_icu.cpp
+src/intl/lc_icu.h
+src/jrd/IntlManager.cpp
+src/jrd/IntlManager.h
+src/jrd/RandomGenerator.cpp
+src/jrd/RandomGenerator.h
+src/jrd/unicode_util.cpp
+src/jrd/unicode_util.h
+	The Original Code was created by Adriano dos Santos Fernandes
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2004 Adriano dos Santos Fernandes <adrianosf@uol.com.br>
+builds/posix/Makefile.in.extern.icu
+	The Original Code was created by Adriano dos Santos Fernandes
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2005 Adriano dos Santos Fernandes <adrianosf@uol.com.br>
+src/jrd/DataTypeUtil.cpp
+src/jrd/DataTypeUtil.h
+src/jrd/IntlUtil.cpp
+src/jrd/IntlUtil.h
+	The Original Code was created by Adriano dos Santos Fernandes
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2006 Adriano dos Santos Fernandes <adrianosf@uol.com.br>
+src/jrd/SimilarToMatcher.h
+        The Original Code was created by Adriano dos Santos Fernandes for the 
+        Firebird Open Source RDBMS project.
+        Copyright (c) 2007 Adriano dos Santos Fernandes <adrianosf@uol.com.br>
+src/jrd/SysFunction.cpp
+src/jrd/SysFunction.h
+	The Original Code was created by Adriano dos Santos Fernandes
+	for the Firebird Open Source RDBMS project, based on work done
+	in Yaffil by Oleg Loa <loa@mail.ru> and Alexey Karyakin <aleksey.karyakin@mail.ru>
+	Copyright (c) 2007 Adriano dos Santos Fernandes <adrianosf@uol.com.br>
+	and all contributors signed below.
+	All Rights Reserved.
+	Contributors: Oleg Loa <loa@mail.ru>,
+		      Alexey Karyakin <aleksey.karyakin@mail.ru>
+src/dsql/DdlNodes.h
+src/dsql/Nodes.h
+src/dsql/Parser.cpp
+src/dsql/Parser.h
+src/dsql/StmtNodes.h
+src/jrd/PreparedStatement.cpp
+src/jrd/PreparedStatement.h
+src/jrd/ResultSet.cpp
+src/jrd/ResultSet.h
+        The Original Code was created by Adriano dos Santos Fernandes
+	for the Firebird Open Source RDBMS project.
+        Copyright (c) 2008 Adriano dos Santos Fernandes <adrianosf@uol.com.br>
+src/jrd/BlrReader.h
+        The Original Code was created by Adriano dos Santos Fernandes
+        for the Firebird Open Source RDBMS project.
+        Copyright (c) 2009 Adriano dos Santos Fernandes <adrianosf@uol.com.br>
+src/intl/collations/koi8r_ru.h
+src/intl/collations/koi8u_ua.h
+src/intl/collations/win1257_ee.h
+src/intl/collations/win1257_lt.h
+src/intl/collations/win1257_lv.h
+        The Original Code was created by Aleksey Karyakin for the Yaffil 
+        project.
+        Copyright (c) 2005 Aleksey Karyakin <aleksey.karyakin@mail.ru>
+src/common/config/dir_list.cpp
+src/common/config/dir_list.h
+src/jrd/sha.h
+	Created by: Alex Peshkov <AlexPeshkov@users.sourceforge.net>
+	All Rights Reserved.
+src/utilities/gsec/call_service.cpp
+src/utilities/gsec/call_service.h
+	The Original Code was created by Alexander Peshkoff for the Firebird
+	Open Source RDBMS project.
+src/jrd/os/thd_priority.h
+src/jrd/os/win32/thd_priority.cpp
+        The Original Code was created by Alexander Peshkoff for the Firebird
+	Open Source RDBMS project.
+	Copyright (c) 2002 Alexander Peshkoff <peshkoff@mail.ru
+src/common/classes/locks.cpp
+        The Original Code was created by Alexander Peshkoff for the Firebird
+	Open Source RDBMS project.
+        Copyright (c) 2003 Alexander Peshkoff <peshkoff@mail.ru>
+src/jrd/execute_statement.h
+	The Original Code was created by Alexander Peshkoff for the Firebird
+	Open Source RDBMS project.
+        Copyright (c) 2003 Alexander Peshkoff <peshkoff@mail.ru> and all
+        contributors signed below.
+        All Rights Reserved.
+        Contributor(s): Adriano dos Santos Fernandes
+src/jrd/execute_statement.cpp
+	 The Original Code was created by Alexander Peshkoff
+	 for the Firebird Open Source RDBMS project.
+	 Copyright (c) 2003 Alexander Peshkoff <peshkoff@mail.ru>
+	 Contributor(s): Adriano dos Santos Fernandes
+builds/posix/Makefile.in.client.gsec
+src/common/classes/auto.h
+src/common/classes/fb_pair.h
+src/common/classes/fb_string.cpp
+src/common/classes/fb_string.h
+src/common/classes/init.h
+src/common/classes/objects_array.h
+src/common/classes/stack.h
+src/common/classes/string_test.cmd
+src/common/classes/string_test.cpp
+src/misc/upgrade/v2/security_database.sql
+	The Original Code was created by Alexander Peshkoff
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2004 Alexander Peshkoff <peshkoff@mail.ru>
+src/common/classes/MetaName.cpp
+src/common/classes/MetaName.h
+	The Original Code was created by Alexander Peshkoff for the Firebird
+	Open Source RDBMS project.
+	Copyright (c) 2005 Alexander Peshkoff <peshkoff@mail.ru
+src/alice/aliceMain.cpp
+src/burp/burpMain.cpp
+src/utilities/gsec/gsecMain.cpp
+src/utilities/gstat/dba_proto.h
+src/utilities/gstat/gstatMain.cpp
+        The Original Code was created by Alex Peshkov for the Firebird Open 
+        Source RDBMS project.
+        Copyright (c) 2007 Alex Peshkov <peshkoff at mail dot ru>
+src/common/classes/Aligner.h
+src/common/classes/semaphore.cpp
+src/misc/src_bundle.sh
+src/utilities/fbsvcmgr.cpp
+src/common/UtilSvc.cpp
+src/common/UtilSvc.h
+        The Original Code was created by Alexander Peshkoff for the Firebird
+	Open Source RDBMS project.
+	Copyright (c) 2007 Alexander Peshkoff <peshkoff@mail.ru>
+src/common/StatusArg.cpp
+src/common/StatusArg.h
+src/common/cvt.h
+src/jrd/UserManagement.cpp
+src/jrd/UserManagement.h
+src/utilities/nbackup/nbkMain.cpp
+src/utilities/nbackup/nbk_proto.h
+src/utilities/nbackup/nbkswi.h
+        The Original Code was created by Alex Peshkov for the Firebird Open 
+        Source RDBMS project.
+        Copyright (c) 2008 Alex Peshkov <peshkoff at mail.ru>
+src/common/classes/VaryStr.h
+src/common/classes/Hash.h
+        The Original Code was created by Alex Peshkov for the Firebird Open 
+        Source RDBMS project.
+        Copyright (c) 2009 Alex Peshkov <peshkoff@mail.ru>
+src/jrd/os/os_utils.h
+src/jrd/os/posix/os_utils.cpp
+src/jrd/os/win32/os_utils.cpp
+        The Original Code was created by Alexander Peshkoff for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2009 Alexander Peshkoff <peshkoff@mail.ru>
+src/common/classes/init.cpp
+        The Original Code was created by Alexander Peshkoff for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2008 Alexander Peshkoff <peshkoff@mail.ru>
+src/common/classes/FpeControl.h
+        The Original Code was created by Alexander Peshkoff for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2008 Alexander Peshkoff <peshkoff@mail.ru>,
+                           Bill Oliver <Bill.Oliver@sas.com>
+src/jrd/os/win32/win9x_nt.h
+        The Original Code was created by Alexander Peshkoff for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2009 Nikolay Samofatov <skidder at users.sourceforge.net>
+src/jrd/btn.cpp
+src/jrd/btn.h
+	The Original Code was created by Arno Brinkman
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2003 Arno Brinkman
+src/jrd/Optimizer.h
+	The Original Code was created by Arno Brinkman
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2004 Arno Brinkman
+src/jrd/Optimizer.cpp
+	The Original Code was created by Arno Brinkman
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2004 Arno Brinkman <firebird@abvisie.nl>
+	and all contributors signed below.
+	Contributor(s):  Adriano dos Santos Fernandes
+src/common/classes/fb_atomic.il
+        The Original Code was created by Bill Oliver for the Firebird Open 
+        Source RDBMS project.
+        Copyright (c) 2009 Bill Oliver <Bill.Oliver@sas.com>
+src/common/stuff.h
+	The Original Code was created by Blas Rodriguez Somoza on 24-May-2004
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2004 Blas Rodriguez Somoza
+src/extlib/fbudf/*
+	The Original Code was created by Claudio Valderrama C. for IBPhoenix.
+	The development of the Original Code was sponsored by Craig Leonardi.
+	Copyright (c) 2001 IBPhoenix
+src/common/utils.cpp
+src/common/utils_proto.h
+	The Original Code was created by Claudio Valderrama on 25-Dec-2003 for
+	the Firebird Open Source RDBMS project.
+        Copyright (c) 2003 Claudio Valderrama and all contributors signed
+        below.
+        Contributors: Nickolay Samofatov <nickolay@broadviewsoftware.com>
+src/misc/upgrade/v2.1/metadata_charset.txt
+src/misc/upgrade/v2/ib_udf_upgrade.sql
+	The Original Code was created by Claudio Valderrama on 20-Sept-2004
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2004 Claudio Valderrama
+src/common/classes/BaseStream.cpp
+src/common/classes/BaseStream.h
+src/common/classes/MsgPrint.cpp
+src/common/classes/MsgPrint.h
+src/common/classes/SafeArg.cpp
+src/common/classes/SafeArg.h
+src/common/classes/TriState.h
+src/common/classes/UserBlob.cpp
+src/common/classes/UserBlob.h
+src/isql/Extender.cpp
+src/isql/Extender.h
+src/isql/PtrSentry.h
+src/isql/ColList.cpp
+src/isql/ColList.h
+src/isql/InputDevices.cpp
+src/isql/InputDevices.h
+src/isql/OptionsBase.cpp
+src/isql/OptionsBase.h
+	The Original Code was created by Claudio Valderrama for
+	the Firebird Open Source RDBMS project.
+	Copyright (c) 2007 Claudio Valderrama
+src/common/config/config.cpp
+src/common/config/config_file.cpp
+src/common/config/config_file.h
+src/common/config/config.h
+src/common/config/config_impl.h
+src/dsql/misc_func.cpp
+src/dsql/misc_func.h
+src/jrd/db_alias.cpp
+src/jrd/db_alias.h
+src/jrd/misc_func_ids.h
+        The Original Code was created by Dmitry Yemanov for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2002 Dmitry Yemanov <dimitr@users.sf.net>
+src/jrd/os/win32/config_root.cpp
+	The Original Code was created by Dmitry Yemanov for the Firebird Open
+	Source RDBMS project.
+        Copyright (c) 2002 Dmitry Yemanov <dimitr@users.sf.net> and all
+        contributors signed below.
+        All Rights Reserved.
+        Contributor(s): Adriano dos Santos Fernandes
+src/common/classes/timestamp.h
+src/include/types_pub.h
+	The Original Code was created by Dmitry Yemanov for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2004 Dmitry Yemanov <dimitr@users.sf.net>
+src/jrd/ods.cpp
+src/jrd/ods_proto.h
+	The Original Code was created by Dmitry Yemanov for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2005 Dmitry Yemanov <dimitr@users.sf.net>
+src/common/classes/File.h
+src/common/classes/TempFile.cpp
+src/common/classes/TempFile.h
+src/jrd/DatabaseSnapshot.cpp
+src/jrd/DatabaseSnapshot.h
+src/jrd/RecordBuffer.cpp
+src/jrd/RecordBuffer.h
+src/jrd/RuntimeStatistics.cpp
+src/jrd/RuntimeStatistics.h
+src/jrd/TempSpace.cpp
+src/jrd/TempSpace.h
+src/jrd/VirtualTable.cpp
+src/jrd/VirtualTable.h
+	The Original Code was created by Dmitry Yemanov for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2006 Dmitry Yemanov <dimitr@users.sf.net>
+src/common/classes/PublicHandle.cpp
+src/common/classes/PublicHandle.h
+         The Original Code was created by Dmitry Yemanov for the Firebird Open 
+         Source RDBMS project.
+        Copyright (c) 2008 Dmitry Yemanov <dimitr@users.sf.net>
+src/jrd/os/darwin/config_root.cpp
+src/jrd/os/mod_loader.h
+src/jrd/os/path_utils.h
+src/jrd/os/posix/mod_loader.cpp
+src/jrd/os/posix/path_utils.cpp
+        The Original Code was created by John Bellardo
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2002 John Bellardo <bellardo at cs.ucsd.edu>
+src/jrd/os/darwin/mod_loader.cpp
+	The Original Code was created by John Bellardo
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2002 John Bellardo <bellardo at cs.ucsd.edu>
+	Contributors: Paul Beach
+src/common/dllinst.cpp
+src/common/dllinst.h
+src/jrd/trace/TraceCmdLine.cpp
+src/jrd/trace/TraceConfigStorage.cpp
+src/jrd/trace/TraceConfigStorage.h
+src/jrd/trace/TraceLog.cpp
+src/jrd/trace/TraceLog.h
+src/jrd/trace/TraceService.cpp
+src/jrd/trace/TraceService.h
+src/jrd/trace/TraceSession.h
+        The Original Code was created by Khorsun Vladyslav for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2008 Khorsun Vladyslav <hvlad@users.sourceforge.net>
+src/jrd/trace/TraceDSQLHelpers.h
+src/jrd/trace/TraceJrdHelpers.h
+src/jrd/trace/TraceObjects.cpp
+src/jrd/trace/TraceObjects.h
+src/utilities/ntrace/PluginLogWriter.cpp
+src/utilities/ntrace/PluginLogWriter.h
+src/utilities/ntrace/TraceConfiguration.cpp
+src/utilities/ntrace/TraceConfiguration.h
+        The Original Code was created by Khorsun Vladyslav for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2009 Khorsun Vladyslav <hvlad@users.sourceforge.net>
+src/utilities/ntrace/TraceUnicodeUtils.cpp
+src/utilities/ntrace/TraceUnicodeUtils.h
+        The Original Code was created by Khorsun Vladyslav for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2010 Khorsun Vladyslav <hvlad@users.sourceforge.net>
+builds/install/arch-specific/linux/Makefile.in
+builds/posix/make.rules
+builds/install/misc/fb_config.in
+        Created by: Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+builds/install/arch-specific/aix/misc/postinstall.sh.in
+builds/install/arch-specific/freebsd/freebsdLibrary.sh.in
+builds/install/arch-specific/linux/misc/linuxLibrary.sh.in
+builds/install/arch-specific/linux/misc/makeInstallImage.sh.in
+builds/install/arch-specific/linux/misc/postinstall.sh.in
+builds/install/arch-specific/linux/misc/postuninstall.sh.in
+builds/install/arch-specific/linux/misc/preinstall.sh.in
+builds/install/arch-specific/linux/misc/preuninstall.sh.in
+builds/install/arch-specific/linux/misc/tarMainInstall.sh.in
+builds/install/arch-specific/linux/misc/tarMainUninstall.sh.in
+builds/install/arch-specific/linux/misc/tarinstall.sh.in
+builds/install/arch-specific/linux/misc/taruninstall.sh.in
+builds/install/misc/changeGdsLibraryCompatibleLink.sh.in
+builds/install/misc/changeMultiConnectMode.sh.in
+builds/install/misc/changeRunUser.sh.in
+builds/install/misc/classicLibrary.sh.in
+builds/install/misc/posixLibrary.sh.in
+builds/install/misc/restoreRootRunUser.sh.in
+builds/install/misc/superLibrary.sh.in
+        Copyright (c) Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+        and all contributors signed below.
+        All Rights Reserved.
+        Contributor: Alex Peshkoff
+src/include/editline.h
+	The Original Code was created by Mark O'Donohue for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2002 Mark O'Donohue <skywalker@users.sourceforge.net>
+src/dsql/keywords.cpp
+	The Original Code was created by Mark O'Donohue for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2002 Mark O'Donohue <skywalker@users.sourceforge.net> and
+        all contributors signed below.
+        All Rights Reserved.
+        Contributor: Adriano dos Santos Fernandes, Claudio Valderrama
+builds/install/arch-specific/freebsd/install.sh.in
+        The Original Code was created by Mark O'Donohue
+        for the Firebird Open Source RDBMS project.
+        Copyright (c) Mark O'Donohue <mark.odonohue@ludwig.edu.au> and Chris 
+        Knight <chris@e-easy.com.au> and all contributors signed below.
+        All Rights Reserved.
+        Contributor: Alex Peshkoff
+src/jrd/os/posix/config_root.cpp
+	The Original Code was created by Mark O'Donohue for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2002 Mark O'Donohue <skywalker@users.sourceforge.net> and
+        all contributors signed below.
+        All Rights Reserved.
+        Contributor: Nickolay Samofatov
+src/jrd/status.h
+	The Original Code was created by Mike Nordell
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2001 Mike Nordell <tamlin at algonet.se>
+src/jrd/status.cpp
+	The Original Code was created by Mike Nordell
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2001 Mike Nordell <tamlin at algonet.se>
+	and all contributors signed below.
+	Contributors: Sean Leyne
+src/include/fb_types.h
+	The Original Code was created by Mike Nordell and Mark O'Donohue
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2001 Mike Nordel <tamlin@algonet.se>,
+		Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+		and all contributors signed below.
+	Contributors: Sean Leyne
+src/include/firebird.h
+	The Original Code was created by Mark O'Donohue, Mike Nordell and John
+        Bellardo
+        for the Firebird Open Source RDBMS project.
+	Copyright (c) 2001
+		Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+		Mike Nordell   <tamlin@algonet.se>
+		John Bellardo  <bellardo@cs.ucsd.edu>
+		and all contributors signed below.
+	Contributors: Alex Peshkov
+src/include/fb_exception.h
+	The Original Code was created by Mike Nordell
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2001 Mike Nordell <tamlin at algonet.se>
+src/vulcan/PathName.cpp
+src/vulcan/PathName.h
+	The Original Code was created by James A. Starkey for IBPhoenix.
+	Copyright (c) 2004 James A. Starkey
+src/config/AdminException.cpp
+src/config/AdminException.h
+src/config/Args.cpp
+src/config/ArgsException.cpp
+src/config/ArgsException.h
+src/config/Args.h
+src/config/ConfigFile.cpp
+src/config/ConfigFile.h
+src/config/Configuration.cpp
+src/config/Configuration.h
+src/config/ConfObj.cpp
+src/config/ConfObject.cpp
+src/config/ConfObject.h
+src/config/ConfObj.h
+src/config/Element.cpp
+src/config/Element.h
+src/config/InputFile.cpp
+src/config/InputFile.h
+src/config/InputStream.cpp
+src/config/InputStream.h
+src/config/Lex.cpp
+src/config/Lex.h
+src/config/ScanDir.cpp
+src/config/ScanDir.h
+src/config/Stream.cpp
+src/config/Stream.h
+src/config/StreamSegment.cpp
+src/config/StreamSegment.h
+src/vulcan/RefObject.cpp
+src/vulcan/RefObject.h
+	The Original Code was created by James A. Starkey for IBPhoenix.
+	Copyright (c) 1997 - 2000, 2001, 2003 James A. Starkey
+	Copyright (c) 1997 - 2000, 2001, 2003 Netfrastructure, Inc.
+	All Rights Reserved.
+builds/posix/fbintl.hpux.vers
+builds/posix/fbintl.vers
+builds/posix/Makefile.in.codes
+src/common/classes/alloc.cpp
+src/common/classes/class_perf.cpp
+src/common/classes/class_test.cpp
+src/common/classes/ClumpletReader.cpp
+src/common/classes/ClumpletReader.h
+src/common/classes/ClumpletWriter.cpp
+src/common/classes/ClumpletWriter.h
+src/common/classes/fb_atomic.h
+src/common/classes/fb_tls.h
+src/common/classes/GenericMap.h
+src/common/classes/locks.h
+src/common/classes/semaphore.h
+src/common/classes/sparse_bitmap.h
+src/common/classes/tree.h
+src/common/classes/vector.h
+src/jrd/evl_string.h
+src/jrd/evl_string_test.cpp
+src/jrd/functions.h
+src/jrd/intl_classes.h
+src/jrd/os/guid.h
+src/jrd/os/posix/guid.cpp
+src/jrd/os/win32/guid.cpp
+src/jrd/RecordNumber.h
+src/utilities/ntrace/TracePluginConfig.h
+src/utilities/ntrace/os/FileObject.h
+src/utilities/ntrace/os/platform.h
+src/utilities/ntrace/os/posix/FileObject.cpp
+src/utilities/ntrace/os/posix/platform.cpp
+src/utilities/ntrace/os/win32/FileObject.cpp
+src/utilities/ntrace/os/win32/platform.cpp
+        The Original Code was created by Nickolay Samofatov for the Firebird
+	Open Source RDBMS project.
+	Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com>
+src/jrd/TextType.h
+src/utilities/nbackup.cpp
+src/jrd/CharSet.h
+src/jrd/Collation.h
+src/jrd/CsConvert.h
+src/jrd/intlobj_new.h
+builds/posix/ib_util.hpux.vers
+builds/posix/ib_util.vers
+	The Original Code was created by Nickolay Samofatov
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com>
+	and all contributors signed below.
+	All Rights Reserved.
+	Contributor(s): Adriano dos Santos Fernandes
+builds/posix/fbtrace.hpux.vers
+builds/posix/fbtrace.vers
+        The Original Code was created by Nickolay Samofatov for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com>
+        and all contributors signed below.
+        All Rights Reserved.
+        Contributors: Adriano dos Santos Fernandes, Alex Peshkov
+src/jrd/nbak.h
+        The Original Code was created by Nickolay Samofatov for the Firebird
+	Open Source RDBMS project.
+        Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com> 
+        and all contributors signed below.
+        All Rights Reserved.
+        Contributor(s): Roman Simakov <roman-simakov@users.sourceforge.net>
+src/jrd/nbak.cpp
+        The Original Code was created by Nickolay Samofatov for the Firebird
+	Open Source RDBMS project.
+        Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com> 
+        and all contributors signed below.
+        All Rights Reserved.
+        Contributor(s): Roman Simakov <roman-simakov@users.sourceforge.net>
+                        Khorsun Vladyslav <hvlad@users.sourceforge.net>
+src/jrd/GlobalRWLock.cpp
+src/jrd/GlobalRWLock.h
+	The Original Code was created by Nickolay Samofatov for the Firebird
+	Open Source RDBMS project.
+        Copyright (c) 2006 Nickolay Samofatov <nickolay@broadviewsoftware.com> 
+        and all contributors signed below.
+        All Rights Reserved.
+        Contributor(s): Roman Simakov <roman-simakov@users.sourceforge.net>
+src/common/classes/alloc.h
+builds/posix/fbtrace.darwin.vers
+	The Original Code was created by Nickolay Samofatov for the Firebird
+	Open Source RDBMS project.
+	STL allocator is based on one by Mike Nordell and John Bellardo
+	Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com>
+	All Rights Reserved.
+	Contributor(s): Alex Peshkoff <peshkoff@mail.ru>
+src/common/classes/rwlock.h
+	The Original Code was created by Nickolay Samofatov for the Firebird
+	Open Source RDBMS project.
+	Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com>
+	Contributors: Adriano dos Santos Fernandes
+src/jrd/ntrace.h
+src/jrd/trace/TraceManager.cpp
+src/jrd/trace/TraceManager.h
+src/utilities/ntrace/TracePluginImpl.cpp
+src/utilities/ntrace/TracePluginImpl.h
+src/utilities/ntrace/paramtable.h
+src/utilities/ntrace/traceplugin.cpp
+	The Original Code was created by Nickolay Samofatov for the Firebird
+	Open Source RDBMS project.
+	Copyright (c) 2004 Nickolay Samofatov <nickolay@broadviewsoftware.com>
+        Contributors: 2008 Khorsun Vladyslav
+src/utilities/install/install_client.cpp
+src/utilities/install/install.cpp
+src/utilities/install/install_proto.h
+	The Original Code is (C) 2003 Olivier Mascia.
+	The Initial Developer of the Original Code is Olivier Mascia.
+builds/posix/fbintl.darwin.vers
+	This code was created by Paul Beach, IBPhoenix based on code created by
+	Nickolay Samofatov for the Firebird Open Source RDBMS project.
+builds/posix/ib_util.darwin.vers
+        This code was created by Paul Beach, IBPhoenix based on code created by
+        Nickolay Samofatov for the Firebird Open Source RDBMS project.
+        All Rights Reserved.
+        Contributor(s): Adriano dos Santos Fernandes
+builds/install/arch-specific/darwin/changeMultiConnectMode
+        The Original Code was created by Paul Beach based on the original Posix 
+        script created by Alex Peshkov for the Firebird Open Source RDBMS 
+        project.
+        Copyright (c) 2009 Paul Beach <pbeach@ibphoenix.com>
+                           Alex Peshkov <peshkov@mail.ru>
+builds/posix/firebird.darwin.client.vers
+builds/posix/firebird.darwin.embed.vers
+	This Code was created by Paul Beach, IBPhoenix
+	based on original code created by Inprise and Nickolay Somofatov
+	based on firebird.vers (Nickolay Samofatov) and fbclient.def (Inprise)
+builds/install/arch-specific/win32/FirebirdInstallEnvironmentChecks.inc
+builds/install/arch-specific/win32/FirebirdInstallSupportFunctions.inc
+	The Original Code is copyright 2001-2003 Paul Reeves for IBPhoenix.
+	The Initial Developer of the Original Code is Paul Reeves for IBPhoenix.
+	All Rights Reserved.
+builds/install/arch-specific/win32/BuildExecutableInstall.bat
+	The Original Code is copyright 2003-2004 Paul Reeves.
+	The Initial Developer of the Original Code is Paul Reeves
+builds/install/arch-specific/win32/FirebirdInstall_20.iss
+	The Original Code is copyright 2001-2003 Paul Reeves for IBPhoenix.
+	The Initial Developer of the Original Code is Paul Reeves for IBPhoenix.
+	All Rights Reserved.
+	Contributor(s):
+	    Tilo Muetze, Theo ? and Michael Rimov for improved detection of an
+	    existing install directory.
+	    Simon Carter for the WinSock2 detection.
+	    Philippe Makowski for internationalization and french translation
+	    Sergey Nikitin for migrating to ISS v5.
+src/utilities/fbcpl/fbdialog.cpp
+src/utilities/fbcpl/fbdialog.h
+src/utilities/fbcpl/fbpanel.cpp
+src/utilities/fbcpl/fbpanel.h
+	The Initial Developer of the Original Code is Paul Reeves.
+	The Original Code is (C) 2003 Paul Reeves
+src/common/classes/condition.h
+        The Original Code was created by Roman Simakov for the Red Soft Corp 
+        and Firebird Open Source RDBMS project.
+        Copyright (c) 2008 Roman Simakov
+src/gpre/fbrmclib.cpp
+	The Original Code was created by Stephen W. Boyd
+	for the Firebird Open Source RDBMS project.
+	Copyright (c) 2006 Steve Boyd <sboydlns at gmail.com>
+src/common/classes/RefMutex.h
+        The Original Code was created by Vlad Khorsun for the Firebird Open 
+        Source RDBMS project.
+        Copyright (c) 2004 Vlad Khorsun <hvlad@users.sf.net> and all 
+        contributors signed below.
+        All Rights Reserved.
+        Contributor(s):
+            Alex Peshkov <peshkoff@mail.ru>
+            Dmitry Yemanov <dimitr@users.sf.net>
+src/jrd/Relation.cpp
+	The Original Code was created by Vlad Khorsun for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2005 Vlad Khorsun <hvlad at users.sourceforge.net>
+src/jrd/DebugInterface.cpp
+src/jrd/DebugInterface.h
+	The Original Code was created by Vlad Khorsun for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2006 Vlad Khorsun <hvlad at users.sourceforge.net>
+src/common/StatusHolder.cpp
+src/common/StatusHolder.h
+src/jrd/extds/ExtDS.h
+src/jrd/extds/IscDS.cpp
+src/jrd/extds/IscDS.h
+	The Original Code was created by Vlad Khorsun for the Firebird Open
+	Source RDBMS project.
+	Copyright (c) 2007 Vlad Khorsun <hvlad at users.sourceforge.net>
+src/jrd/extds/ExtDS.cpp
+        The Original Code was created by Vladyslav Khorsun for the Firebird 
+        Open Source RDBMS project and based on execute_statement module by 
+        Alexander Peshkoff.
+        Copyright (c) 2007 Vladyslav Khorsun <hvlad@users.sourceforge.net>
+src/common/classes/RefCounted.h
+src/jrd/extds/InternalDS.cpp
+src/jrd/extds/InternalDS.h
+        The Original Code was created by Vlad Khorsun for the Firebird Open
+        Source RDBMS project.
+        Copyright (c) 2008 Vlad Khorsun <hvlad at users.sourceforge.net>
+src/utilities/fbtracemgr/traceMgrMain.cpp
+        The Original Code was created by Vladyslav Khorsun for the Firebird 
+        Open Source RDBMS project.
+        Copyright (c) 2009 Vladyslav Khorsun <hvlad@users.sourceforge.net>
+
+
+
+LGPL-2.1 with exception
+-----------------------
+builds/posix/Makefile.in.fbtrace
+builds/posix/Makefile.in.smp_server
+builds/posix/Makefile.in.static.createdb
+        Created by:  Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+builds/install/arch-specific/aix/classic/makeInstallImage.sh.in
+builds/install/arch-specific/aix/Makefile.in
+builds/install/arch-specific/aix/misc/postuninstall.sh.in
+builds/install/arch-specific/aix/misc/preinstall.sh.in
+builds/install/arch-specific/aix/misc/preuninstall.sh.in
+builds/install/arch-specific/aix/misc/tarinstall.sh.in
+builds/install/arch-specific/aix/misc/tarmaininstall.sh.in
+builds/install/arch-specific/aix/misc/tarmainuninstall.sh.in
+builds/install/arch-specific/aix/misc/taruninstall.sh.in
+builds/install/arch-specific/freebsd/Makefile.in
+builds/install/arch-specific/netbsd/Makefile.in
+	Created by:  Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+	Contributor(s): Chris Knight <chris@e-easy.com.au>
+builds/install/arch-specific/hpux/classic/makeinstallImage.sh.in
+builds/install/arch-specific/hpux/classic/postInstall.sh.in
+builds/install/arch-specific/hpux/classic/postUninstall.sh.in
+builds/install/arch-specific/hpux/classic/preInstall.sh.in
+builds/install/arch-specific/hpux/classic/preUninstall.sh.in
+builds/install/arch-specific/hpux/classic/tarInstall.sh.in
+builds/install/arch-specific/hpux/classic/tarmainInstall.sh.in
+builds/install/arch-specific/hpux/classic/tarmainUninstall.sh.in
+builds/install/arch-specific/hpux/classic/tarUninstall.sh.in
+builds/install/arch-specific/hpux/Makefile.in
+builds/install/arch-specific/hpux/misc/changegdslibrarycompatibleLink.sh.in
+builds/install/arch-specific/hpux/misc/createaliasDB.sh.in
+builds/install/arch-specific/hpux/misc/firebird.init.d.hpux.in
+builds/install/arch-specific/hpux/misc/hpuxLibrary.sh.in
+builds/install/arch-specific/hpux/super/makeinstallImage.sh.in
+builds/install/arch-specific/hpux/super/tarInstall.sh.in
+builds/install/arch-specific/hpux/super/tarmainInstall.sh.in
+builds/install/arch-specific/hpux/super/tarmainUninstall.sh.in
+builds/install/arch-specific/hpux/super/tarUninstall.sh.in
+builds/install/misc/createAliasDB.sh.in
+builds/posix/Makefile.in.boot.gpre
+builds/posix/Makefile.in.client.gbak
+builds/posix/Makefile.in.client.gdef
+builds/posix/Makefile.in.client.gfix
+builds/posix/Makefile.in.client.gpre
+builds/posix/Makefile.in.client.isql
+builds/posix/Makefile.in.client.qli
+builds/posix/Makefile.in.client.util
+builds/posix/Makefile.in.embed.gbak
+builds/posix/Makefile.in.embed.gdef
+builds/posix/Makefile.in.embed.gfix
+builds/posix/Makefile.in.embed.gpre
+builds/posix/Makefile.in.embed.isql
+builds/posix/Makefile.in.embed.qli
+builds/posix/Makefile.in.embed.util
+builds/posix/Makefile.in.examples
+builds/posix/Makefile.in.extlib
+builds/posix/Makefile.in.fbserver
+builds/posix/Makefile.in.fbutil
+builds/posix/Makefile.in.firebird
+builds/posix/Makefile.in.inet_server
+builds/posix/Makefile.in.intl
+builds/posix/Makefile.in.libfbclient
+builds/posix/Makefile.in.libfbembed
+builds/posix/Makefile.in.libfbstatic
+builds/posix/Makefile.in.msgs
+builds/posix/Makefile.in.refDatabases
+builds/posix/Makefile.in.static.gbak
+builds/posix/Makefile.in.static.gpre
+builds/posix/Makefile.in.static.isql
+builds/posix/make.shared.targets
+examples/build_unix/Makefile.in.v5_examples
+	Created by:  Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+builds/install/arch-specific/netbsd/install.sh.in
+	Created by: Chris Knight <chris@e-easy.com.au>
+	Contributor(s): James K. Lowden <jklowden@schemamania.org>
+builds/posix/Makefile.in.client.fbudf
+builds/posix/Makefile.in.embed.fbudf
+	Created by:  Blas Rodriguez Somoza
+src/install/arch-specific/solx86gcc/Makefile.in
+	Created by:  Erik Kunze <Erik.Kunze@philosys.de>
+builds/posix/Makefile.in.extern.editline
+	Created by:  Erik Kunze <Erik.Kunze@philosys.de>
+	Contributors: Alex Peshkov
+
+
+MPL-1.1 | GPL-2+
+----------------
+builds/posix/make.defaults
+examples/build_unix/Makefile.in.example5
+	Created by: Mark O'Donohue <mark.odonohue@ludwig.edu.au>
+
+BSD-like licensing
+------------------
+src/jrd/enc.cpp
+ Copyright (c) 1989 The Regents of the University of California.
+ All rights reserved.
+ .
+ This code is derived from software contributed to Berkeley by
+ Tom Truscott.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+      This product includes software developed by the University of
+      California, Berkeley and its contributors.
+ 4. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+
+Other licensing
+---------------
+acx_pthread.m4
+  Available from the GNU Autoconf Macro Archive
+  Current version is at http://autoconf-archive.cryp.to/acx_pthread.html
+  That page says:
+     Copyright © 2007 Steven G. Johnson <stevenj@alum.mit.edu>
+ .
+     This program is free software: you can redistribute it and/or modify it
+     under the terms of the GNU General Public License as published by the Free
+     Software Foundation, either version 3 of the License, or (at your option)
+     any later version.
+     .
+     This program is distributed in the hope that it will be useful, but
+     WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+     or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+     for more details.
+     .
+     You should have received a copy of the GNU General Public License along
+     with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+     As a special exception, the respective Autoconf Macro's copyright owner
+     gives unlimited permission to copy, distribute and modify the configure
+     scripts that are the output of Autoconf when processing the Macro. You
+     need not follow the terms of the GNU General Public License when using or
+     distributing such scripts, even though portions of the text of the Macro
+     appear in them. The GNU General Public License (GPL) does govern all other
+     use of the material that constitutes the Autoconf Macro.
+ .
+     This special exception to the GPL applies to versions of the Autoconf
+     Macro released by the Autoconf Macro Archive. When you make and distribute
+     a modified version of the Autoconf Macro, you may extend this special
+     exception to the GPL to apply to your modified version as well.
+ .
+   The full text of GNU General Public License version 3 can be found at
+   /usr/share/common-licenses/GPL-3 on every Debian system.
+
+configure
+    # Generated by GNU Autoconf 2.61.
+    #
+    # Copyright (C) 1992, 1993, 1994, 1995, 1996, 1998, 1999, 2000, 2001,
+    # 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
+    # This configure script is free software; the Free Software Foundation
+    # gives unlimited permission to copy, distribute and modify it.
+
+builds/install/misc/IDPLicense.txt
+builds/install/misc/IPLicense.txt
+doc/license/IDPL.txt
+    # license texts
+
+builds/make.new/config/config.guess
+ Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
+ 2000, 2001, 2002, 2003, 2004, 2005 Free Software Foundation, Inc.
+ .
+ This file is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA
+ 02110-1301, USA.
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+ .
+ Originally written by Per Bothner <per@bothner.com>.
+ .
+ The full text of GNU General Public License version 2 can be found at
+ /usr/share/common-licenses/GPL-2 on every Debian system.
+
+builds/make.new/config/ltmain.sh
+ Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005
+ Free Software Foundation, Inc.
+ Originally by Gordon Matzigkeit <gord@gnu.ai.mit.edu>, 1996
+ 
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ 
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+ .
+ The full text of GNU General Public License version 2 can be found at
+ /usr/share/common-licenses/GPL-2 on every Debian system.
+
+extern/btyacc/*
+ BTYACC was created by Chris Dodd using ideas from many places and lots of code
+ from the Berkeley Yacc distribution, which is a public domain yacc clone put
+ together by the good folks at Berkeley.  This code is distributed with NO
+ WARRANTEE and is public domain.  It is certain to contain bugs, which you
+ should report to: chrisd@collins.com.
+ .
+ Vadim Maslov of Siber Systems <vadik@siber.com> considerably modified BTYACC
+ to make it suitable for production environment.
+
+src/jrd/sha.cpp
+ NIST Secure Hash Algorithm
+ heavily modified by Uwe Hollerbach <uh@alumni.caltech edu>
+ from Peter C. Gutmann's implementation as found in
+ Applied Cryptography by Bruce Schneier
+ This code is in the public domain
+
+
+
+
+
+
+		*********************************
+		*                               *
+		*   L I C E N S E   T E X T S   *
+		*                               *
+		*********************************
+
+=========================================================================
+INTERBASE PUBLIC LICENSE
+
+Version 1.0
+
+1. Definitions.
+
+1.0.1. "Commercial Use" means distribution or otherwise making the Covered
+Code available to a third party.
+
+1.1. ''Contributor'' means each entity that creates or contributes to the
+creation of Modifications.
+
+1.2. ''Contributor Version'' means the combination of the Original Code,
+prior Modifications used by a Contributor, and the Modifications made by
+that particular Contributor.
+
+1.3. ''Covered Code'' means the Original Code or Modifications or the
+combination of the Original Code and Modifications, in each case including
+portions thereof.
+
+1.4. ''Electronic Distribution Mechanism'' means a mechanism generally
+accepted in the software development community for the electronic transfer
+of data.
+
+1.5. ''Executable'' means Covered Code in any form other than Source Code.
+
+1.6. ''Initial Developer'' means the individual or entity identified as
+the Initial Developer in the Source Code notice required by Exhibit A.
+
+1.7. ''Larger Work'' means a work which combines Covered Code or portions
+thereof with code not governed by the terms of this License.
+
+1.8. ''License'' means this document.
+
+1.8.1. "Licensable" means having the right to grant, to the maximum extent
+possible, whether at the time of the initial grant or subsequently acquired,
+any and all of the rights conveyed herein.
+
+1.9. ''Modifications'' means any addition to or deletion from the substance
+or structure of either the Original Code or any previous Modifications. When
+Covered Code is released as a series of files, a Modification is:
+
+A. Any addition to or deletion from the contents of a file containing
+Original Code or previous Modifications.
+
+B. Any new file that contains any part of the Original Code or previous
+Modifications.
+
+1.10. ''Original Code'' means Source Code of computer software code which
+is described in the Source Code notice required by Exhibit A as Original
+Code, and which, at the time of its release under this License is not
+already Covered Code governed by this License.
+
+1.10.1. "Patent Claims" means any patent claim(s), now owned or hereafter
+acquired, including without limitation, method, process, and apparatus
+claims, in any patent Licensable by grantor.
+
+1.11. ''Source Code'' means the preferred form of the Covered Code for
+making modifications to it, including all modules it contains, plus any
+associated interface definition files, scripts used to control compilation
+and installation of an Executable, or source code differential comparisons
+against either the Original Code or another well known, available Covered
+Code of the Contributor's choice. The Source Code can be in a compressed or
+archival form, provided the appropriate decompression or de-archiving
+software is widely available for no charge.
+
+1.12. "You'' (or "Your") means an individual or a legal entity exercising
+rights under, and complying with all of the terms of, this License or a
+future version of this License issued under Section 6.1. For legal entities,
+"You'' includes any entity which controls, is controlled by, or is under
+common control with You. For purposes of this definition, "control'' means
+(a) the power, direct or indirect, to cause the direction or management of
+such entity, whether by contract or otherwise, or (b) ownership of more
+than fifty percent (50%) of the outstanding shares or beneficial ownership
+of such entity.
+
+2. Source Code License.
+
+2.1. The Initial Developer Grant.
+
+The Initial Developer hereby grants You a world-wide, royalty-free,
+non-exclusive license, subject to third party intellectual property claims:
+
+(a) under intellectual property rights (other than patent or trademark)
+Licensable by Initial Developer to use, reproduce, modify, display, perform,
+sublicense and distribute the Original Code (or portions thereof) with or
+without Modifications, and/or as part of a Larger Work; and
+
+(b) under Patents Claims infringed by the making, using or selling of
+Original Code, to make, have made, use, practice, sell, and offer for sale,
+and/or otherwise dispose of the Original Code (or portions thereof).
+
+(c) the licenses granted in this Section 2.1(a) and (b) are effective on the
+date Initial Developer first distributes Original Code under the terms of
+this License.
+
+(d) Notwithstanding Section 2.1(b) above, no patent license is granted:
+1) for code that You delete from the Original Code; 2) separate from the
+Original Code; or 3) for infringements caused by: i) the modification of the
+Original Code or ii) the combination of the Original Code with other
+software or devices.
+
+2.2. Contributor Grant.
+
+Subject to third party intellectual property claims, each Contributor hereby
+grants You a world-wide, royalty-free, non-exclusive license
+
+(a) under intellectual property rights (other than patent or trademark)
+Licensable by Contributor, to use, reproduce, modify, display, perform,
+sublicense and distribute the Modifications created by such Contributor
+(or portions thereof) either on an unmodified basis, with other
+Modifications, as Covered Code and/or as part of a Larger Work; and
+
+(b) under Patent Claims infringed by the making, using, or selling of
+Modifications made by that Contributor either alone and/or in combination
+with its Contributor Version (or portions of such combination), to make,
+use, sell, offer for sale, have made, and/or otherwise dispose of:
+1) Modifications made by that Contributor (or portions thereof); and 2) the
+combination of Modifications made by that Contributor with its Contributor
+Version (or portions of such combination).
+
+(c) the licenses granted in Sections 2.2(a) and 2.2(b) are effective on the
+date Contributor first makes Commercial Use of the Covered Code.
+
+(d) Notwithstanding Section 2.2(b) above, no patent license is granted:
+1) for any code that Contributor has deleted from the Contributor Version;
+2) separate from the Contributor Version; 3) for infringements caused by:
+i) third party modifications of Contributor Version or ii) the combination
+of Modifications made by that Contributor with other software (except as
+part of the Contributor Version) or other devices; or 4) under Patent Claims
+infringed by Covered Code in the absence of Modifications made by that
+Contributor.
+
+3. Distribution Obligations.
+
+3.1. Application of License.
+
+The Modifications which You create or to which You contribute are governed
+by the terms of this License, including without limitation Section 2.2. The
+Source Code version of Covered Code may be distributed only under the terms
+of this License or a future version of this License released under Section
+6.1, and You must include a copy of this License with every copy of the
+Source Code You distribute. You may not offer or impose any terms on any
+Source Code version that alters or restricts the applicable version of this
+License or the recipients' rights hereunder. However, You may include an
+additional document offering the additional rights described in Section 3.5.
+
+3.2. Availability of Source Code.
+
+Any Modification which You create or to which You contribute must be made
+available in Source Code form under the terms of this License either on the
+same media as an Executable version or via an accepted Electronic
+Distribution Mechanism to anyone to whom you made an Executable version
+available; and if made available via Electronic Distribution Mechanism,
+must remain available for at least twelve (12) months after the date it
+initially became available, or at least six (6) months after a subsequent
+version of that particular Modification has been made available to such
+recipients. You are responsible for ensuring that the Source Code version
+remains available even if the Electronic Distribution Mechanism is
+maintained by a third party.
+
+3.3. Description of Modifications.
+
+You must cause all Covered Code to which You contribute to contain a file
+documenting the changes You made to create that Covered Code and the date
+of any change. You must include a prominent statement that the Modification
+is derived, directly or indirectly, from Original Code provided by the
+Initial Developer and including the name of the Initial Developer in
+(a) the Source Code, and (b) in any notice in an Executable version or
+related documentation in which You describe the origin or ownership of the
+Covered Code.
+
+3.4. Intellectual Property Matters
+
+(a) Third Party Claims.
+
+If Contributor has knowledge that a license under a third party's
+intellectual property rights is required to exercise the rights granted by
+such Contributor under Sections 2.1 or 2.2, Contributor must include a text
+file with the Source Code distribution titled "LEGAL'' which describes the
+claim and the party making the claim in sufficient detail that a recipient
+will know whom to contact. If Contributor obtains such knowledge after the
+Modification is made available as described in Section 3.2, Contributor
+shall promptly modify the LEGAL file in all copies Contributor makes
+available thereafter and shall take other steps (such as notifying
+appropriate mailing lists or newsgroups) reasonably calculated to inform
+those who received the Covered Code that new knowledge has been obtained.
+
+(b) Contributor APIs.
+
+If Contributor's Modifications include an application programming interface
+and Contributor has knowledge of patent licenses which are reasonably
+necessary to implement that API, Contributor must also include this
+information in the LEGAL file.
+
+(c) Representations.
+
+Contributor represents that, except as disclosed pursuant to Section 3.4(a)
+above, Contributor believes that Contributor's Modifications are
+Contributor's original creation(s) and/or Contributor has sufficient rights
+to grant the rights conveyed by this License.
+
+3.5. Required Notices.
+
+You must duplicate the notice in Exhibit A in each file of the Source Code.
+If it is not possible to put such notice in a particular Source Code file
+due to its structure, then You must include such notice in a location (such
+as a relevant directory) where a user would be likely to look for such a
+notice. If You created one or more Modification(s) You may add your name as
+a Contributor to the notice described in Exhibit A. You must also duplicate
+this License in any documentation for the Source Code where You describe
+recipients' rights or ownership rights relating to Covered Code. You may
+choose to offer, and to charge a fee for, warranty, support, indemnity or
+liability obligations to one or more recipients of Covered Code. However,
+You may do so only on Your own behalf, and not on behalf of the Initial
+Developer or any Contributor. You must make it absolutely clear than any
+such warranty, support, indemnity or liability obligation is offered by You
+alone, and You hereby agree to indemnify the Initial Developer and every
+Contributor for any liability incurred by the Initial Developer or such
+Contributor as a result of warranty, support, indemnity or liability terms
+You offer.
+
+3.6. Distribution of Executable Versions.
+
+You may distribute Covered Code in Executable form only if the requirements
+of Section 3.1-3.5 have been met for that Covered Code, and if You include
+a notice stating that the Source Code version of the Covered Code is
+available under the terms of this License, including a description of how
+and where You have fulfilled the obligations of Section 3.2. The notice must
+be conspicuously included in any notice in an Executable version, related
+documentation or collateral in which You describe recipients' rights relating
+to the Covered Code. You may distribute the Executable version of Covered
+Code or ownership rights under a license of Your choice, which may contain
+terms different from this License, provided that You are in compliance with
+the terms of this License and that the license for the Executable version
+does not attempt to limit or alter the recipient's rights in the Source Code
+version from the rights set forth in this License. If You distribute the 
+Executable version under a different license You must make it absolutely
+clear that any terms which differ from this License are offered by You alone, 
+not by the Initial Developer or any Contributor. You hereby agree to
+indemnify the Initial Developer and every Contributor for any liability
+incurred by the Initial Developer or such Contributor as a result of any
+such terms You offer.
+
+3.7. Larger Works.
+
+You may create a Larger Work by combining Covered Code with other code not
+governed by the terms of this License and distribute the Larger Work as a
+single product. In such a case, You must make sure the requirements of this
+License are fulfilled for the Covered Code.
+
+4. Inability to Comply Due to Statute or Regulation.
+
+If it is impossible for You to comply with any of the terms of this License
+with respect to some or all of the Covered Code due to statute, judicial
+order, or regulation then You must: (a) comply with the terms of this
+License to the maximum extent possible; and (b) describe the limitations and
+the code they affect. Such description must be included in the LEGAL file
+described in Section 3.4 and must be included with all distributions of the
+Source Code. Except to the extent prohibited by statute or regulation, such
+description must be sufficiently detailed for a recipient of ordinary skill
+to be able to understand it.
+
+5. Application of this License.
+
+This License applies to code to which the Initial Developer has attached the
+notice in Exhibit A and to related Covered Code.
+
+6. Versions of the License.
+
+6.1. New Versions.
+
+Inprise Corporation (''Inprise'') may publish revised and/or new versions of
+the License from time to time. Each version will be given a distinguishing
+version number.
+
+6.2. Effect of New Versions.
+
+Once Covered Code has been published under a particular version of the
+License, You may always continue to use it under the terms of that version.
+You may also choose to use such Covered Code under the terms of any
+subsequent version of the License published by Inprise. No one other than
+Inprise has the right to modify the terms applicable to Covered Code created
+under this License.
+
+6.3. Derivative Works.
+
+If You create or use a modified version of this License (which you may only
+do in order to apply it to code which is not already Covered Code governed
+by this License), You must (a) rename Your license so that the phrases
+''Mozilla'', ''MOZILLAPL'', ''MOZPL'', ''Netscape'', "MPL", ''NPL", 
+"InterBase", "Inprise", "Borland'' or any confusingly similar phrase do not
+appear in your license (except to note that your license differs from this
+License) and (b) otherwise make it clear that Your version of the license
+contains terms which differ from the Mozilla Public License and Netscape
+Public License. (Filling in the name of the Initial Developer, Original
+Code or Contributor in the notice described in Exhibit A shall not of
+themselves be deemed to be modifications of this License.)
+
+6.4 Origin of the InterBase Public License.
+
+The InterBase public license is based on the Mozilla Public License V 1.1
+with the following changes:
+
+1. The license is published by Inprise Corporation. Only Inprise Corporation
+can modify the terms applicable to Covered Code.
+2. The license can be modified and used for code which is not already
+governed by this license. Modified versions of the license must be renamed
+to avoid confusion with Netscape?s or Inprise?s license and must include a
+description of changes from the InterBase Public License.
+3. The name of the license in Exhibit A is the "InterBase Public License".
+4. The reference to an alternative license in Exhibit A has been removed.
+5. Amendments I, II, III, V, and VI have been deleted.
+6. Exhibit A, Netscape Public License has been deleted
+7. A new amendment (II) has been added, describing the required and
+restricted rights to use the trademarks of Inprise Corporation.
+
+7. DISCLAIMER OF WARRANTY.
+
+COVERED CODE IS PROVIDED UNDER THIS LICENSE ON AN "AS IS'' BASIS, WITHOUT
+WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT
+LIMITATION, WARRANTIES THAT THE COVERED CODE IS FREE OF DEFECTS,
+MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+RISK AS TO THE QUALITY AND PERFORMANCE OF THE COVERED CODE IS WITH YOU.
+SHOULD ANY COVERED CODE PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL
+DEVELOPER OR ANY OTHER CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN
+ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY COVERED CODE IS AUTHORIZED
+HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+8. TERMINATION.
+
+8.1. This License and the rights granted hereunder will terminate
+automatically if You fail to comply with terms herein and fail to cure such
+breach within 30 days of becoming aware of the breach. All sublicenses to
+the Covered Code which are properly granted shall survive any termination
+of this License. Provisions which, by their nature, must remain in effect
+beyond the termination of this License shall survive.
+
+8.2. If You initiate litigation by asserting a patent infringement claim
+(excluding declaratory judgment actions) against Initial Developer or a
+Contributor (the Initial Developer or Contributor against whom You file such
+action is referred to as "Participant") alleging that:
+
+(a) such Participant's Contributor Version directly or indirectly infringes
+any patent, then any and all rights granted by such Participant to You under
+Sections 2.1 and/or 2.2 of this License shall, upon 60 days notice from
+Participant terminate prospectively, unless if within 60 days after receipt
+of notice You either: (i) agree in writing to pay Participant a mutually
+agreeable reasonable royalty for Your past and future use of Modifications
+made by such Participant, or (ii) withdraw Your litigation claim with respect
+to the Contributor Version against such Participant. If within 60 days of
+notice, a reasonable royalty and payment arrangement are not mutually agreed
+upon in writing by the parties or the litigation claim is not withdrawn, the
+rights granted by Participant to You under Sections 2.1 and/or 2.2
+automatically terminate at the expiration of the 60 day notice period
+specified above.
+
+(b) any software, hardware, or device, other than such Participant's
+Contributor Version, directly or indirectly infringes any patent, then any
+rights granted to You by such Participant under Sections 2.1(b) and 2.2(b)
+are revoked effective as of the date You first made, used, sold, distributed,
+or had made, Modifications made by that Participant.
+
+8.3. If You assert a patent infringement claim against Participant alleging
+that such Participant's Contributor Version directly or indirectly infringes
+any patent where such claim is resolved (such as by license or settlement)
+prior to the initiation of patent infringement litigation, then the
+reasonable value of the licenses granted by such Participant under Sections
+2.1 or 2.2 shall be taken into account in determining the amount or value of
+any payment or license.
+
+8.4. In the event of termination under Sections 8.1 or 8.2 above, all end
+user license agreements (excluding distributors and resellers) which have
+been validly granted by You or any distributor hereunder prior to termination
+shall survive termination.
+
+9. LIMITATION OF LIABILITY.
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING
+NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL YOU, THE INITIAL DEVELOPER, ANY
+OTHER CONTRIBUTOR, OR ANY DISTRIBUTOR OF COVERED CODE, OR ANY SUPPLIER OF
+ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY INDIRECT, SPECIAL,
+INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT
+LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE
+OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF
+SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES.
+THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR
+PERSONAL INJURY RESULTING FROM SUCH PARTY'S NEGLIGENCE TO THE EXTENT
+APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW
+THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS
+EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+10. U.S. GOVERNMENT END USERS.
+
+The Covered Code is a ''commercial item,'' as that term is defined in 48
+C.F.R. 2.101 (Oct. 1995), consisting of ''commercial computer software'' and
+''commercial computer software documentation,'' as such terms are used in 48
+C.F.R. 12.212 (Sept. 1995). Consistent with 48 C.F.R. 12.212 and 48 C.F.R.
+227.7202-1 through 227.7202-4 (June 1995), all U.S. Government End Users
+acquire Covered Code with only those rights set forth herein.
+
+11. MISCELLANEOUS.
+
+This License represents the complete agreement concerning subject matter
+hereof. If any provision of this License is held to be unenforceable, such
+provision shall be reformed only to the extent necessary to make it
+enforceable. This License shall be governed by Georgia law provisions (except
+to the extent applicable law, if any, provides otherwise), excluding its
+conflict-of-law provisions. With respect to disputes in which at least one
+party is a citizen of, or an entity chartered or registered to do business
+in the United States of America, Any litigation relating to this License
+shall be subject to the jurisdiction of the Federal Courts of the Northern
+District of Georgia and/or the state courts of Gwinnett County, Georgia,
+with the losing party responsible for costs, including without limitation,
+court costs and reasonable attorneys' fees and expenses. The application of
+the United Nations Convention on Contracts for the International Sale of
+Goods is expressly excluded. Any law or regulation which provides that the
+language of a contract shall be construed against the drafter shall not
+apply to this License.
+
+12. RESPONSIBILITY FOR CLAIMS.
+
+As between Initial Developer and the Contributors, each party is responsible
+for claims and damages arising, directly or indirectly, out of its
+utilization of rights under this License and You agree to work with Initial
+Developer and Contributors to distribute such responsibility on an equitable
+basis. Nothing herein is intended or shall be deemed to constitute any
+admission of liability.
+
+13. MULTIPLE-LICENSED CODE.
+
+Initial Developer may designate portions of the Covered Code as
+"Multiple-Licensed". "Multiple-Licensed" means that the Initial Developer
+permits you to utilize portions of the Covered Code under Your choice of
+the InterBase Public License or the alternative licenses, if any, specified
+by the Initial Developer in the file described in Exhibit A.
+
+EXHIBIT A - InterBase Public License.
+
+``The contents of this file are subject to the InterBase Public License
+Version 1.0 (the "License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at
+http://www.interbase.com/IPL.html
+
+Software distributed under the License is distributed on an "AS IS" basis,
+WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+for the specific language governing rights and limitations under the License.
+
+The Original Code was created by InterBase Software Corp and its successors.
+
+Portions created by Borland/Inprise are Copyright (C) Borland/Inprise.
+All Rights Reserved.
+
+Contributor(s): ______________________________________.
+
+AMENDMENTS
+
+I. InterBase and logo. This License does not grant any rights to use the
+trademarks "InterBase'', "Java" or "JavaScript" even if such marks are
+included in the Original Code or Modifications.
+
+II. Trademark Usage.
+
+II.1. Advertising Materials. All advertising materials mentioning features
+or use of the covered Code must display the following acknowledgement: "This
+product includes software developed by Inprise Corporation. "
+
+II.2. Endorsements. The names "InterBase," "Inprise," and "Borland" must not
+be used to endorse or promote Contributor Versions or Larger Works without
+the prior written permission of InterBase.
+
+II.3. Product Names. Contributor Versions and Larger Works may not be called
+"InterBase" or "InterBase" nor may the word "InterBase" appear in their
+names without the prior written permission of Inprise.
+
+
+
+
+
+=============================================================================
+Initial Developer's PUBLIC LICENSE
+Version 1.0 
+
+1. Definitions
+
+1.0 "Commercial Use" means distribution or otherwise making the Covered 
+Code available to a third party. 
+
+1.1 ''Contributor'' means each entity that creates or contributes to the 
+ creation of Modifications. 
+
+1.2 ''Contributor Version'' means the combination of the Original Code, prior 
+Modifications used by a Contributor, and the Modifications made by that 
+particular Contributor. 
+
+1.3. ''Covered Code'' means the Original Code or Modifications or the 
+combination of the Original Code and Modifications, in each case including 
+portions thereof. 
+
+1.4. ''Electronic Distribution Mechanism'' means a mechanism generally 
+accepted in the software development community for the electronic transfer of 
+data. 
+
+1.5. ''Executable'' means Covered Code in any form other than Source Code. 
+
+1.6. ''Initial Developer'' means the individual or entity identified as the Initial 
+Developer in the Source Code notice required by Exhibit A. 
+
+1.7. ''Larger Work'' means a work which combines Covered Code or portions 
+thereof with code not governed by the terms of this License. 
+
+1.8. ''License'' means this document. 
+
+1.8.1. "Licensable" means having the right to grant, to the maximum 
+extent possible, whether at the time of the initial grant or subsequently 
+acquired, any and all of the rights conveyed herein.
+
+1.9. ''Modifications'' means any addition to or deletion from the substance or 
+structure of either the Original Code or any previous Modifications. When 
+Covered Code is released as a series of files, a Modification is: 
+
+Any addition to or deletion from the contents of a file containing Original 
+Code or previous Modifications. 
+
+Any new file that contains any part of the Original Code or previous 
+Modifications. 
+
+1.10. ''Original Code'' means Source Code of computer software code which 
+is described in the Source Code notice required by Exhibit A as Original Code, 
+and which, at the time of its release under this License is not already Covered 
+Code governed by this License. 
+
+1.10.1. "Patent Claims" means any patent claim(s), now owned or 
+hereafter acquired, including without limitation, method, process, and 
+apparatus claims, in any patent Licensable by grantor.
+
+1.11. ''Source Code'' means the preferred form of the Covered Code for 
+making modifications to it, including all modules it contains, plus any associated 
+interface definition files, scripts used to control compilation and installation of 
+an Executable, or source code differential comparisons against either the 
+Original Code or another well known, available Covered Code of the 
+Contributor's choice. The Source Code can be in a compressed or archival 
+form, provided the appropriate decompression or de-archiving software is 
+widely available for no charge.
+
+1.12. "You'' (or "Your") means an individual or a legal entity exercising rights 
+under, and complying with all of the terms of, this License or a future version 
+of this License issued under Section 6.1. For legal entities, "You'' includes any 
+entity w hich controls, is controlled by, or is under common control with You. 
+For purposes of this definition, "control'' means (a) the power, direct or 
+indirect, to cause the direction or management of such entity, whether by 
+contract or otherwise, or (b) ownership of more than fifty percent (50%) of 
+the outstanding shares or beneficial ownership of such entity. 
+
+
+2. Source Code License.
+
+
+2.1. The Initial Developer Grant. The Initial Developer hereby grants You a 
+world-wide, royalty-free, non-exclusive license, subject to third party intellectual 
+property claims: 
+
+(a) under intellectual property rights (other than patent or trademark) 
+Licensable by Initial Developer to use, reproduce, modify, display, perform, 
+sublicense and distribute the Original Code (or portions thereof) with or without 
+Modifications, and/or as part of a Larger Work; and 
+
+(b) under Patents Claims infringed by the making, using or selling of Original 
+Code, to make, have made, use, practice, sell, and offer for sale, and/or 
+otherwise dispose of the Original Code (or portions thereof). 
+
+(c) the licenses granted in this Section 2.1(a) and (b) are effective on the date 
+Initial Developer first distributes Original Code under the terms of this License. 
+
+d) Notwithstanding Section 2.1(b) above, no patent license is granted:
+
+1) for code that You delete from the Original Code; 
+
+2) separate from the Original Code; or 
+
+3) for infringements caused by: 
+
+i) the modification of the Original Code or 
+
+ii) the combination of the Original Code with other software or 
+devices. 
+
+2.2. Contributor Grant. Subject to third party intellectual property claims, each 
+Contributor hereby grants You a world-wide, royalty-free, non-exclusive license 
+
+(a) under intellectual property rights (other than patent or trademark) 
+Licensable by Contributor, to use, reproduce, modify, display, perform, 
+sublicense and distribute the Modifications created by such Contributor (or 
+portions thereof) either on an unmodified basis, with other Modifications, as 
+Covered Code and/or as part of a Larger Work; and 
+
+(b) under Patent Claims infringed by the making, using, or selling of 
+Modifications made by that Contributor either alone and/or in combination with 
+its Contributor Version (or portions of such combination), to make, use, sell, 
+offer for sale, have made, and/or otherwise dispose of: 1) Modifications made 
+by that Contributor (or portions thereof); and 2) the combination of 
+Modifications made by that Contributor with its Contributor Version (or portions 
+of such combination). 
+
+(c) the licenses granted in Sections 2.2(a) and 2.2(b) are effective on the date 
+Contributor first makes Commercial Use of the Covered Code. 
+
+(d) Notwithstanding Section 2.2(b) above, no patent license is granted:
+
+1) for any code that Contributor has deleted from the Contributor 
+Version; 
+
+2) separate from the Contributor Version; 
+
+3) for infringements caused by: 
+
+i) third party modifications of Contributor Version or 
+
+ii) the combination of Modifications made by that Contributor with 
+other software (except as part of the Contributor Version) or 
+other devices; or 
+
+4) under Patent Claims infringed by Covered Code in the absence of 
+Modifications made by that Contributor. 
+
+
+3. Distribution Obligations.
+
+
+3.1. Application of License. The Modifications which You create or to which 
+You contribute are governed by the terms of this License, including without 
+limitation Section 2.2. The Source Code version of Covered Code may be 
+distributed only under the terms of this License or a future version of this 
+License released under Section 6.1, and You must include a copy of this 
+License with every copy of the Source Code You distribute. You may not offer 
+or impose any terms on any Source Code version that alters or restricts the 
+applicable version of this License or the recipients' rights hereunder. However, 
+You may include an additional document offering the additional rights described 
+in Section 3.5. 
+
+
+3.2. Availability of Source Code. Any Modification which You create or to 
+which You contribute must be made available in Source Code form under the 
+terms of this License either on the same media as an Executable version or via 
+an accepted Electronic Distribution Mechanism to anyone to whom you made 
+an Executable version available; and if made available via Electronic Distribution 
+Mechanism, must remain available for at least twelve (12) months after the 
+date it initially became available, or at least six (6) months after a subsequent 
+version of that particular Modification has been made available to such 
+recipients. You are responsible for ensuring that the Source Code version 
+remains available even if the Electronic Distribution Mechanism is maintained by 
+a third party. 
+
+
+3.3. Description of Modifications. You must cause all Covered Code to 
+which You contribute to contain a file documenting the changes You made to 
+create that Covered Code and the date of any change. You must include a 
+prominent statement that the Modification is derived, directly or indirectly, from 
+Original Code provided by the Initial Developer and including the name of the 
+Initial Developer in 
+
+(a) the Source Code, and
+
+(b) in any notice in an Executable version or related documentation in 
+which You describe the origin or ownership of the Covered Code.
+
+
+3.4. Intellectual Property Matters
+
+a) Third Party Claims. If Contributor has knowledge that a license under 
+a third party's intellectual property rights is required to exercise the 
+rights granted by such Contributor under Sections 2.1 or 2.2, 
+Contributor must include a text file with the Source Code distribution 
+titled "LEGAL'' which describes the claim and the party making the claim 
+in sufficient detail that a recipient will know whom to contact. If 
+Contributor obtains such knowledge after the Modification is made 
+available as described in Section 3.2, Contributor shall promptly modify 
+the LEGAL file in all copies Contributor makes available thereafter and 
+shall take other steps (such as notifying appropriate mailing lists or 
+newsgroups) reasonably calculated to inform those who received the 
+Covered Code that new knowledge has been obtained. 
+
+(b) Contributor APIs. If Contributor's Modifications include an application 
+programming interface and Contributor has knowledge of patent 
+licenses which are reasonably necessary to implement that API, 
+Contributor must also include this information in the LEGAL file. 
+
+
+(c) Representations. Contributor represents that, except as disclosed 
+pursuant to Section 3.4(a) above, Contributor believes that Contributor's 
+Modifications are Contributor's original creation(s) and/or Contributor 
+has sufficient rights to grant the rights conveyed by this License. 
+
+
+3.5. Required Notices. You must duplicate the notice in Exhibit A in each file 
+of the Source Code. If it is not possible to put such notice in a particular Source 
+Code file due to its structure, then You must include such notice in a location 
+(such as a relevant directory) where a user would be likely to look for such a 
+notice. If You created one or more Modification(s) You may add your name as 
+a Contributor to the notice described in Exhibit A. You must also duplicate this 
+License in any documentation for the Source Code where You describe 
+recipients' rights or ownership rights relating to Covered Code. You may 
+choose to offer, and to charge a fee for, warranty, support, indemnity or 
+liability obligations to one or more recipients of Covered Code. However, You 
+may do so only on Your own behalf, and not on behalf of the Initial Developer 
+or any Contributor. You must make it absolutely clear than any such warranty, 
+support, indemnity or liability obligation is offered by You alone, and You 
+hereby agree to indemnify the Initial Developer and every Contributor for any 
+liability incurred by the Initial Developer or such Contributor as a result of 
+warranty, support, indemnity or liability terms You offer. 
+
+
+3.6. Distribution of Executable Versions. You may distribute Covered 
+Code in Executable form only if the requirements of Section 3.1-3.5 have been 
+met for that Covered Code, and if You include a notice stating that the Source 
+Code version of the Covered Code is available under the terms of this License, 
+including a description of how and where You have fulfilled the obligations of 
+Section 3.2. The notice must be conspicuously included in any notice in an 
+Executable version, related documentation or collateral in which You describe 
+recipients' rights relating to the Covered Code. You may distribute the 
+Executable version of Covered Code or ownership rights under a license of 
+Your choice, which may contain terms different from this License, provided 
+that You are in compliance with the terms of this License and hat the license 
+for the Executable version does not attempt to limit or alter the recipient's rights 
+in the Source Code version from the rights set forth in this License. If You 
+distribute the Executable version under a different license You must make it 
+absolutely clear that any terms which differ from this License are offered by 
+You alone, not by the Initial Developer or any Contributor. You hereby agree to 
+indemnify the Initial Developer and every Contributor for any liability incurred by 
+the Initial Developer or such Contributor as a result of any such terms You 
+offer. 
+
+
+3.7. Larger Works. You may create a Larger Work by combining Covered 
+Code with other code not governed by the terms of this License and distribute 
+the Larger Work as a single product. In such a case, You must make sure the 
+requirements of this License are fulfilled for the Covered Code. 
+
+
+4. Inability to Comply Due to Statute or Regulation.
+
+    
+
+If it is impossible for You to comply with any of the terms of this License with respect 
+to some or all of the Covered Code due to statute, judicial order, or regulation then You 
+must: 
+
+(a) comply with the terms of this License to the maximum extent possible; and 
+
+(b) describe the limitations and the code they affect. Such description must be 
+included in the LEGAL file described in Section 3.4 and must be included with 
+all distributions of the Source Code. Except to the extent prohibited by statute 
+or regulation, such description must be sufficiently detailed for a recipient of 
+ordinary skill to be able to understand it. 
+
+
+5. Application of this License.
+
+    
+
+This License applies to code to which the Initial Developer has attached the notice in 
+Exhibit A and to related Covered Code. 
+
+
+6. Versions of the License.
+
+
+6.1. New Versions. The Initial Developer of this code may publish revised 
+and/or new versions of the License from time to time. Each version will be 
+given a distinguishing version number. 
+
+
+6.2. Effect of New Versions. Once Covered Code has been published under 
+a particular version of the License, You may always continue to use it under 
+the terms of that version. You may also choose to use such Covered Code 
+under the terms of any subsequent version of the License published by the 
+Initial Developer. No one other than the Initial Developer has the right to modify 
+the terms applicable to Covered Code created under this License.
+
+
+6.3. Derivative Works. If You create or use a modified version of this License 
+(which you may only do in order to apply it to code which is not already 
+Covered Code governed by this License), You must 
+
+(a) rename Your license so that the phrases ''Mozilla'', ''MOZILLAPL'', 
+''MOZPL'', ''Netscape'', "MPL", ''NPL", or any confusingly similar phrases 
+do not appear in your license (except to note that your license differs 
+from this License) and 
+
+(b) otherwise make it clear that Your version of the license contains 
+terms which differ from the Mozilla Public License and Netscape Public 
+License. (Filling in the name of the Initial Developer, Original Code or 
+Contributor in the notice described in Exhibit A shall not of themselves 
+be deemed to be modifications of this License.) 
+
+
+6.4 Origin of the Initial Developer's Public License. The Initial Developer's 
+Public License is based on the Mozilla Public License V 1.1 with the following 
+changes: 
+
+1) The license is published by the Initial Developer of this code. Only the 
+Initial Developer can modify the terms applicable to Covered Code. 
+
+2) The license can be modified and used for code which is not already 
+governed by this license. Modified versions of the license must be 
+renamed to avoid confusion with Netscape's license Initial Developer's's 
+license and must include a description of changes from the Initial 
+Developer's Public License. 
+
+3) The name of the license in Exhibit A is the "Initial Developer's Public 
+License".
+
+4) The reference to an alternative license in Exhibit A has been removed.
+ 
+5) Amendments I, II, III, V, and VI have been deleted.
+
+6) Exhibit A, Netscape Public License has been deleted
+
+
+7. DISCLAIMER OF WARRANTY.
+
+    
+
+COVERED CODE IS PROVIDED UNDER THIS LICENSE ON AN "AS IS'' BASIS, WITHOUT 
+WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT 
+LIMITATION, WARRANTIES THAT THE COVERED CODE IS FREE OF DEFECTS, 
+MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE 
+ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE COVERED CODE IS 
+WITH YOU. SHOULD ANY COVERED CODE PROVE DEFECTIVE IN ANY RESPECT, 
+YOU (NOT THE INITIAL DEVELOPER OR ANY OTHER CONTRIBUTOR) ASSUME THE 
+COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER 
+OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF 
+ANY COVERED CODE IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS 
+DISCLAIMER. 
+
+
+8. TERMINATION.
+
+    
+8.1. This License and the rights granted hereunder will terminate automatically 
+if You fail to comply with terms herein and fail to cure such breach within 30 
+days of becoming aware of the breach. All sublicenses to the Covered Code 
+which are properly granted shall survive any termination of this License. 
+Provisions which, by their nature, must remain in effect beyond the termination 
+of this License shall survive. 
+
+8.2. If You initiate litigation by asserting a patent infringement claim (excluding 
+declatory judgment actions) against Initial Developer or a Contributor (the Initial 
+Developer or Contributor against whom You file such action is referred to as 
+"Participant") alleging that:
+
+(a) such Participant's Contributor Version directly or indirectly infringes 
+any patent, then any and all rights granted by such Participant to You 
+under Sections 2.1 and/or 2.2 of this License shall, upon 60 days notice 
+from Participant terminate prospectively, unless if within 60 days after 
+receipt of notice You either:
+
+(i) agree in writing to pay Participant a mutually agreeable 
+reasonable royalty for Your past and future use of Modifications 
+made by such Participant, or 
+
+(ii) withdraw Your litigation claim with respect to the Contributor 
+Version against such Participant. 
+
+
+If within 60 days of notice, a reasonable royalty and payment 
+arrangement are not mutually agreed upon in writing by the parties or 
+the litigation claim is not withdrawn, the rights granted by Participant to 
+You under Sections 2.1 and/or 2.2 automatically terminate at the 
+expiration of the 60 day notice period specified above. 
+
+(b) any software, hardware, or device, other than such Participant's 
+Contributor Version, directly or indirectly infringes any patent, then any 
+rights granted to You by such Participant under Sections 2.1(b) and 
+2.2(b) are revoked effective as of the date You first made, used, sold, 
+distributed, or had made, Modifications made by that Participant. 
+
+8.3. If You assert a patent infringement claim against Participant alleging that 
+such Participant's Contributor Version directly or indirectly infringes any patent 
+where such claim is resolved (such as by license or settlement) prior to the 
+initiation of patent infringement litigation, then the reasonable value of the 
+licenses granted by such Participant under Sections 2.1 or 2.2 shall be taken 
+into account in determining the amount or value of any payment or license. 
+
+8.4. In the event of termination under Sections 8.1 or 8.2 above, all end user 
+license agreements (excluding distributors and resellers) which have been 
+validly granted by You or any distributor hereunder prior to termination shall 
+survive termination. 
+
+
+9. LIMITATION OF LIABILITY.
+
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT 
+(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL YOU, THE INITIAL 
+DEVELOPER, ANY OTHER CONTRIBUTOR, OR ANY DISTRIBUTOR OF COVERED 
+CODE, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON 
+FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY 
+CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF 
+GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY 
+AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY 
+SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS 
+LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR 
+PERSONAL INJURY RESULTING FROM SUCH PARTY'S NEGLIGENCE TO THE EXTENT 
+APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT 
+ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL 
+DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU. 
+
+
+10. U.S. GOVERNMENT END USERS.
+
+
+The Covered Code is a ''commercial item,'' as that term is defined in 48 C.F.R. 2.101 
+(Oct. 1995), consisting of ''commercial computer software'' and ''commercial computer 
+software documentation,'' as such terms are used in 48 C.F.R. 12.212 (Sept. 1995). 
+Consistent with 48 C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 
+1995), all U.S. Government End Users acquire Covered Code with only those rights 
+set forth herein. 
+
+
+11. MISCELLANEOUS.
+
+
+This License represents the complete agreement concerning subject matter hereof. If 
+any provision of this License is held to be unenforceable, such provision shall be 
+reformed only to the extent necessary to make it enforceable. This License shall be 
+governed by California law provisions (except to the extent applicable law, if any, 
+provides otherwise), excluding its conflict-of-law provisions. With respect to disputes 
+in which at least one party is a citizen of, or an entity chartered or registered to do 
+business in the United States of America, any litigation relating to this License shall be 
+subject to the jurisdiction of the Federal Courts of the Northern District of California, 
+with venue lying in Santa Clara County, California, with the losing party responsible for 
+costs, including without limitation, court costs and reasonable attorneys' fees and 
+expenses. The application of the United Nations Convention on Contracts for the 
+International Sale of Goods is expressly excluded. Any law or regulation which 
+provides that the language of a contract shall be construed against the drafter shall 
+not apply to this License. 
+
+
+12. RESPONSIBILITY FOR CLAIMS.
+
+
+As between Initial Developer and the Contributors, each party is responsible for claims 
+and damages arising, directly or indirectly, out of its utilization of rights under this 
+License and You agree to work with Initial Developer and Contributors to distribute 
+such responsibility on an equitable basis. Nothing herein is intended or shall be 
+deemed to constitute any admission of liability. 
+
+
+13. MULTIPLE-LICENSED CODE.
+
+
+Initial Developer may designate portions of the Covered Code as "Multiple-Licensed". 
+"Multiple-Licensed" means that the Initial Devpoeloper permits you to utilize portions of 
+the Covered Code under Your choice of the IDPL or the alternative licenses, if any, 
+specified by the Initial Developer in the file described in Exhibit A. 
+
+EXHIBIT A -Initial Developer's Public License.
+
+The contents of this file are subject to the Initial Developer's Public License Version 1.0 
+(the "License"); you may not use this file except in compliance with the License. You 
+may obtain a copy of the License at http://www.ibphoenix.com/idpl.html Software 
+distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY 
+OF ANY KIND, either express or implied. See the License for the specific language 
+governing rights and limitations under the License.
+
+The Original Code is ______________________________________. 
+
+The Initial Developer of the Original Code is ________________________.
+
+Portions created by ______________________ are Copyright (C) ______ 
+_______________________.
+
+All Rights Reserved.
+
+Contributor(s): ______________________________________. 
+
+
+============================================================================
+
+
+
+
+                          MOZILLA PUBLIC LICENSE
+                                Version 1.1
+
+                              ---------------
+
+1. Definitions.
+
+     1.0.1. "Commercial Use" means distribution or otherwise making the
+     Covered Code available to a third party.
+
+     1.1. "Contributor" means each entity that creates or contributes to
+     the creation of Modifications.
+
+     1.2. "Contributor Version" means the combination of the Original
+     Code, prior Modifications used by a Contributor, and the Modifications
+     made by that particular Contributor.
+
+     1.3. "Covered Code" means the Original Code or Modifications or the
+     combination of the Original Code and Modifications, in each case
+     including portions thereof.
+
+     1.4. "Electronic Distribution Mechanism" means a mechanism generally
+     accepted in the software development community for the electronic
+     transfer of data.
+
+     1.5. "Executable" means Covered Code in any form other than Source
+     Code.
+
+     1.6. "Initial Developer" means the individual or entity identified
+     as the Initial Developer in the Source Code notice required by Exhibit
+     A.
+
+     1.7. "Larger Work" means a work which combines Covered Code or
+     portions thereof with code not governed by the terms of this License.
+
+     1.8. "License" means this document.
+
+     1.8.1. "Licensable" means having the right to grant, to the maximum
+     extent possible, whether at the time of the initial grant or
+     subsequently acquired, any and all of the rights conveyed herein.
+
+     1.9. "Modifications" means any addition to or deletion from the
+     substance or structure of either the Original Code or any previous
+     Modifications. When Covered Code is released as a series of files, a
+     Modification is:
+          A. Any addition to or deletion from the contents of a file
+          containing Original Code or previous Modifications.
+
+          B. Any new file that contains any part of the Original Code or
+          previous Modifications.
+
+     1.10. "Original Code" means Source Code of computer software code
+     which is described in the Source Code notice required by Exhibit A as
+     Original Code, and which, at the time of its release under this
+     License is not already Covered Code governed by this License.
+
+     1.10.1. "Patent Claims" means any patent claim(s), now owned or
+     hereafter acquired, including without limitation,  method, process,
+     and apparatus claims, in any patent Licensable by grantor.
+
+     1.11. "Source Code" means the preferred form of the Covered Code for
+     making modifications to it, including all modules it contains, plus
+     any associated interface definition files, scripts used to control
+     compilation and installation of an Executable, or source code
+     differential comparisons against either the Original Code or another
+     well known, available Covered Code of the Contributor's choice. The
+     Source Code can be in a compressed or archival form, provided the
+     appropriate decompression or de-archiving software is widely available
+     for no charge.
+
+     1.12. "You" (or "Your")  means an individual or a legal entity
+     exercising rights under, and complying with all of the terms of, this
+     License or a future version of this License issued under Section 6.1.
+     For legal entities, "You" includes any entity which controls, is
+     controlled by, or is under common control with You. For purposes of
+     this definition, "control" means (a) the power, direct or indirect,
+     to cause the direction or management of such entity, whether by
+     contract or otherwise, or (b) ownership of more than fifty percent
+     (50%) of the outstanding shares or beneficial ownership of such
+     entity.
+
+2. Source Code License.
+
+     2.1. The Initial Developer Grant.
+     The Initial Developer hereby grants You a world-wide, royalty-free,
+     non-exclusive license, subject to third party intellectual property
+     claims:
+          (a)  under intellectual property rights (other than patent or
+          trademark) Licensable by Initial Developer to use, reproduce,
+          modify, display, perform, sublicense and distribute the Original
+          Code (or portions thereof) with or without Modifications, and/or
+          as part of a Larger Work; and
+
+          (b) under Patents Claims infringed by the making, using or
+          selling of Original Code, to make, have made, use, practice,
+          sell, and offer for sale, and/or otherwise dispose of the
+          Original Code (or portions thereof).
+
+          (c) the licenses granted in this Section 2.1(a) and (b) are
+          effective on the date Initial Developer first distributes
+          Original Code under the terms of this License.
+
+          (d) Notwithstanding Section 2.1(b) above, no patent license is
+          granted: 1) for code that You delete from the Original Code; 2)
+          separate from the Original Code;  or 3) for infringements caused
+          by: i) the modification of the Original Code or ii) the
+          combination of the Original Code with other software or devices.
+
+     2.2. Contributor Grant.
+     Subject to third party intellectual property claims, each Contributor
+     hereby grants You a world-wide, royalty-free, non-exclusive license
+
+          (a)  under intellectual property rights (other than patent or
+          trademark) Licensable by Contributor, to use, reproduce, modify,
+          display, perform, sublicense and distribute the Modifications
+          created by such Contributor (or portions thereof) either on an
+          unmodified basis, with other Modifications, as Covered Code
+          and/or as part of a Larger Work; and
+
+          (b) under Patent Claims infringed by the making, using, or
+          selling of  Modifications made by that Contributor either alone
+          and/or in combination with its Contributor Version (or portions
+          of such combination), to make, use, sell, offer for sale, have
+          made, and/or otherwise dispose of: 1) Modifications made by that
+          Contributor (or portions thereof); and 2) the combination of
+          Modifications made by that Contributor with its Contributor
+          Version (or portions of such combination).
+
+          (c) the licenses granted in Sections 2.2(a) and 2.2(b) are
+          effective on the date Contributor first makes Commercial Use of
+          the Covered Code.
+
+          (d)    Notwithstanding Section 2.2(b) above, no patent license is
+          granted: 1) for any code that Contributor has deleted from the
+          Contributor Version; 2)  separate from the Contributor Version;
+          3)  for infringements caused by: i) third party modifications of
+          Contributor Version or ii)  the combination of Modifications made
+          by that Contributor with other software  (except as part of the
+          Contributor Version) or other devices; or 4) under Patent Claims
+          infringed by Covered Code in the absence of Modifications made by
+          that Contributor.
+
+3. Distribution Obligations.
+
+     3.1. Application of License.
+     The Modifications which You create or to which You contribute are
+     governed by the terms of this License, including without limitation
+     Section 2.2. The Source Code version of Covered Code may be
+     distributed only under the terms of this License or a future version
+     of this License released under Section 6.1, and You must include a
+     copy of this License with every copy of the Source Code You
+     distribute. You may not offer or impose any terms on any Source Code
+     version that alters or restricts the applicable version of this
+     License or the recipients' rights hereunder. However, You may include
+     an additional document offering the additional rights described in
+     Section 3.5.
+
+     3.2. Availability of Source Code.
+     Any Modification which You create or to which You contribute must be
+     made available in Source Code form under the terms of this License
+     either on the same media as an Executable version or via an accepted
+     Electronic Distribution Mechanism to anyone to whom you made an
+     Executable version available; and if made available via Electronic
+     Distribution Mechanism, must remain available for at least twelve (12)
+     months after the date it initially became available, or at least six
+     (6) months after a subsequent version of that particular Modification
+     has been made available to such recipients. You are responsible for
+     ensuring that the Source Code version remains available even if the
+     Electronic Distribution Mechanism is maintained by a third party.
+
+     3.3. Description of Modifications.
+     You must cause all Covered Code to which You contribute to contain a
+     file documenting the changes You made to create that Covered Code and
+     the date of any change. You must include a prominent statement that
+     the Modification is derived, directly or indirectly, from Original
+     Code provided by the Initial Developer and including the name of the
+     Initial Developer in (a) the Source Code, and (b) in any notice in an
+     Executable version or related documentation in which You describe the
+     origin or ownership of the Covered Code.
+
+     3.4. Intellectual Property Matters
+          (a) Third Party Claims.
+          If Contributor has knowledge that a license under a third party's
+          intellectual property rights is required to exercise the rights
+          granted by such Contributor under Sections 2.1 or 2.2,
+          Contributor must include a text file with the Source Code
+          distribution titled "LEGAL" which describes the claim and the
+          party making the claim in sufficient detail that a recipient will
+          know whom to contact. If Contributor obtains such knowledge after
+          the Modification is made available as described in Section 3.2,
+          Contributor shall promptly modify the LEGAL file in all copies
+          Contributor makes available thereafter and shall take other steps
+          (such as notifying appropriate mailing lists or newsgroups)
+          reasonably calculated to inform those who received the Covered
+          Code that new knowledge has been obtained.
+
+          (b) Contributor APIs.
+          If Contributor's Modifications include an application programming
+          interface and Contributor has knowledge of patent licenses which
+          are reasonably necessary to implement that API, Contributor must
+          also include this information in the LEGAL file.
+
+               (c)    Representations.
+          Contributor represents that, except as disclosed pursuant to
+          Section 3.4(a) above, Contributor believes that Contributor's
+          Modifications are Contributor's original creation(s) and/or
+          Contributor has sufficient rights to grant the rights conveyed by
+          this License.
+
+     3.5. Required Notices.
+     You must duplicate the notice in Exhibit A in each file of the Source
+     Code.  If it is not possible to put such notice in a particular Source
+     Code file due to its structure, then You must include such notice in a
+     location (such as a relevant directory) where a user would be likely
+     to look for such a notice.  If You created one or more Modification(s)
+     You may add your name as a Contributor to the notice described in
+     Exhibit A.  You must also duplicate this License in any documentation
+     for the Source Code where You describe recipients' rights or ownership
+     rights relating to Covered Code.  You may choose to offer, and to
+     charge a fee for, warranty, support, indemnity or liability
+     obligations to one or more recipients of Covered Code. However, You
+     may do so only on Your own behalf, and not on behalf of the Initial
+     Developer or any Contributor. You must make it absolutely clear than
+     any such warranty, support, indemnity or liability obligation is
+     offered by You alone, and You hereby agree to indemnify the Initial
+     Developer and every Contributor for any liability incurred by the
+     Initial Developer or such Contributor as a result of warranty,
+     support, indemnity or liability terms You offer.
+
+     3.6. Distribution of Executable Versions.
+     You may distribute Covered Code in Executable form only if the
+     requirements of Section 3.1-3.5 have been met for that Covered Code,
+     and if You include a notice stating that the Source Code version of
+     the Covered Code is available under the terms of this License,
+     including a description of how and where You have fulfilled the
+     obligations of Section 3.2. The notice must be conspicuously included
+     in any notice in an Executable version, related documentation or
+     collateral in which You describe recipients' rights relating to the
+     Covered Code. You may distribute the Executable version of Covered
+     Code or ownership rights under a license of Your choice, which may
+     contain terms different from this License, provided that You are in
+     compliance with the terms of this License and that the license for the
+     Executable version does not attempt to limit or alter the recipient's
+     rights in the Source Code version from the rights set forth in this
+     License. If You distribute the Executable version under a different
+     license You must make it absolutely clear that any terms which differ
+     from this License are offered by You alone, not by the Initial
+     Developer or any Contributor. You hereby agree to indemnify the
+     Initial Developer and every Contributor for any liability incurred by
+     the Initial Developer or such Contributor as a result of any such
+     terms You offer.
+
+     3.7. Larger Works.
+     You may create a Larger Work by combining Covered Code with other code
+     not governed by the terms of this License and distribute the Larger
+     Work as a single product. In such a case, You must make sure the
+     requirements of this License are fulfilled for the Covered Code.
+
+4. Inability to Comply Due to Statute or Regulation.
+
+     If it is impossible for You to comply with any of the terms of this
+     License with respect to some or all of the Covered Code due to
+     statute, judicial order, or regulation then You must: (a) comply with
+     the terms of this License to the maximum extent possible; and (b)
+     describe the limitations and the code they affect. Such description
+     must be included in the LEGAL file described in Section 3.4 and must
+     be included with all distributions of the Source Code. Except to the
+     extent prohibited by statute or regulation, such description must be
+     sufficiently detailed for a recipient of ordinary skill to be able to
+     understand it.
+
+5. Application of this License.
+
+     This License applies to code to which the Initial Developer has
+     attached the notice in Exhibit A and to related Covered Code.
+
+6. Versions of the License.
+
+     6.1. New Versions.
+     Netscape Communications Corporation ("Netscape") may publish revised
+     and/or new versions of the License from time to time. Each version
+     will be given a distinguishing version number.
+
+     6.2. Effect of New Versions.
+     Once Covered Code has been published under a particular version of the
+     License, You may always continue to use it under the terms of that
+     version. You may also choose to use such Covered Code under the terms
+     of any subsequent version of the License published by Netscape. No one
+     other than Netscape has the right to modify the terms applicable to
+     Covered Code created under this License.
+
+     6.3. Derivative Works.
+     If You create or use a modified version of this License (which you may
+     only do in order to apply it to code which is not already Covered Code
+     governed by this License), You must (a) rename Your license so that
+     the phrases "Mozilla", "MOZILLAPL", "MOZPL", "Netscape",
+     "MPL", "NPL" or any confusingly similar phrase do not appear in your
+     license (except to note that your license differs from this License)
+     and (b) otherwise make it clear that Your version of the license
+     contains terms which differ from the Mozilla Public License and
+     Netscape Public License. (Filling in the name of the Initial
+     Developer, Original Code or Contributor in the notice described in
+     Exhibit A shall not of themselves be deemed to be modifications of
+     this License.)
+
+7. DISCLAIMER OF WARRANTY.
+
+     COVERED CODE IS PROVIDED UNDER THIS LICENSE ON AN "AS IS" BASIS,
+     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING,
+     WITHOUT LIMITATION, WARRANTIES THAT THE COVERED CODE IS FREE OF
+     DEFECTS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING.
+     THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE COVERED CODE
+     IS WITH YOU. SHOULD ANY COVERED CODE PROVE DEFECTIVE IN ANY RESPECT,
+     YOU (NOT THE INITIAL DEVELOPER OR ANY OTHER CONTRIBUTOR) ASSUME THE
+     COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF
+     ANY COVERED CODE IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+8. TERMINATION.
+
+     8.1.  This License and the rights granted hereunder will terminate
+     automatically if You fail to comply with terms herein and fail to cure
+     such breach within 30 days of becoming aware of the breach. All
+     sublicenses to the Covered Code which are properly granted shall
+     survive any termination of this License. Provisions which, by their
+     nature, must remain in effect beyond the termination of this License
+     shall survive.
+
+     8.2.  If You initiate litigation by asserting a patent infringement
+     claim (excluding declatory judgment actions) against Initial Developer
+     or a Contributor (the Initial Developer or Contributor against whom
+     You file such action is referred to as "Participant")  alleging that:
+
+     (a)  such Participant's Contributor Version directly or indirectly
+     infringes any patent, then any and all rights granted by such
+     Participant to You under Sections 2.1 and/or 2.2 of this License
+     shall, upon 60 days notice from Participant terminate prospectively,
+     unless if within 60 days after receipt of notice You either: (i)
+     agree in writing to pay Participant a mutually agreeable reasonable
+     royalty for Your past and future use of Modifications made by such
+     Participant, or (ii) withdraw Your litigation claim with respect to
+     the Contributor Version against such Participant.  If within 60 days
+     of notice, a reasonable royalty and payment arrangement are not
+     mutually agreed upon in writing by the parties or the litigation claim
+     is not withdrawn, the rights granted by Participant to You under
+     Sections 2.1 and/or 2.2 automatically terminate at the expiration of
+     the 60 day notice period specified above.
+
+     (b)  any software, hardware, or device, other than such Participant's
+     Contributor Version, directly or indirectly infringes any patent, then
+     any rights granted to You by such Participant under Sections 2.1(b)
+     and 2.2(b) are revoked effective as of the date You first made, used,
+     sold, distributed, or had made, Modifications made by that
+     Participant.
+
+     8.3.  If You assert a patent infringement claim against Participant
+     alleging that such Participant's Contributor Version directly or
+     indirectly infringes any patent where such claim is resolved (such as
+     by license or settlement) prior to the initiation of patent
+     infringement litigation, then the reasonable value of the licenses
+     granted by such Participant under Sections 2.1 or 2.2 shall be taken
+     into account in determining the amount or value of any payment or
+     license.
+
+     8.4.  In the event of termination under Sections 8.1 or 8.2 above,
+     all end user license agreements (excluding distributors and resellers)
+     which have been validly granted by You or any distributor hereunder
+     prior to termination shall survive termination.
+
+9. LIMITATION OF LIABILITY.
+
+     UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT
+     (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL YOU, THE INITIAL
+     DEVELOPER, ANY OTHER CONTRIBUTOR, OR ANY DISTRIBUTOR OF COVERED CODE,
+     OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR
+     ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY
+     CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL,
+     WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER
+     COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN
+     INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF
+     LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY
+     RESULTING FROM SUCH PARTY'S NEGLIGENCE TO THE EXTENT APPLICABLE LAW
+     PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE
+     EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO
+     THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+10. U.S. GOVERNMENT END USERS.
+
+     The Covered Code is a "commercial item," as that term is defined in
+     48 C.F.R. 2.101 (Oct. 1995), consisting of "commercial computer
+     software" and "commercial computer software documentation," as such
+     terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent with 48
+     C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995),
+     all U.S. Government End Users acquire Covered Code with only those
+     rights set forth herein.
+
+11. MISCELLANEOUS.
+
+     This License represents the complete agreement concerning subject
+     matter hereof. If any provision of this License is held to be
+     unenforceable, such provision shall be reformed only to the extent
+     necessary to make it enforceable. This License shall be governed by
+     California law provisions (except to the extent applicable law, if
+     any, provides otherwise), excluding its conflict-of-law provisions.
+     With respect to disputes in which at least one party is a citizen of,
+     or an entity chartered or registered to do business in the United
+     States of America, any litigation relating to this License shall be
+     subject to the jurisdiction of the Federal Courts of the Northern
+     District of California, with venue lying in Santa Clara County,
+     California, with the losing party responsible for costs, including
+     without limitation, court costs and reasonable attorneys' fees and
+     expenses. The application of the United Nations Convention on
+     Contracts for the International Sale of Goods is expressly excluded.
+     Any law or regulation which provides that the language of a contract
+     shall be construed against the drafter shall not apply to this
+     License.
+
+12. RESPONSIBILITY FOR CLAIMS.
+
+     As between Initial Developer and the Contributors, each party is
+     responsible for claims and damages arising, directly or indirectly,
+     out of its utilization of rights under this License and You agree to
+     work with Initial Developer and Contributors to distribute such
+     responsibility on an equitable basis. Nothing herein is intended or
+     shall be deemed to constitute any admission of liability.
+
+13. MULTIPLE-LICENSED CODE.
+
+     Initial Developer may designate portions of the Covered Code as
+     "Multiple-Licensed".  "Multiple-Licensed" means that the Initial
+     Developer permits you to utilize portions of the Covered Code under
+     Your choice of the NPL or the alternative licenses, if any, specified
+     by the Initial Developer in the file described in Exhibit A.
+
+EXHIBIT A -Mozilla Public License.
+
+     ``The contents of this file are subject to the Mozilla Public License
+     Version 1.1 (the "License"); you may not use this file except in
+     compliance with the License. You may obtain a copy of the License at
+     http://www.mozilla.org/MPL/
+
+     Software distributed under the License is distributed on an "AS IS"
+     basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+     License for the specific language governing rights and limitations
+     under the License.
+
+     The Original Code is ______________________________________.
+
+     The Initial Developer of the Original Code is ________________________.
+     Portions created by ______________________ are Copyright (C) ______
+     _______________________. All Rights Reserved.
+
+     Contributor(s): ______________________________________.
+
+     Alternatively, the contents of this file may be used under the terms
+     of the _____ license (the  "[___] License"), in which case the
+     provisions of [______] License are applicable instead of those
+     above.  If you wish to allow use of your version of this file only
+     under the terms of the [____] License and not to allow others to use
+     your version of this file under the MPL, indicate your decision by
+     deleting  the provisions above and replace  them with the notice and
+     other provisions required by the [___] License.  If you do not delete
+     the provisions above, a recipient may use your version of this file
+     under either the MPL or the [___] License."
+
+     [NOTE: The text of this Exhibit A may differ slightly from the text of
+     the notices in the Source Code files of the Original Code. You should
+     use the text of this Exhibit A rather than the text found in the
+     Original Code Source Code for Your Modifications.]

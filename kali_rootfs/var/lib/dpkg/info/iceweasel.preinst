@@ -1,0 +1,40 @@
+#!/bin/sh -e
+
+if [ "$1" = "upgrade" ] || [ "$1" = "install" ] ; then
+    dpkg-divert --package iceweasel --divert /usr/bin/firefox.real --rename /usr/bin/firefox
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/iceweaselrc -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/profile/bookmarks.html -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/common/duckduckgo.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/amazondotcom.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/bing.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/ddg.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/eBay.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/google.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/twitter.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/wikipedia.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/locale/en-US/yahoo.xml -- "$@"
+# End automatically added section
+

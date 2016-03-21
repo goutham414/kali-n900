@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libimobiledevice6
+/usr/share/doc/libimobiledevice6/changelog.Debian.gz
+/usr/share/doc/libimobiledevice6/NEWS.gz
+/usr/share/doc/libimobiledevice6/copyright
+/usr/share/doc/libimobiledevice6/README
+/usr/share/doc/libimobiledevice6/AUTHORS
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libimobiledevice.so.6.0.0
+/usr/lib/arm-linux-gnueabihf/libimobiledevice.so.6

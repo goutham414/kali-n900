@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = remove -o "$1" = purge ]; then
+	dpkg-divert --package systemd-shim --remove --rename --divert \
+		/usr/share/dbus-1/system-services/org.freedesktop.systemd1.service.systemd \
+		/usr/share/dbus-1/system-services/org.freedesktop.systemd1.service
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/org.freedesktop.systemd-shim.conf 8-4 systemd-shim -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/org.freedesktop.systemd1.conf 6-2 systemd-shim -- "$@"
+# End automatically added section
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=owasp-mantra-ff
+Encoding=UTF-8
+Exec=sh -c "owasp-mantra-ff"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Kali-Package=owasp-mantra-ff

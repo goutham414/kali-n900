@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+# When upgrading from <0.123, we need to move initramfs.conf away so
+# dpkg will stop remembering it as an 'obsolete' conffile for us.  The
+# postinst of either initramfs-tools or initramfs-tools-core will move
+# it back.
+if [ "$1" = upgrade ] && dpkg --compare-versions "$2" lt 0.123~ && \
+   [ -f /etc/initramfs-tools/initramfs.conf ]; then
+	mv /etc/initramfs-tools/initramfs.conf \
+		/etc/initramfs-tools/initramfs.conf.dpkg-backup
+fi
+
+

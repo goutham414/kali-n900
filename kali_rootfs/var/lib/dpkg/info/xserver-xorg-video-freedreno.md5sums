@@ -1,0 +1,5 @@
+db15a9dbf83051560e30dd75812a5a5d  usr/lib/xorg/modules/drivers/freedreno_drv.so
+eca1922d9db26548f06eb1a670726df9  usr/share/X11/xorg.conf.d/42-freedreno.conf
+6cbcfbeea72de8de08c10919a51d499c  usr/share/doc/xserver-xorg-video-freedreno/changelog.Debian.gz
+a27cd2977920ee108383b351cc43c899  usr/share/doc/xserver-xorg-video-freedreno/copyright
+79a7953ed4d556adf7eddbe25431cc69  usr/share/man/man4/freedreno.4.gz

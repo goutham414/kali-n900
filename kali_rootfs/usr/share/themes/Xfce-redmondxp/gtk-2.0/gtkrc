@@ -1,0 +1,211 @@
+style "default"
+{
+    GtkButton::default_border         = {0, 0, 0, 0}
+    GtkButton::default_outside_border = {0, 0, 0, 0}
+    GtkButton::default_spacing        = 10
+    GtkButton::focus-line-width       = 1
+    GtkButton::focus-padding          = 0
+    GtkCheckButton::indicator_size    = 15
+    GtkRadioButton::indicator_size    = 15
+    GtkMenuBar::shadow_type           = out
+    GtkMenuItem::selected_shadow_type = none
+    GtkPaned::handle_full_size        = 1
+    GtkRange::slider_width            = 15
+    GtkRange::stepper_size            = 15
+    GtkRange::stepper_spacing         = 0
+    GtkRange::trough_border           = 0
+    GtkScrollbar::min_slider_length   = 20
+    GtkToolbar::shadow_type           = out
+    GtkWidget::interior_focus         = 1
+    GtkWidget::internal-padding       = 4
+
+    xthickness = 2
+    ythickness = 2
+
+    base[ACTIVE]      = "#e5e5e5"
+    base[INSENSITIVE] = "#efebdf"
+    base[NORMAL]      = "#ffffff"
+    base[PRELIGHT]    = "#efebdf"
+    base[SELECTED]    = "#0055ef"
+
+    bg[ACTIVE]        = "#d4d4ce"
+    bg[INSENSITIVE]   = "#efebdf"
+    bg[NORMAL]        = "#efebdf"
+    bg[PRELIGHT]      = "#efebdf"
+    bg[SELECTED]      = "#0055ef"
+
+    fg[ACTIVE]        = "#000000"
+    fg[INSENSITIVE]   = "#7f7f79"
+    fg[NORMAL]        = "#000000"
+    fg[PRELIGHT]      = "#000000"
+    fg[SELECTED]      = "#ffffff"
+
+    text[ACTIVE]      = "#000000"
+    text[INSENSITIVE] = "#000000"
+    text[NORMAL]      = "#000000"
+    text[PRELIGHT]    = "#000000"
+    text[SELECTED]    = "#ffffff"
+
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = plain
+        }
+    }
+}
+widget_class "*"                   style "default"
+
+style "colored" = "default"
+{
+    xthickness = 1
+    ythickness = 1
+
+    bg[ACTIVE]        = "#0055ef"
+    bg[PRELIGHT]      = "#0055ef"
+    fg[ACTIVE]        = "#ffffff"
+    fg[PRELIGHT]      = "#ffffff"
+    text[PRELIGHT]    = "#ffffff"
+
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = gradient
+            orientation = vertical
+            shade_start = 0.9
+            shade_end = 1.1
+        }
+    }
+}
+widget_class "*GtkList*"           style "colored"
+class "*GtkList*"                  style "colored"
+widget_class "*GtkEntry*"          style "colored"
+class "*GtkEntry*"                 style "colored"
+widget_class "*GtkTree*"           style "colored"
+class "*GtkTree*"                  style "colored"
+widget_class "*GtkProgress*"       style "colored"
+class "*GtkProgress*"              style "colored"
+
+style "menu" = "colored"
+{
+    xthickness = 1
+    ythickness = 1
+
+    bg[INSENSITIVE]   = "#ffffff"
+    bg[NORMAL]        = "#ffffff"
+
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = plain
+        }
+    }
+}
+widget_class "*Menu*"              style "menu"
+class "*Menu*"                     style "menu"
+
+style "menubar" = "colored"
+{
+    xthickness = 2
+    ythickness = 2
+}
+
+widget_class "*MenuBar"            style "menubar"
+class "*MenuBar"                   style "menubar"
+
+style "button" = "default"
+{
+    bg[NORMAL]        = "#fafaf2"
+    bg[ACTIVE]        = "#ffcb39"
+    bg[PRELIGHT]      = "#fafaf2"
+    bg[INSENSITIVE]   = "#fafaf2"
+
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = gradient
+            orientation = vertical
+            shade_start = 1.1
+            shade_end = 0.9
+        }
+    }
+}
+widget_class "*Button*"            style "button"
+class "*Button*"                   style "button"
+widget_class "*button*"            style "button"
+class "*button*"                   style "button"
+widget_class "*OptionMenu*"        style "button"
+class "*OptionMenu*"               style "button"
+
+style "notebook" = "default"
+{
+    xthickness = 1
+    ythickness = 1
+
+    bg[NORMAL]        = "#fafaf2"
+    bg[ACTIVE]        = "#d4d4ce"
+}
+
+widget_class "*Notebook*"          style "notebook"
+class "*Notebook*"                 style "notebook"
+
+style "scroll" = "default"
+{
+    base[ACTIVE]      = "#d4d4ce"
+    base[INSENSITIVE] = "#efebdf"
+    base[NORMAL]      = "#efebdf"
+    base[PRELIGHT]    = "#c6d3ff"
+    base[SELECTED]    = "#c6d3ff"
+    bg[NORMAL]        = "#c6d3ff"
+    bg[PRELIGHT]      = "#c6d3ff"
+    bg[SELECTED]      = "#efebdf"
+    fg[SELECTED]      = "#000000"
+    text[SELECTED]    = "#000000"
+
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = gradient
+            orientation = auto
+            shade_start = 1.1
+            shade_end = 0.9
+        }
+    }
+}
+widget_class "*Scrollbar*"         style "scroll"
+class "*Scrollbar*"                style "scroll"
+widget_class "*GtkScale*"          style "scroll"
+class "*GtkScale*"                 style "scroll"
+
+
+# This is for ROX-Filer
+# 
+style "rox" = "default"
+{
+  bg[NORMAL] = "#ffffff"
+  bg[ACTIVE] = "#ffffff"
+}
+widget_class "*Collection"         style "rox"
+
+
+# This is for the window borders (xfwm4 & metacity)
+# 
+style "titlebar" = "default"
+{
+    bg[SELECTED]      = "#0055ef"
+    fg[SELECTED]      = "#ffffff"
+    bg[INSENSITIVE]   = "#7b96de"
+    fg[INSENSITIVE]   = "#dee7f7"
+}
+widget "xfwm"                      style "titlebar"
+class "MetaFrames"                 style "titlebar"
+widget_class "MetaFrames"          style "titlebar"

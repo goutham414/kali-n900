@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=recstudio-cli
+Encoding=UTF-8
+Exec=sh -c "recstudio-cli;${SHELL:-bash}"
+Icon=kali-recstudio.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Kali-Package=recstudio

@@ -1,0 +1,11 @@
+
+Start-Date: 2016-03-20  19:42:54
+Commandline: /usr/bin/apt-get -y --no-install-recommends install firmware-ti-connectivity sysvinit-core
+Install: firmware-ti-connectivity:armhf (20160110-1), sysvinit-core:armhf (2.88dsf-59.3)
+Remove: systemd-sysv:armhf (229-2)
+End-Date: 2016-03-20  19:43:14
+
+Start-Date: 2016-03-20  20:05:00
+Commandline: /usr/bin/apt-get install kpartx
+Install: kpartx:armhf (0.5.0+git1.656f8865-5)
+End-Date: 2016-03-20  20:05:05

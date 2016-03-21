@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=blkcalc
+Encoding=UTF-8
+Exec=sh -c "blkcalc;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Kali-Package=sleuthkit

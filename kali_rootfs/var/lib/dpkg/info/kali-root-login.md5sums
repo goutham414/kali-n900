@@ -1,0 +1,8 @@
+1577b99fa7946df14387a802adb6b5fa  usr/share/doc/kali-root-login/changelog.gz
+480a9a08318ee5a0530184bbf4b12687  usr/share/doc/kali-root-login/copyright
+b83a87d45a0205284bf5a2f686422ba8  usr/share/gdm/dconf/91-kali-settings
+b1aa2c2b01e4d3b4625c0423a51730b3  usr/share/kali-root-login/daemon.conf
+efd93f40abbe4b7136476cf1fe9ef114  usr/share/kali-root-login/gdm-autologin
+0c45e7e086c4ba8fddd883098b977a4f  usr/share/kali-root-login/gdm-password
+b0663f34dfd91e926339b322cf818b25  usr/share/kali-root-login/sddm
+8eb356348fb934e5b02c8cf86d1aef15  usr/share/kali-root-login/sddm.conf

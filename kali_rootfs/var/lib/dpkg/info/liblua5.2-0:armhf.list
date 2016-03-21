@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/liblua5.2-0
+/usr/share/doc/liblua5.2-0/changelog.Debian.gz
+/usr/share/doc/liblua5.2-0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/liblua5.2-c++.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/liblua5.2.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/liblua5.2.so.0
+/usr/lib/arm-linux-gnueabihf/liblua5.2-c++.so.0

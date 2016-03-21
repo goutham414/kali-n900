@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=patator
+Encoding=UTF-8
+Exec=sh -c "patator -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Kali-Package=patator
+
+

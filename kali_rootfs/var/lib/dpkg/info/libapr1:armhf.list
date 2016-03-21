@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libapr1
+/usr/share/doc
+/usr/share/doc/libapr1
+/usr/share/doc/libapr1/changelog.Debian.gz
+/usr/share/doc/libapr1/changelog.gz
+/usr/share/doc/libapr1/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libapr-1.so.0.5.2
+/usr/lib/arm-linux-gnueabihf/libapr-1.so.0

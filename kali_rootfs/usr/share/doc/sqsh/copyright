@@ -1,0 +1,13 @@
+This package was debianized by Steve Langasek <vorlon@debian.org> on
+Wed, 30 May 2001 12:14:10 -0500.
+
+It was downloaded from http://www.sqsh.org/sqsh_download.html
+
+Upstream Author: Scott C. Gray <gray@voicenet.com>
+
+Copyright:
+
+sqsh is copyright (C) 1995-1999  Scott C. Gray and is licensed under the
+GNU GPL license.
+On Debian GNU/Linux systems, the complete text of the GNU General Public
+License can be found in /usr/share/common-licenses/GPL.

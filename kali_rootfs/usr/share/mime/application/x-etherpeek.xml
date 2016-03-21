@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-etherpeek">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Packet Capture (Savvius/Etherpeek/Airopeek tagged/v9)</comment>
+  <generic-icon name="application-wireshark-doc"/>
+  <glob pattern="*.tpc"/>
+  <glob pattern="*.apc"/>
+  <glob pattern="*.wpz"/>
+  <glob pattern="*.tpc.gz"/>
+  <glob pattern="*.apc.gz"/>
+  <glob pattern="*.wpz.gz"/>
+</mime-type>

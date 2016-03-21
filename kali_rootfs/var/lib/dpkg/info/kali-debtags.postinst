@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if which debtags >/dev/null 2>&1; then
+    # Disabled until http://bugs.debian.org/791647 is fixed
+    # debtags update --local
+    debtags update
+fi
+
+
+

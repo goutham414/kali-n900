@@ -1,0 +1,225 @@
+#!/bin/bash
+#
+# This script runs every day, trying to crack passwords, and then calls
+# mailer to warn the users (and maybe also root) about that.
+
+# One of two options should be passed to this script:
+# start -- start running john
+# stop -- stops running john
+# The script will run/stop john (as a background process if started)
+# and exit.
+
+# The time when the script is called can be configured in /etc/cron.d/john
+
+# You can pass options to john in /etc/cron.d/john. See john(1) for the possible
+# options, and include them after "JOHN_OPTIONS=" below.
+
+JOHNDIR=/usr/sbin
+PASSWD=/etc/passwd
+SHADOW=/etc/shadow
+RUNDIR=/var/lib/john
+PIDDIR=/var/run/john
+RESTORE=$RUNDIR/restore
+
+PASSFILE=`grep -v ^# /etc/john/john-mail.conf | grep -e "[ ]*passfile[ ]*=[ ]*" | sed -e "s/#.*//" -e "s/.*=[ ]*//" |head -1`
+GROUP=`grep -v ^# /etc/john/john-mail.conf | grep -e "[ ]*group[ ]*=[ ]*" | sed -e "s/#.*//" -e "s/.*=[ ]*//" | head -1`
+
+[ ! -d $PIDDIR ] && mkdir -p $PIDDIR
+cd $RUNDIR
+
+# Gets the PID of the process that should be running john,
+# and sends SIGHUP to it.
+#
+john_stop()
+{
+
+	RESTOREFILE=""
+	if [ -f $RESTORE ]; then
+		RESTOREFILE=`grep ^$PASSFILE $RESTORE`
+	fi
+
+	if [ -f $PIDDIR/john.pid ]
+	then
+		# Stop john, we don't really care too much about the error
+		# messages (just in case, the john cronjob might have finished
+		# its job and exited)
+		/sbin/start-stop-daemon --stop -q -o --pidfile $PIDDIR/john.pid 2>&1 >/dev/null
+		rm $PIDDIR/john.pid
+	else
+		# Try the old (deprecated) method if we don't have a piddfile
+		john_stop_all
+	fi
+
+
+	# Once finished we determine if we need to mail anything
+	rm -f /var/lock/john
+	if [ ! -z "$RESTOREFILE" -a -f "$RESTOREFILE" ] ; then
+	# But use the latest shadow file
+		TMPFILE=`mktemp $PASSFILE.XXXXXX` || exit 1
+		chmod og-rwx $TMPFILE
+		if [ -n "$SHADOW" -a -f "$SHADOW" ]; then
+			$JOHNDIR/unshadow $PASSWD $SHADOW >> $TMPFILE
+		else
+			cat $PASSWD >> $TMPFILE
+		fi
+		# Move to the directory where john.pot resides
+		OUTPUT=`$JOHNDIR/mailer $TMPFILE 2>&1`
+		# Mailer mails to root if there is something relevant
+		# this could be done by configuring john-mail.msg too..
+		if [ -n "$OUTPUT" ]; then
+			echo $OUTPUT
+		fi
+		rm -f $TMPFILE
+	fi
+}
+
+# Gets the PID of all the processes called "john" processes, try to checks 
+# which one we want, and sends SIGHUP to it.
+#
+john_stop_all()
+{
+
+PID=`/bin/pidof john`
+for p in $PID; do
+	PROCPATH=$(readlink /proc/$p/exe)
+	RELEVANTPATH=`echo $PROCPATH | sed -e"s^$JOHNDIR/john.*^$JOHNDIR/john^"`
+	if [ "$RELEVANTPATH" = $JOHNDIR/john ]; then
+		kill -2 $p
+	fi
+done
+
+}
+
+# Starts john 
+#
+john_start()
+{
+
+if [ -z $PASSFILE ]; then
+	mail -s "John cronjob is not configured yet!" root <<EOF
+John was set up to run every day, but it needs you to specify a
+temporary file, with a "passfile=" line in /etc/john/john-mail.conf.
+
+Thank you,
+
+John the Ripper, an automated password cracking tool.
+EOF
+	 exit 0
+fi
+
+
+
+# $TMPFILE is the file with the temporary passwords unshadowed. It
+# will be passed to john if this is not a restore session. $PASSFILE is
+# the same. The difference is that we may set $TMPFILE to "" in the case
+# of a restore session, but $PASSFILE is kept so we can use the mailer
+# later.
+
+RESTOREFILE=""
+if [ -f $RESTORE ]; then
+	RESTOREFILE=`grep ^$PASSFILE $RESTORE`
+	RESTORE_OPTION="-restore:$RESTORE"
+fi
+
+# if RESTOREFILE is empty or does not exist, then there is 
+# really nothing to restore
+# TODO: this might not be strictly true, if john has cracked
+# all passwords before the cronjob was stopped
+if [ -z "$RESTOREFILE" -o ! -f "$RESTOREFILE" ] ; then
+	RESTORE_OPTION=""
+	RESTOREFILE=""
+	[ -f "$RESTORE" ] && rm -f $RESTORE
+	# Remove anyother stale PASSFILEs before creating a new one
+	rm -f $PASSFILE*
+	TMPFILE=`mktemp $PASSFILE.XXXXXX` || exit 1
+	chmod og-rwx $TMPFILE
+	if [ -n "$SHADOW" -a -f "$SHADOW" ]; then
+		$JOHNDIR/unshadow $PASSWD $SHADOW >> $TMPFILE
+	else
+		cat $PASSWD >> $TMPFILE
+	fi
+fi
+
+# We capture the output of john, and check if there was a line with
+# "guesses: 0" in it. If not, then either john exited abnormally, or
+# passwords were guessed -- and in both cases we send all the output
+# to stdout.
+#
+if [ ! -f /var/lock/john -a ! -f $PIDDIR/john.pid ]; then
+	touch /var/lock/john
+
+	# Run john in background 
+	# TODO: start-stop-daemon is flexible enought we could run
+	# it using a different user
+	if [ -z "$RESTORE_OPTION" ] ; then
+		/sbin/start-stop-daemon --start --chdir $RUNDIR -b -m \
+			--pidfile $PIDDIR/john.pid --exec $JOHNDIR/john --  \
+			$JOHN_OPTIONS $TMPFILE  > /dev/null 
+	else 
+	# Note: If we are restoring the session all the options are already
+	# there...
+		/sbin/start-stop-daemon --start --chdir $RUNDIR -b -m \
+		--pidfile $PIDDIR/john.pid --exec $JOHNDIR/john --  \
+		$RESTORE_OPTION $JOHN_OPTIONS $TMPFILE  > /dev/null 
+	fi
+else
+	PID=`cat $PIDDIR/john.pid`
+	# Redundant check (just in case)
+	PROCPATH=$(readlink /proc/$PID/exe)
+	RELEVANTPATH=`echo $PROCPATH | sed -e"s^$JOHNDIR/john.*^$JOHNDIR/john^"`
+	if [ "$RELEVANTPATH" = $JOHNDIR/john ]; then
+		mail -s "John is already running" root <<EOF
+John is running at $HOSTNAME -- either the cronjob lasted too long,
+or someone else is running john. Please investigate this situation
+and, if John is not running, remove /var/lock/john and/or $PIDDIR/john.pid
+EOF
+	else 
+		mail -s "There are John cron's stale files" root <<EOF
+There are stale files of a John cronjob at $HOSTNAME
+Please investigate this situation and remove /var/lock/john 
+and/or $PIDDIR/john.pid
+EOF
+	fi
+fi
+
+}
+
+# filters the passwd file by given group
+alter_passwd()
+{
+	if [[ ! -z $GROUP ]]; then
+		ALTEREDPASSWD=$PASSWD.altered.for.john
+		rm -f $ALTEREDPASSWD
+		touch $ALTEREDPASSWD
+		chmod 0600 $ALTEREDPASSWD
+		for x in `grep -e ^$GROUP: /etc/group | cut -d: -f4 | tr ',' ' '`
+		do
+			grep -e ^$x: $PASSWD >> $ALTEREDPASSWD
+		done
+		PASSWD=$ALTEREDPASSWD
+	fi
+}
+
+# removes the altered file
+remove_altered_passwd()
+{
+	rm -f $PASSWD.altered.for.john
+}
+if [ $# -ne 1 ]; then
+	echo "$0 {start|stop} "
+	exit 1;
+else
+	case "$1" in
+		start)
+			alter_passwd
+			john_start
+			;;
+		stop)
+			john_stop
+			remove_altered_passwd
+			;;
+		*)
+			exit 1;
+			;;
+	esac
+fi

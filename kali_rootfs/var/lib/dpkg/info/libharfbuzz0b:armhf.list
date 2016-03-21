@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libharfbuzz0b
+/usr/share/doc/libharfbuzz0b/changelog.Debian.gz
+/usr/share/doc/libharfbuzz0b/changelog.Debian.armhf.gz
+/usr/share/doc/libharfbuzz0b/changelog.gz
+/usr/share/doc/libharfbuzz0b/copyright
+/usr/share/doc/libharfbuzz0b/TODO
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libharfbuzz.so.0.10000.1
+/usr/lib/arm-linux-gnueabihf/libharfbuzz.so.0

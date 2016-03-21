@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libthai0
+/usr/share/doc/libthai0/changelog.Debian.gz
+/usr/share/doc/libthai0/changelog.gz
+/usr/share/doc/libthai0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libthai.so.0.2.4
+/usr/lib/arm-linux-gnueabihf/libthai.so.0

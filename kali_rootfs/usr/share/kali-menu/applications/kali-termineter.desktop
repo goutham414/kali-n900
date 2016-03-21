@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=termineter
+Encoding=UTF-8
+Exec=sh -c "termineter -h;${SHELL:-bash}"
+Icon=kali-termineter.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;
+X-Kali-Package=termineter

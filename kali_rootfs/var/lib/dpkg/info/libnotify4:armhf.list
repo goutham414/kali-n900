@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnotify4
+/usr/share/doc/libnotify4/changelog.gz
+/usr/share/doc/libnotify4/NEWS.gz
+/usr/share/doc/libnotify4/changelog.Debian.gz
+/usr/share/doc/libnotify4/copyright
+/usr/share/doc/libnotify4/AUTHORS
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libnotify.so.4.0.0
+/usr/lib/arm-linux-gnueabihf/libnotify.so.4

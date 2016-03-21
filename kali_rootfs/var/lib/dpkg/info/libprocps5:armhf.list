@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libprocps5
+/usr/share/doc/libprocps5/changelog.Debian.gz
+/usr/share/doc/libprocps5/changelog.gz
+/usr/share/doc/libprocps5/NEWS.Debian.gz
+/usr/share/doc/libprocps5/copyright
+/lib
+/lib/arm-linux-gnueabihf
+/lib/arm-linux-gnueabihf/libprocps.so.5.0.0
+/lib/arm-linux-gnueabihf/libprocps.so.5

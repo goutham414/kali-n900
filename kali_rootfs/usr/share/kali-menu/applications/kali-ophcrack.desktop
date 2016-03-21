@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ophcrack
+Encoding=UTF-8
+Exec=sh -c "ophcrack"
+Icon=kali-ophcrack.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=05-password-attacks;
+X-Kali-Package=ophcrack

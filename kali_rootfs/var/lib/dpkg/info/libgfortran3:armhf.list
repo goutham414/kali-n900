@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgfortran.so.3.0.0
+/usr/share/doc/libgfortran3
+/usr/lib/arm-linux-gnueabihf/libgfortran.so.3

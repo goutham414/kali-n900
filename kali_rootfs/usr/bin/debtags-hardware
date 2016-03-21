@@ -1,0 +1,167 @@
+#!/usr/bin/python3
+
+# debtags-hardware: detect what hardware tags apply to the current system
+#
+# Copyright (C) 2012  Enrico Zini <enrico@debian.org>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+import pwd
+import os
+import sys
+import hashlib
+import urllib
+import urllib2
+import json
+import logging
+
+log = logging.getLogger(sys.argv[0])
+
+def list_packages(opts):
+    from debtagshw import debtagshw
+    hw = debtagshw.DebtagsAvailableHW()
+
+    from debian import debtags
+    import apt
+    cache = apt.Cache()
+
+    db = debtags.DB()
+    with open("/var/lib/debtags/package-tags", "r") as fd:
+        db.read(fd)
+
+    for status, tags in hw.generate_tag_expressions():
+        if opts.incompatible:
+            if status != debtagshw.HardwareSupported.NO: continue
+        else:
+            if status != debtagshw.HardwareSupported.YES: continue
+        pkgsets = [db.packages_of_tag(t) for t in tags]
+        res = set(pkgsets[0])
+        for s in pkgsets[1:]:
+            res &= s
+        if not res: continue
+        print "#"
+        print "# Packages for %s:" % ",".join(sorted(tags))
+        print "#"
+        for pkg in sorted(res):
+            try:
+                # FIXME: I wish I had cache.get(pkg, None)
+                p = cache[pkg]
+            except KeyError:
+                continue
+            if opts.installed and not p.is_installed: continue
+            if opts.uninstalled and p.is_installed: continue
+            ver = p.candidate
+            print p.name, "-", ver.summary
+
+def pkgreport(opts):
+    from debtagshw import debtagshw
+    hw = debtagshw.DebtagsAvailableHW()
+
+    from debian import debtags
+    import apt
+    cache = apt.Cache()
+
+    db = debtags.DB()
+    with open("/var/lib/debtags/package-tags", "r") as fd:
+        db.read(fd)
+
+    class Pkginfo(object):
+        def __init__(self, name):
+            self.pkg = cache[name]
+            self.rules = []
+
+    pkgs = dict()
+    seen_tags = set()
+
+    for status, tags in hw.generate_tag_expressions():
+        seen_tags.update(tags)
+        pkgsets = [db.packages_of_tag(t) for t in tags]
+        res = set(pkgsets[0])
+        for s in pkgsets[1:]:
+            res &= s
+        if not res: continue
+        for name in res:
+            info = pkgs.get(name, None)
+            if info is None:
+                try:
+                    info = Pkginfo(name)
+                except KeyError:
+                    continue
+                pkgs[name] = info
+            info.rules.append((status, tags))
+
+    for name, info in sorted(pkgs.iteritems()):
+        print info.pkg.name, "-", info.pkg.candidate.summary
+        print " ", ", ".join(sorted(t for t in db.tags_of_package(name) if t in seen_tags))
+        # Use the following line instead if you want to see all tags of package
+        # print " ", ", ".join(sorted(db.tags_of_package(name)))
+        for status, tags in info.rules:
+            print " ", status, ", ".join(sorted(tags))
+        print
+
+if __name__ == "__main__":
+    from optparse import OptionParser
+    import sys
+
+    VERSION="1.8"
+
+    class Parser(OptionParser):
+        def error(self, msg):
+            sys.stderr.write("%s: error: %s\n\n" % (self.get_prog_name(), msg))
+            self.print_help(sys.stderr)
+            sys.exit(2)
+
+    parser = Parser(usage="usage: %prog [options]",
+                    version="%prog "+ VERSION,
+                    description="Detects what tag combinations make sense for the current system.")
+    parser.add_option("-q", "--quiet", action="store_true",
+                      help="quiet mode: only output errors.")
+    parser.add_option("-v", "--verbose", action="store_true",
+                      help="verbose mode: output progress and non-essential information.")
+    parser.add_option("-d", "--debug", action="store_true",
+                      help="debug mode: output debug informationn.")
+    parser.add_option("--packages", action="store_true",
+                      help="show packages for all tags found.")
+    parser.add_option("--incompatible", action="store_true",
+                      help="show packages that would not work instead of those that would work.")
+    parser.add_option("--installed", action="store_true",
+                      help="show only installed packages.")
+    parser.add_option("--uninstalled", action="store_true",
+                      help="show only uninstalled packages.")
+    parser.add_option("--pkgreport", action="store_true",
+                      help="show a details reports of what packages match what rules and why.")
+    (opts, args) = parser.parse_args()
+
+    #FORMAT = "%(asctime)-15s %(levelname)s %(message)s"
+    FORMAT = "%(message)s"
+    if opts.quiet:
+        logging.basicConfig(level=logging.ERROR, stream=sys.stderr, format=FORMAT)
+    elif not opts.verbose:
+        logging.basicConfig(level=logging.WARNING, stream=sys.stderr, format=FORMAT)
+    elif opts.debug:
+        logging.basicConfig(level=logging.DEBUG, stream=sys.stderr, format=FORMAT)       
+    else:
+        logging.basicConfig(level=logging.INFO, stream=sys.stderr, format=FORMAT)
+
+    if opts.packages:
+        list_packages(opts)
+    elif opts.pkgreport:
+        pkgreport(opts)
+    else:
+        from debtagshw import debtagshw
+        hw = debtagshw.DebtagsAvailableHW()
+
+        for status, tag in hw.generate_tag_expressions():
+            print status, tag

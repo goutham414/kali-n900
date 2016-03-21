@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wifite
+Encoding=UTF-8
+Exec=sh -c "wifite --help;${SHELL:-bash}"
+Icon=kali-wifite.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-wireless-attacks;
+X-Kali-Package=wifite

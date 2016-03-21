@@ -1,0 +1,1525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Libxfce4ui Reference Manual: XfceSMClient</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.0">
+<link rel="home" href="index.html" title="Libxfce4ui Reference Manual">
+<link rel="up" href="libxfce4ui-sm.html" title="Part V. Xfce Session Management Support">
+<link rel="prev" href="libxfce4ui-sm.html" title="Part V. Xfce Session Management Support">
+<link rel="next" href="ix01.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#XfceSMClient.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#XfceSMClient.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#XfceSMClient.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#XfceSMClient.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libxfce4ui-sm.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libxfce4ui-sm.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ix01.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="XfceSMClient"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="XfceSMClient.top_of_page"></a>XfceSMClient</span></h2>
+<p>XfceSMClient — Session management client</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="XfceSMClient.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="returnvalue">GOptionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-option-group" title="xfce_sm_client_get_option_group ()">xfce_sm_client_get_option_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="returnvalue">XfceSMClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get" title="xfce_sm_client_get ()">xfce_sm_client_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="returnvalue">XfceSMClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-with-argv" title="xfce_sm_client_get_with_argv ()">xfce_sm_client_get_with_argv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="returnvalue">XfceSMClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-full" title="xfce_sm_client_get_full ()">xfce_sm_client_get_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-connect" title="xfce_sm_client_connect ()">xfce_sm_client_connect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-disconnect" title="xfce_sm_client_disconnect ()">xfce_sm_client_disconnect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-is-connected" title="xfce_sm_client_is_connected ()">xfce_sm_client_is_connected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-is-resumed" title="xfce_sm_client_is_resumed ()">xfce_sm_client_is_resumed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-desktop-file" title="xfce_sm_client_set_desktop_file ()">xfce_sm_client_set_desktop_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-request-shutdown" title="xfce_sm_client_request_shutdown ()">xfce_sm_client_request_shutdown</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-client-id" title="xfce_sm_client_get_client_id ()">xfce_sm_client_get_client_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-state-file" title="xfce_sm_client_get_state_file ()">xfce_sm_client_get_state_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-current-directory" title="xfce_sm_client_get_current_directory ()">xfce_sm_client_get_current_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-current-directory" title="xfce_sm_client_set_current_directory ()">xfce_sm_client_set_current_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-priority" title="xfce_sm_client_get_priority ()">xfce_sm_client_get_priority</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-priority" title="xfce_sm_client_set_priority ()">xfce_sm_client_set_priority</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-restart-command" title="xfce_sm_client_get_restart_command ()">xfce_sm_client_get_restart_command</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-restart-command" title="xfce_sm_client_set_restart_command ()">xfce_sm_client_set_restart_command</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="returnvalue">XfceSMClientRestartStyle</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-restart-style" title="xfce_sm_client_get_restart_style ()">xfce_sm_client_get_restart_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-restart-style" title="xfce_sm_client_set_restart_style ()">xfce_sm_client_set_restart_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--argc" title="The “argc” property">argc</a></td>
+<td class="property_flags">Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a></td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--argv" title="The “argv” property">argv</a></td>
+<td class="property_flags">Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--client-id" title="The “client-id” property">client-id</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--current-directory" title="The “current-directory” property">current-directory</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--desktop-file" title="The “desktop-file” property">desktop-file</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--priority" title="The “priority” property">priority</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a></td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--restart-command" title="The “restart-command” property">restart-command</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a></td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--restart-style" title="The “restart-style” property">restart-style</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="XfceSMClient.html#XfceSMClient--resumed" title="The “resumed” property">resumed</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="XfceSMClient.html#XfceSMClient-quit" title="The “quit” signal">quit</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="XfceSMClient.html#XfceSMClient-quit-cancelled" title="The “quit-cancelled” signal">quit-cancelled</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="XfceSMClient.html#XfceSMClient-quit-requested" title="The “quit-requested” signal">quit-requested</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="XfceSMClient.html#XfceSMClient-save-state" title="The “save-state” signal">save-state</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="XfceSMClient.html#XfceSMClient-save-state-extended" title="The “save-state-extended” signal">save-state-extended</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="XfceSMClient.html#XfceSMClient-struct" title="XfceSMClient">XfceSMClient</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="XfceSMClient.html#XfceSMClientPriority" title="enum XfceSMClientPriority">XfceSMClientPriority</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle">XfceSMClientRestartStyle</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="XfceSMClient.html#XfceSMClientShutdownHint" title="enum XfceSMClientShutdownHint">XfceSMClientShutdownHint</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="XfceSMClient.html#XFCE-SM-CLIENT-ERROR:CAPS" title="XFCE_SM_CLIENT_ERROR">XFCE_SM_CLIENT_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="XfceSMClient.html#XfceSmCLientErrorEnum" title="enum XfceSmCLientErrorEnum">XfceSmCLientErrorEnum</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> XfceSMClientRestartStyle
+    <span class="lineart">╰──</span> XfceSMClientShutdownHint
+    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> XfceSMClient
+</pre>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libxfce4ui/libxfce4ui.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.description"></a><h2>Description</h2>
+<p><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> is a session management client that speaks the X Session
+Management Protocol (XSMP).  It's designed to be easy to use and hide some
+of the more esoteric feaures of XSMP from the API user.</p>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="xfce-sm-client-get-option-group"></a><h3>xfce_sm_client_get_option_group ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="returnvalue">GOptionGroup</span></a> *
+xfce_sm_client_get_option_group (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> argc</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **argv</code></em>);</pre>
+<p>Constructs a <a href="https://developer.gnome.org/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="type">GOptionGroup</span></a> suitable for use with Glib's
+command-line option parser.</p>
+<p>This function is a bit sneaky in that it will make a copy of
+the program's argc and argv <span class="emphasis"><em>before</em></span> GTK+ etc.
+has a chance to mess around with it, so <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> can later
+construct an accurate restart command.  Instead of calling
+<a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init"><code class="function">gtk_init()</code></a> or <a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init-with-args"><code class="function">gtk_init_with_args()</code></a>, instead you'd do something
+like:</p>
+<div class="informalexample"><pre class="programlisting">
+GOptionContext *context = g_option_context_new("");
+g_option_context_add_group(context, gtk_get_option_group(TRUE));
+g_option_context_add_group(context, xfce_sm_client_get_option_group(argc, argv);
+g_option_context_parse(context, &amp;argc, &amp;argv, NULL);
+</pre></div>
+<p>Error checking is omitted here for brevity, and of course you could
+add your app's own options with <a href="https://developer.gnome.org/glib/unstable/glib-Commandline-option-parser.html#g-option-context-add-main-entries"><code class="function">g_option_context_add_main_entries()</code></a>
+or similar.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.2.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>argc</p></td>
+<td class="parameter_description"><p>The application's argument count</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>argv</p></td>
+<td class="parameter_description"><p>The application's argument vector</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.2.9"></a><h4>Returns</h4>
+<p> A new <a href="https://developer.gnome.org/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="type">GOptionGroup</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get"></a><h3>xfce_sm_client_get ()</h3>
+<pre class="programlisting"><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="returnvalue">XfceSMClient</span></a> *
+xfce_sm_client_get (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the application's SM client instance.  This is best
+used with <a class="link" href="XfceSMClient.html#xfce-sm-client-get-option-group" title="xfce_sm_client_get_option_group ()"><code class="function">xfce_sm_client_get_option_group()</code></a> above (and using
+the returned <a href="https://developer.gnome.org/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="type">GOptionGroup</span></a> with <a href="https://developer.gnome.org/glib/unstable/glib-Commandline-option-parser.html#g-option-context-parse"><code class="function">g_option_context_parse()</code></a>), as the
+command line parsing will figure out many of the SM client's
+required property values for you.</p>
+<p>If you are not using Gtk or Glib's command-line option parser,
+take a look at <code class="function">xfce_sm_client_new_with_argv()</code> and
+<code class="function">xfce_sm_client_new_full()</code>.</p>
+<p>If you have already created an <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> instance using
+this function or one of the xfce_sm_client_new_*() functions,
+this will return the same instance.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.3.7"></a><h4>Returns</h4>
+<p> A new or existing <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-with-argv"></a><h3>xfce_sm_client_get_with_argv ()</h3>
+<pre class="programlisting"><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="returnvalue">XfceSMClient</span></a> *
+xfce_sm_client_get_with_argv (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> argc</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **argv</code></em>,
+                              <em class="parameter"><code><a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a> restart_style</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> priority</code></em>);</pre>
+<p>Creates a new <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> instance.  It attempts to
+set all required properties using the app's command line.
+Note that this function does not actually connect to the session
+manager, so other actions can be taken (such as setting custom
+properties or connecting signals) before calling
+<a class="link" href="XfceSMClient.html#xfce-sm-client-connect" title="xfce_sm_client_connect ()"><code class="function">xfce_sm_client_connect()</code></a>.</p>
+<p>If you are using Gtk or Glib's command-line option parser,
+it is recommended that you use <a class="link" href="XfceSMClient.html#xfce-sm-client-get-option-group" title="xfce_sm_client_get_option_group ()"><code class="function">xfce_sm_client_get_option_group()</code></a>
+and <a class="link" href="XfceSMClient.html#xfce-sm-client-get" title="xfce_sm_client_get ()"><code class="function">xfce_sm_client_get()</code></a> instead.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>argc</p></td>
+<td class="parameter_description"><p>The number of arguments passed to <code class="function">main()</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>argv</p></td>
+<td class="parameter_description"><p>The argument vector passed to <code class="function">main()</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>restart_style</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>A restart priority</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.4.7"></a><h4>Returns</h4>
+<p> A new <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> instance</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-full"></a><h3>xfce_sm_client_get_full ()</h3>
+<pre class="programlisting"><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="returnvalue">XfceSMClient</span></a> *
+xfce_sm_client_get_full (<em class="parameter"><code><a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a> restart_style</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> priority</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *resumed_client_id</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *current_directory</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **restart_command</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desktop_file</code></em>);</pre>
+<p>Creates a new SM client instance, allowing the application
+fine-grained control over the initial properties set.
+Note that this function does not actually connect to the session
+manager, so other actions can be taken (such as setting custom
+properties or connecting signals) before calling
+<a class="link" href="XfceSMClient.html#xfce-sm-client-connect" title="xfce_sm_client_connect ()"><code class="function">xfce_sm_client_connect()</code></a>.</p>
+<p>It is recommended to use <a class="link" href="XfceSMClient.html#xfce-sm-client-get-with-argv" title="xfce_sm_client_get_with_argv ()"><code class="function">xfce_sm_client_get_with_argv()</code></a>, or,
+if you are using Gtk or Glib's command-line option parser,
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-option-group" title="xfce_sm_client_get_option_group ()"><code class="function">xfce_sm_client_get_option_group()</code></a> and <a class="link" href="XfceSMClient.html#xfce-sm-client-get" title="xfce_sm_client_get ()"><code class="function">xfce_sm_client_get()</code></a> instead.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>restart_style</p></td>
+<td class="parameter_description"><p>An XfceSMClientRestartStyle</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>A restart priority</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resumed_client_id</p></td>
+<td class="parameter_description"><p>The client id used in the previous session</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>current_directory</p></td>
+<td class="parameter_description"><p>The application's working directory</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>restart_command</p></td>
+<td class="parameter_description"><p>A command that can resume the application's
+saved state</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desktop_file</p></td>
+<td class="parameter_description"><p>The application's .desktop file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.5.7"></a><h4>Returns</h4>
+<p> A new <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> instance</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-connect"></a><h3>xfce_sm_client_connect ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfce_sm_client_connect (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Attempts to connect to the session manager.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> location.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.6.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  If an error
+occurs, <em class="parameter"><code>error</code></em>
+will be set.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-disconnect"></a><h3>xfce_sm_client_disconnect ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_sm_client_disconnect (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Disconnects the application from the session manager.</p>
+<div class="note"><p>
+This may not remove the application from the saved
+session (if any) if the user later does not choose to save
+the session when logging out.
+</p></div>
+<div class="refsect3">
+<a name="id-1.6.2.11.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-is-connected"></a><h3>xfce_sm_client_is_connected ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfce_sm_client_is_connected (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Determines whether or not the application has connected to the
+session manager.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.8.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if connected to the session manager, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-is-resumed"></a><h3>xfce_sm_client_is_resumed ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfce_sm_client_is_resumed (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Determines whether the application was resumed from a previous
+session, or if the application has been started fresh with no
+state information associated with it.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.9.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if resumed from a previous session, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-set-desktop-file"></a><h3>xfce_sm_client_set_desktop_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_sm_client_set_desktop_file (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desktop_file</code></em>);</pre>
+<p>Sets the application's .desktop file.  In addition to informing
+the session manager of the .desktop file so it can present localized
+names and an icon in session listings and the splash screen, this
+also calls <a href="https://developer.gnome.org/glib/unstable/glib-Miscellaneous-Utility-Functions.html#g-set-application-name"><code class="function">g_set_application_name()</code></a> and
+<a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-set-default-icon-name"><code class="function">gtk_window_set_default_icon_name()</code></a> (or
+<a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-set-default-icon-from-file"><code class="function">gtk_window_set_default_icon_from_file()</code></a>) if the Name and Icon
+keys are present, respectively.</p>
+<p>If a relative path to the file is provided, this function will search
+the standard application directories as specified by the</p>
+<a class="ulink" href="http://standards.freedesktop.org/menu-spec/latest/" target="_top">XDG
+Desktop Menu Specification</a>.
+<div class="refsect3">
+<a name="id-1.6.2.11.10.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desktop_file</p></td>
+<td class="parameter_description"><p>The path to the application's .desktop file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-request-shutdown"></a><h3>xfce_sm_client_request_shutdown ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_sm_client_request_shutdown (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>,
+                                 <em class="parameter"><code><a class="link" href="XfceSMClient.html#XfceSMClientShutdownHint" title="enum XfceSMClientShutdownHint"><span class="type">XfceSMClientShutdownHint</span></a> shutdown_hint</code></em>);</pre>
+<p>Sends a request to the session manager to end the session.
+Depending on <em class="parameter"><code>hint</code></em>
+, the session manager may prompt for a
+certain action (log out, halt, reboot, etc.) or may take the
+requested action without user intervention.</p>
+<div class="note"><p>
+The session manager may or may not support all requested
+actions, and is also free to ignore the requested action.
+</p></div>
+<div class="refsect3">
+<a name="id-1.6.2.11.11.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>shutdown_hint</p></td>
+<td class="parameter_description"><p>The type of shutdown requested</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-client-id"></a><h3>xfce_sm_client_get_client_id ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+xfce_sm_client_get_client_id (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Retrieves the session client's unique ID.  This ID can
+be used to construct a filename used to restore the
+application's state.  Note that this value is only
+guaranteed to be valid if connected to the session manager.</p>
+<div class="note"><p>
+Instead of constructing a state filename, it is
+recommended to use <a class="link" href="XfceSMClient.html#xfce-sm-client-get-state-file" title="xfce_sm_client_get_state_file ()"><code class="function">xfce_sm_client_get_state_file()</code></a>.
+</p></div>
+<div class="refsect3">
+<a name="id-1.6.2.11.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.12.7"></a><h4>Returns</h4>
+<p> an opaque object-owned string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-state-file"></a><h3>xfce_sm_client_get_state_file ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+xfce_sm_client_get_state_file (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Constructs a filename that can be used to restore or save
+state information.</p>
+<p>When saving state, ote that this file may already exist (and
+may have been used for saving previous state for the
+application), so the application should first remove or empty
+the file if it requires a fresh state file.</p>
+<p>On the next application start, this function can be used to
+check to see if there is any previous saved state, and, if so,
+the state can be restored from the file.</p>
+<p>This function will use a standard location and naming scheme
+and handle state cleanup (setting of the discard command) for you.</p>
+<p>Before calling this function, the application must have a
+valid program identifier set (see <code class="function">xfce_sm_client_set_program()</code>)
+and a valid client ID (see <a class="link" href="XfceSMClient.html#xfce-sm-client-get-client-id" title="xfce_sm_client_get_client_id ()"><code class="function">xfce_sm_client_get_client_id()</code></a>).</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.13.9"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.13.10"></a><h4>Returns</h4>
+<p> a file name string, owned by the object or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+the session client is disabled.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-current-directory"></a><h3>xfce_sm_client_get_current_directory ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+xfce_sm_client_get_current_directory (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Retrieves the session client's working directory.  See
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-current-directory" title="xfce_sm_client_set_current_directory ()"><code class="function">xfce_sm_client_set_current_directory()</code></a> for more information.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.14.6"></a><h4>Returns</h4>
+<p> an object-owned string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-set-current-directory"></a><h3>xfce_sm_client_set_current_directory ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_sm_client_set_current_directory (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *current_directory</code></em>);</pre>
+<p>Sets the startup working directory of <em class="parameter"><code>sm_client</code></em>
+ to
+<em class="parameter"><code>current_directory</code></em>
+.  If unset, defaults to the user's
+home directory.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>current_directory</p></td>
+<td class="parameter_description"><p>A valid path name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-priority"></a><h3>xfce_sm_client_get_priority ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a>
+xfce_sm_client_get_priority (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Retrieves the session client's restart priority.  See
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-priority" title="xfce_sm_client_set_priority ()"><code class="function">xfce_sm_client_set_priority()</code></a> for more information.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.16.6"></a><h4>Returns</h4>
+<p> a value from <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#G-MININT8:CAPS"><span class="type">G_MININT8</span></a> to <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#G-MAXINT8:CAPS"><span class="type">G_MAXINT8</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-set-priority"></a><h3>xfce_sm_client_set_priority ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_sm_client_set_priority (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> priority</code></em>);</pre>
+<p>Sets the startup priority for <em class="parameter"><code>sm_client</code></em>
+ to <em class="parameter"><code>priority</code></em>
+.  Note
+that the default priority for applications is 50; lower values
+should be reserved for components of the desktop environment.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>A 8-bit signed priority value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-restart-command"></a><h3>xfce_sm_client_get_restart_command ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
+xfce_sm_client_get_restart_command (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Retrieves the session client's restart command.  See
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-restart-command" title="xfce_sm_client_set_restart_command ()"><code class="function">xfce_sm_client_set_restart_command()</code></a> for more information.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.18.6"></a><h4>Returns</h4>
+<p> an object-owned string vector</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-set-restart-command"></a><h3>xfce_sm_client_set_restart_command ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_sm_client_set_restart_command (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **restart_command</code></em>);</pre>
+<p>Sets the application's "restart" command, which is used to restart
+the application and restore any saved state from the previous
+run.</p>
+<p>If unset, defaults to the command used to start this instance
+of the application, with session management related arguments
+added (if not already present).</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.19.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>restart_command</p></td>
+<td class="parameter_description"><p>An argument vector</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-get-restart-style"></a><h3>xfce_sm_client_get_restart_style ()</h3>
+<pre class="programlisting"><a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="returnvalue">XfceSMClientRestartStyle</span></a>
+xfce_sm_client_get_restart_style (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>);</pre>
+<p>Retrieves the session client's restart style.  See
+<a class="link" href="XfceSMClient.html#xfce-sm-client-set-restart-style" title="xfce_sm_client_set_restart_style ()"><code class="function">xfce_sm_client_set_restart_style()</code></a> for more information.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.2.11.20.6"></a><h4>Returns</h4>
+<p> a value from the <a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a> enum</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-sm-client-set-restart-style"></a><h3>xfce_sm_client_set_restart_style ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_sm_client_set_restart_style (<em class="parameter"><code><a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client</code></em>,
+                                  <em class="parameter"><code><a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a> restart_style</code></em>);</pre>
+<p>Sets the restart style hint to <em class="parameter"><code>restart_style</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.6.2.11.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>restart_style</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a> value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="XfceSMClient-struct"></a><h3>XfceSMClient</h3>
+<pre class="programlisting">typedef struct _XfceSMClient XfceSMClient;</pre>
+<p>An opaque struct with only private fields.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClientPriority"></a><h3>enum XfceSMClientPriority</h3>
+<p>Some sample priority values for use with <a class="link" href="XfceSMClient.html#xfce-sm-client-set-priority" title="xfce_sm_client_set_priority ()"><code class="function">xfce_sm_client_set_priority()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.2.12.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-PRIORITY-HIGHEST:CAPS"></a>XFCE_SM_CLIENT_PRIORITY_HIGHEST</p></td>
+<td class="enum_member_description">
+<p>A high priority value.  You probably
+                                  don't want to use this.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-PRIORITY-WM:CAPS"></a>XFCE_SM_CLIENT_PRIORITY_WM</p></td>
+<td class="enum_member_description">
+<p>A priority value for use by the window manager.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-PRIORITY-CORE:CAPS"></a>XFCE_SM_CLIENT_PRIORITY_CORE</p></td>
+<td class="enum_member_description">
+<p>A priority value for use by applications that
+                               place windows on the screen and possibly set
+                               window manager struts.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-PRIORITY-DESKTOP:CAPS"></a>XFCE_SM_CLIENT_PRIORITY_DESKTOP</p></td>
+<td class="enum_member_description">
+<p>A priority value for use by applications
+                                  that draw on the desktop.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-PRIORITY-DEFAULT:CAPS"></a>XFCE_SM_CLIENT_PRIORITY_DEFAULT</p></td>
+<td class="enum_member_description">
+<p>A priority value for regular applications.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-PRIORITY-LOWEST:CAPS"></a>XFCE_SM_CLIENT_PRIORITY_LOWEST</p></td>
+<td class="enum_member_description">
+<p>The lowest possible priority value.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClientRestartStyle"></a><h3>enum XfceSMClientRestartStyle</h3>
+<p>An enumeration describing how the session manager should restart
+the application.</p>
+<div class="refsect3">
+<a name="id-1.6.2.12.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-RESTART-NORMAL:CAPS"></a>XFCE_SM_CLIENT_RESTART_NORMAL</p></td>
+<td class="enum_member_description">
+<p>Only restart the application if it is
+                                still running when the session is next
+                                saved.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-RESTART-IMMEDIATELY:CAPS"></a>XFCE_SM_CLIENT_RESTART_IMMEDIATELY</p></td>
+<td class="enum_member_description">
+<p>Immediately restart the application
+                                     if it ever quits.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClientShutdownHint"></a><h3>enum XfceSMClientShutdownHint</h3>
+<p>Hints to the session manager what kind of shutdown the session manager
+should perform.</p>
+<div class="refsect3">
+<a name="id-1.6.2.12.5.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-SHUTDOWN-HINT-ASK:CAPS"></a>XFCE_SM_CLIENT_SHUTDOWN_HINT_ASK</p></td>
+<td class="enum_member_description">
+<p>Prompt the user for a choice,</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-SHUTDOWN-HINT-LOGOUT:CAPS"></a>XFCE_SM_CLIENT_SHUTDOWN_HINT_LOGOUT</p></td>
+<td class="enum_member_description">
+<p>End the current session,</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-SHUTDOWN-HINT-HALT:CAPS"></a>XFCE_SM_CLIENT_SHUTDOWN_HINT_HALT</p></td>
+<td class="enum_member_description">
+<p>Shut down the computer.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-SHUTDOWN-HINT-REBOOT:CAPS"></a>XFCE_SM_CLIENT_SHUTDOWN_HINT_REBOOT</p></td>
+<td class="enum_member_description">
+<p>Restart the computer.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-SM-CLIENT-ERROR:CAPS"></a><h3>XFCE_SM_CLIENT_ERROR</h3>
+<pre class="programlisting">#define XFCE_SM_CLIENT_ERROR xfce_sm_client_error_quark()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSmCLientErrorEnum"></a><h3>enum XfceSmCLientErrorEnum</h3>
+<div class="refsect3">
+<a name="id-1.6.2.12.7.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-ERROR-FAILED:CAPS"></a>XFCE_SM_CLIENT_ERROR_FAILED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="XFCE-SM-CLIENT-ERROR-INVALID-CLIENT:CAPS"></a>XFCE_SM_CLIENT_ERROR_INVALID_CLIENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="XfceSMClient--argc"></a><h3>The <code class="literal">“argc”</code> property</h3>
+<pre class="programlisting">  “argc”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Argument count passed to program.</p>
+<p>Flags: Write / Construct Only</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--argv"></a><h3>The <code class="literal">“argv”</code> property</h3>
+<pre class="programlisting">  “argv”                     <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a></pre>
+<p>Argument vector passed to program.</p>
+<p>Flags: Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--client-id"></a><h3>The <code class="literal">“client-id”</code> property</h3>
+<pre class="programlisting">  “client-id”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>A string uniquely identifying the current instance of this client.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--current-directory"></a><h3>The <code class="literal">“current-directory”</code> property</h3>
+<pre class="programlisting">  “current-directory”        <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The directory that should be used as the working directory the next time this client is restarted.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--desktop-file"></a><h3>The <code class="literal">“desktop-file”</code> property</h3>
+<pre class="programlisting">  “desktop-file”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The application's .desktop file.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--priority"></a><h3>The <code class="literal">“priority”</code> property</h3>
+<pre class="programlisting">  “priority”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></pre>
+<p>Determines the ordering in which this client is restarted.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: 50</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--restart-command"></a><h3>The <code class="literal">“restart-command”</code> property</h3>
+<pre class="programlisting">  “restart-command”          <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a></pre>
+<p>A command used to restart this application, preserving the current state.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--restart-style"></a><h3>The <code class="literal">“restart-style”</code> property</h3>
+<pre class="programlisting">  “restart-style”            <a class="link" href="XfceSMClient.html#XfceSMClientRestartStyle" title="enum XfceSMClientRestartStyle"><span class="type">XfceSMClientRestartStyle</span></a></pre>
+<p>Specifies how the client should be restarted by the session manager.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: XFCE_SM_CLIENT_RESTART_NORMAL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient--resumed"></a><h3>The <code class="literal">“resumed”</code> property</h3>
+<pre class="programlisting">  “resumed”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether or not the client was resumed with previous state.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="XfceSMClient.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="XfceSMClient-quit"></a><h3>The <code class="literal">“quit”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Emitted when the application is required to quit.  This is not
+optional: if the client does not quit a short time after receiving
+this signal, it will likely be terminated in some other way.  While
+not required, the application will usually receive quit-requested
+before receiving quit.  If the application does not connect to this
+signal, <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> will call <code class="function">exit(3)</code> with
+an exit code of zero on behalf of the application.</p>
+<div class="refsect3">
+<a name="id-1.6.2.14.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient-quit-cancelled"></a><h3>The <code class="literal">“quit-cancelled”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Informs the application that it will not need to quit.  In most cases,
+quit-cancelled will be emitted a short time after quit-requested.</p>
+<div class="refsect3">
+<a name="id-1.6.2.14.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient-quit-requested"></a><h3>The <code class="literal">“quit-requested”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Signals the client that the session manager will soon want the
+application to quit, perhaps as a part of ending the session
+(but this should not be assumed).  The application can take
+this opportunity to prompt the user to save any unsaved work
+to disk.</p>
+<p>This signal also expects a return value from the handler.  If the
+application wishes to cancel the quit request (perhaps because the
+user selected "Cancel" in prompts to save unsaved work), it should
+return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> from the handler.  If the application is satisfied
+with possibly needing to quit soon, the handler should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.2.14.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient-save-state"></a><h3>The <code class="literal">“save-state”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Signals the client that it should save a copy of its current state
+such that it could be restarted later in exactly the same state as
+it is at the time of signal emission.</p>
+<p>If the state is simple enough to be encoded in the application's
+command line, <a class="link" href="XfceSMClient.html#xfce-sm-client-set-restart-command" title="xfce_sm_client_set_restart_command ()"><code class="function">xfce_sm_client_set_restart_command()</code></a> can be used
+to set that command line.  For more complex state data,
+<a class="link" href="XfceSMClient.html#xfce-sm-client-get-state-file" title="xfce_sm_client_get_state_file ()"><code class="function">xfce_sm_client_get_state_file()</code></a> should be used.</p>
+<p>The application should attempt to save its state as quickly as
+possible, and MUST NOT interact with the user as a part of saving
+state.</p>
+<div class="refsect3">
+<a name="id-1.6.2.14.5.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfceSMClient-save-state-extended"></a><h3>The <code class="literal">“save-state-extended”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a> *sm_client,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Allows the application to save extra state information after all
+other applications in the session have had a chance to save their
+state.  This is mainly used by the window manager to save window
+positions.  Most applications should not need to connect to this
+signal.</p>
+<div class="refsect3">
+<a name="id-1.6.2.14.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sm_client</p></td>
+<td class="parameter_description"><p>An <a class="link" href="XfceSMClient.html" title="XfceSMClient"><span class="type">XfceSMClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

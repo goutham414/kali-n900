@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=intrace
+Encoding=UTF-8
+Exec=sh -c "intrace;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Kali-Package=intrace

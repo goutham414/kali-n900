@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+
+Name: xfce4-session
+Description: Xfce 4 session manager
+Requires: libxfce4ui-1 libxfconf-0
+Version: 4.12.1
+Libs: -L${libdir} -lxfsm-4.6
+Cflags: -I${includedir}/xfce4/xfce4-session-4.6

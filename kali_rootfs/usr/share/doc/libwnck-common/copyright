@@ -1,0 +1,699 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: WNCK (v2.x)
+Upstream-Contact: Havoc Pennington <hp@redhat.com>
+Source: http://ftp.gnome.org/pub/gnome/sources/libwnck/
+
+Files: libwnck/application.h
+ libwnck/pager.h
+ libwnck/private.h
+ libwnck/screen.h
+ libwnck/selector.h
+ libwnck/tasklist.h
+ libwnck/util.c
+ libwnck/window-action-menu.c
+ libwnck/window-action-menu.h
+ libwnck/window.h
+ libwnck/workspace.h
+ libwnck/xutils.c
+ libwnck/xutils.h
+Copyright: 2001, Havoc Pennington
+  2003, 2005-2007, Vincent Untz
+  2005-2007, Vincent Untz
+  2006-2007, Vincent Untz
+License: LGPL-2+
+
+Files: libwnck/inlinepixbufs.h
+ libwnck/test-pager.c
+ libwnck/test-selector.c
+ libwnck/test-tasklist.c
+ libwnck/test-urgent.c
+ libwnck/test-wnck.c
+ libwnck/wnck-enum-types.c
+ libwnck/wnck-enum-types.h
+ libwnck/wnck-marshal.c
+ libwnck/wnck-marshal.h
+Copyright: *No copyright*
+License: LGPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+
+Files: libwnck/pager-accessible-factory.c
+ libwnck/pager-accessible-factory.h
+ libwnck/pager-accessible.c
+ libwnck/pager-accessible.h
+ libwnck/workspace-accessible-factory.c
+ libwnck/workspace-accessible-factory.h
+ libwnck/workspace-accessible.c
+ libwnck/workspace-accessible.h
+Copyright: 2002, Sun Microsystems Inc
+License: LGPL-2+
+
+Files: libwnck/pager.c
+ libwnck/screen.c
+ libwnck/tasklist.c
+ libwnck/window.c
+ libwnck/workspace.c
+Copyright: 2001, Havoc Pennington
+  2003, 2005-2007, Vincent Untz
+  2003, Kim Woelders
+  2003, Red Hat, Inc
+  2006-2007, Vincent Untz
+License: LGPL-2+
+
+Files: libwnck/application.c
+ libwnck/util.h
+Copyright: 2001, Havoc Pennington
+  2003, Red Hat, Inc
+  2005-2007, Vincent Untz
+  2006-2007, Vincent Untz
+License: LGPL-2+
+
+Files: libwnck/wnck-urgency-monitor.c
+ libwnck/wnckprop.c
+Copyright: 2007, Vincent Untz
+  2009, Vincent Untz
+License: LGPL-2+
+
+Files: libwnck/class-group.c
+ libwnck/class-group.h
+Copyright: 2003, Ximian, Inc
+  2006-2007, Vincent Untz
+License: LGPL-2+
+
+Files: ltmain.sh
+Copyright: 1996-2001, 2003-2007, 2008, Free Software Foundation, Inc
+License: GPL-2+
+
+Files: libwnck/selector.c
+Copyright: 2000, Helix Code, Inc
+  2001, Free Software Foundation, Inc
+  2003, Sun Microsystems, Inc
+  2005-2007, Vincent Untz
+License: LGPL-2+
+
+Files: libwnck/libwnck.h
+Copyright: 2001, Havoc Pennington
+License: LGPL-2+
+
+Files: Makefile.in
+ aclocal.m4
+ doc/Makefile.in
+ libwnck/Makefile.in
+Copyright: 1994-2014, Free Software Foundation, Inc.
+License: public-domain~Makefile
+
+Files: config.guess
+ config.sub
+ depcomp
+ missing
+Copyright: 1992-2015, Free Software Foundation, Inc.
+License: GPL-3+~autoconf
+
+Files: m4/libtool.m4
+Copyright: 1996-2011, Free Software Foundation, Inc.
+License: GPL-2+~libtool
+
+Files: m4/intltool.m4
+Copyright: 2001, Eazel, Inc.
+License: GPL-2+~autoconf
+
+Files: install-sh
+Copyright: 1994, X Consortium
+License: GPL-3+~autoconf
+
+Files: configure
+Copyright: 1992-1996, 1998-2012, Free Software Foundation, Inc.
+License: public-domain~configure
+
+Files: m4/ltoptions.m4
+ m4/ltsugar.m4
+ m4/ltversion.m4
+ m4/lt~obsolete.m4
+Copyright: 2004-2009, Free Software Foundation, Inc.
+License: public-domain~m4
+
+Files: INSTALL
+Copyright: 1994-1996, 1999-2002, 2004-2013, Free Software Foundation, Inc.
+License: public-domain~autotools
+
+Files: mkinstalldirs
+Copyright: 1993, Noah Friedman <friedman@prep.ai.mit.edu>
+License: public-domain~automake
+
+Files: AUTHORS
+ ChangeLog
+ COPYING
+ HACKING
+ MAINTAINERS
+ Makefile.am
+ NEWS
+ README
+ config.h.in
+ configure.ac
+ doc/Makefile.am
+ doc/html/WnckApplication.html
+ doc/html/WnckClassGroup.html
+ doc/html/WnckPager.html
+ doc/html/WnckScreen.html
+ doc/html/WnckSelector.html
+ doc/html/WnckTasklist.html
+ doc/html/WnckWindow.html
+ doc/html/WnckWorkspace.html
+ doc/html/core.html
+ doc/html/home.png
+ doc/html/index.html
+ doc/html/index.sgml
+ doc/html/indexes.html
+ doc/html/intro.html
+ doc/html/ix01.html
+ doc/html/ix02.html
+ doc/html/ix03.html
+ doc/html/ix04.html
+ doc/html/ix05.html
+ doc/html/ix06.html
+ doc/html/ix07.html
+ doc/html/ix08.html
+ doc/html/ix09.html
+ doc/html/ix10.html
+ doc/html/ix11.html
+ doc/html/ix12.html
+ doc/html/left.png
+ doc/html/libwnck-Miscellaneous-Functions.html
+ doc/html/libwnck-Resource-Usage-of-X-Clients.html
+ doc/html/libwnck-Window-Action-Menu.html
+ doc/html/libwnck.devhelp
+ doc/html/libwnck.devhelp2
+ doc/html/right.png
+ doc/html/style.css
+ doc/html/up.png
+ doc/html/utils.html
+ doc/html/widgets.html
+ doc/libwnck-docs.sgml
+ doc/libwnck-overrides.txt
+ doc/libwnck-sections.txt
+ gtk-doc.make
+ libwnck-1.0-uninstalled.pc.in
+ libwnck-1.0.pc.in
+ libwnck/Makefile.am
+ libwnck/TODO
+ libwnck/default_icon.png
+ libwnck/stock_delete.png
+ libwnck/stock_maximize.png
+ libwnck/stock_minimize.png
+ libwnck/wnck-marshal.list
+ m4/gtk-doc.m4
+ po/LINGUAS
+ po/POTFILES.in
+Copyright: 2001, Havoc Pennington <hp@redhat.com>
+           2007-2011 Vincent Untz <vuntz@gnome.org>
+License: LGPL-2+
+Comment:
+ Assuming license as found in COPYING file. Assuming copyright
+ holders from AUTHORS file. Assuming copyright periods from
+ ChangeLog files and commit history.
+
+Files: po/Makefile.in.in
+Copyright: 1995, 1996, 1997, Ulrich Drepper <drepper@gnu.ai.mit.edu>
+ 2004-2008, Rodney Dawes <dobey.pwns@gmail.com>
+License: public-domain~gettext
+
+Files: po/am.po
+ po/ar.po
+ po/as.po
+ po/ast.po
+ po/az.po
+ po/be.po
+ po/be@latin.po
+ po/bg.po
+ po/bn.po
+ po/bn_IN.po
+ po/br.po
+ po/bs.po
+ po/ca.po
+ po/ca@valencia.po
+ po/crh.po
+ po/cs.po
+ po/cy.po
+ po/da.po
+ po/de.po
+ po/dz.po
+ po/el.po
+ po/en@shaw.po
+ po/en_CA.po
+ po/en_GB.po
+ po/eo.po
+ po/es.po
+ po/et.po
+ po/eu.po
+ po/fa.po
+ po/fi.po
+ po/fr.po
+ po/ga.po
+ po/gl.po
+ po/gu.po
+ po/he.po
+ po/hi.po
+ po/hr.po
+ po/hu.po
+ po/id.po
+ po/is.po
+ po/it.po
+ po/ja.po
+ po/ka.po
+ po/kk.po
+ po/kn.po
+ po/ko.po
+ po/ku.po
+ po/ky.po
+ po/li.po
+ po/lt.po
+ po/lv.po
+ po/mai.po
+ po/mi.po
+ po/mk.po
+ po/ml.po
+ po/mn.po
+ po/mr.po
+ po/ms.po
+ po/nb.po
+ po/ne.po
+ po/nl.po
+ po/nn.po
+ po/oc.po
+ po/or.po
+ po/pa.po
+ po/pl.po
+ po/pt.po
+ po/pt_BR.po
+ po/ro.po
+ po/ru.po
+ po/rw.po
+ po/si.po
+ po/sk.po
+ po/sl.po
+ po/sq.po
+ po/sr.po
+ po/sr@latin.po
+ po/sv.po
+ po/ta.po
+ po/te.po
+ po/th.po
+ po/tr.po
+ po/ug.po
+ po/uk.po
+ po/vi.po
+ po/wa.po
+ po/xh.po
+ po/zh_CN.po
+ po/zh_HK.po
+ po/zh_TW.po
+Copyright:
+ 2001-2006, Abel Cheung <abel@oaka.org>
+ 2004, 2005, 2006, Adam Weinberger <adamw@gnome.org>
+ Adi Roiban <adi@roiban.ro>
+ Aleksandar Urošević <urke@gmx.net>
+ 2004, Ales Nyakhaychyk <nab@mail.by>
+ 2009, Alexander Nyakhaychyk <nyakhaychyk@gmail.com>
+ 2006, 2007, 2009, Alexander Shopov <ash@contact.bg>
+ 2008, Amanpreet Singh Alam <aalam@users.sf.net>
+ Amitakhya Phukan <aphukan@fedoraproject.org>
+ 2009, Amitakhya Phukan <aphukan@fedoraproject.org>
+ 2007, Anas Husseini <linux.anas@gmail.com>
+ 2003, 2004, Andras Timar <timar@gnome.hu>
+ 2007, 2008, 2009, Andre Klapper <ak-47@gmx.net>
+ 2006, 2009, Ani Peter <apeter@redhat.com>
+ 2006, Ankit Patel <ankit644@yahoo.com>
+ 2005, 2007, 2008, 2009, Ankit Patel <ankit@redhat.com>
+ 2009, Antón Méixome <meixome@mancomun.org>
+ 2003, Arafat Medini <lumina@silverpen.de>
+ 2003, 2004, 2006, 2008, Arangel Angov <ufo@linux.net.mk>
+ 2003, Arman Aksoy <armish@linux-sevenler.de>
+ 2004, 2005, 2006, 2007, 2009, A S Alam <aalam@users.sf.net>
+ 2007, Ask Hjorth Larsen <asklarsen@gmail.com>
+ 2004, Åsmund Skjæveland <aasmunds@fys.uio.no>
+ astur <malditoastur@gmail.com>
+ 2005, Augustin KIBERWA  <akiberwa@yahoo.co.uk>
+ 2006, Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+ 2004, 2008, 2009, Baris Cicek <baris@teamforce.name.tr>
+ 2010, Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+ 2005, Benoît Dejean <tazforever@dlfp.org>
+ Canonical Ltd <translations@canonical.com>
+ 2005, Carole Karema <karemacarole@hotmail.com>
+ 2002-2005, 2007, 2008, 2009, Changwoo Ryu <cwryu@debian.org>
+ Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+ 2001, 2002, Christian Meyer <chrisime@gnome.org>
+ 2002-2004, Christian Neumair <chris@gnome-de.org>
+ 2001, 2002, 2003, 2004, 2005, Christian Rose <menthos@menthos.com>
+ 2002, Christophe Fergeau <teuf@users.sourceforge.net>
+ 2002-2006, Christophe Merlet <redfox@redfoxcenter.org>
+ 2008-2009, Claude Paroz <claude@2xlibre.net>
+ 2006-2009, Clytie Siddall <clytie@riverland.net.au>
+ 2006, 2007, 2009, Daniel Nylander <po@danielnylander.se>
+ 2007, Danishka Navin <snavin@redhat.com>
+ David Lodge <dave@cirt.net>
+ Dawa pemo <daws_403@hotmail.com>
+ 2009, Deng Xiyue <manphiz@gmail.com>
+ 2010, Denis <denisarnuad@yahoo.fr>
+ Denis Lackovic <delacko@fly.srk.fer.hr>
+ 2003, Dinesh Nadarajah <n_dinesh@yahoo.com>
+ 2010, Dirgita <dirgitadevina@yahoo.co.id>
+ 2006, Djihed Afifi <djihed@gmail.com>
+ 2002, Dmitry G. Mastrukov <dmitry@taurussoft.org>
+ 2005, Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>
+ 2007, 2008, Dr.T.Vasudevan <agnihot3@gmail.com>
+ 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, Duarte Loreto <happyguy_pt@hotmail.com>
+ 2005, Erdal Ronahi <erdal.ronahi@gmail.com>
+ 2008, Eskild Hustvedt <eskildh@gnome.org>
+ 2002-2005, 2006, Evandro Fernandes Giovanini <evandrofg@ig.com.br>
+ Evgeni Boevski <linkej@yahoo.com>, 2002;
+ 2006, Felix <ifelix@redhat.com>
+ 2005, 2006, Francisco Javier F. Serrador <serrador@cvs.gnome.org>
+ 2010, Fran Diéguez <frandieguez@ubuntu.com>
+ 2003, FSF-India <locale@gnu.org.in>
+ 2003, Funda Wang <fundawang@en2china.com>
+ 2005, 2007, 2008, 2009, Gabor Kelemen <kelemeng@gnome.hu>
+ 2005, Ganesh Ghimire <gghimire@gmail.com>
+ 2004, Gareth Owen <gowen72@yahoo.com>
+ 2002, Ge'ez Frontier Foundation <locales@geez.org>
+ 2002, Germán Poo Caamaño <gpoo@ubiobio.cl>
+ Gheyret Kenji <gheyret@yahoo.com>,2010
+ 2002,2003, Gil 'Dolfin' Osher <dolfin@rpg.org.il>
+ 2002, 2004, Gil Osher <dolfin@rpg.org.il>
+ 2007, 2008, Gintautas Miliauskas <gintas@akl.lt>
+ 2002, G Karunakar <karunakar@freedomink.org>
+ 2006, Gora Mohanty <gora_mohanty@yahoo.co.in>
+ 2002, Görkem Çetin <gorkem@gelecek.com.tr>
+ 2006, Guillaume Savaton <gsavaton@hotmail.com>
+ 2001-2004, Hasbullah Bin Pit (sebol) <sebol@ikhlas.com>
+ helgi <helgi@trance.is>
+ 2006, Hendrik Richter <hendrikr@gnome.org>
+ 2004, Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>
+ 2009, I. Felix <ifelix@redhat.com>
+ 2005, 2006, Ignacio Casal Quinteiro <nacho.resa@gmail.com>
+ 2006, Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+ 2007, Ihar Hračyška <ihar.hrachyshka@gmail.com>
+ 2005-2009, Ilkka Tuohela <hile@iki.fi>
+ 2002, Ilmar Kerm <ikerm@hot.ee>
+ 2005, Ilyas Bakirov <just_ilyas@yahoo.com>
+ Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+ 2004, 2006, 2008, 2009, 2010, Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+ 2007, Iñaki Larrañaga Murgoitio <dooteo@zundan.com>
+ 2002, Isam Bayazidi <bayazidi@arabeyes.org>
+ 2004, Ivan Noris <vix@vazka.sk>
+ 2002, Ivan Stojmirov <stojmir@linux.net.mk>
+ Ivar Smolin <okul@linux.ee>, 2005–2007, 2009, 2010
+ 2003, Jamil Ahmed <jamil@bengalinux.org>
+ 2004, Jayaradha N <jaya@pune.redhat.com>
+ 2005, Jaydeep Bhusal <zaydeep@hotmail.com>
+ 2005, JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>
+ 2009, Jennie Petoumenou <epetoumenou@gmail.com>
+ 2002, Jesús Bravo Álvarez <suso@trasno.net>
+ 2003, Joël Brich <joel.brich@laposte.net>
+ 2004, John C Barstow <jbowtie@amathaine.com>
+ 2008, Jonh Wendell <wendell@bani.com.br>
+ 2002, 2003, 2004, 2005, 2006, Jordi Mallach <jordi@sindominio.net>
+ 200, 2009, Jorge González <jorgegonz@svn.gnome.org>
+ 2007, Jovan Naumovski <jovan@lugola.net>
+ 2003, KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>
+ 2004, Kemal Sanjta <gomez@lugzdk.ba>
+ Kenneth Nielsen <k.nielsen81@gmail.com>
+ 2008, Kenneth Nielsen <k.nielsen81@gmail.com>
+ 2006, 2007, 2008, 2009, Khaled Hosny <khaledhosny@eglug.org>
+ 2001-2010, Kjartan Maraas <kmaraas@gnome.org>
+ 2003,2004, 2006, 2007, Kostas Papadimas <pkst@gnome.org>
+ 2009, Krishna Babu K <kkrothap@redhat.com>
+ 2006, Lasse Bang Mikkelsen <lbm@fatalerror.dk>
+ 2004, Laszlo Dvornik <dvornik@gnome.hu>
+ 2002, 2003, 2004, 2005, 2006, Laurent Dhima <laurenti@alblinux.net>
+ 2006, Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>
+ 2005, Leonid Kanter <leon@asplinux.ru>
+ 2001, Lorint Hendschel <LorintHendschel@skynet.be>
+ 2005, 2006, 2007, 2008, 2009, Luca Ferretti <elle.uca@libero.it>
+ 2005, Lucas Vieites <lucas@asixinformatica.com>
+ 2009, Lucian Adrian Grijincu <lucian.grijincu@gmail.com>
+ 2004, MagNet <magnet@magnet-i.com>
+ 2005, Mahay Alam Khan <makl10n@yahoo.com>
+ 2006, Mahesh Subedi <submanesh@hotmail.com>
+ 2009, Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>
+ 2008, 2009, Manoj Kumar Giri <mgiri@redhat.com>
+ 2009, Maruf Ovee <maruf@ankur.org.bd>
+ 2007 - 2010, Matej Urbančič <mateju@svn.gnome.org>
+ 2003, Mathieu van Woerkom <mathieu@brabants.org>
+ 2006, Matic Žgur <mr.zgur@gmail.com>
+ 2004-2008, Maxim Dziumanenko <dziumanenko@gmail.com>
+ 2004, Meelad Zakaria <meelad@bamdad.org>
+ 2003, 2004, Metin Əmirov <metin@karegen.com>
+ 2003, 2003, 2004, 2005, 2006, Miloslav Trmac <mitr@volny.cz>
+ Miloš Popović <gpopac@gmail.com>
+ 2003 - 2005, Mișu Moldovan <dumol@gnome.ro>
+ 2000, Mohammad DAMT <mdamt@bisnisweb.com>
+ 2002, Mohammed Gamal <f2c2001@yahoo.com>
+ 2006, Mugurel Tudor <mugurelu@gnome.ro>
+ 2007, Nabin Gautam <nabin@mpp.org.np>
+ 2002, 2005, 2007, Nguyễn Thái Ngọc Duy <pclouds@gmail.com>
+ Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+ 2005, Nikos Charonitakis <charosn@her.forthnet.gr>
+ 2005, Noëlla Mupole <s24211045@tuks.co.za>
+ 2006-2007, Og Maciel <ogmaciel@gnome.org>
+ 2002-2005, Ole Laursen <olau@hardworking.dk>
+ 1999-2002, Pablo Saratxaga <srtxg@chanae.alphanet.ch>
+ 2003, Paisa Seeluangsawat <paisa@users.sf.net>
+ 2003, Paul Duffy <dubhthach@frink.nuigalway.ie>
+ 2002, Pauli Virtanen <pauli.virtanen@hut.fi>
+ 2007-2009, Pavol Šimo <palo.simo@gmail.com>
+ 2004, Pawan Chitrakar  <pawan@nplinux.org>
+ 2002, Peter Doma <zelin@pointernet.hu>
+ 2007, 2009, Petr Kovar <pknbe@volny.cz>
+ 2005, Philibert Ndandali  <ndandali@yahoo.fr>
+ 2002, Pier Luigi Fiorini <plfiorini@supereva.it>
+ 2005, 2006, Priit Laes <amd@store20.com>
+ 2006, Rahul Bhalerao <b.rahul.pm@gmail.com>
+ 2006, 2010, Raivis Dejus <orvils@gmail.com>
+ 2009, Rajesh Ranjan <rajesh672@gmail.com>
+ 2005, 2006, 2008, Rajesh Ranjan <rranjan@redhat.com>
+ Ray Wang <wanglei1123@gmail.com>
+ 2002, 2009, Reinout van Schouwen <reinout@gmail.com>
+ 2009, Reşat SABIQ <tilde.birlik@gmail.com>
+ Rhys Jones <rhys@sucs.org>
+ 2007-2008, Robert-André-Mauchin <zebob.m@pengzone.org>
+ Robert Sedak <robert.sedak@sk.tel.hr>
+ 2002, Ronald Hummelink <ronald@hummelink.xs4all.nl>
+ 2002, 2003, Roozbeh Pournader <roozbeh@farsiweb.info>
+ 2002, Roy-Magne Mo <rmo@sunnmore.net>
+ 2007, Runa Bhattacharjee <runabh@gmail.com>
+ 2008, 2009, Runa Bhattacharjee <runab@redhat.com>
+ 2010, Sahran <sahran.ug@gmail.com>
+ 2003, SamÃºel JÃ³n Gunnarsson  <sammi@techattack.nu>
+ 2005, Samia Niamatullah <mailsamia2001@yahoo.com>
+ 2008, 2009, Sandeep Shedmake <sandeep.shedmake@gmail.com>
+ 2009, Sangeeta Kumari <sangeeta09@gmail.com>
+ 2008, Sankarshan Mukhopadhyay <sankarshan.mukhopadhyay@gmail.com>
+ 2003, Sanlig Badral <badral@chinggis.com>
+ 2003, 2004, Sanlig Badral <Badral@openmn.org>
+ 2007, Santhosh Thottingal <santhosh.thottingal@gmail.com>
+ 2007, 2009, Seán de Búrca <leftmostcat@gmail.com>
+ 2008, 2009, 2010, Shankar Prasad <svenkate@redhat.com>
+ 2005, Shiva  Pokharel <pokharelshiva@hotmail.com>
+ 2006, Shiva Prasad Pokharel <pokharelshiva@hotmail.com>
+ 2007, Sílvia Miranda <silvia.gnome@gmail.com>
+ 2002,2003, Simos Xenitellis <simos@hellug.gr>
+ <srtxg@chanae.alphanet.ch>
+ 2006, Sree Ganesh <mrthottempudi@yahoo.com>
+ 2003, Stanislav Visnovsky <visnovsky@kde.org>
+ 2001,2003, Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>
+ 2002, Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>
+ 2007, Stéphane Raimbault <stephane.raimbault@gmail.com>
+ 2005, Steve Murphy <murf@e-tools.com>
+ 2009, Suso Baleato <suso.baleato@xunta.es>
+ 2003, Swapnil Hajare <dreamil1000a@yahoo.com>
+ 2001-2002, Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>
+ 2003-2009, Takeshi AIHANA <takeshi.aihana@gmail.com>
+ 2005-2009, Theppitak Karoonboonyanan <thep@linux.thai.net>
+ 2009, Thomas Thurman <tthurman@gnome.org>
+ 2002, 2003, 2004, 2005, 2006, 2008, Tino Meinen <a.t.meinen@chello.nl>
+ 2002, 2003, Tõivo Leedjärv <toivo@linux.ee>
+ 2003-2004, Tomas Kuliavas <tokul@users.sourceforge.net>
+ Tomasz Dominikowski <dominikowski@gmail.com>
+ 2004, tome <tome@users.ossm.org.mk>
+ 2002, Valek Filippov <frob@df.ru>
+ 2008, Vasiliy Faronov <qvvx@yandex.ru>
+ 2005, Viateur MUGENZI <muvia1@yahoo.fr>
+ 2007, Vincent Untz <vincent@vuntz.net>
+ 2003, Vital Khilko <dojlid@mova.org>
+ 2007-2008, Vladimer Sichinava <vsichi@gnome.org>
+ Vladimir Melo <vladimirmelo.psi@gmail.com>
+ 2004, 2005, 2006, Vladimir Petkov <vpetkov@i-space.org>
+ 2003, Vladislav Bidikov <bidikovi@mail.com.mk>
+ 2002, Wang Jian <lark@linux.net.cn>
+ 2006, Woodman Tuen <wmtuen@gmail.com>
+ 2006, 2009, Wouter Bolsterlee <wbolster@gnome.org>
+ 2003, www.gyfieithu.co.uk <kyfieithu@kyfieithu.co.uk>
+ 2002, Yanko Kaneti <yaneti@declera.com>
+ 2006-2008, Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+ 2008, Yavor Doganov <yavor@gnu.org>
+ 2002, Young-Ho, Cha <ganadist@chollian.net>
+ 2001, Yuriy Syrota <rasta@renome.rovno.ua>
+ 2010, Zeper <zeper@msn.com>
+ Zoran Jankovic <zoran.jankovic@inet.hr>
+ 2005-2007, Žygimantas Beručka <zygis@gnome.org>
+ Александар Урошевић <urke@gmx.net>
+ Милош Поповић <gpopac@gmail.com>
+License: LGPL-2+
+Comment:
+ Using same license as found in COPYING file.
+
+Files: debian/*
+Copyright: 2001-2014, Bacher <seb128@debian.org> 
+           2001-2014, Biebl <biebl@debian.org> 
+           2001-2014, Cabizza <marco87@gmail.com> 
+           2001-2014, Dassen (Ray) <jdassen@debian.org>
+           2001-2014, Dröge <slomo@debian.org> 
+           2001-2014, Drop useless --libexecdir
+           2001-2014, Gabriel <sunweaver@debian.org> 
+           2001-2014, Henriksson <andreas@fatal.se> 
+           2001-2014, Mallach <jordi@debian.org> 
+           2001-2014, Marillat <marillat@debian.org> 
+           2001-2014, Minier <lool@dooz.org> 
+           2001-2014, Mouette <joss@debian.org> 
+           2001-2014, Pass --as-needed to
+           2001-2014, Pozuelo Monfort <pochu@debian.org>
+           2001-2014, Surý <ondrej@debian.org> 
+           2001-2014, Surý <ondrej@sury.org> 
+           2016, Mike Gabriel <sunweaver@debian.org>
+License: LGPL-2+
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-2+~libtool
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ As a special exception to the GNU General Public License,
+ if you distribute this file as part of a program or library that
+ is built using GNU Libtool, you may include this file under the
+ same distribution terms that you use for the rest of that program.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-2+~autoconf
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: public-domain~gettext
+ This file may be copied and used freely without restrictions.  It may
+ be used in projects which are not available under a GNU General Public License,
+ but which still want to provide support for the GNU gettext functionality.
+
+License: public-domain~autotools
+ Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved.  This file is offered as-is,
+ without warranty of any kind.
+
+License: public-domain~Makefile
+ This Makefile.in is free software; the Free Software Foundation
+ gives unlimited permission to copy and/or distribute it,
+ with or without modifications, as long as this notice is preserved.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+ even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.
+
+License: public-domain~configure
+ This configure script is free software; the Free Software Foundation
+ gives unlimited permission to copy, distribute and modify it.
+
+License: public-domain~automake
+ "Public Domain"
+
+License: public-domain~m4
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+
+License: GPL-3+~autoconf
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that
+ program.  This Exception is an additional permission under section 7
+ of the GNU General Public License, version 3 ("GPLv3").
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

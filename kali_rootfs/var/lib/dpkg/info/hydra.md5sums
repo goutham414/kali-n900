@@ -1,0 +1,14 @@
+c267748412ed52a225a2a3525e780e94  usr/bin/dpl4hydra
+c22fc6c3e3f817e3f9d00b340591ef4b  usr/bin/hydra
+4b7b97ef1c4898445384b3b1512f341a  usr/bin/hydra-wizard
+17044821e406729d57b75984a2bebbbc  usr/bin/pw-inspector
+35661a250918f3b77c4999ba9a7511a4  usr/share/doc/hydra/README.gz
+6bdb1b2609fa126cc2a5e4a4a69501a0  usr/share/doc/hydra/changelog.Debian.armhf.gz
+a69df3eee0126f52a76328996dd93fae  usr/share/doc/hydra/changelog.Debian.gz
+0e5d1b4203e96ba491fbe73eca5deb2d  usr/share/doc/hydra/changelog.gz
+ac20f1964233308ef97181f76dfa45b1  usr/share/doc/hydra/copyright
+dcd1e2cd24e1e0a459204e71d58207ab  usr/share/hydra/dpl4hydra_local.csv
+7221f53344778f7738113464317054aa  usr/share/man/man1/dpl4hydra.1.gz
+f23d8552bf7bd1d31821378b7685b35c  usr/share/man/man1/hydra-wizard.1.gz
+9d660e3fa229f1c97108997fe1929ba2  usr/share/man/man1/hydra.1.gz
+df5c787e0364c6e9a4012bfce9ba483b  usr/share/man/man1/pw-inspector.1.gz

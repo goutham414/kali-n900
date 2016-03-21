@@ -1,0 +1,123 @@
+#!/bin/sh -u
+# Copyright (c) 2010 The Chromium OS Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+#
+# Run TPM diagnostics in recovery mode, and attempt to fix problems.  This is
+# specific to devices with chromeos firmware.
+#
+# Most of the diagnostics examine the TPM state and try to fix it.  This may
+# require clearing TPM ownership.
+
+tpmc=${USR_BIN:=/usr/bin}/tpmc
+crossystem=${USR_BIN}/crossystem
+dot_recovery=${DOT_RECOVERY:=/mnt/stateful_partition/.recovery}
+awk=/usr/bin/awk
+initctl=/sbin/initctl
+
+log() {
+  echo "$*"
+}
+
+quit() {
+  log "ERROR: $*"
+  log "exiting"
+  exit 1
+}
+
+log_tryfix() {
+  log "$*: attempting to fix"
+}
+
+tpm_clear_and_reenable () {
+  $tpmc clear
+  $tpmc enable
+  $tpmc activate
+}
+
+reset_space () {
+  local index=$1
+  local permissions=$2
+  local size=$3
+  local bytes="$4"
+
+  if ! $tpmc definespace $index $size $permissions; then
+    log "could not redefine space $index"
+    return 1
+  fi
+  # do not quote "$bytes", as we mean to expand it here
+  $tpmc write $index $bytes || log "writing to $index failed with code $?"
+  log "space $index was recreated successfully"
+}
+
+
+# ------------
+# MAIN PROGRAM
+# ------------
+
+# Sanity check: are we executing in a recovery image?
+
+if [ -e $dot_recovery ]; then
+  quit "This is a developer utility, it should never run on a (production) recovery image"
+fi
+
+# Did the firmware keep the TPM unlocked?
+
+if ! $($crossystem mainfw_type?recovery); then
+  quit "You must put a test image on a USB stick and boot it in recovery mode to run this"
+fi
+
+# tcsd may or may not be running
+
+log "Stopping tcsd..."
+if $initctl stop tcsd >/dev/null 2>/dev/null; then
+  tcsd_was_running=1
+  log "...done"
+else
+  tcsd_was_running=0
+  log "(already stopped)"
+fi
+
+# Is the state of the PP enable flags correct?
+
+if ! ($tpmc getpf | grep -q "physicalPresenceLifetimeLock 1" &&
+      $tpmc getpf | grep -q "physicalPresenceHWEnable 0" &&
+      $tpmc getpf | grep -q "physicalPresenceCMDEnable 1"); then
+  log_tryfix "bad state of physical presence enable flags"
+  if $tpmc ppfin; then
+    log "physical presence enable flags are now correctly set"
+  else
+    quit "could not set physical presence enable flags"
+  fi
+fi
+
+# Is physical presence turned on?
+
+if $tpmc getvf | grep -q "physicalPresence 0"; then
+  log_tryfix "physical presence is OFF, expected ON"
+  # attempt to turn on physical presence
+  if $tpmc ppon; then
+    log "physical presence is now on"
+  else
+    quit "could not turn physical presence on"
+  fi
+fi
+
+# I never learned what this does, but it's probably good just in case...
+tpm_clear_and_reenable
+
+# Reset firmware and kernel spaces to default (rollback version 1/1)
+reset_space 0x1007 0x8001 0xa "02  00  01 00 01 00  00 00 00  4f" || \
+  log "could not fix firmware space"
+reset_space 0x1008 0x1 0xd "02  4c 57 52 47  01 00 01 00  00 00 00  55" || \
+  log "could not fix kernel space"
+# Don't need valid data in backup space, vboot can reset it as long as it exists
+reset_space 0x1009 0x1 0x10 "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00" || \
+  log "could not fix backup space"
+
+if [ $tcsd_was_running != 0 ]; then
+  echo Restarting tcsd...
+  $initctl start tcsd >/dev/null
+fi
+
+log "TPM has successfully been reset to factory defaults"

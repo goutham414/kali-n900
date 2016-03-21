@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libmysqlclient18
+/usr/share/doc
+/usr/share/doc/libmysqlclient18
+/usr/share/doc/libmysqlclient18/changelog.Debian.gz
+/usr/share/doc/libmysqlclient18/changelog.gz
+/usr/share/doc/libmysqlclient18/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmysqlclient.so.18.1.0
+/usr/lib/arm-linux-gnueabihf/libmysqlclient_r.so.18.1.0
+/usr/lib/arm-linux-gnueabihf/libmysqlclient_r.so.18
+/usr/lib/arm-linux-gnueabihf/libmysqlclient.so.18

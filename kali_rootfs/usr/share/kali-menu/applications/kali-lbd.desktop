@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=lbd
+Encoding=UTF-8
+Exec=sh -c "lbd;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-03-ids-ips-identification;
+X-Kali-Package=lbd

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=modes_gui
+Encoding=UTF-8
+Exec=sh -c "modes_gui"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Kali-Package=gr-air-modes

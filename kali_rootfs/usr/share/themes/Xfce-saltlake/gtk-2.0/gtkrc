@@ -1,0 +1,88 @@
+style "default"
+{
+    GtkButton::default_border         = {0, 0, 0, 0}
+    GtkButton::default_outside_border = {0, 0, 0, 0}
+    GtkButton::child_displacement_x   = 1
+    GtkButton::child_displacement_y   = 1
+    GtkButton::default_spacing        = 5
+    GtkButton::focus-line-width       = 1
+    GtkButton::focus-padding          = 0
+    GtkCheckButton::indicator_size    = 15
+    GtkRadioButton::indicator_size    = 15
+    GtkMenuItem::selected_shadow_type = etched-in
+    GtkPaned::handle_full_size        = 1
+    GtkRange::slider_width            = 15
+    GtkRange::stepper_size            = 15
+    GtkRange::trough_border           = 0
+    GtkScrollbar::min_slider_length   = 20
+    GtkWidget::interior_focus         = 1
+
+    xthickness = 2
+    ythickness = 2
+
+    fg[ACTIVE]        = "#000000"
+    fg[INSENSITIVE]   = "#717170"
+    fg[NORMAL]        = "#000000"
+    fg[PRELIGHT]      = "#000000"
+    fg[SELECTED]      = "#ffffff"
+
+    bg[ACTIVE]        = "#cdcdc9"
+    bg[INSENSITIVE]   = "#e4e4e0"
+    bg[NORMAL]        = "#e4e4e0"
+    bg[PRELIGHT]      = "#ccc9c5"
+    bg[SELECTED]      = "#3f993f"
+
+    base[ACTIVE]      = "#e5e5e5"
+    base[INSENSITIVE] = "#e4e4e0"
+    base[NORMAL]      = "#ffffff"
+    base[PRELIGHT]    = "#ccc9c5"
+    base[SELECTED]    = "#ccc9c5"
+
+    text[ACTIVE]      = "#000000"
+    text[INSENSITIVE] = "#000000"
+    text[NORMAL]      = "#000000"
+    text[PRELIGHT]    = "#000000"
+    text[SELECTED]    = "#000000"
+
+    engine "xfce"
+    {
+	smooth_edge = false
+    }
+}
+
+widget_class "*"          style "default"
+
+style "thin" = "default"
+{
+    xthickness = 1
+    ythickness = 1
+}
+
+widget_class "*Progress"  style "thin" 
+class "*Progress"         style "thin" 
+widget_class "*MenuItem*" style "thin" 
+class "*MenuItem*"        style "thin" 
+
+# This is for ROX-Filer
+# 
+style "rox" = "default"
+{
+  bg[NORMAL] = "#ffffff"
+  bg[ACTIVE] = "#ffffff"
+}
+widget_class "*Collection" style "rox"
+
+
+# This is for the window borders (xfwm4 & metacity)
+# 
+style "titlebar" = "default"
+{
+    bg[SELECTED]      = "#3f993f"
+    fg[SELECTED]      = "#ffffff"
+    bg[INSENSITIVE]   = "#cdcdc9"
+    fg[INSENSITIVE]   = "#000000"
+}
+
+widget "xfwm"	          style "titlebar"
+class "MetaFrames"        style "titlebar"
+widget_class "MetaFrames" style "titlebar"

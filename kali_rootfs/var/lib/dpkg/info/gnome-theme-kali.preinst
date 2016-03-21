@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    install)
+        dpkg-divert --rename --package gnome-theme-kali \
+                    --divert /usr/share/gnome-shell/theme/gnome-shell.css.original \
+                    --add /usr/share/gnome-shell/theme/gnome-shell.css
+    ;;
+    
+    upgrade|abort-upgrade)
+    ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+
+esac
+
+

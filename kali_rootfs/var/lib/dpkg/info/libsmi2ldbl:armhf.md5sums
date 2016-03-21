@@ -1,0 +1,10 @@
+cf8c843fe11913f24feee01ce73232f7  usr/lib/arm-linux-gnueabihf/libsmi.so.2.0.27
+33adbce7c39035563e2d3a3aa80b10e3  usr/share/doc/libsmi2ldbl/ANNOUNCE
+1cae029683026850652ece6a3f639d91  usr/share/doc/libsmi2ldbl/README
+2590eef298a83cd033974ac8de445f55  usr/share/doc/libsmi2ldbl/THANKS
+022fd5400d308e6336079906cd98378c  usr/share/doc/libsmi2ldbl/TODO.gz
+7de833ad3e77d92227c41483d0c0092d  usr/share/doc/libsmi2ldbl/changelog.Debian.gz
+1a1cb852d38fb7d2089228728abbaed2  usr/share/doc/libsmi2ldbl/changelog.gz
+8c1e8ce4c87014950dab0d17a88574ca  usr/share/doc/libsmi2ldbl/copyright
+fdeebf5f9885b0d003eaba0d53c3e3b1  usr/share/doc/libsmi2ldbl/smi.conf-example
+127717929142feb662d971d16f07edef  usr/share/lintian/overrides/libsmi2ldbl

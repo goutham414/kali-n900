@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=veil-evasion
+Encoding=UTF-8
+Exec=sh -c "veil-evasion -h;${SHELL:-bash}"
+Icon=kali-veil-catapult-evasion.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;13-social-engineering-tools;
+X-Kali-Package=veil-evasion

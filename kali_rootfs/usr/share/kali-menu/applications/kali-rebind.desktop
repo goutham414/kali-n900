@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rebind
+Encoding=UTF-8
+Exec=sh -c "rebind;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+X-Kali-Package=rebind

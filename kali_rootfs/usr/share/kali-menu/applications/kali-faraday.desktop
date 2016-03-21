@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=faraday IDE
+Encoding=UTF-8
+Exec=sh -c "python-faraday;${SHELL:-bash}"
+Icon=kali-faraday.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-reporting;
+X-Kali-Package=python-faraday

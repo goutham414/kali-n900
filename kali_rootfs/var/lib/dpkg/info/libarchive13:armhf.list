@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libarchive13
+/usr/share/doc
+/usr/share/doc/libarchive13
+/usr/share/doc/libarchive13/changelog.Debian.gz
+/usr/share/doc/libarchive13/changelog.Debian.armhf.gz
+/usr/share/doc/libarchive13/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libarchive.so.13.1.2
+/usr/lib/arm-linux-gnueabihf/libarchive.so.13

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mfoc
+Encoding=UTF-8
+Exec=sh -c "mfoc -h;${SHELL:-bash}"
+Icon=kali-mfoc.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;06-wireless-attacks;
+X-Kali-Package=mfoc

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mifare-classic-format
+Encoding=UTF-8
+Exec=sh -c "mifare-classic-format -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Kali-package=libfreefare-bin

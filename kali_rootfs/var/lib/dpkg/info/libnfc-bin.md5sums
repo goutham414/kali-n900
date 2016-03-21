@@ -1,0 +1,17 @@
+7d06d8c5913ec06c1d5fb5d3bc1d48ab  usr/bin/nfc-emulate-forum-tag4
+2738a5cfc06d9d51cbe4d7c855b7fbe4  usr/bin/nfc-list
+ce0ea8c61662cd1d51a522707480d93a  usr/bin/nfc-mfclassic
+60435628072ea4e4354fcac02206a1d2  usr/bin/nfc-mfultralight
+deaed6123a736e5fdf12248697d1e4a4  usr/bin/nfc-read-forum-tag3
+502f2bdd35fe6188b627b0442cac4bff  usr/bin/nfc-relay-picc
+ba3c09da6d2027ef3b5ad5d4d9b3603b  usr/bin/nfc-scan-device
+354c94a74e728b26f704851bbc71780f  usr/share/doc/libnfc-bin/changelog.Debian.gz
+870e85ab15aca152d7ddaf8f914c4084  usr/share/doc/libnfc-bin/changelog.gz
+27271829aefdab50114a25312b80594f  usr/share/doc/libnfc-bin/copyright
+ebf1c935d5799fc6210fc8f16918f0a2  usr/share/man/man1/nfc-emulate-forum-tag4.1.gz
+d5d2695b0a4065a6a71984f08cccc813  usr/share/man/man1/nfc-list.1.gz
+73553ae8f20d7b80bb2fa568deabf62f  usr/share/man/man1/nfc-mfclassic.1.gz
+49ed31f1a46af9ca84087de34214e084  usr/share/man/man1/nfc-mfultralight.1.gz
+8cd7dafc9b63c3f1d395ae164db3d50f  usr/share/man/man1/nfc-read-forum-tag3.1.gz
+a4e4e33606b7ed485ad3ccb3bceaed7e  usr/share/man/man1/nfc-relay-picc.1.gz
+a016fd113e01edae845f44b67c050daa  usr/share/man/man1/nfc-scan-device.1.gz

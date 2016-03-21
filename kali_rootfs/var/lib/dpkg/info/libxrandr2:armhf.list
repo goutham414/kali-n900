@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxrandr2
+/usr/share/doc/libxrandr2/changelog.Debian.gz
+/usr/share/doc/libxrandr2/changelog.gz
+/usr/share/doc/libxrandr2/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libXrandr.so.2.2.0
+/usr/lib/arm-linux-gnueabihf/libXrandr.so.2

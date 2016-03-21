@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jad
+Encoding=UTF-8
+Exec=sh -c "jad;${SHELL:-bash}"
+Icon=kali-jad.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Kali-Package=jad

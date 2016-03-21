@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dnmap-client
+Encoding=UTF-8
+Exec=sh -c "dnmap_client;${SHELL:-bash}"
+Icon=kali-dnmap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Kali-Package=dnmap

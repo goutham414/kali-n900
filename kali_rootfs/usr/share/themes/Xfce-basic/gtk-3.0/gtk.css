@@ -1,0 +1,60 @@
+* {
+    engine: xfce;
+
+    -xfce-smooth-edge: true;
+    -xfce-grip-style: disabled;
+
+    -GtkButton-default-border        : 0;
+    -GtkButton-default-outside-border: 0;
+    -GtkWidget-focus-line-width      : 1;
+    -GtkWidget-focus-padding         : 2;
+    -GtkMenuBar-shadow-type          : out;
+    -GtkToolbar-shadow-type          : out;
+    -GtkWidget-interior-focus        : true;
+    -GtkRange-slider-width           : 14;
+    -GtkRange-stepper-size           : 14;
+    -GtkRange-stepper-spacing        : 0;
+    -GtkRange-trough-border          : 0;
+}
+
+*:insensitive {
+    text-shadow: 1px 1px white;
+}
+
+GtkComboBox {
+    padding: 0px;
+}
+
+GtkComboBox .button {
+    padding: 1px;
+}
+
+.button {
+    border-width: 2px 2px;
+
+    background-image: -gtk-gradient(linear, left top, left bottom, from(shade(#DCDAD5, 1.1)), to(shade(#DCDAD5, 1.0)));
+}                                                         
+                                                          
+.button:active {                                          
+    background-image: -gtk-gradient(linear, left top, left bottom, from(shade(#9E9A91, 1.0)), to(shade(#9E9A91, 1.1)));
+}                                                         
+                                                          
+.button:insensitive {                                     
+    background-image: -gtk-gradient(linear, left top, left bottom, from(shade(#C8C5BE, 1.1)), to(shade(#C8C5BE, 1.0)));
+}                                                         
+                                                          
+.button:hover {                                           
+    background-image: -gtk-gradient(linear, left top, left bottom, from(shade(#4B6983, 1.1)), to(shade(#4B6983, 1.0)));
+}
+
+.button:selected {
+    background-image: -gtk-gradient(linear, left top, left bottom, from(shade(#4B6983, 1.0)), to(shade(#4B6983, 1.1)));
+}
+
+.menuitem {
+    border-width: 0px 0px;
+}
+
+.scrollbar, .scale {
+    border-width: 2px 2px;
+}

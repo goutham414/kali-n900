@@ -1,0 +1,34 @@
+# Add two default launchers in gnome-panel
+[org/gnome/gnome-panel/layout]
+object-id-list=['browser', 'terminal']
+
+[org/gnome/gnome-panel/layout/objects/browser]
+object-iid='PanelInternalFactory::Launcher'
+pack-index=1
+pack-type='start'
+toplevel-id='top-panel-0'
+
+[org/gnome/gnome-panel/layout/objects/browser/instance-config]
+location='/usr/share/applications/iceweasel.desktop'
+
+[org/gnome/gnome-panel/layout/objects/terminal]
+object-iid='PanelInternalFactory::Launcher'
+pack-index=2
+pack-type='start'
+toplevel-id='top-panel-0'
+
+[org/gnome/gnome-panel/layout/objects/terminal/instance-config]
+location='/usr/share/applications/gnome-terminal.desktop'
+
+# Override default settings of GNOME Shell extension dash-to-dock
+# (the extension doesn't use any schema)
+[org/gnome/shell/extensions/dash-to-dock]
+custom-theme-running-dots=true
+dock-position='LEFT'
+custom-theme-shrink=true
+background-opacity=0.35
+height-fraction=0.90
+opaque-background=true
+dash-max-icon-size=32
+preferred-monitor=0
+minimize-shift=true

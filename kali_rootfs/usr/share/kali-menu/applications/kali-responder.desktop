@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=responder
+Encoding=UTF-8
+Exec=sh -c "responder -h;${SHELL:-bash}"
+Icon=kali-responder.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Kali-Package=responder

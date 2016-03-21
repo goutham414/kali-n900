@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wpscan
+Encoding=UTF-8
+Exec=sh -c "wpscan --help;${SHELL:-bash}"
+Icon=kali-wpscan.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;03-01-cms-identification;03-05-web-vulnerability-scanners;
+X-Kali-Package=wpscan

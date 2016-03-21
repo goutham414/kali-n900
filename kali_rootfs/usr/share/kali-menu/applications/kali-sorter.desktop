@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sorter
+Encoding=UTF-8
+Exec=sh -c "sorter;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Kali-Package=sleuthkit

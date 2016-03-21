@@ -1,0 +1,126 @@
+style "default"
+{
+    GtkButton::default_border                    = {0, 0, 0, 0}     
+    GtkButton::default_outside_border            = {0, 0, 0, 0}     
+    GtkButton::default_spacing                   = 12               
+    GtkButton::focus-line-width                  = 1
+    GtkButton::focus-padding                     = 0
+    GtkCheckButton::indicator_size               = 15               
+    GtkRadioButton::indicator_size               = 15
+    GtkMenuItem::selected_shadow_type            = in
+    GtkPaned::handle_full_size                   = 1                
+    GtkRange::slider_width                       = 15               
+    GtkRange::stepper_size                       = 15               
+    GtkRange::trough_border                      = 0
+    GtkSpinButton::shadow_type                   = in
+    GtkScrollbar::has_backward_stepper           = 1
+    GtkScrollbar::has_forward_stepper            = 1
+    GtkScrollbar::has_secondary_backward_stepper = 1
+    GtkScrollbar::min_slider_length              = 20               
+    GtkWidget::focus-padding                     = 2                
+    GtkWidget::interior_focus                    = 2                
+
+    xthickness = 2
+    ythickness = 2
+
+    bg[NORMAL] = { 0.863, 0.863, 0.863 }
+    bg[SELECTED] = { 0.039, 0.373, 0.537 }
+    bg[INSENSITIVE] = { 0.863, 0.863, 0.863 }
+    bg[ACTIVE] = { 0.933, 0.933, 0.933 }
+    bg[PRELIGHT] = { 0.933, 0.933, 0.933 }
+
+    base[NORMAL] = { 1.000, 1.000, 1.000 }
+    base[SELECTED] = { 0.039, 0.373, 0.537 }
+    base[INSENSITIVE] = { 0.863, 0.863, 0.863 }
+    base[ACTIVE] = { 0.863, 0.863, 0.863 }
+    base[PRELIGHT] = { 0.933, 0.933, 0.933 }
+
+    text[NORMAL] = { 0.000, 0.000, 0.000 }
+    text[SELECTED] = { 1.000, 1.000, 1.000 }
+    text[INSENSITIVE] = { 0.718, 0.718, 0.718 }
+    text[ACTIVE] = { 0.000, 0.000, 0.000 }
+    text[PRELIGHT] = { 0.000, 0.000, 0.000 }
+
+    fg[NORMAL] = { 0.000, 0.000, 0.000 }
+    fg[SELECTED] = { 1.000, 1.000, 1.000 }
+    fg[INSENSITIVE] = { 0.718, 0.718, 0.718 }
+    fg[ACTIVE] = { 0.250, 0.250, 0.250 }
+    fg[PRELIGHT] = { 0.000, 0.000, 0.000 }
+
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = plain
+        }
+    }
+}
+widget_class "*" style "default"
+
+style "menustyle" = "default"
+{
+    xthickness = 3
+    ythickness = 3
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = plain
+        }
+    }
+}
+widget_class "*BonoboDockItem"     style "menustyle"
+class "*BonoboDockItem"            style "menustyle"
+widget_class "*HandleBox"          style "menustyle"
+class "*HandleBox"                 style "menustyle"
+widget_class "*ToolBar"            style "menustyle"
+class "*ToolBar"                   style "menustyle"
+widget_class "*MenuBar"            style "menustyle"
+class "*MenuBar"                   style "menustyle"
+
+style "buttonstyle" = "default"
+{
+    xthickness = 3
+    ythickness = 3
+    engine "xfce" 
+    {
+        smooth_edge = true
+        boxfill
+        {
+            fill_style = gradient
+            orientation = vertical
+            shade_start = 1.10
+            shade_end = 0.90
+        }
+    }
+}
+widget_class "*Button*"            style "buttonstyle"
+class "*Button*"                   style "buttonstyle"
+
+
+# This is for ROX-Filer
+# 
+style "rox" = "default"
+{
+  bg[NORMAL] = "#ffffff"
+  bg[ACTIVE] = "#ffffff"
+}
+widget_class "*Collection"         style "rox"
+
+
+# This is for the window borders (xfwm4 & metacity)
+# 
+style "titlebar"
+{
+    bg[SELECTED]      = { 0.039, 0.373, 0.537 }
+    fg[SELECTED]      = { 1.000, 1.000, 1.000 }
+    bg[INSENSITIVE]   = { 0.933, 0.933, 0.933 }
+    fg[INSENSITIVE]   = { 0.250, 0.250, 0.250 }
+}
+
+widget "xfwm"             style "titlebar"
+class "MetaFrames"        style "titlebar"
+widget_class "MetaFrames" style "titlebar"
+

@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Libxfce4ui Reference Manual: Xfce Dialogs</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.0">
+<link rel="home" href="index.html" title="Libxfce4ui Reference Manual">
+<link rel="up" href="libxfce4ui-widgets.html" title="Part IV. Xfce UI Widget">
+<link rel="prev" href="libxfce4ui-widgets.html" title="Part IV. Xfce UI Widget">
+<link rel="next" href="libxfce4ui-xfce-titled-dialog.html" title="Xfce Titled Dialog">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libxfce4ui-xfce-dialogs.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libxfce4ui-widgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libxfce4ui-widgets.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libxfce4ui-xfce-titled-dialog.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libxfce4ui-xfce-dialogs"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libxfce4ui-xfce-dialogs.top_of_page"></a>Xfce Dialogs</span></h2>
+<p>Xfce Dialogs — Common used dialogs to interact with the user.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libxfce4ui-xfce-dialogs.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog-new" title="xfce_message_dialog_new ()">xfce_message_dialog_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog-new-valist" title="xfce_message_dialog_new_valist ()">xfce_message_dialog_new_valist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog" title="xfce_message_dialog ()">xfce_message_dialog</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-dialog-show-help" title="xfce_dialog_show_help ()">xfce_dialog_show_help</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-dialog-show-help-with-version" title="xfce_dialog_show_help_with_version ()">xfce_dialog_show_help_with_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-dialog-show-info" title="xfce_dialog_show_info ()">xfce_dialog_show_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-dialog-show-warning" title="xfce_dialog_show_warning ()">xfce_dialog_show_warning</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-dialog-show-error" title="xfce_dialog_show_error ()">xfce_dialog_show_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-dialog-confirm" title="xfce_dialog_confirm ()">xfce_dialog_confirm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libxfce4ui-xfce-dialogs.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libxfce4ui-xfce-dialogs.html#XFCE-BUTTON-TYPE-MIXED:CAPS" title="XFCE_BUTTON_TYPE_MIXED">XFCE_BUTTON_TYPE_MIXED</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libxfce4ui-xfce-dialogs.html#XFCE-BUTTON-TYPE-PIXBUF:CAPS" title="XFCE_BUTTON_TYPE_PIXBUF">XFCE_BUTTON_TYPE_PIXBUF</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libxfce4ui-xfce-dialogs.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libxfce4ui/libxfce4ui.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libxfce4ui-xfce-dialogs.description"></a><h2>Description</h2>
+<p>
+Useful convientent function to interact with the user using a
+<a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html"><span class="type">GtkMessageDialog</span></a>.
+</p>
+</div>
+<div class="refsect1">
+<a name="libxfce4ui-xfce-dialogs.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="xfce-message-dialog-new"></a><h3>xfce_message_dialog_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+xfce_message_dialog_new (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_text</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_button_text</code></em>,
+                         <em class="parameter"><code>...</code></em>);</pre>
+<p>xfce_message_dialog_new() allows you to easily create Gtk+ message dialogs.
+It accepts GTK+ stock buttons, mixed buttons (using XFCE_BUTTON_TYPE_MIXED)
+or buttons with a <span class="type">GdkPixbuf</span> (using XFCE_BUTTON_TYPE_PIXBUF).</p>
+<p>The buttons are defined by <em class="parameter"><code>first_button_text</code></em>
+ and the next arguments in the
+following format <em class="parameter"><code>type</code></em>
+, <em class="parameter"><code>param1</code></em>
+[, <em class="parameter"><code>param2</code></em>
+, <em class="parameter"><code>param3</code></em>
+].</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="varname">XFCE_BUTTON_TYPE_MIXED</code></span></p></td>
+<td><p>
+        This allows you to easily create mixed buttons in a dialog.
+        <em class="parameter"><code>param1</code></em> is used for the stock_id, <em class="parameter"><code>param2</code></em> for the label and
+        <em class="parameter"><code>param3</code></em> for the response_id. See also <a class="link" href="libxfce4ui-xfce-gtk-extensions.html#xfce-gtk-button-new-mixed" title="xfce_gtk_button_new_mixed ()"><code class="function">xfce_gtk_button_new_mixed()</code></a>.
+      </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="varname">XFCE_BUTTON_TYPE_PIXBUF</code></span></p></td>
+<td><p>
+        Creates a button with the <span class="type">GdkPixbuf</span> as button icon.
+        <em class="parameter"><code>param1</code></em> is the <span class="type">GdkPixuf</span>, <em class="parameter"><code>param2</code></em> for the label and
+        <em class="parameter"><code>param3</code></em> for the response_id.
+      </p></td>
+</tr>
+<tr>
+<td><p><span class="term">Stock Buttons</span></p></td>
+<td><p>
+        When the variables above were not matched, the button type
+        will be a stock button. <em class="parameter"><code>type</code></em> will be the stock id, <em class="parameter"><code>param1</code></em>
+        is used for the response_id.
+      </p></td>
+</tr>
+</tbody>
+</table></div>
+<p>To clarify this behaviour see the example below. We create a dialog with
+two stock buttons, a <span class="type">GdkPixbuf</span> button and a mixed button.</p>
+<div class="example">
+<a name="id-1.5.2.7.2.8"></a><p class="title"><b>Example 2. Creating a Xfce Message Dialog</b></p>
+<div class="example-contents"><pre class="programlisting">
+GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_size (filename, 24, 24);
+
+GtkWidget *dialog = xfce_message_dialog (parent, "Question",
+                                         GTK_STOCK_DIALOG_QUESTION,
+                                         "There are unsaved modifications",
+                                         "The menu has been modified, do you want to save it before quitting?",
+                                         GTK_STOCK_SAVE, GTK_RESPONSE_YES,
+                                         XFCE_BUTTON_TYPE_MIXED, GTK_STOCK_DELETE, "Forget modifications", GTK_RESPONSE_APPLY,
+                                         XFCE_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
+                                         GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
+                                         NULL);
+
+g_object_unref (G_OBJECT (pixbuf));
+</pre></div>
+</div>
+<br class="example-break"><div class="refsect3">
+<a name="id-1.5.2.7.2.9"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>title of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stock_id</p></td>
+<td class="parameter_description"><p>gtk stock icon name to show in the dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_text</p></td>
+<td class="parameter_description"><p>primary text shown in large bold font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>secondary_text</p></td>
+<td class="parameter_description"><p>secondary text shown in normal font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>first_button_text</p></td>
+<td class="parameter_description"><p>text for the first button.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.2.10"></a><h4>Returns</h4>
+<p> A new <a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html"><span class="type">GtkMessageDialog</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-message-dialog-new-valist"></a><h3>xfce_message_dialog_new_valist ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+xfce_message_dialog_new_valist (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_stock_id</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_text</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_button_text</code></em>,
+                                <em class="parameter"><code><span class="type">va_list</span> args</code></em>);</pre>
+<p>See <a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog-new" title="xfce_message_dialog_new ()"><code class="function">xfce_message_dialog_new()</code></a>, this version takes a va_list for
+language bindings to use.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>title of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>icon_stock_id</p></td>
+<td class="parameter_description"><p>gtk stock icon name to show in the dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_text</p></td>
+<td class="parameter_description"><p>primary text shown in large bold font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>secondary_text</p></td>
+<td class="parameter_description"><p>secondary text shown in normal font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>first_button_text</p></td>
+<td class="parameter_description"><p>text for the first button.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>args</p></td>
+<td class="parameter_description"><p>argument list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.3.6"></a><h4>Returns</h4>
+<p> A new <a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html"><span class="type">GtkMessageDialog</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-message-dialog"></a><h3>xfce_message_dialog ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+xfce_message_dialog (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_text</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_button_text</code></em>,
+                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Create a new dialog as in <a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog-new" title="xfce_message_dialog_new ()"><code class="function">xfce_message_dialog_new()</code></a>, then runs the
+dialog using <a href="http://developer.gnome.org/gtk2/GtkDialog.html#gtk-dialog-run"><span class="type">gtk_dialog_run</span></a> and return the response id selected by the user.</p>
+<p>See <a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog-new" title="xfce_message_dialog_new ()"><code class="function">xfce_message_dialog_new()</code></a> for more information.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>title of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stock_id</p></td>
+<td class="parameter_description"><p>gtk stock icon name to show in the dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_text</p></td>
+<td class="parameter_description"><p>primary text shown in large bold font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>secondary_text</p></td>
+<td class="parameter_description"><p>secondary text shown in normal font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>first_button_text</p></td>
+<td class="parameter_description"><p>text for the first button.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.4.7"></a><h4>Returns</h4>
+<p> the selected response id.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-dialog-show-help"></a><h3>xfce_dialog_show_help ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_dialog_show_help (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *application</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *page</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *offset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-dialog-show-help-with-version"></a><h3>xfce_dialog_show_help_with_version ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_dialog_show_help_with_version (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *application</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *page</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *offset</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *version</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-dialog-show-info"></a><h3>xfce_dialog_show_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_dialog_show_info (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_format</code></em>,
+                       <em class="parameter"><code>...</code></em>);</pre>
+<p>Displays an information dialog on <em class="parameter"><code>parent</code></em>
+ using the <em class="parameter"><code>primary_format</code></em>
+ as message.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>secondary_text</p></td>
+<td class="parameter_description"><p>secondary text of the dialog or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_format</p></td>
+<td class="parameter_description"><p>the <code class="function">printf()</code>-style format for the primary problem description.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-dialog-show-warning"></a><h3>xfce_dialog_show_warning ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_dialog_show_warning (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_format</code></em>,
+                          <em class="parameter"><code>...</code></em>);</pre>
+<p>Displays a warning dialog on <em class="parameter"><code>parent</code></em>
+ using the <em class="parameter"><code>primary_format</code></em>
+ as message.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>secondary_text</p></td>
+<td class="parameter_description"><p>secondary text of the dialog or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_format</p></td>
+<td class="parameter_description"><p>the <code class="function">printf()</code>-style format for the primary problem description.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-dialog-show-error"></a><h3>xfce_dialog_show_error ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfce_dialog_show_error (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *error</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_format</code></em>,
+                        <em class="parameter"><code>...</code></em>);</pre>
+<p>Displays an error dialog on <em class="parameter"><code>parent</code></em>
+ using the <em class="parameter"><code>primary_format</code></em>
+ as primary message and optionally
+displaying <em class="parameter"><code>error</code></em>
+ as secondary error text.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, which gives a more precise description of the problem or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_format</p></td>
+<td class="parameter_description"><p>the <code class="function">printf()</code>-style format for the primary problem description.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-dialog-confirm"></a><h3>xfce_dialog_confirm ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfce_dialog_confirm (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *confirm_label</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_format</code></em>,
+                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Runs a questions dialog, that has a 'Cancel' and a 'Confirm' button. The 'Confirm'
+button text can be set by <em class="parameter"><code>action</code></em>
+ if given.</p>
+<p>If <em class="parameter"><code>stock_id</code></em>
+ is equal to <a href="http://developer.gnome.org/gtk2/gtk3-Stock-Items.html#GTK-STOCK-YES:CAPS"><span class="type">GTK_STOCK_YES</span></a>, the 'Cancel' button becomes a 'No' button.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stock_id</p></td>
+<td class="parameter_description"><p>the stock name of the confirm button, for example <a href="http://developer.gnome.org/gtk2/gtk3-Stock-Items.html#GTK-STOCK-YES:CAPS"><span class="type">GTK_STOCK_YES</span></a> or <a href="http://developer.gnome.org/gtk2/gtk3-Stock-Items.html#GTK-STOCK-CLEAR:CAPS"><span class="type">GTK_STOCK_CLEAR</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>confirm_label</p></td>
+<td class="parameter_description"><p>if non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this text is used on the confirm button together with the <em class="parameter"><code>stock_id</code></em>
+icon.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>secondary_text</p></td>
+<td class="parameter_description"><p>secondary text in the dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_format</p></td>
+<td class="parameter_description"><p>the <code class="function">printf()</code>-style format for the dialog question.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.10.7"></a><h4>Returns</h4>
+<p> TRUE if the user confirms, else FALSE.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libxfce4ui-xfce-dialogs.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="XFCE-BUTTON-TYPE-MIXED:CAPS"></a><h3>XFCE_BUTTON_TYPE_MIXED</h3>
+<pre class="programlisting">#define XFCE_BUTTON_TYPE_MIXED  "button-mixed"
+</pre>
+<p>
+Used to define a mixed button in <a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog-new" title="xfce_message_dialog_new ()"><code class="function">xfce_message_dialog_new()</code></a> and
+<code class="function">xfce_message_dialog_run()</code>.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-BUTTON-TYPE-PIXBUF:CAPS"></a><h3>XFCE_BUTTON_TYPE_PIXBUF</h3>
+<pre class="programlisting">#define XFCE_BUTTON_TYPE_PIXBUF "button-pixbuf"
+</pre>
+<p>
+Used to define a <span class="type">GdkPixuf</span> button in <a class="link" href="libxfce4ui-xfce-dialogs.html#xfce-message-dialog-new" title="xfce_message_dialog_new ()"><code class="function">xfce_message_dialog_new()</code></a> and
+<code class="function">xfce_message_dialog_run()</code>.
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+# If aborting an upgrade from <0.123, we need to move initramfs.conf back
+# into place.
+if [ "$1" = abort-upgrade ] && dpkg --compare-versions "$2" lt 0.123~ && \
+   [ -f /etc/initramfs-tools/initramfs.conf.dpkg-backup ]; then
+	mv -n /etc/initramfs-tools/initramfs.conf.dpkg-backup \
+		/etc/initramfs-tools/initramfs.conf
+fi
+
+

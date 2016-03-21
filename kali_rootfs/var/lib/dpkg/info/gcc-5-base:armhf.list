@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/gcc-5-base
+/usr/share/doc/gcc-5-base/changelog.Debian.gz
+/usr/share/doc/gcc-5-base/README.Debian.armhf.gz
+/usr/share/doc/gcc-5-base/copyright
+/usr/share/doc/gcc-5-base/TODO.Debian
+/usr/lib
+/usr/lib/gcc
+/usr/lib/gcc/arm-linux-gnueabihf
+/usr/lib/gcc/arm-linux-gnueabihf/5
+/usr/lib/gcc/arm-linux-gnueabihf/5.3.1

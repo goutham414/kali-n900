@@ -1,0 +1,4 @@
+Vendor: Kali
+Vendor-URL: http://www.kali.org/
+Parent: debian
+Bugs: http://bugs.kali.org

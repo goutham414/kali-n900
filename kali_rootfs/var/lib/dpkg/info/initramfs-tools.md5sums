@@ -1,0 +1,9 @@
+1f6d8767aff32fe81672fb790edb5695  usr/sbin/update-initramfs
+3ecdc039bab6fc435fa76f259c59b6db  usr/share/bash-completion/completions/initramfs-tools
+2157f9c6f5fe96d5b65ef68f7884d7c5  usr/share/bug/initramfs-tools/script
+91c7ac7ad742ab92c3046f2e07642bc4  usr/share/doc/initramfs-tools/NEWS.Debian.gz
+adb652e999f8884ae56dfd11067b3e5b  usr/share/doc/initramfs-tools/TODO
+15ce61ac24f9bda5e0a06e874d617076  usr/share/doc/initramfs-tools/changelog.gz
+4fc01ee21c39633ec3547d25c2fd3a75  usr/share/doc/initramfs-tools/copyright
+deb0dcbd1b2669ae0d1a17c9bb12b5a5  usr/share/man/man5/update-initramfs.conf.5.gz
+b3e42bec424c4e5d9d4ef56d494f1ddc  usr/share/man/man8/update-initramfs.8.gz

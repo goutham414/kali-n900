@@ -1,0 +1,4 @@
+/etc/init.d/cgmanager
+/etc/init.d/cgproxy
+/etc/init/cgmanager.conf
+/etc/init/cgproxy.conf

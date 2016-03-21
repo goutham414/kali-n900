@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sqlninja
+Encoding=UTF-8
+Exec=sh -c "sqlninja;${SHELL:-bash}"
+Icon=kali-sqlninja.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-database-assessment;
+X-Kali-Package=sqlninja

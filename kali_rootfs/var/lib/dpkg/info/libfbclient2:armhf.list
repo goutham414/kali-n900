@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libfbclient.so.2.5.5
+/usr/lib/arm-linux-gnueabihf/firebird
+/usr/lib/arm-linux-gnueabihf/firebird/2.5
+/usr/lib/arm-linux-gnueabihf/firebird/2.5/fr_FR.msg
+/usr/lib/arm-linux-gnueabihf/firebird/2.5/firebird.msg
+/usr/lib/arm-linux-gnueabihf/firebird/2.5/de_DE.msg
+/usr/share/doc/libfbclient2
+/usr/lib/arm-linux-gnueabihf/libfbclient.so.2

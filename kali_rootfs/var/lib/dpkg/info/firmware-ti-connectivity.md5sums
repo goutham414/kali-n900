@@ -1,0 +1,16 @@
+3a68787e5b1cb75e2a8c160ad79297ab  lib/firmware/ti-connectivity/wl1251-fw.bin
+6d570e73a9cb1f686b2ad5cdbbdf6b83  lib/firmware/ti-connectivity/wl1251-nvs.bin
+f977143963132ff9d0b34df855c0d584  lib/firmware/ti-connectivity/wl127x-fw-5-mr.bin
+50fe969ae8ce6162176a9b0ec9e53a34  lib/firmware/ti-connectivity/wl127x-fw-5-plt.bin
+0fd4b726f08caf08fade4a58096294dd  lib/firmware/ti-connectivity/wl127x-fw-5-sr.bin
+170b227c9cc5f3020ae58ce25eb93f21  lib/firmware/ti-connectivity/wl127x-nvs.bin
+3c7c6d8fd7bedcef352c1d810a5650c2  lib/firmware/ti-connectivity/wl128x-fw-5-mr.bin
+3a650e228ae0859671ebe462640c2df6  lib/firmware/ti-connectivity/wl128x-fw-5-plt.bin
+310ed21941f9c86bf906e849be7e03ea  lib/firmware/ti-connectivity/wl128x-fw-5-sr.bin
+387ee1359ecac0e1546290cec4892a31  lib/firmware/ti-connectivity/wl128x-nvs.bin
+96f020fb8a5f73925c9dbcef263dbb54  lib/firmware/ti-connectivity/wl18xx-fw-2.bin
+758a6b5f61748f1d7dbce104278250f7  lib/firmware/ti-connectivity/wl18xx-fw-3.bin
+bd2731877d3f36e9d9d34cd9c3e10abb  usr/share/appdata/firmware-ti-connectivity.metainfo.xml
+8dbcc0513822473f1ebe02dcf31dcc01  usr/share/bug/firmware-ti-connectivity/presubj
+976f1d6c41d52ff9c36aa13e279ff884  usr/share/doc/firmware-ti-connectivity/changelog.Debian.gz
+dcff03b468f7b481d9c1788fab0bef1f  usr/share/doc/firmware-ti-connectivity/copyright

@@ -1,0 +1,40 @@
+This package was debianized by Yves-Alexis Perez <corsac@corsac.net> on
+Thu, 25 Jan 2007 18:36:55 +0100
+
+It is based on gtk2-engines-xfce package by Martin Loschwitz 
+<madkiss@madkiss.org> 
+
+You can fetch this package from http://cimi.netsons.org/pages/murrine.php
+
+Upstream Author is Andrea Cimitan <andrea.cimitan@gmail.com>
+Murrine is based on work from various projects:
+
+Clearlooks development team:
+  Richard Stellingwerff - remenic@gmail.com
+  Daniel Borgmann       - daniel.borgmann@gmail.com
+
+Rezlooks modifications:
+  Doug Whiteley         - dougwhiteley@gmail.com
+  
+Candido modifications:
+  Andrea Cimitan        - andrea.cimitan@gmail.com
+
+© 2006-2009 Andrea Cimitan
+
+Licensing:
+
+   This package is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; version 2 or later.
+
+   This package is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this package; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+
+On Debian systems, the complete text of the GNU General Public 
+License can be found in `/usr/share/common-licenses/GPL'.

@@ -1,0 +1,7 @@
+9cf74d5e67efa43ea9efac1861dbe238  usr/lib/arm-linux-gnueabihf/libedit.so.2.0.53
+4959b54a4e8042b998561e290f5f77e1  usr/share/doc/libedit2/TODO.Debian
+2efb430de420a5a25170fb5d60d4a629  usr/share/doc/libedit2/changelog.Debian.armhf.gz
+c59b706a6d9c6da388d4fa1639ad3967  usr/share/doc/libedit2/changelog.Debian.gz
+cf060345b046891c5af399fb2453b3d6  usr/share/doc/libedit2/changelog.gz
+eda44fd56a0ef44c440ecc106650ed2d  usr/share/doc/libedit2/copyright
+5aa1af3cfbc185b05ee615dae85f1d30  usr/share/lintian/overrides/libedit2

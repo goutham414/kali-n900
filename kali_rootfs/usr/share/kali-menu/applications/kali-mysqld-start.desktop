@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mysql start
+Encoding=UTF-8
+Exec=sh -c "service mysql start;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-03-mysqld;
+X-Kali-Package=mysql-server

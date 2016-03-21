@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=armitage
+Encoding=UTF-8
+Exec=sh -c "armitage;${SHELL:-bash}"
+Icon=kali-armitage.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=08-exploitation-tools;
+X-Kali-Package=armitage

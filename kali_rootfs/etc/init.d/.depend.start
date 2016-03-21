@@ -1,0 +1,11 @@
+TARGETS = killprocs console-setup.sh rsyslog cgmanager motd bootlogs acpid dbus cgproxy single cron lightdm network-manager rmnologin rc.local
+INTERACTIVE = console-setup.sh
+acpid: rsyslog
+dbus: rsyslog
+cgproxy: cgmanager
+single: killprocs motd bootlogs
+cron: rsyslog
+lightdm: acpid dbus
+network-manager: dbus rsyslog
+rmnologin: lightdm acpid dbus rsyslog cgproxy cgmanager network-manager motd bootlogs console-setup.sh cron
+rc.local: lightdm acpid dbus rsyslog cgproxy cgmanager network-manager motd bootlogs console-setup.sh cron

@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libnspr4
+/usr/share/doc
+/usr/share/doc/libnspr4
+/usr/share/doc/libnspr4/changelog.Debian.gz
+/usr/share/doc/libnspr4/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libnspr4.so
+/usr/lib/arm-linux-gnueabihf/libplc4.so
+/usr/lib/arm-linux-gnueabihf/libplds4.so

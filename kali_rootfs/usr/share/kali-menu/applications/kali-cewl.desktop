@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cewl
+Encoding=UTF-8
+Exec=sh -c "cewl --help;${SHELL:-bash}"
+Icon=kali-cewl.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;05-password-attacks;
+X-Kali-Package=cewl

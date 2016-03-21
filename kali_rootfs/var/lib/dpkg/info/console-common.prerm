@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/init.d/keymap.sh 0.7.88+nmu1~ -- "$@"
+# End automatically added section

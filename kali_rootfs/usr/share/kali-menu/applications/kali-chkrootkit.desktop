@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=chkrootkit
+Encoding=UTF-8
+Exec=sh -c "chkrootkit -h;${SHELL:-bash}"
+Icon=kali-chkrootkit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=chkrootkit

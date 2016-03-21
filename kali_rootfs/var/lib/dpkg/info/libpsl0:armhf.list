@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpsl0
+/usr/share/doc/libpsl0/changelog.Debian.gz
+/usr/share/doc/libpsl0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libpsl.so.0.4.0
+/usr/lib/arm-linux-gnueabihf/libpsl.so.0

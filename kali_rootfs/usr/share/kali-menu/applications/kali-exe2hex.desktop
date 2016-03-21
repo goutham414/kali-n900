@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=exe2hex
+Encoding=UTF-8
+Exec=sh -c "exe2hex;${SHELL:-bash}"
+Icon=kali-exe2hex.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;10-maintaining-access;
+X-Kali-Package=exe2hexbat

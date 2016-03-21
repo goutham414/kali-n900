@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=phishing-frenzy
+Encoding=UTF-8
+Exec=sh -c "phishing-frenzy -h;${SHELL:-bash}"
+Icon=kali-phishing-frenzy.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-social-engineering-tools;
+X-Kali-Package=phishing-frenzy

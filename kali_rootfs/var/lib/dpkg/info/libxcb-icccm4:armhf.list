@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxcb-icccm4
+/usr/share/doc/libxcb-icccm4/changelog.gz
+/usr/share/doc/libxcb-icccm4/NEWS.gz
+/usr/share/doc/libxcb-icccm4/changelog.Debian.gz
+/usr/share/doc/libxcb-icccm4/copyright
+/usr/share/doc/libxcb-icccm4/README
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxcb-icccm.so.4.0.0
+/usr/lib/arm-linux-gnueabihf/libxcb-icccm.so.4

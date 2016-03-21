@@ -1,0 +1,19 @@
+libpam-cgm
+==========
+
+In the past, Ubuntu carried a systemd patch to provide logged-in users
+with cgroups which they could administer.  This can now be done by the
+pam_cgm module.
+
+By default, pam_cgm will create a new cgroup for the user for all
+controllers other than name=systemd.  To specify a list of controllers
+to use, edit /usr/share/pam-configs/cgm to add the comma-separated
+list of controllers after a -c argument.  For instance, instead of
+
+	optional	pam_cgm.so
+
+use
+
+	optional	pam_cgm.so -c freezer,memory
+
+Then run pam-auth-update to cause the /etc/pam.d/ files to be updated.

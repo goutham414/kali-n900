@@ -1,0 +1,10 @@
+76d27cec895171fa52f667d12e89ebd7  lib/udev/rules.d/55-dm.rules
+95e01aa50cf45497b2ecebc08a7906e2  lib/udev/rules.d/60-persistent-storage-dm.rules
+e17d08df4b3c52d77cd5e28d831952ca  sbin/dmsetup
+a1639c7980166ec2379bce97be0ece6f  usr/share/doc/dmsetup/changelog.Debian.armhf.gz
+8558caef620d38c73382391260fb0f04  usr/share/doc/dmsetup/changelog.Debian.devmapper.gz
+0bd5fe2a3f4e39eb3cfae9e28b7d9372  usr/share/doc/dmsetup/changelog.Debian.gz
+5851430d56aa94efb1fdf9bbb7fb46cf  usr/share/doc/dmsetup/changelog.gz
+0c26eedb7cf48e3f56fc63ece2d40190  usr/share/doc/dmsetup/copyright
+4b0433880e2da3d28259093c87efa973  usr/share/initramfs-tools/hooks/dmsetup
+2c948b33b52a75c3da1f15313bb05956  usr/share/man/man8/dmsetup.8.gz

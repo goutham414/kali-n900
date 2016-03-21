@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgmp10
+/usr/share/doc/libgmp10/changelog.Debian.gz
+/usr/share/doc/libgmp10/copyright
+/usr/share/doc/libgmp10/README.Debian
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgmp.so.10.3.0
+/usr/lib/arm-linux-gnueabihf/libgmp.so.10

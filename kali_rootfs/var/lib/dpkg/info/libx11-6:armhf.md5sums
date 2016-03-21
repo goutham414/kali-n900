@@ -1,0 +1,7 @@
+28b82977ac4995d003f982a7db4e2546  usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0
+73935a46de4281fc0b11e9913b06aace  usr/share/doc/libx11-6/NEWS.Debian.gz
+af25483e013c3c454e31550803c5718a  usr/share/doc/libx11-6/NEWS.gz
+5373773697ea7a3edfde51990d19e292  usr/share/doc/libx11-6/changelog.Debian.gz
+d557cf7f91c694a573452ba5e6ccc628  usr/share/doc/libx11-6/changelog.gz
+baa43cabe19521cd793947b55fc034db  usr/share/doc/libx11-6/copyright
+7b3bf08e452bf55411aac9e4fe527e99  usr/share/lintian/overrides/libx11-6

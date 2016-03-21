@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=fern wifi cracker
+Encoding=UTF-8
+Exec=sh -c "fern-wifi-cracker"
+Icon=kali-fern-wifi-cracker.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-01-wireless-tools;06-wireless-attacks;
+X-Kali-Package=fern-wifi-cracker

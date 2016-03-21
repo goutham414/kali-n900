@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=volatility
+Encoding=UTF-8
+Exec=sh -c "vol -h;${SHELL:-bash}"
+Icon=kali-volatility.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=volatility

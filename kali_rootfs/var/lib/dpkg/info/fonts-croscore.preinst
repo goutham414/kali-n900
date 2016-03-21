@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/30-0-google-croscore-arimo-fontconfig.conf 2015-09-29-1~ fonts-croscore -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/30-0-google-croscore-cousine-fontconfig.conf 2015-09-29-1~ fonts-croscore -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/30-0-google-croscore-tinos-fontconfig.conf 2015-09-29-1~ fonts-croscore -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/62-google-croscore-arimo-fontconfig.conf 2015-09-29-1~ fonts-croscore -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/62-google-croscore-cousine-fontconfig.conf 2015-09-29-1~ fonts-croscore -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/62-google-croscore-tinos-fontconfig.conf 2015-09-29-1~ fonts-croscore -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/62-google-croscore-symbolneu-fontconfig.conf 2015-09-29-1~ fonts-croscore -- "$@"
+# End automatically added section

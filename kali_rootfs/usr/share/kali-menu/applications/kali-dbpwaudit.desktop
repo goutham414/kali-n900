@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dbpwaudit
+Encoding=UTF-8
+Exec=sh -c "dbpwaudit;${SHELL:-bash}"
+Icon=kali-dbpwaudit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-database-assessment;05-01-online-attacks;
+X-Kali-Package=dbpwaudit

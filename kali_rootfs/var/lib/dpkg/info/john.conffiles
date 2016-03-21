@@ -1,0 +1,4 @@
+/etc/cron.d/john
+/etc/john/john-mail.conf
+/etc/john/john-mail.msg
+/etc/john/john.conf

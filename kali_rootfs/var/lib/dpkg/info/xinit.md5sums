@@ -1,0 +1,8 @@
+57543185b5ac3fd98cb8c42a3175c711  usr/bin/startx
+da4edfd40ad97bf4a1ca2c4d8c60f0f7  usr/bin/xinit
+5ba0400b8e6384d7256bc1031be323ee  usr/share/doc/xinit/NEWS.Debian.gz
+264d29f2b8d321bde7eb5c003e7b369f  usr/share/doc/xinit/changelog.Debian.gz
+1d1a5be5d7e413b9d4189674a8f1d1e3  usr/share/doc/xinit/changelog.gz
+91b9035fc9f7683f3aab67114843a69f  usr/share/doc/xinit/copyright
+eb0c1542d8dda4237876dc4a834fb78f  usr/share/man/man1/startx.1.gz
+033904e7262e4955789c6e22a0ed4ec0  usr/share/man/man1/xinit.1.gz

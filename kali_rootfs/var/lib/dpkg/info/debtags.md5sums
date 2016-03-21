@@ -1,0 +1,16 @@
+d0b47a5c4bac645d6025bfb391300c40  usr/bin/debtags
+802ee8fd947f748de52f62883de761fd  usr/bin/debtags-hardware
+307b29c17fe5d6ac1c69e6c485ff6de1  usr/bin/debtags-submit-patch
+ac56ef1f1e1f45ade510264e8741417c  usr/share/bash-completion/completions/debtags
+4be97f536e3b164638c8b68f7499d657  usr/share/debtags/tags-current.gz
+31eb1136902cd6dcac4463198ebae302  usr/share/debtags/vocabulary
+e6f1df5fc430c630a8d2ff743fdfe228  usr/share/doc/debtags/Makefile
+b702752bd09885bffc57e9568e70431c  usr/share/doc/debtags/README
+a08d16c4f1c80793d0318f91afbec6e1  usr/share/doc/debtags/README.Debian
+78a76a0ed7bbb2cbd1b05e74eca3a20e  usr/share/doc/debtags/buildinfo_all.gz
+944a78aea89d6edc958f8d80d249d63f  usr/share/doc/debtags/changelog.gz
+da2f40e829f6678045aa46a312b1c6e9  usr/share/doc/debtags/copyright
+7b64507a267c7497d674a1314c0e3845  usr/share/doc/debtags/debtags-edit.png
+42e90ded0ea65fb487574d9c8f0a29b5  usr/share/doc/debtags/packagesearch.png
+22bd31b00e04c6423beb0c06962468f9  usr/share/doc/debtags/paper-debtags.rst.gz
+4169bfeb62d41f5a47b9d8a8dfe3d33d  usr/share/doc/debtags/ranganathan.png

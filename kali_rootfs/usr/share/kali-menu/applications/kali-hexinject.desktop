@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=hexinject
+Encoding=UTF-8
+Exec=sh -c "hexinject -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers;
+X-Kali-Package=hexinject

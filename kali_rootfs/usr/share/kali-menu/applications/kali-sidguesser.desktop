@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sidguesser
+Encoding=UTF-8
+Exec=sh -c "sidguess;${SHELL:-bash}"
+Icon=kali-sidguesser.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-database-assessment;
+X-Kali-Package=sidguesser

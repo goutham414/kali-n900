@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rsmangler
+Encoding=UTF-8
+Exec=sh -c "rsmangler -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+X-Kali-Package=rsmangler

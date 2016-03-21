@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libproxy1v5
+/usr/share/doc/libproxy1v5/changelog.Debian.gz
+/usr/share/doc/libproxy1v5/changelog.gz
+/usr/share/doc/libproxy1v5/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libproxy.so.1.0.0
+/usr/lib/arm-linux-gnueabihf/libproxy.so.1

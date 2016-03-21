@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnetfilter-acct1
+/usr/share/doc/libnetfilter-acct1/copyright
+/usr/share/doc/libnetfilter-acct1/changelog.gz
+/usr/share/doc/libnetfilter-acct1/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libnetfilter_acct.so.1.0.0
+/usr/lib/arm-linux-gnueabihf/libnetfilter_acct.so.1

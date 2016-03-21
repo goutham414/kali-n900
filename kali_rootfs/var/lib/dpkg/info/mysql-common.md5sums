@@ -1,0 +1,5 @@
+2e5a1a8c28036f79b7e5cbba6568aa1b  usr/share/doc/mysql-common/changelog.Debian.gz
+54a533bba302c12cfd824f8ddf672a6a  usr/share/doc/mysql-common/changelog.gz
+39378741a80c3e736d1c75a0be5c61d6  usr/share/doc/mysql-common/copyright
+908eaf5d6816dbb558041609dbd90c49  usr/share/lintian/overrides/mysql-common
+4e0715e047778648bca4fc74e26e36dc  usr/share/mysql-common/configure-symlinks

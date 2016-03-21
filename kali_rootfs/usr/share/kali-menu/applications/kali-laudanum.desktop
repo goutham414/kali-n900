@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=laudanum
+Encoding=UTF-8
+Exec=sh -c "ls -l /usr/share/laudanum;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-03-web-backdoors;
+X-Kali-Package=laudanum

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ophcrack-cli
+Encoding=UTF-8
+Exec=sh -c "ophcrack-cli;${SHELL:-bash}"
+Icon=kali-ophcrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Kali-Package=ophcrack-cli

@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libdrm-nouveau2
+/usr/share/doc
+/usr/share/doc/libdrm-nouveau2
+/usr/share/doc/libdrm-nouveau2/changelog.Debian.gz
+/usr/share/doc/libdrm-nouveau2/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libdrm_nouveau.so.2.0.0
+/usr/lib/arm-linux-gnueabihf/libdrm_nouveau.so.2

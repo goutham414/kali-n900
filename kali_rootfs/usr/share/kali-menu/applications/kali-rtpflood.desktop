@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rtpflood
+Encoding=UTF-8
+Exec=sh -c "rtpflood;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+X-Kali-Package=rtpflood

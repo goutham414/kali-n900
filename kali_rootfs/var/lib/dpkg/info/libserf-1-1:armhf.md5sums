@@ -1,0 +1,6 @@
+cde777199e9a63999d66627a559c621c  usr/lib/arm-linux-gnueabihf/libserf-1.so.1.3.0
+89f87b8f96661ac6a52bc30c3ed02573  usr/share/doc/libserf-1-1/NOTICE
+0c31d5685b6a31d1fab67c18553d4f0d  usr/share/doc/libserf-1-1/changelog.Debian.gz
+e2120a301b2a3fbb3c3a67d67e5961a3  usr/share/doc/libserf-1-1/changelog.gz
+971b5c3f67063e5eac64c8bc243ad600  usr/share/doc/libserf-1-1/copyright
+8fbd6987327a211bd286a31c166920e9  usr/share/lintian/overrides/libserf-1-1

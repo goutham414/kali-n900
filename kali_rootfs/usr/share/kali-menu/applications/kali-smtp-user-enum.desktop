@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=smtp-user-enum
+Encoding=UTF-8
+Exec=sh -c "smtp-user-enum -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-11-smtp-analysis;
+X-Kali-Package=smtp-user-enum

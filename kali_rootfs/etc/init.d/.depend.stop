@@ -1,0 +1,10 @@
+TARGETS = paxctld bluetooth apache2 ssh fake-hwclock cgmanager cgproxy lightdm network-manager urandom sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: lightdm paxctld bluetooth network-manager apache2
+rsyslog: paxctld sendsigs bluetooth network-manager apache2
+umountnfs.sh: sendsigs lightdm paxctld rsyslog bluetooth network-manager apache2
+hwclock.sh: rsyslog
+networking: paxctld umountnfs.sh apache2
+umountfs: lightdm networking paxctld umountnfs.sh bluetooth urandom network-manager apache2 hwclock.sh
+umountroot: umountfs fake-hwclock
+halt: umountroot
+reboot: umountroot

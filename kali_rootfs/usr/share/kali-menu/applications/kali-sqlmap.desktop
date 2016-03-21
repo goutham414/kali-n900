@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sqlmap
+Encoding=UTF-8
+Exec=sh -c "sqlmap -h;${SHELL:-bash}"
+Icon=kali-sqlmap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;04-database-assessment;08-exploitation-tools;
+X-Kali-Package=sqlmap

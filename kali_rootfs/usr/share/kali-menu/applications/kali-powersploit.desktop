@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=powersploit
+Encoding=UTF-8
+Exec=sh -c "cd /usr/share/powersploit/ && ls -l;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;10-maintaining-access;
+X-Kali-Package=powersploit

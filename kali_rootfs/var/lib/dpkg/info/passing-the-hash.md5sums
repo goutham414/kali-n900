@@ -1,0 +1,14 @@
+3718c4e1e8fc871511089ba226b89684  usr/bin/pth-curl
+ffafd53de6a3f26fd7a2cb48f51175e2  usr/bin/pth-net
+19bb44810b64675d2bc8e3e9886e6c16  usr/bin/pth-rpcclient
+71cb8e96f8ffa979d5d02aa9c705536f  usr/bin/pth-smbclient
+099c0fde2bdf4aa6a875d1b17d633b01  usr/bin/pth-smbget
+2c2357eacef2561c1c17ce5ab1122bc3  usr/bin/pth-sqsh
+0504d0dd5918074c264ee1eea501bcd9  usr/bin/pth-winexe
+5096467bcfedb5fe440b63dfffd6b9a0  usr/bin/pth-wmic
+4f53251cbfd81ecdbdf6ec812c30aaf5  usr/bin/pth-wmis
+788fb0dc9fad0f822cba81acd4346ae8  usr/lib/passing-the-hash/libct.so.4.0.0
+989a78033cf0c823bc0ce4e25902a0ce  usr/lib/passing-the-hash/pth-samba.so
+5b9365faa530b0eddb71d2deb983b12b  usr/share/doc/passing-the-hash/changelog.gz
+928de855d598f825a8f40b8c49afd1e5  usr/share/doc/passing-the-hash/copyright
+af97d7a9a82c4b3ad6ac7c25c9ac2145  usr/share/lintian/overrides/passing-the-hash

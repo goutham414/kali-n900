@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgarcon-1-0
+/usr/share/doc/libgarcon-1-0/changelog.Debian.gz
+/usr/share/doc/libgarcon-1-0/changelog.gz
+/usr/share/doc/libgarcon-1-0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgarcon-1.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/libgarcon-gtk2-1.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/libgarcon-gtk2-1.so.0
+/usr/lib/arm-linux-gnueabihf/libgarcon-1.so.0

@@ -1,0 +1,7 @@
+iceweasel: embedded-library usr/lib/iceweasel/libxul.so: libtheora
+# The embedded libjpeg is libjpeg-turbo, not libjpeg.
+iceweasel: embedded-library usr/lib/iceweasel/libxul.so: libjpeg
+# The embedded libpng is patched for APNG support
+iceweasel: embedded-library usr/lib/iceweasel/libxul.so: libpng
+# Upstream code is not ready to use system library
+iceweasel: embedded-library usr/lib/iceweasel/libxul.so: srtp

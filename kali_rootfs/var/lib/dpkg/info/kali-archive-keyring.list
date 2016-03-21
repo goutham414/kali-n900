@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/kali-archive-keyring
+/usr/share/doc/kali-archive-keyring/changelog.gz
+/usr/share/doc/kali-archive-keyring/copyright
+/usr/share/keyrings
+/usr/share/keyrings/kali-archive-keyring.gpg

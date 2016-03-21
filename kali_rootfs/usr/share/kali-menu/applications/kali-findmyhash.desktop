@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=findmyhash
+Encoding=UTF-8
+Exec=sh -c "findmyhash;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Kali-Package=findmyhash

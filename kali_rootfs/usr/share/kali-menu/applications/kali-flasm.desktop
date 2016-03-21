@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=flasm
+Encoding=UTF-8
+Exec=sh -c "flasm;${SHELL:-bash}"
+Icon=kali-flasm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Kali-Package=flasm

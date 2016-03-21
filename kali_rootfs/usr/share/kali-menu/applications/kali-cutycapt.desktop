@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cutycapt
+Encoding=UTF-8
+Exec=sh -c "cutycapt --help;${SHELL:-bash}"
+Icon=kali-cutycapt.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;12-reporting;
+X-Kali-Package=cutycapt

@@ -1,0 +1,81 @@
+README for Debtags
+==================
+
+``debtags`` is used to maintain debtags information on a system.  It allows to
+merge the tag data found in the Packages file with, optionally, other tag
+sources listed in /etc/debtags/sources.list
+
+The package also ships the vocabulary that describes the tags found in the
+Packages file, and can merge it with vocabulary information acquired from other
+configured tag sources.
+
+``debtags`` allows to perform various kinds of queries and checks on the tag
+database, mostly useful from scripts, possibly in combination with the
+``tagcoll`` tool.  For high-level query tools, look at ept-cache, adept and
+other package managers.  For a package information index that indexes tags as
+well as various useful information to support high-level queries, look at
+apt-xapian-index.
+
+The command line tool also allows to perform some scripted editing of the
+tags, and to submit a tag patch to the central tag archive.  If you want to use
+the debtags tool for contributing to the central tag archive, please disable
+the apt tag source in /etc/debtags/sources.list and enable the unreviewed
+tag source on Alioth, so that you will make sure you are working with the most
+recent version of the archive.
+
+
+Resources
+---------
+
+  Website:
+
+    http://debtags.alioth.debian.org
+
+  Mailing lists:
+  
+    debtags-devel@lists.alioth.debian.org
+    http://lists.alioth.debian.org/mailman/listinfo/debtags-devel
+      Development and usage discussions
+  
+    debtags-commits@lists.alioth.debian.org
+    http://lists.alioth.debian.org/mailman/listinfo/debtags-commmits
+      Postings of subversion logs
+
+  Subversion repository:
+
+    http://svn.debian.org/viewcvs/debtags/
+      Browse online
+    svn://svn.debian.org/debtags/
+      Read-only access
+    svn+ssh://alioth.debian.org/svn/debtags/
+      Write access
+
+
+Miscellaneous notes
+-------------------
+
+Some analysis techniques:
+
+Consistency checks on facets that should go together::
+
+  # Show all packages which have a tag in uitoolkit but not a tag in interface
+  # (same can be repeated for hardware and hwtech, devel and langdevel)
+  debtags facetcoll | grep uitoolkit | grep -v interface | cut -d: -f1 | sort | uniq
+
+  # Count the number of facets
+  debtags facetcoll | tagcoll reverse | wc -l
+
+  # Get a list of toplevel facets in a facet hierarchy
+  debtags facetcoll | tagcoll hierarchy | cut -f2 -d/ | cut -f1 -d: | sort | uniq
+
+
+Interesting links:
+
+ * http://www.itconsult.it/knowledge/articoli/detArticoli.asp?ID=18
+
+
+
+Author
+------
+
+Enrico Zini <enrico@debian.org>

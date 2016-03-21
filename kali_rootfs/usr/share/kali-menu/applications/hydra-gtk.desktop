@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=hydra-gtk
+Encoding=UTF-8
+Exec=sh -c "xhydra"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=05-01-online-attacks;
+X-Kali-Package=hydra-gtk
+
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=maltegoce
+Encoding=UTF-8
+Exec=sh -c "maltegoce"
+Icon=kali-maltegoce.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=01-info-gathering;01-07-osint-analysis;13-social-engineering-tools;
+X-Kali-Package=maltegoce

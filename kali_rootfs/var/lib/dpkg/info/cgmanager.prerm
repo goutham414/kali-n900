@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/cgproxy" ]; then
+	invoke-rc.d cgproxy stop || exit $?
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/cgmanager" ]; then
+	invoke-rc.d cgmanager stop || exit $?
+fi
+# End automatically added section

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=metagoofil
+Encoding=UTF-8
+Exec=sh -c "metagoofil;${SHELL:-bash}"
+Icon=kali-metagoofil.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;12-reporting;
+X-Kali-Package=metagoofil

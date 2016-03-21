@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+if [ "$1" = "remove" ]; then
+  update-alternatives --remove x-session-manager /usr/bin/xfce4-session 
+  update-alternatives --remove x-session-manager /usr/bin/startxfce4
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/autostart/xfce4-tips-autostart.desktop 4.8.1-4 -- "$@"
+# End automatically added section
+
+
+exit 0

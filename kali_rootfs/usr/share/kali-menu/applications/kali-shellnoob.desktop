@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=shellnoob
+Encoding=UTF-8
+Exec=sh -c "shellnoob;${SHELL:-bash}"
+Icon=kali-shellnoob.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;
+X-Kali-Package=shellnoob

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=beef xss framework
+Encoding=UTF-8
+Exec=sh -c "beef-xss;${SHELL:-bash}"
+Icon=kali-beef.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;13-social-engineering-tools;
+X-Kali-Package=beef-xss

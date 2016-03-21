@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=chntpw
+Encoding=UTF-8
+Exec=sh -c "chntpw -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Kali-Package=chntpw

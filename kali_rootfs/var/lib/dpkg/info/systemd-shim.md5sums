@@ -1,0 +1,6 @@
+7b733e01d73b0cf512462570b52e4f83  usr/lib/arm-linux-gnueabihf/systemd-shim
+1df6e8433506e78b393dfd9068592cf2  usr/lib/arm-linux-gnueabihf/systemd-shim-cgroup-release-agent
+fcee1a5e5f69d88e7c9afdfdf7feb789  usr/lib/systemd/ntp-units.d/systemd-shim.list
+d6029011b09e5e2bb6a61720106f4daf  usr/share/dbus-1/system-services/org.freedesktop.systemd1.service
+ec3ddd28c063c98ff21659cc296ceb3d  usr/share/doc/systemd-shim/changelog.Debian.gz
+552f959e774fe8d16c330fcd04bd8ef8  usr/share/doc/systemd-shim/copyright

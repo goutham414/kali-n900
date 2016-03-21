@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=lsadump
+Encoding=UTF-8
+Exec=sh -c "lsadump -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Kali-Package=creddump
+

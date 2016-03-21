@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ettercap-graphical
+Encoding=UTF-8
+Exec=sh -c "ettercap -G"
+Icon=kali-ettercap.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Kali-Package=ettercap-graphical

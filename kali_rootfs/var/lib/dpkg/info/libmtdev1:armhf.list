@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/apport
+/usr/share/apport/package-hooks
+/usr/share/apport/package-hooks/source_mtdev.py
+/usr/share/doc
+/usr/share/doc/libmtdev1
+/usr/share/doc/libmtdev1/copyright
+/usr/share/doc/libmtdev1/changelog.gz
+/usr/share/doc/libmtdev1/changelog.Debian.gz
+/usr/share/doc/libmtdev1/README
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmtdev.so.1.0.0
+/usr/lib/arm-linux-gnueabihf/libmtdev.so.1

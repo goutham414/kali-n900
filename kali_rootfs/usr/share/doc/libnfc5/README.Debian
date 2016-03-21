@@ -1,0 +1,11 @@
+Notes for the Debian libnfc packages
+------------------------------------
+
+  * libnfc5 package
+    libnfc5 installs blacklist-libnfc.conf to /etc/modprobe.d/blacklist-libnfc.conf.
+    Because "nfc" and "pn533" is supported from Linux kernel 3.1, driver conflicts
+    with libnfc.
+    If you want to use nfc driver of linux kernel, you need remove blacklist-libnfc.conf
+    from /etc/modprobe.d/.
+
+  -- Nobuhiro Iwamatsu <iwamatsu@debian.org> Sat, 05 Oct 2013 07:35:36 +0900

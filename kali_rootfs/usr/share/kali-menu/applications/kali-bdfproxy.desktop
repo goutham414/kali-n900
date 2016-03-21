@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bdfproxy
+Encoding=UTF-8
+Exec=sh -c "bdfproxy;${SHELL:-bash}"
+Icon=kali-bdfproxy.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;10-maintaining-access;
+X-Kali-Package=bdfproxy

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libbluetooth3
+/usr/share/doc/libbluetooth3/changelog.Debian.gz
+/usr/share/doc/libbluetooth3/changelog.gz
+/usr/share/doc/libbluetooth3/README.Debian.gz
+/usr/share/doc/libbluetooth3/NEWS.Debian.gz
+/usr/share/doc/libbluetooth3/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libbluetooth.so.3.18.9
+/usr/lib/arm-linux-gnueabihf/bluetooth
+/usr/lib/arm-linux-gnueabihf/bluetooth/plugins
+/usr/lib/arm-linux-gnueabihf/bluetooth/plugins/sixaxis.so
+/usr/lib/arm-linux-gnueabihf/libbluetooth.so.3

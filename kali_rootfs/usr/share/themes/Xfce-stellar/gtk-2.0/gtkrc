@@ -1,0 +1,95 @@
+style "default"
+{
+    GtkButton::default_border         = {5, 5, 5, 5}
+    GtkButton::default_outside_border = {6, 6, 6, 6}
+    GtkButton::default_spacing        = 5
+    GtkButton::focus-padding          = 0
+    GtkCheckButton::indicator_size    = 15
+    GtkRadioButton::indicator_size    = 15
+    GtkMenuItem::selected_shadow_type = in
+    GtkPaned::handle_full_size        = 1
+    GtkRange::slider_width            = 12
+    GtkRange::stepper_size            = 12
+    GtkRange::stepper_spacing         = 0
+    GtkRange::trough_border           = 0
+    GtkScrollbar::min_slider_length   = 20
+    GtkWidget::focus-line-pattern     = "\0"
+    GtkWidget::focus-line-width       = 2
+    GtkWidget::interior_focus         = 0
+    GtkWidget::internal-padding       = 2
+
+    ExoIconBar::active-item-border-color = "#724056"
+    ExoIconBar::active-item-fill-color = "#b24d7a"
+    ExoIconBar::active-item-text-color = "#ffffff"
+
+    ExoIconBar::cursor-item-border-color = "#707481"
+    ExoIconBar::cursor-item-fill-color = "#AEB2C3"
+    ExoIconBar::cursor-item-text-color = "#000000"
+
+    xthickness = 1
+    ythickness = 1
+
+    fg[NORMAL]       = "#000000"
+    fg[ACTIVE]       = "#000000"
+    fg[PRELIGHT]     = "#000000"
+    fg[SELECTED]     = "#ffffff"
+    fg[INSENSITIVE]  = "#4e4f56" 
+
+    bg[NORMAL]       = "#aeb2c3"
+    bg[ACTIVE]       = "#9ba0b0"
+    bg[PRELIGHT]     = "#aeb2c3"
+    bg[SELECTED]     = "#b24d7a"
+    bg[INSENSITIVE]  = "#9ba0b0"
+
+    base[NORMAL]     = "#fcfcf0"
+    base[SELECTED]   = "#b24d7a"
+    base[ACTIVE]     = "#888ca0"
+    base[PRELIGHT]   = "#b24d7a"
+    base[INSENSITIVE]= "#969bb4"
+
+    text[INSENSITIVE]= "#747474"
+    text[NORMAL]     = "#000000"
+    text[ACTIVE]     = "#000000"
+    text[PRELIGHT]   = "#000000"
+    text[SELECTED]   = "#ffffff"
+
+    engine "xfce"
+    {
+        grip_style = none
+        smooth_edge = true
+    }
+}
+
+style "menu" = "default"
+{
+    bg[PRELIGHT]     = "#9BA0B0" 
+    text[PRELIGHT]   = "#FFFFFF"
+}
+
+class "GtkWidget"    style "default"
+class "GtkMenuItem*" style "menu"
+
+
+# This is for ROX-Filer
+# 
+style "rox" = "default"
+{
+  bg[NORMAL] = "#ffffff"
+  bg[ACTIVE] = "#ffffff"
+}
+widget_class "*Collection" style "rox"
+
+
+# This is for the window borders (xfwm4 & metacity)
+# 
+style "titlebar" = "default"
+{
+    bg[SELECTED]      = "#b24d7a"
+    fg[SELECTED]      = "#ffffff"
+    bg[INSENSITIVE]   = "#9ba0b0"
+    fg[INSENSITIVE]   = "#000000"
+}
+
+widget "xfwm"	          style "titlebar"
+class "MetaFrames"        style "titlebar"
+widget_class "MetaFrames" style "titlebar"

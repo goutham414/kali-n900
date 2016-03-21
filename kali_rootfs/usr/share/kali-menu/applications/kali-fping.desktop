@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=fping
+Encoding=UTF-8
+Exec=sh -c "fping -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;
+X-Kali-Package=fping

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=volafox
+Encoding=UTF-8
+Exec=sh -c "volafox;${SHELL:-bash}"
+Icon=kali-volafox.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=volafox

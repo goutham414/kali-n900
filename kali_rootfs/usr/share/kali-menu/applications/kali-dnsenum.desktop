@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dnsenum
+Encoding=UTF-8
+Exec=sh -c "dnsenum -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Kali-Package=dnsenum

@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# update-u-boot update-initramfs hook to update u-boot images
+# Distributable under the terms of the GNU GPL version 3.
+
+KERNELRELEASE=$1
+INITRAMFS=$2
+
+# Create uInitrd under /boot
+mkimage -A arm -O linux -T ramdisk -C none -a 0 -e 0 -n initramfs -d $INITRAMFS /boot/uInitrd-$KERNELRELEASE
+

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libgeoip1
+/usr/share/doc
+/usr/share/doc/libgeoip1
+/usr/share/doc/libgeoip1/changelog.Debian.gz
+/usr/share/doc/libgeoip1/changelog.gz
+/usr/share/doc/libgeoip1/README.md.gz
+/usr/share/doc/libgeoip1/copyright
+/usr/share/doc/libgeoip1/README.Debian
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libGeoIP.so.1.6.9
+/usr/lib/arm-linux-gnueabihf/libGeoIP.so.1

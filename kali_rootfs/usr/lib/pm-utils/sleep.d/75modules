@@ -1,0 +1,31 @@
+#!/bin/sh
+# Unload requested modules.
+
+. "${PM_FUNCTIONS}"
+
+suspend_modules()
+{
+	[ -z "$SUSPEND_MODULES" ] && return $NA
+	for x in $SUSPEND_MODULES ; do
+	        printf "Unloading kernel module %s..." "$x"
+		modunload $x && echo Done. || echo Failed.
+	done
+	return 0
+}
+
+resume_modules()
+{
+	modreload
+	echo "Reloaded unloaded modules."
+}
+
+case "$1" in
+	hibernate|suspend)
+		suspend_modules
+		;;
+	thaw|resume)
+		resume_modules
+		;;
+	*) exit $NA
+		;;
+esac

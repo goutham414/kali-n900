@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bluemaho
+Encoding=UTF-8
+Exec=sh -c "bluemaho.py;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Kali-Package=bluemaho

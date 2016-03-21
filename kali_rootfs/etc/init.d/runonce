@@ -1,0 +1,31 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          runonce
+# Required-Start:    $remote_fs
+# Required-Stop:
+# X-Start-Before:    console-setup
+# Default-Start:     S
+# Default-Stop:
+# X-Interactive:     true
+### END INIT INFO
+install-keymap /var/tmp/rx51_us.map
+
+# Set root password
+echo "Setting root user password..."
+while ! passwd; do
+	:
+done
+
+# Set unprivileged user password
+echo "Setting user user password..."
+useradd -c "Kali user" -m -s /bin/bash user
+while ! passwd user; do
+	:
+done
+
+# Reconfigure locales and time zone
+dpkg-reconfigure locales
+dpkg-reconfigure tzdata
+
+rm /etc/init.d/runonce
+update-rc.d runonce remove

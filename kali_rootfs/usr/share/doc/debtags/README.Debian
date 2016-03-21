@@ -1,0 +1,22 @@
+debtags for Debian
+------------------
+
+Some links if you want to know more about Debtags:
+
+  The Debtags website
+    http://debtags.alioth.debian.org
+
+  An introductory paper about Debtags, written for Debconf5
+    http://debtags.alioth.debian.org/paper-debtags.html
+
+    (also available in text format in
+     /usr/share/doc/debtags/paper-debtags.rst.gz)
+
+  My Debtags talk at Debconf 5 (includes slides and video of the presentation) 
+    http://people.debian.org/~enrico/talks/20050710-Debconf/
+
+
+You can have a look at the manpage for some example queries.
+
+
+ -- Enrico Zini <enrico@debian.org>, Sun Jul 31 16:06:49 CEST 2005

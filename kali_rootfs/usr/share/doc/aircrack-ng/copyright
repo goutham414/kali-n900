@@ -1,0 +1,394 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aircrack-ng
+Upstream-Contact: Thomas d'Otreppe <tdotreppe@aircrack-ng.org>
+Source: http://download.aircrack-ng.org/aircrack-ng-1.2-beta3.tar.gz
+
+Files: *
+Copyright: 2006-2016, Thomas d'Otreppe
+License: GPL-2+
+
+Files: lib/csharp/MonoExample/NDesk-dbus/*
+Copyright: 2006-2007, Alp Toker <alp@atoker.com>
+License: MIT
+
+Files: lib/csharp/MonoExample/NewStationNotify* lib/csharp/Example1/*
+ lib/csharp/WirelessPanda/*
+Copyright: 2011 Thomas d'Otreppe
+License: BSD-2-clause or LGPL-2.1+
+
+Files: src/makeivs-ng.c src/kstats.c src/osdep/linux.c src/common.c
+       src/common.h src/osdep/byteorder.h src/osdep/airpcap.c
+       src/osdep/airpcap.h src/crypto.c src/osdep/common.c
+       src/osdep/common.h
+Copyright: 2004-2005, Christophe Devine
+           2006-2009, Thomas d'Otreppe
+License: GPL-2+
+
+Files: src/osdep/freebsd.c src/osdep/dummy.c src/osdep/freebsd_tap.c
+       src/osdep/openbsd.c src/osdep/network.c src/osdep/network.h
+       src/osdep/dummy_tap.c src/osdep/cygwin.c src/buddy-ng.c
+       src/osdep/cygwin.h src/osdep/netbsd_tap.c src/osdep/cygwin_tap.c
+       src/osdep/openbsd_tap.c src/osdep/linux_tap.c src/osdep/osdep.c
+       src/osdep/osdep.h src/osdep/packed.h src/osdep/netbsd.c
+       src/easside-ng.c src/easside.h src/airserv-ng.c src/besside-ng.c
+       src/osdep/file.c src/wpaclean.c
+Copyright: 2007-2011, Andrea Bittau <a.bittau@cs.ucl.ac.uk>
+License: GPL-2+
+
+Files: src/osdep/darwin.c src/osdep/darwin_tap.c
+Copyright: 2009, Kyle Fuller <inbox@kylefuller.co.uk>
+License: GPL-2+
+
+Files: src/osdep/radiotap/*
+Copyright: 2007-2008, Andy Green <andy@warmcat.com>
+           2007-2009, Johannes Berg <johannes@sipsolutions.net>
+License: GPL-2+
+
+Files: src/osdep/radiotap/radiotap.h
+Copyright: 2003-2004, David Young
+License: BSD-3-clause
+
+Files: src/osdep/tap-win32/common.h
+Copyright: 2002-2005, OpenVPN Solutions LLC
+           2003, Damion K. Wilson
+License: GPL-2+
+
+Files: src/crctable.h
+Copyright: 2004, KoreK
+License: GPL-2+
+Comment: This file is extracted from the work published by KoreK
+         on 2004 on NetStumbler Forums:
+             http://www.netstumbler.org/unix-linux/-t12489.html
+         See http://trac.aircrack-ng.org/ticket/953 for details.
+
+Files: src/besside-ng-crawler.c
+Copyright: 2010, Pedro Larbig <pedro.larbig@carhs.de>
+License: GPL-2+
+
+Files: src/MD5_std.h src/aligned.h src/arch.h src/jcommon.h src/johnswap.h
+       src/md5.h src/memdbg.h src/memory.c src/memory.h src/misc.h
+       src/pseudo_intrinsics.h src/simd-intrinsics-load-flags.h
+       src/simd-intrinsics.c src/simd-intrinsics.h
+       src/sse-intrinsics-load-flags.h src/sse-intrinsics.c
+       src/sse-intrinsics.h src/wpapsk.c src/wpapsk.h
+Copyright: 1996-2013 by Solar Designer
+License: GPL-2+ with OpenSSL and unRAR exception
+
+Files: src/cpuid.c
+Copyright: Len White <lwhite@nrw.ca>
+           2006-2014 Thomas d'Otreppe
+License: GPL-2+
+
+Files: src/linecount.cpp
+Copyright: 2015 Len White <lwhite@nrw.ca>
+License: GPL-2+ with OpenSSL exception
+
+Files: manpages/*
+Copyright: 2006-2014 Thomas d'Otreppe
+           2006-2007 Adam Cecile (Le_Vert) <gandalf@le-vert.net>
+           2006-2007 Martin Beck
+           2008-2011 Rick Farina
+           2012 David Francos
+           2013 Carlos Alberto Lopez Perez
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2006-2010 Adam Cecile (Le_Vert) <gandalf@le-vert.net>
+           2011-2014 Carlos Alberto Lopez Perez <clopez@igalia.com>
+License: GPL-2+
+
+Files: test/*
+Copyright: 2012-2013 Carlos Alberto Lopez Perez <clopez@igalia.com>
+License: GPL-2+
+
+Files: src/sha1-git.*
+Copyright: 2009 Brandon Casey <drafnel@gmail.com>
+           2009 Junio C Hamano <gitster@pobox.com>
+           2009 Linus Torvalds <torvalds@linux-foundation.org>
+           2009 Nicolas Pitre <nico@cam.org>
+           2010 Ramsay Jones <ramsay@ramsay1.demon.co.uk>
+           2012 Carlos Alberto Lopez Perez <clopez@igalia.com>
+License: GPL-2+
+
+Files: src/gcrypt-openssl-wrapper.h
+Copyright: 2012 Carlos Alberto Lopez Perez <clopez@igalia.com>
+License: GPL-2+
+
+Files: scripts/airdriver-ng
+Copyright: 2007, Martin Beck
+License: GPL-2+
+
+Files: scripts/airdrop-ng/*
+Copyright: 2008-2012, Ben Smith <thex1le@gmail.com>
+           2012, David Francos Cuartero <xayon@xayon.net>
+           2012-2013 Rick Farina <zero_chaos@aircrack-ng.org>
+License: GPL-2
+
+Files: scripts/airgraph-ng/*
+Copyright: 2008-2012, Ben Smith <thex1le@gmail.com>
+           2012, David Francos Cuartero <xayon@xayon.net>
+           2012, Rick Farina <zero_chaos@aircrack-ng.org>
+License: GPL-2
+
+Files: scripts/airoscript-ng/*
+Copyright: 2008 Daouid
+           2009-2014 David Francos Cuartero <xayon@xayon.net>
+           2011 Degenerated Labs
+License: GPL-2+
+
+Files: src/airbase-ng.c src/airtun-ng.c src/tkiptun-ng.c
+Copyright: 2006-2010, Thomas d'Otreppe
+           2006-2009, Martin Beck
+License: GPL-2+ with OpenSSL exception
+
+Files: src/airolib-ng.c
+Copyright: 2007-2009, ebfe
+License: GPL-2+ with OpenSSL exception
+
+Files: src/aircrack-ng.c src/aircrack-ng.h src/airdecap-ng.c src/ivstools.c
+       src/aireplay-ng.c src/packetforge-ng.c src/airodump-ng.c
+       src/airdecloak-ng.c src/airdecloak-ng.h src/version.h src/pcap.h
+       src/linecount.h
+Copyright: 2001-2005, Christophe Devine
+           2006-2010, Thomas d'Otreppe
+License: GPL-2+ with OpenSSL exception
+
+Files: src/aircrack-ng.h src/uniqueiv.h
+Copyright: 2007-2012, Martin Beck <hirte@aircrack-ng.org>
+License: GPL-2+ with OpenSSL exception
+
+Files: src/uniqueiv.c
+Copyright: 2004-2008, Stanislaw Pusep
+License: GPL-2+ with OpenSSL exception
+
+Files: src/wesside-ng.c
+Copyright: 2005-2009, Andrea Bittau <a.bittau@cs.ucl.ac.uk>
+License: GPL-2+ with OpenSSL exception
+
+Files: src/aircrack-ptw-lib.c src/aircrack-ptw-lib.h
+Copyright: 2007-2009, Erik Tews, Andrei Pychkine and Ralf-Philipp Weinmann
+License: GPL-2+ with OpenSSL exception
+
+Files: src/sha1-sse2.h
+Copyright: nx5 <naplam33@msn.com>
+License: GPL-2+ with OpenSSL exception
+
+Files: src/sha1-sse2.S
+Copyright: 2008, Alvaro Salmador (naplam33@msn.com)
+           2005, Simon Marechal (simon@banquise.net)
+License: GPL-2+ with OpenSSL exception
+
+Files: src/wkp-frame.h
+Copyright: 2010, ZhaoChunsheng
+License: GPL-2+
+
+Files: src/include/ethernet.h
+Copyright: 1992-2012, The FreeBSD Project
+License: BSD-2-clause
+Comment: License and authors guessed. This file is extracted from the
+         FreeBSD Kernel (src/sys/net/ethernet.h)
+
+Files: src/include/if_arp.h
+Copyright: 1986-1993, The Regents of the University of California
+License: BSD-3-clause
+
+Files: src/include/ieee80211.h
+Copyright: 2001, Atsushi Onoe
+           2002-2005, Sam Leffler, Errno Consulting
+License: BSD-3-clause
+
+Files: src/include/if_llc.h
+Copyright: 1986-1993, The Regents of the University of California
+License: BSD-3-clause
+
+
+Files: src/osdep/crctable_osdep.h
+Copyright: 1993, Ross N. Williams <ross@guest.adelaide.edu.au>
+License: public-domain
+ This code is fully public-domain. The crc_tbl_osdep table is generated
+ using a well known algorithm published on 1993 by Ross Williams.
+ See http://www.ross.net/crc/download/crc_v3.txt for details.
+
+License: GPL-2
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; under
+ version 2 of the License.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2+ with OpenSSL exception
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ In addition, as a special exception, the copyright holders give
+ permission to link the code of portions of this program with the
+ OpenSSL library under certain conditions as described in each
+ individual source file, and distribute linked combinations
+ including the two.
+ You must obey the GNU General Public License in all respects
+ for all of the code used other than OpenSSL. If you modify
+ file(s) with this exception, you may extend this exception to your
+ version of the file(s), but you are not obligated to do so. If you
+ do not wish to do so, delete this exception statement from your
+ version. If you delete this exception statement from all source
+ files in the program, then also delete it here.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2+ with OpenSSL and unRAR exception
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ As a special exception to the GNU General Public License terms,
+ permission is hereby granted to link the code of this program, with or
+ without modification, with any version of the OpenSSL library and/or any
+ version of unRAR, and to distribute such linked combinations.  You must
+ obey the GNU GPL in all respects for all of the code used other than
+ OpenSSL and unRAR.  If you modify this program, you may extend this
+ exception to your version of the program, but you are not obligated to
+ do so.  (In other words, you may release your derived work under pure
+ GNU GPL version 2 or later as published by the FSF.)
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2.1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+    * The name of the author may not be used to endorse or promote products
+      derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.

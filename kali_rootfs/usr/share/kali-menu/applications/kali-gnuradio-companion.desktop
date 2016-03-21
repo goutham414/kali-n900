@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gnuradio-companion
+Encoding=UTF-8
+Exec=sh -c "gnuradio-companion"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Kali-Package=gnuradio

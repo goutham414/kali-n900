@@ -1,0 +1,13 @@
+c659fa29bf294668a2b900a83243fd02  usr/lib/arm-linux-gnueabihf/xfce4/panel/plugins/libpulseaudio-plugin.so
+89058f4472c73ab55ecdbd8b854aa84a  usr/share/doc/xfce4-pulseaudio-plugin/NEWS.gz
+b6764bfe0b8231161e01f8f6aeddac2a  usr/share/doc/xfce4-pulseaudio-plugin/README
+b1ab1f65772290495819f4aa96faa2f1  usr/share/doc/xfce4-pulseaudio-plugin/changelog.Debian.gz
+34e63acf8b958e2f6b554db2228340ef  usr/share/doc/xfce4-pulseaudio-plugin/changelog.gz
+048cf0018d49a4bf5173f0b2d0298d2c  usr/share/doc/xfce4-pulseaudio-plugin/copyright
+d81fbeb354db129841cb8d1a16d4c5a5  usr/share/icons/hicolor/48x48/apps/xfce4-pulseaudio-plugin.png
+f025310ef93644d30aea43f8099e5320  usr/share/icons/hicolor/scalable/apps/xfce4-pulseaudio-plugin.svg
+87f26ff9d7a953145bb9b53e8ece25a8  usr/share/icons/hicolor/scalable/status/audio-volume-high-symbolic.svg
+940df0d5a813a80550e779fd3b45ef0a  usr/share/icons/hicolor/scalable/status/audio-volume-low-symbolic.svg
+c1d7a4ab97b7e91d3be937789ffa228d  usr/share/icons/hicolor/scalable/status/audio-volume-medium-symbolic.svg
+8e33b982a2eeed6c1df8e9283a7dae48  usr/share/icons/hicolor/scalable/status/audio-volume-muted-symbolic.svg
+b137fdd7057672ce3c478c52626da2a4  usr/share/xfce4/panel/plugins/pulseaudio.desktop

@@ -1,0 +1,11 @@
+# Kali specific tags for the "pentest" facet
+tags file:/usr/share/kali-debtags/kali
+
+# Copy of Debian official tags
+#
+# We need those because the Kali mirror doesn't export tag information
+# in the "Packages" file. reprepro doesn't preserve that information
+# and Debian doesn't publish any ready-to-use override file to
+# re-integrate those fields in arbitrary mirrors. 
+#
+tags file:/usr/share/kali-debtags/debian

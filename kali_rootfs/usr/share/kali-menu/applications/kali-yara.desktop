@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=yara
+Encoding=UTF-8
+Exec=sh -c "yara;${SHELL:-bash}"
+Icon=yara.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=yara

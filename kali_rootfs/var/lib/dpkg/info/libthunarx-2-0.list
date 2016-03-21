@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libthunarx-2.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/thunarx-2
+/usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-apr.so
+/usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-sbr.so
+/usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-uca.so
+/usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-wallpaper-plugin.so
+/usr/share/doc/libthunarx-2-0
+/usr/lib/arm-linux-gnueabihf/libthunarx-2.so.0

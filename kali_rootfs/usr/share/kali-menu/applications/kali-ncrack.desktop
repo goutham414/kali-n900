@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ncrack
+Encoding=UTF-8
+Exec=sh -c "ncrack -h;${SHELL:-bash}"
+Icon=kali-ncrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-password-attacks;
+X-Kali-Package=ncrack
+
+

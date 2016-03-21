@@ -1,0 +1,30 @@
+OpenLayers for Debian
+---------------------
+
+If you wish to include OpenLayers in your HTML files which are served
+via a webserver you should add the following lines to your <HEAD>
+section:
+
+    <script language="javascript" type="text/javascript"
+        src="/javascript/openlayers/OpenLayers.js"></script>
+        
+If you're generating files which are going to be served via the
+filesystem (such that no HTTP server is used) instead you should
+access OpenLayers via the filesystem path:
+
+    <script language="javascript" type="text/javascript"
+        src="/usr/share/javascript/openlayers/OpenLayers.js"></script>
+
+OpenLayers.js is full and uncompressed OpenLayers javascript, the minified
+variant is OpenLayers.min.js.
+
+The following variants of OpenLayers are available:
+
+ Profile  Uncompressed          Minified
+ -------------------------------------------------------
+ full     OpenLayers.js         OpenLayers.min.js
+ light    OpenLayers.light.js   OpenLayers.light.min.js
+ lite     OpenLayers.lite.js    OpenLayers.lite.min.js
+ mobile   OpenLayers.mobile.js  OpenLayers.mobile.min.js
+ tests    OpenLayers.tests.js   OpenLayers.tests.min.js
+

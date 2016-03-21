@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pyrit
+Encoding=UTF-8
+Exec=sh -c "pyrit -h;${SHELL:-bash}"
+Icon=kali-pyrit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-password-attacks;
+X-Kali-Package=pyrit

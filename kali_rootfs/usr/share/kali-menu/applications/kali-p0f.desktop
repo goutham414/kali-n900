@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=p0f
+Encoding=UTF-8
+Exec=sh -c "p0f -h;${SHELL:-bash}"
+Icon=kali-p0f.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Kali-Package=p0f

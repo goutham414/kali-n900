@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=netdiscover
+Encoding=UTF-8
+Exec=sh -c "netdiscover -h;${SHELL:-bash}"
+Icon=kali-netdiscover.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-08-route-analysis;
+X-Kali-Package=netdiscover

@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libupower-glib3
+/usr/share/doc/libupower-glib3/changelog.Debian.gz
+/usr/share/doc/libupower-glib3/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libupower-glib.so.3.0.1
+/usr/lib/arm-linux-gnueabihf/libupower-glib.so.3

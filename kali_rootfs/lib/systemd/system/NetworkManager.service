@@ -1,0 +1,20 @@
+[Unit]
+Description=Network Manager
+After=network-pre.target dbus.service
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.NetworkManager
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/usr/sbin/NetworkManager --no-daemon
+Restart=on-failure
+# NM doesn't want systemd to kill its children for it
+KillMode=process
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_DAC_OVERRIDE CAP_NET_RAW CAP_NET_BIND_SERVICE CAP_SETGID CAP_SETUID CAP_SYS_MODULE CAP_AUDIT_WRITE CAP_KILL CAP_SYS_CHROOT
+ProtectSystem=true
+ProtectHome=read-only
+
+[Install]
+WantedBy=multi-user.target
+Also=NetworkManager-dispatcher.service
+

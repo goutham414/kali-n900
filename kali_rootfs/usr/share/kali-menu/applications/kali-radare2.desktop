@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=radare2
+Encoding=UTF-8
+Exec=sh -c "radare2 -h;${SHELL:-bash}"
+Icon=kali-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Kali-Package=radare2

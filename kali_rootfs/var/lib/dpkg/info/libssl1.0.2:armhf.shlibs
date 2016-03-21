@@ -1,0 +1,4 @@
+libcrypto 1.0.2 libssl1.0.2
+libssl 1.0.2 libssl1.0.2
+udeb: libcrypto 1.0.2 libcrypto1.0.2-udeb
+udeb: libssl 1.0.2 libcrypto1.0.2-udeb

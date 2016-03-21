@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/systemd-shim
+/usr/lib/arm-linux-gnueabihf/systemd-shim-cgroup-release-agent
+/usr/lib/systemd
+/usr/lib/systemd/ntp-units.d
+/usr/lib/systemd/ntp-units.d/systemd-shim.list
+/usr/share
+/usr/share/doc
+/usr/share/doc/systemd-shim
+/usr/share/doc/systemd-shim/changelog.Debian.gz
+/usr/share/doc/systemd-shim/copyright
+/usr/share/dbus-1
+/usr/share/dbus-1/system-services
+/usr/share/dbus-1/system-services/org.freedesktop.systemd1.service

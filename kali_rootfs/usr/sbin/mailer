@@ -1,0 +1,53 @@
+#!/bin/sh
+#
+# This file is part of John the Ripper password cracker,
+# Copyright (c) 1996-98 by Solar Designer
+#
+
+if [ $# -ne 1 ]; then
+	echo "Usage: $0 PASSWORD-FILE"
+	exit 0
+fi
+
+if [ ! -f /etc/john/john-mail.conf ]; then
+       echo "Couldn't find /etc/john/john-mail.conf -- stopping!"
+       exit 0
+fi
+
+if [ ! -f /etc/john/john-mail.msg ]; then
+        echo "Couldn't find /etc/john/john-mail.msg -- stopping!"
+        exit 0
+fi
+
+# In Debian, john should be in /usr/sbin. "john" binaries in other
+# locations should not be used.
+JOHNDIR=/usr/sbin
+
+# Let's get stuff from conf file:
+SHELLS=`grep   -e "^[ ]*shells[ ]*=[ ]*"  /etc/john/john-mail.conf | sed "s/.*=[ ]*//"`
+MAILCMD=`grep  -e "^[ ]*mailcmd[ ]*=[ ]*" /etc/john/john-mail.conf | sed "s/.*=[ ]*//"`
+MAILARGS=`grep -e "^[ ]*mailargs[ ]*=[ ]*" /etc/john/john-mail.conf | sed "s/.*=[ ]*//"`
+
+# Let's start
+$JOHNDIR/john -show "$1" -shells:$SHELLS | sed -n 's/:.*//p' |
+(
+	SENT=0
+
+	while read LOGIN; do
+		echo Sending mail to "$LOGIN"...
+
+# Sends a message to each user; a template is in /etc/john/john.msg
+# Subject, Reply-to, and other header lines should be put
+# at the top of that file.
+        sed -e 's/@LOGIN/'$LOGIN'/g' \
+            -e 's/@HOSTNAME/'$(hostname)'/g' /etc/john/john-mail.msg |
+        $MAILCMD $MAILARGS $LOGIN
+
+		SENT=$(($SENT+1))
+	done
+
+	if [ ! $SENT -eq 0 ]; then
+	    echo "John has cracked $SENT passwords. If you want to see them,"
+	    echo "use john -show <passwordfile>. (See john(1) for details)."
+	fi
+)

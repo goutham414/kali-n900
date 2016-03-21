@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libwsutil6
+/usr/share/doc/libwsutil6/changelog.Debian.gz
+/usr/share/doc/libwsutil6/changelog.gz
+/usr/share/doc/libwsutil6/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libwsutil.so.6.0.0
+/usr/lib/arm-linux-gnueabihf/libwsutil.so.6

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jsql
+Encoding=UTF-8
+Exec=sh -c "jsql"
+Icon=kali-jsql.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=04-database-assessment;03-05-web-vulnerability-scanners;
+X-Kali-Package=jsql

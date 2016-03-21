@@ -1,0 +1,12 @@
+de22bf7ef2468e0b09f68572ffdbac98  usr/lib/arm-linux-gnueabihf/libicudata.so.55.1
+e97b23fb4131ba38f99048e3abed05e6  usr/lib/arm-linux-gnueabihf/libicui18n.so.55.1
+6fa7690b359d0f52e40ca47fd34436a4  usr/lib/arm-linux-gnueabihf/libicuio.so.55.1
+b53d3957d0f74c03dae053998cd62b69  usr/lib/arm-linux-gnueabihf/libicule.so.55.1
+43b1cc2da8a5d92a2895dd377e89bc74  usr/lib/arm-linux-gnueabihf/libiculx.so.55.1
+8a6e6e0f46936bca50191edb6f77b71f  usr/lib/arm-linux-gnueabihf/libicutest.so.55.1
+799e7bef417134ba0563329c19ac15ac  usr/lib/arm-linux-gnueabihf/libicutu.so.55.1
+4d7729c630028624c4687834f7a9c9bb  usr/lib/arm-linux-gnueabihf/libicuuc.so.55.1
+9c69789ded16fb0ebc4e278ce0502678  usr/share/doc/libicu55/NEWS.Debian.gz
+dd17a2e2614ac48408374e54f3f5251b  usr/share/doc/libicu55/changelog.Debian.gz
+9ea09fe6a412595a70a97fb5f0ceec0b  usr/share/doc/libicu55/copyright
+dd0be8b2ab4e96c3837a64c2536a6ffe  usr/share/lintian/overrides/libicu55

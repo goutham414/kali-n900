@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=shellter
+Encoding=UTF-8
+Exec=sh -c "shellter;${SHELL:-bash}"
+Icon=shellter.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;
+X-Kali-Package=shellter

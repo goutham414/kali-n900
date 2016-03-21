@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxcb-util0
+/usr/share/doc/libxcb-util0/README
+/usr/share/doc/libxcb-util0/NEWS.gz
+/usr/share/doc/libxcb-util0/changelog.Debian.gz
+/usr/share/doc/libxcb-util0/changelog.gz
+/usr/share/doc/libxcb-util0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxcb-util.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/libxcb-util.so.0

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=hashdeep
+Encoding=UTF-8
+Exec=sh -c "hashdeep -h;${SHELL:-bash}"
+Icon=kali-hashdeep.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Kali-Package=hashdeep

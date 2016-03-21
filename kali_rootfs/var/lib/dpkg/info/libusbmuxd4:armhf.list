@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libusbmuxd4
+/usr/share/doc
+/usr/share/doc/libusbmuxd4
+/usr/share/doc/libusbmuxd4/changelog.Debian.gz
+/usr/share/doc/libusbmuxd4/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libusbmuxd.so.4.0.0
+/usr/lib/arm-linux-gnueabihf/libusbmuxd.so.4

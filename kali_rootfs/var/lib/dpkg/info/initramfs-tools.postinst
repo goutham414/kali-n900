@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+# If initramfs-tools-core was fully upgraded to 0.123 before our
+# preinst ran, we need to move initramfs.conf back into place.
+if [ "$1" = configure ] && [ -n "$2" ] && dpkg --compare-versions "$2" lt 0.123~ && \
+   [ -f /etc/initramfs-tools/initramfs.conf.dpkg-backup ]; then
+	mv -n /etc/initramfs-tools/initramfs.conf.dpkg-backup \
+		/etc/initramfs-tools/initramfs.conf
+fi
+
+# Regenerate initramfs whenever we go to dpkg state `installed'
+if [ "x$1" != xtriggered ]; then
+	# this activates the trigger, if triggers are working
+	update-initramfs -u
+else
+	# force it to actually happen
+	DPKG_MAINTSCRIPT_PACKAGE='' update-initramfs -u
+fi
+
+

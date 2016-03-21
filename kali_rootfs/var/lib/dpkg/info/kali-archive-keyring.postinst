@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	# Install the symlink upon first installation
+	ln -sf /usr/share/keyrings/kali-archive-keyring.gpg \
+	       /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+	echo "Installed kali-archive-keyring as a trusted APT keyring."
+    ;;
+esac
+
+
+

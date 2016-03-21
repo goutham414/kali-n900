@@ -1,0 +1,23 @@
+motif (2.3.4-1)
+
+  * The Xprint library has been deprecated in Debian for some time now (see
+    #657253), so the low-level print support of Motif has not worked for that
+    time. Upstream Motif now has a configure option to not build the printing
+    support, but doing so removes symbols that would otherwise be present. As
+    we are now moving Motif to the main archive, packages now depending on
+    lesstif2 in Debian don't depend on the printing functionality and need to
+    be rebuild against motif, and the motif libraries are split into different
+    packages anyway, we have decided to just configure Motif without xprint
+    support without bumping the soname (upstream should have done that
+    properly).
+
+ -- Paul Gevers <elbrus@debian.org>  Sun, 17 Feb 2013 10:36:27 +0100
+
+  * The Motif Demos (or SDK Examples) are not built and distributed in any
+    of the motif binary packages in Debian.
+    They are available in the motif source package, and can be built, after
+    removing the line: ' --disable-demos \' from debian/rules, like any
+    other source package [1].
+    [1] https://wiki.debian.org/BuildingTutorial
+
+ -- Graham Inggs <graham@nerve.org.za>  Sun, 12 Oct 2014 11:22:22 +0200

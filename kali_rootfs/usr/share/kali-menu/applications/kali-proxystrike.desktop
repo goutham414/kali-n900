@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=proxystrike
+Encoding=UTF-8
+Exec=sh -c "proxystrike"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-06-web-application-proxies;
+X-Kali-Package=proxystrike

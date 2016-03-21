@@ -1,0 +1,5 @@
+2a006bf4b382c90089c306eb79fc12fb  usr/lib/arm-linux-gnueabihf/libthunarx-2.so.0.0.0
+f6dc42c332affb2dfa3818f12c0cd0cc  usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-apr.so
+dd2863e45dff8934f598935971432008  usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-sbr.so
+7e7c0c10285b89040195a73537ccb56a  usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-uca.so
+e909b0b5fdb7786b5ad12bce3abcdd54  usr/lib/arm-linux-gnueabihf/thunarx-2/thunar-wallpaper-plugin.so

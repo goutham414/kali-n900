@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=crunch
+Encoding=UTF-8
+Exec=sh -c "crunch;${SHELL:-bash}"
+Icon=kali-crunch.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-password-attacks;05-05-profile;
+X-Kali-Package=crunch

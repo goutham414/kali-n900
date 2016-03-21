@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=whatweb
+Encoding=UTF-8
+Exec=sh -c "whatweb -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Kali-Package=whatweb

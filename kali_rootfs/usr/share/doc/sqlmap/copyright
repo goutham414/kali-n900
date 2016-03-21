@@ -1,0 +1,505 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: sqlmap
+Source: http://sqlmap.sourceforge.net/
+
+Files: *
+Copyright: 2006-2016 sqlmap developers (http://sqlmap.org/)
+           2006-2016 Damele Assumpcao Guimaraes (@inquisb) <bernardo@sqlmap.org>
+           2006-2016 Miroslav Stampar (@stamparm) <miroslav@sqlmap.org>
+License: GPL-2+-custom
+ This program is free software; you may redistribute and/or modify it under
+ the terms of the GNU General Public License as published by the Free
+ Software Foundation; Version 2 (or later) with the clarifications and
+ exceptions described below. This guarantees your right to use, modify, and
+ redistribute this software under certain conditions. If you wish to embed
+ sqlmap technology into proprietary software, we sell alternative licenses
+ (contact sales@sqlmap.org).
+ .
+ Note that the GPL places important restrictions on "derived works", yet it
+ does not provide a detailed definition of that term. To avoid
+ misunderstandings, we interpret that term as broadly as copyright law
+ allows. For example, we consider an application to constitute a "derived
+ work" for the purpose of this license if it does any of the following:
+ * Integrates source code from sqlmap.
+ * Reads or includes sqlmap copyrighted data files, such as xml/queries.xml
+ * Executes sqlmap and parses the results (as opposed to typical shell or
+   execution-menu apps, which simply display raw sqlmap output and so are
+   not derivative works).
+ * Integrates/includes/aggregates sqlmap into a proprietary executable
+   installer, such as those produced by InstallShield.
+ * Links to a library or executes a program that does any of the above
+ .
+ The term "sqlmap" should be taken to also include any portions or derived
+ works of sqlmap. This list is not exclusive, but is meant to clarify our
+ interpretation of derived works with some common examples. Our
+ interpretation applies only to sqlmap - we do not speak for other people's
+ GPL works.
+ .
+ If you have any questions about the GPL licensing restrictions on using
+ sqlmap in non-GPL works, we would be happy to help. As mentioned above,
+ we also offer alternative license to integrate sqlmap into proprietary
+ applications and appliances.
+ If you received these files with a written license agreement or contract
+ stating terms other than the terms above, then that alternative license
+ agreement takes precedence over these comments.
+ .
+ Source is provided to this software because we believe users have a right
+ to know exactly what a program is going to do before they run it.
+ .
+ Source code also allows you to fix bugs and add new features. You are
+ highly encouraged to send your changes to dev@sqlmap.org for possible
+ incorporation into the main distribution. By sending these changes to the
+ sqlmap developers, to the mailing lists, or via Git pull request, checking
+ them into the sqlmap source code repository, it is understood (unless you
+ specify otherwise) that you are offering the sqlmap project the unlimited,
+ non-exclusive right to reuse, modify, and relicense the code. sqlmap will
+ always be available Open Source, but this is important because the
+ inability to relicense code has caused devastating problems for other Free
+ Software projects (such as KDE and NASM). If you wish to specify special
+ license conditions of your contributions, just say so when you send them.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License v2.0 for more details at
+ http://www.gnu.org/licenses/gpl-2.0.html, or below
+ .
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-2 file.
+
+Files: thirdparty/beautifulsoup/*
+Copyright: 2004-2010 Leonard Richardson
+License: BSD-3-clause
+
+Files: thirdparty/socks/*
+Copyright: 2006 Dan-Haim
+License: BSD-2-clause
+
+Files: thirdparty/oset/*
+Copyright: 2009 Raymond Hettinger, and others
+           2010 BlueDynamics Alliance, Austria (original work)
+License: BSD-3-clause
+
+Files: thirdparty/ansistrm/*
+Copyright: 2010-2012 Vinay Sajip
+License: BSD-3-clause
+
+Files: thirdparty/termcolor/*
+Copyright: 2008-2011 Volvox Development Team
+           Konstantin Lepa <konstantin.lepa@gmail.com> (author)
+License: MIT
+
+Files: thirdparty/magic/*
+Copyright: 2011 Adam Hupp
+License: MIT
+Comment:
+ (upstream switched to from PSF to MIT on 4 jan 2014
+ https://github.com/ahupp/python-magic/commit/a0f2249dad53 )
+
+Files: thirdparty/pagerank/*
+Copyright: 2010 Corey Goldberg
+           2012 Miroslav Stampar
+License: MIT
+
+Files: thirdparty/odict/*
+Copyright: 2003-2008 Nicola Larosa <nico@teknico.net>
+           2003-2008 Michael Foord <fuzzyman@voidspace.org.uk>
+License: MIT
+Comment: the __init__.py file says BSD license (also upstream at
+ http://www.voidspace.org.uk/python/license.shtml says so)
+ but licensecheck says MIT/X11 (BSD like)
+
+Files: thirdparty/fcrypt/fcrypt.py
+Copyright: 2000-2004 Carey Evans  <careye@spamcop.net>
+                     Eric Young <eay@mincom.oz.au> (original code)
+                2010 Jonathan Hartley
+License: custom-BSD-like
+ Permission to use, copy, modify, and distribute this software and
+ its documentation for any purpose and without fee is hereby granted,
+ provided that the above copyright notice appear in all copies and
+ that both that copyright notice and this permission notice appear in
+ supporting documentation.
+ .
+ CAREY EVANS DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+ EVENT SHALL CAREY EVANS BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+ USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
+ .
+ Based on C code by Eric Young (eay@mincom.oz.au), which has the
+ following copyright.  Especially note condition 3, which imposes
+ extra restrictions on top of the standard Python license used above.
+ .
+ The fcrypt.c source is available from:
+     ftp://ftp.psy.uq.oz.au/pub/Crypto/DES/
+ This library is free for commercial and non-commercial use as long as
+ the following conditions are aheared to.  The following conditions
+ apply to all code found in this distribution, be it the RC4, RSA,
+ lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+ included with this distribution is covered by the same copyright terms
+ except that the holder is Tim Hudson (tjh@mincom.oz.au).
+ .
+ Copyright remains Eric Young's, and as such any Copyright notices in
+ the code are not to be removed.
+ If this package is used in a product, Eric Young should be given attribution
+ as the author of the parts of the library used.
+ This can be in the form of a textual message at program startup or
+ in documentation (online or textual) provided with the package.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+    "This product includes cryptographic software written by
+     Eric Young (eay@mincom.oz.au)"
+    The word 'cryptographic' can be left out if the rouines from the library
+    being used are not cryptographic related :-).
+ 4. If you include any Windows specific code (or a derivative thereof) from
+    the apps directory (application code) you must include an acknowledgement:
+    "This product includes software written by Tim Hudson (tjh@mincom.oz.au)"
+ THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+ .
+ The licence and distribution terms for any publically available version or
+ derivative of this code cannot be changed.  i.e. this code cannot simply be
+ copied and put under another distribution licence
+ [including the GNU Public Licence.]
+
+Files: thirdparty/fcrypt/__init__.py
+Copyright: 2000-2004 Carey Evans  <careye@spamcop.net>
+                     Eric Young <eay@mincom.oz.au> (original code)
+                2010 Jonathan Hartley
+License: BSD-2-clause
+
+Files: thirdparty/clientform/*
+Copyright: 2007-2008 David McNab
+           2002-2007 John J. Lee <jjl@pobox.com>
+                2005 Gary Poster
+                2005 Zope Corporation
+           1998-2000 Gisle Aas.
+License: LGPL-3+
+
+Files: thirdparty/clientform/clientform.py
+Copyright: 2007-2008 David McNab
+           2002-2007 John J. Lee <jjl@pobox.com>
+                2005 Gary Poster
+                2005 Zope Corporation
+           1998-2000 Gisle Aas.
+License: BSD-3-clause or ZPL-2.1
+
+Files: thirdparty/keepalive/*
+Copyright: 2002-2003 Michael D. Stenner
+License: LGPL-3+
+
+Files: thirdparty/multipart/*
+Copyright: 2006 Will Holcomb
+License: LGPL-2.1+
+
+Files: thirdparty/pydes/*
+Copyright: 2009 Todd Whiteman
+License: LGPL-3+
+
+Files: thirdparty/chardet/*
+Copyright: 1998-2005 Mark Pilgrim - port to Python
+           1998-2005 Shy Shalom - original C code
+           1998-2005 Shoshannah Forbes - original C code (?)
+           1998-2005 Proofpoint, Inc.
+           1998 Netscape Communications Corporation.
+           Ian Cordasco (port to Python)
+           Mark Pilgrim (port to Python)
+License: LGPL-2.1+
+
+Files: thirdparty/xdot/*
+       thirdparty/gprof2dot/*
+Copyright: 2008-2009 Jose Fonseca
+           2002 Cynthia Brewer
+           2002 Mark Harrower
+           2002 The Pennsylvania State, University (part of the xdot file)
+License: LGPL-3+
+Comment: some subparts of the xdot.py file are licensed as:
+ Apache-Style Software License for ColorBrewer software and ColorBrewer Color
+ Schemes, Version 1.1
+ .
+ Copyright (c) 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State
+ University. All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+    1. Redistributions as source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+ .
+    2. The end-user documentation included with the redistribution, if any,
+    must include the following acknowledgment:
+ .
+       This product includes color specifications and designs developed by
+       Cynthia Brewer (http://colorbrewer.org/).
+ .
+    Alternately, this acknowledgment may appear in the software itself, if and
+    wherever such third-party acknowledgments normally appear.
+ .
+    3. The name "ColorBrewer" must not be used to endorse or promote products
+    derived from this software without prior written permission. For written
+    permission, please contact Cynthia Brewer at cbrewer@psu.edu.
+ .
+    4. Products derived from this software may not be called "ColorBrewer",
+    nor may "ColorBrewer" appear in their name, without prior written
+    permission of Cynthia Brewer.
+ .
+ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CYNTHIA
+ BREWER, MARK HARROWER, OR THE PENNSYLVANIA STATE UNIVERSITY BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: thirdparty/bottle/*
+Copyright: 2012 Marcel Hellkamp
+License: MIT
+
+Files: thirdparty/prettyprint/*
+Copyright: 2010 Chris Hall
+License: BSD-2-clause
+
+Files: extra/icmpsh/*
+Copyright: 2010 Nico Leidecker <nico@leidecker.info>
+           2010 Bernardo Damele A. G. <bernardo.damele@gmail.com>
+License: GPL-3+
+
+Files: extra/shellcodeexec/*
+Copyright: 2010, Bernardo Damele A. G. <bernardo.damele@gmail.com>
+License: LGPL-2.1+
+
+Files: extra/runcmd/windows/runcmd/*
+Copyright: 2010 Miroslav Stampar <miroslav.stampar@gmail.com>
+License: LGPL-2.1+
+
+Files: debian/*
+Copyright: 2009 Bernardo Damele A. G. <bernardo.damele@gmail.com>
+           2014-2015 Luciano Bello <luciano@debian.org>
+           2014-2016 Gianfranco Costamagna <locutusofborg@debian.org>
+License: GPL-2+
+
+Files: debian/missing-sources/udfhack/*
+Copyright: 2008-2010 Roland Bouman
+           2008-2010 Bernardo Damele A. G.
+License: LGPL-2.1+
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice immediately at the beginning of the file, without modification,
+    this list of conditions, and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: MIT
+ The MIT License
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+License: LGPL-3+
+ This package is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation; either version 3 of the License, or (at your option)
+ any later version.
+ .
+ This package is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU Lesser General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc., 51
+ Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ can be found in `/usr/share/common-licenses/LGPL-3'.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License,
+ or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-2 file.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-3 file.
+
+License: ZPL-2.1
+ Zope Public License (ZPL) Version 2.1
+ A copyright notice accompanies this license document that identifies the
+ copyright holders.
+ .
+ This license has been certified as open source. It has also been designated
+ as GPL compatible by the Free Software Foundation (FSF).
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions in source code must retain the accompanying copyright
+ notice, this list of conditions, and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the accompanying copyright
+ notice, this list of conditions, and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ 3. Names of the copyright holders must not be used to endorse or promote
+ products derived from this software without prior written permission from the
+ copyright holders.
+ .
+ 4. The right to distribute this software or to use it for any purpose does not
+ give you the right to use Servicemarks (sm) or Trademarks (tm) of the
+ copyright holders. Use of them is covered by separate agreement with the
+ copyright holders.
+ .
+ 5. If any files are modified, you must cause the modified files to carry
+ prominent notices stating that you changed the files and the date of any
+ change.
+ .
+ Disclaimer
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

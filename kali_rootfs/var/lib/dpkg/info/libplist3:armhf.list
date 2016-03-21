@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libplist3
+/usr/share/doc/libplist3/NEWS.gz
+/usr/share/doc/libplist3/changelog.Debian.gz
+/usr/share/doc/libplist3/copyright
+/usr/share/doc/libplist3/README
+/usr/share/doc/libplist3/AUTHORS
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libplist.so.3.0.0
+/usr/lib/arm-linux-gnueabihf/libplist.so.3

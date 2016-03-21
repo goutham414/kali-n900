@@ -1,0 +1,18 @@
+#!/bin/sh
+
+. "${PM_FUNCTIONS}"
+
+# do not run pm-powersave on ARM during suspend; the 1.5 seconds that it takes
+# to run it don't nearly compensate the potentially slightly slower suspend
+# operation in low power mode
+ARCH=`uname -m`
+
+command_exists pm-powersave || exit $NA
+
+case $1 in
+    suspend|hibernate) [ "$ARCH" != "${ARCH#arm}" ] || pm-powersave false ;;
+    resume|thaw)       pm-powersave ;;
+    *) exit $NA ;;
+esac
+exit 0
+    

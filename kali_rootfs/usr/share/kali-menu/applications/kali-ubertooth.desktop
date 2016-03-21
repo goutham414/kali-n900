@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ubertooth util
+Encoding=UTF-8
+Exec=sh -c "ubertooth-util -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-04-other-wireless;
+X-Kali-Package=ubertooth

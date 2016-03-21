@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libwacom2
+/usr/share/doc/libwacom2/changelog.Debian.gz
+/usr/share/doc/libwacom2/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libwacom.so.2.4.5
+/usr/lib/arm-linux-gnueabihf/libwacom.so.2

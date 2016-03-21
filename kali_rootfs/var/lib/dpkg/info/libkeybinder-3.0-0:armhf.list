@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libkeybinder-3.0-0
+/usr/share/doc/libkeybinder-3.0-0/changelog.Debian.gz
+/usr/share/doc/libkeybinder-3.0-0/copyright
+/usr/share/doc/libkeybinder-3.0-0/README
+/usr/share/doc/libkeybinder-3.0-0/AUTHORS
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libkeybinder-3.0.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/libkeybinder-3.0.so.0

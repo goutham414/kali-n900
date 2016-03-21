@@ -1,0 +1,7 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = rtupdate ]; then
+	pyclean -p sqlmap /usr/share/sqlmap
+	pycompile -p sqlmap -V 2.4- /usr/share/sqlmap
+fi

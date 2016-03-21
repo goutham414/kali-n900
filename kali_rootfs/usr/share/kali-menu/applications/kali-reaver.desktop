@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=reaver
+Encoding=UTF-8
+Exec=sh -c "reaver -h;${SHELL:-bash}"
+Icon=kali-reaver.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-wireless-attacks;
+X-Kali-Package=reaver

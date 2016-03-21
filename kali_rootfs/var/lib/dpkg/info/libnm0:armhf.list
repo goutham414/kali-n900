@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnm0
+/usr/share/doc/libnm0/changelog.Debian.gz
+/usr/share/doc/libnm0/changelog.gz
+/usr/share/doc/libnm0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libnm.so.0.1.0
+/usr/lib/arm-linux-gnueabihf/libnm.so.0

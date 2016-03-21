@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    install|upgrade)
+        # dpkg does not replace directories by symlinks or vice versa.
+        TARGET="firebird${FB_VER}-common-doc"
+        D="/usr/share/doc/libfbclient2"
+        if [ ! -L "$D" -a -d "$D" ]; then
+            echo "Found legacy directory $D which needs to be replaced by a symlink to $TARGET"
+            if rmdir "$D" >/dev/null 2>&1 ; then
+                echo "Directory is empty, removed"
+            else
+                echo "Directory not empty, moving to libfbclient2.dpkg-old"
+                mv --backup=existing "$D" "$D.dpkg-old"
+            fi
+        fi
+    ;;
+esac
+
+
+
+exit 0

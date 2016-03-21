@@ -1,0 +1,16 @@
+# This file implements the "noautomount" boot option used by Kali's
+# forensic mode to avoid auto-mounting disks which are detected
+# dynamically by udisks
+
+# The downside of this approach is that the setting is overwritten every
+# time that you login in the graphical interface. If you're fed up by this
+# and want to keep automount always disabled, just edit this file and
+# comment everything.
+
+if [ -r /proc/cmdline ] && [ -x "$(which gsettings)" ]; then
+    if grep -q -E "\bnoautomount\b" /proc/cmdline 2>/dev/null; then
+	gsettings set org.gnome.desktop.media-handling automount false
+    else
+	gsettings set org.gnome.desktop.media-handling automount true
+    fi
+fi

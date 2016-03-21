@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=skipfish
+Encoding=UTF-8
+Exec=sh -c "skipfish -h;${SHELL:-bash}"
+Icon=kali-skipfish.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;03-05-web-vulnerability-scanners;
+X-Kali-Package=skipfish

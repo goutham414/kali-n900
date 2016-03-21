@@ -1,0 +1,2 @@
+libwbclient 0 libwbclient0 (>= 2:4.3.6+dfsg)
+libwinbind-client 0 libwbclient0 (= 2:4.3.6+dfsg-1)

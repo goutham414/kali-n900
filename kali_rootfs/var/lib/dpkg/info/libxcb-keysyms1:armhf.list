@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxcb-keysyms.so.1.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxcb-keysyms1
+/usr/share/doc/libxcb-keysyms1/changelog.gz
+/usr/share/doc/libxcb-keysyms1/README
+/usr/share/doc/libxcb-keysyms1/NEWS.gz
+/usr/share/doc/libxcb-keysyms1/changelog.Debian.gz
+/usr/share/doc/libxcb-keysyms1/copyright
+/usr/lib/arm-linux-gnueabihf/libxcb-keysyms.so.1

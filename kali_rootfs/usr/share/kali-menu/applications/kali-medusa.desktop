@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=medusa
+Encoding=UTF-8
+Exec=sh -c "medusa -h;${SHELL:-bash}"
+Icon=kali-medusa.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-password-attacks;
+X-Kali-Package=medusa
+
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mimikatz
+Encoding=UTF-8
+Exec=sh -c "cd /usr/share/mimikatz/ && ls -l;${SHELL:-bash}"
+Icon=kali-mimikatz.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;05-04-pass-hash;
+X-Kali-Package=mimikatz

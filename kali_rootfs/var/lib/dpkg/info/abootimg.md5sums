@@ -1,0 +1,9 @@
+f361fd954e396fc851828e97c2c13fe6  usr/bin/abootimg
+1e30184919a64cb449624fd600c86b85  usr/bin/abootimg-pack-initrd
+c6c10b4a44f9da1ef71ab91a0644e7fa  usr/bin/abootimg-unpack-initrd
+0a78987396424ec4cb804901a1de02fd  usr/share/doc/abootimg/README.gz
+c532b56513c98d48bfc335e9287dcf63  usr/share/doc/abootimg/changelog.Debian.armhf.gz
+e228fc63d271a855cf0a12a6b20534cf  usr/share/doc/abootimg/changelog.Debian.gz
+b990e26f18b308c6e42e8784ea603ec7  usr/share/doc/abootimg/changelog.gz
+8527b24d3337fb93a6036b9717c85987  usr/share/doc/abootimg/copyright
+62b8b5eb223d8390743c2c1fc54c9659  usr/share/man/man1/abootimg.1.gz

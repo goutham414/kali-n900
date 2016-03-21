@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=proxychains
+Encoding=UTF-8
+Exec=sh -c "proxychains;${SHELL:-bash}"
+Icon=kali-proxychains.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;10-maintaining-access;
+X-Kali-Package=proxychains

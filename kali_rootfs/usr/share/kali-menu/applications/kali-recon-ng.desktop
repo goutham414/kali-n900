@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=recon-ng
+Encoding=UTF-8
+Exec=sh -c "recon-ng"
+Icon=kali-Recon-NG.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Kali-Package=recon-ng

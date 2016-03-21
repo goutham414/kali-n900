@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Nessus stop
+Encoding=UTF-8
+Exec=sh -c "/etc/init.d/nessusd stop;${SHELL:-bash}"
+Icon=kali-nessus.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;02-05-nessus;14-services;
+X-Kali-Package=nessus

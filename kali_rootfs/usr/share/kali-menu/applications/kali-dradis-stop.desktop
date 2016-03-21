@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dradis stop
+Encoding=UTF-8
+Exec=sh -c "service dradis stop;${SHELL:-bash}"
+Icon=kali-dradis.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-10-dradis-service;14-services;
+X-Kali-Package=dradis

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ollydbg
+Encoding=UTF-8
+Exec=sh -c "ollydbg"
+Icon=kali-ollydbg.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
+X-Kali-Package=ollydbg

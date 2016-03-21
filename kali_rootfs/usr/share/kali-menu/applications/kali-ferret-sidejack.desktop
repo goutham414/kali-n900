@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ferret
+Encoding=UTF-8
+Exec=sh -c "ferret;${SHELL:-bash}"
+Icon=kali-ferret.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Kali-Package=ferret-sidejack

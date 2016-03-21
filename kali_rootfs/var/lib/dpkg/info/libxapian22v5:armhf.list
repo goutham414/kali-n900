@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxapian22v5
+/usr/share/doc/libxapian22v5/changelog.Debian.gz
+/usr/share/doc/libxapian22v5/changelog.gz
+/usr/share/doc/libxapian22v5/copyright
+/usr/share/doc/libxapian22v5/TODO.Debian
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxapian.so.22.7.0
+/usr/lib/arm-linux-gnueabihf/libxapian.so.22

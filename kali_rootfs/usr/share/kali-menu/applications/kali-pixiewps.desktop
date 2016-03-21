@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pixiewps
+Encoding=UTF-8
+Exec=sh -c "pixiewps -h;${SHELL:-bash}"
+Icon=kali-pixiewps.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-wireless-attacks;
+X-Kali-Package=pixiewps

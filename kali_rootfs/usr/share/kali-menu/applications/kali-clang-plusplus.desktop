@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=clang++
+Encoding=UTF-8
+Exec=sh -c "clang++ --help;${SHELL:-bash}"
+Icon=kali-clang.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Kali-Package=clang

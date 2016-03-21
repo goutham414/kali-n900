@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=thc-pptp-bruter
+Encoding=UTF-8
+Exec=sh -c "thc-pptp-bruter;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Kali-Package=thc-pptp-bruter

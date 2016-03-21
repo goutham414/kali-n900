@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wol-e
+Encoding=UTF-8
+Exec=sh -c "wol-e -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;
+X-Kali-Package=wol-e

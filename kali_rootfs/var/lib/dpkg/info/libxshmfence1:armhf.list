@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxshmfence1
+/usr/share/doc/libxshmfence1/changelog.Debian.gz
+/usr/share/doc/libxshmfence1/changelog.gz
+/usr/share/doc/libxshmfence1/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxshmfence.so.1.0.0
+/usr/lib/arm-linux-gnueabihf/libxshmfence.so.1

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=nishang
+Encoding=UTF-8
+Exec=sh -c "cd /usr/share/nishang && ls -l;${SHELL:-bash}"
+Icon=kali-nishang.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-03-web-backdoors;10-maintaining-access;
+X-Kali-Package=nishang

@@ -1,0 +1,6 @@
+/etc/X11/Xsession.d/52kali_fix_lang
+/etc/X11/Xsession.d/52kali_noautomount
+/etc/dconf/db/local.d/kali-tweaks
+/etc/dconf/profile/user
+/etc/iceweasel/pref/kali.js
+/etc/xdg/xfce4/terminal/terminalrc

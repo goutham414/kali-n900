@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=merge-router-config
+Encoding=UTF-8
+Exec=sh -c "merge-router-config.pl;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-01-cisco-tools;06-01-cisco-attacks;
+X-Kali-Package=copy-router-config

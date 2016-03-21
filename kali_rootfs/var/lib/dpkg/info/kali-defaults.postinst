@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+    if dpkg --compare-versions "$2" lt-nl 2.0~3; then
+	dpkg-divert --rename --package kali-defaults \
+	            --divert /usr/share/themes/Adwaita/metacity-1/metacity-theme-3.xml.original \
+                    --remove /usr/share/themes/Adwaita/metacity-1/metacity-theme-3.xml
+    fi
+    if dpkg --compare-versions "$2" lt-nl 2.0~14; then
+	dpkg-divert --rename --package kali-defaults \
+	            --divert /usr/share/xsessions/default.desktop \
+                    --remove /usr/share/xsessions/gnome-fallback.desktop
+    fi
+
+    for file in /etc/iceweasel/profile/localstore.rdf /etc/iceweasel/profile/bookmarks.html \
+		/etc/skel/.bashrc /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+    do
+	orig_file="/usr/share/kali-defaults/$(basename $file)"
+	if [ ! -e $file ] && [ -e $orig_file ]; then
+	    echo "Installing $orig_file as $file"
+	    mkdir -p $(dirname $file)
+	    cp $orig_file $file
+	fi
+    done
+    dconf update || true
+fi
+
+
+

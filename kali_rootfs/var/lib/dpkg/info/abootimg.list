@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/abootimg.1.gz
+/usr/share/doc
+/usr/share/doc/abootimg
+/usr/share/doc/abootimg/changelog.Debian.armhf.gz
+/usr/share/doc/abootimg/changelog.Debian.gz
+/usr/share/doc/abootimg/changelog.gz
+/usr/share/doc/abootimg/README.gz
+/usr/share/doc/abootimg/copyright
+/usr/bin
+/usr/bin/abootimg
+/usr/bin/abootimg-unpack-initrd
+/usr/bin/abootimg-pack-initrd

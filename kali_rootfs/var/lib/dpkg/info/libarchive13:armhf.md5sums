@@ -1,0 +1,5 @@
+e7a989d35254cfdc6fb5f57bb31132c3  usr/lib/arm-linux-gnueabihf/libarchive.so.13.1.2
+d76e8a3c07a84f33b6c9073514e49013  usr/share/doc/libarchive13/changelog.Debian.armhf.gz
+28bf5b8e74a3bcad56a6a4b68f4505ff  usr/share/doc/libarchive13/changelog.Debian.gz
+3a6a179faabf31fc27bee456a526e7d4  usr/share/doc/libarchive13/copyright
+26ddfed9857b0b377cf8a19ca255cd3c  usr/share/lintian/overrides/libarchive13

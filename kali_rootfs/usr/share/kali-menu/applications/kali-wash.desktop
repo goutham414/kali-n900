@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wash
+Encoding=UTF-8
+Exec=sh -c "wash -h;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Kali-Package=wash

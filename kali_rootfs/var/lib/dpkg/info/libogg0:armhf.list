@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libogg0
+/usr/share/doc/libogg0/copyright
+/usr/share/doc/libogg0/changelog.gz
+/usr/share/doc/libogg0/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libogg.so.0.8.2
+/usr/lib/arm-linux-gnueabihf/libogg.so.0
